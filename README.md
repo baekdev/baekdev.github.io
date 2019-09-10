@@ -1,17 +1,2 @@
-
-## Dive Into Technology 😀  
-
-기술 이야기  
-
-
-##### Hitchens Theme  
-An inarguably well-designed [Jekyll](http://jekyllrb.com) theme by [Pat Dryburgh](https://patdryburgh.com).
-
-
-##### License
-
-The code for this theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT). 
-
-The font, EB Garamond, is Copyright 2017 The EB Garamond Project Authors and licensed under the [SIL Open Font License Version 1.1](https://github.com/patdryburgh/hitchens/blob/master/assets/fonts/OFL.txt).
-
-Graphics are released to the public domain.
+**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license.  
+Copyright (C) 2019 Sal, https://www.wowthemes.net   

@@ -1,47 +1,69 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site
+name: "1oopro.com"
+title: "아웃풋 트레이닝"
+description: "개발 블로그입니다. 토이 프로젝트, 기술 서적 리뷰, 컨퍼런스 등 다양한 정보를 공유합니다."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ''
+google_analytics: ''
+disqus: '1oopro-com'
+#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: DiveTech
-email: diveintotechnology@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  dive into technology
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://divetech.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-icon: /assets/images/icon-512.png
-# twitter_username:
-github_username:  divetech
+# Authors
+authors:
+  1oopro:
+    name: 1oopro
+    display_name: 1oopro
+    avatar: 'assets/images/avatar.jpg'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: diveintotechnology@gmail.com
+    web: https://1oopro.com
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here."
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: /blog/:title/
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
+# Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
 
-paginate: 5
-paginate_path: "/page/:num/"
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+facebook:
+  app_id: '378931686293798'
+  username: iam.seoyeongbaek
+  comment: true
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
