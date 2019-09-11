@@ -4,23 +4,25 @@ title: "아웃풋 트레이닝"
 description: "개발 블로그입니다. 토이 프로젝트, 기술 서적 리뷰, 컨퍼런스 등 다양한 정보를 공유합니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: ''
+baseurl: '/blog'
+assetsurl: 'assets'
 google_analytics: ''
 disqus: '1oopro-com'
-#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+# mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
+keep_files: [assets]
 
 # Authors
 authors:
   1oopro:
-    name: 1oopro
-    display_name: 1oopro
+    name: '1oopro'
+    display_name: '백프로'
     avatar: 'assets/images/avatar.jpg'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: diveintotechnology@gmail.com
-    web: https://1oopro.com
-    twitter: https://twitter.com/wowthemesnet
+    # gravatar: ''
+    email: 'diveintotechnology@gmail.com'
+    web: 'https://1oopro.com'
+    twitter: 'https://twitter.com/iam1oopro'
     description: "This is the author box. Write a short description of the author here."
 
 # Plugins
@@ -38,7 +40,7 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
