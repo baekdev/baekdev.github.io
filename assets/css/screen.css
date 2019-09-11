@@ -725,6 +725,19 @@ h6 {
     margin-bottom: 1.5rem;
 }
 
+.article-post>h2,
+.article-post>h3  {
+    margin-top: 4rem;
+}
+
+.article-post>h2,
+.article-post>h3,
+.article-post>h4,
+.article-post>h5,
+.article-post>h6 {
+    border-bottom: 0.05rem solid #eee;
+}
+
 .article-post img.shadow {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
