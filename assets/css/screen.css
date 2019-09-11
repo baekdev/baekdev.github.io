@@ -735,7 +735,7 @@ h6 {
 .article-post>h4,
 .article-post>h5,
 .article-post>h6 {
-    border-bottom: 0.05rem solid #eee;
+    border-bottom: 0.05rem dashed #eee;
 }
 
 .article-post img.shadow {
