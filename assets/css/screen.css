@@ -908,3 +908,8 @@ iframe {
 .lead-small {
     font-size: 1rem;
 }
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
