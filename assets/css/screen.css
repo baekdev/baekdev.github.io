@@ -534,7 +534,20 @@ ul.tags li a:hover {
     padding: 3px 10px;
     text-align: center;
     border-radius: 999em;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.btn.follow-fill {
+    background-color: #1C9963;
+    border-color: #1C9963;
+    color: rgba(255, 255, 255, 1);
+    fill: rgba(255, 255, 255, 1);
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 999em;
+    font-size: 0.7rem;
     display: inline-block;
 }
 
@@ -632,6 +645,10 @@ ul.tags li a:hover {
 .authorpage .author-description {
     font-size: 1rem;
     color: rgba(0, 0, 0, .6);
+}
+
+.author-description {
+    margin-left: 5px;
 }
 
 .post-top-meta.authorpage .btn.follow {

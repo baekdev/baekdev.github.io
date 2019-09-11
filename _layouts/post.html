@@ -32,16 +32,14 @@ post_class: post-template
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-<!--                        <span class="author-description">{{ author.description }}</span>-->
-                        <!-- Post Date -->
-                        <p style="margin-top: 0.1rem">
-                            <small>
-                                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></span>
-                                {% if page.last_modified_at %}
-                                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>)
-                                {% endif %}
-                            </small>
+
+                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a>
+                        <a target="_blank" href="{{ author.web }}" class="btn follow"><i class="fab fa-dribbble"></i></a>
+                        <a target="_blank" href="{{ author.twitter }}" class="btn follow"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="{{ author.github }}" class="btn follow"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="mailto:{{ author.email }}" class="btn follow"><i class="fas fa-envelope"></i></a>
+                        <p>
+                        <span class="author-description" style="margin-left: 0px">{{ author.description }}</span>
                         </p>
                     </div>
                 </div>
@@ -49,6 +47,15 @@ post_class: post-template
 
                 <!-- Post Title -->
                 <h1 class="posttitle">{{ page.title }}</h1>
+                <!-- Post Date -->
+                <p style="margin-top: 0.1rem">
+                    <small>
+                        <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></span>
+                        {% if page.last_modified_at %}
+                        (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>)
+                        {% endif %}
+                    </small>
+                </p>
                 <!-- Post Categories -->
                 <div class="after-post-cats">
                     <ul class="tags mb-4">

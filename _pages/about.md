@@ -5,4 +5,4 @@ permalink: /about
 comments: false
 ---
 
-TBD
+프로가 되고 싶은 개발자입니다.  

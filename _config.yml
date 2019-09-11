@@ -20,11 +20,11 @@ authors:
     name: '1oopro'
     display_name: '1oopro'
     avatar: 'assets/images/avatar.jpg'
-    # gravatar: ''
     email: 'diveintotechnology@gmail.com'
     web: 'https://1oopro.com'
     twitter: 'https://twitter.com/iam1oopro'
-    description: "This is the author box. Write a short description of the author here."
+    github: 'https://github.io/divetech'
+    description: "프로가 되고 싶은 개발자"
 
 # Plugins
 plugins:
