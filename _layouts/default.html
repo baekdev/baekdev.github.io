@@ -24,6 +24,10 @@
 <!-- naver web master -->
 <meta name="naver-site-verification" content="11ec9086ec9292ebc8dc73f6224492f208b2007b"/>
 
+{% if site.facebook %}
+{% include facebook_sdk.html %}
+{% endif %}
+
 </head>
 
 {% if jekyll.environment == 'production' %}
