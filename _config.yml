@@ -4,7 +4,7 @@ title: "아웃풋 트레이닝"
 description: "개발 블로그입니다. 토이 프로젝트, 기술 서적 리뷰, 컨퍼런스 등 다양한 정보를 공유합니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-# url : 'https://1oopro.com'
+url : ''
 baseurl: '/blog'
 assetsurl: 'assets'
 google_analytics: ''
@@ -57,7 +57,7 @@ kramdown:
       line_numbers: true
 
 # Adsense (change to "enabled" to activate, also your client id.)
-adsense: "enabled"
+adsense: "disabled"
 adsense-data-ad-client: "ca-pub-6059434733081357"
 
 facebook:
@@ -66,6 +66,6 @@ facebook:
   comment: true
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
+lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
