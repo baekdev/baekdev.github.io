@@ -4,7 +4,7 @@ title: "아웃풋 트레이닝"
 description: "개발 블로그입니다. 토이 프로젝트, 기술 서적 리뷰, 컨퍼런스 등 다양한 정보를 공유합니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-url : ''
+# url : 'https://1oopro.com'
 baseurl: '/blog'
 assetsurl: 'assets'
 google_analytics: ''
