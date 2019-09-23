@@ -32,7 +32,7 @@ layout: null
   {% for tag in site.tags %}
   {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/tags/#{{tag_name}}</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/tags#{{tag_name}}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -40,7 +40,7 @@ layout: null
 
   {% for category in  site.categories %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/categories/#{{ category[0] | url_escape | strip | replace: ' ', '-' }}</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
