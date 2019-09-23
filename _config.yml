@@ -4,14 +4,14 @@ title: "아웃풋 트레이닝"
 description: "개발 블로그입니다. 토이 프로젝트, 기술 서적 리뷰, 컨퍼런스 등 다양한 정보를 공유합니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-url : ''
-baseurl: '/blog'
+url : 'https://1oopro.com'
+baseurl: ''
 assetsurl: 'assets'
 google_analytics: ''
 disqus: '1oopro-com'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
-permalink: /:year/:title/
+permalink: /post/:year/:title/
 keep_files: [assets]
 
 # Authors
@@ -22,7 +22,7 @@ authors:
     avatar: 'assets/images/profile9.png'
     email: 'diveintotechnology@gmail.com'
     web: 'https://1oopro.com'
-    twitter: 'https://twitter.com/1oo_per_cent'
+    twitter: 'https://twitter.com/1oo_ppro'
     github: 'https://github.com/divetech'
     description: "백엔드 개발자 & 아웃풋 트레이닝 중"
 
