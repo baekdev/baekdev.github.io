@@ -45,4 +45,9 @@ layout: null
     <priority>0.8</priority>
   </url>
   {% endfor %}
+  <url>
+    <loc>{{ site.url }}/TIL</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
