@@ -1,10 +1,10 @@
 # Site
-name: "1oopro.com"
+name: "baek.dev"
 title: "아웃풋 트레이닝"
 description: "개발 블로그입니다. 토이 프로젝트, 기술 서적 리뷰, 컨퍼런스 등 다양한 정보를 공유합니다."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-url : 'https://1oopro.com'
+url : 'https://baek.dev'
 baseurl: ''
 assetsurl: 'assets'
 google_analytics: 'UA-148511543-1'
@@ -17,12 +17,12 @@ keep_files: [assets]
 # Authors
 authors:
   1oopro:
-    name: '1oopro'
-    display_name: '1oopro'
+    name: 'baek.dev'
+    display_name: 'baek.dev'
     avatar: 'assets/images/profile9.png'
     email: 'diveintotechnology@gmail.com'
-    web: 'https://1oopro.com'
-    twitter: 'https://twitter.com/1oo_pro'
+    web: 'https://baek.dev'
+    twitter: 'https://twitter.com/baek.dev'
     github: 'https://github.com/divetech'
     description: "백엔드 개발자 & 아웃풋 트레이닝 중"
 
