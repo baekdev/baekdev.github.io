@@ -18,12 +18,12 @@ keep_files: [assets]
 authors:
   1oopro:
     name: 'baek.dev'
-    display_name: 'baek.dev'
+    display_name: '개발자 백'
     avatar: 'assets/images/profile9.png'
     email: 'diveintotechnology@gmail.com'
     web: 'https://baek.dev'
     twitter: 'https://twitter.com/baek.dev'
-    github: 'https://github.com/divetech'
+    github: 'https://github.com/baekdev'
     description: "백엔드 개발자 & 아웃풋 트레이닝 중"
 
 # Plugins
