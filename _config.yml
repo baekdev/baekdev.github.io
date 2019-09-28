@@ -16,8 +16,8 @@ keep_files: [assets]
 
 # Authors
 authors:
-  1oopro:
-    name: 'baek.dev'
+  baekdev:
+    name: 'baekdev'
     display_name: '개발자 백'
     avatar: 'assets/images/profile9.png'
     email: 'diveintotechnology@gmail.com'
