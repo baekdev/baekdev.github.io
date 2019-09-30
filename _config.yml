@@ -13,6 +13,8 @@ disqus: 'baekdev'
 include: ["_pages"]
 permalink: /post/:title/
 keep_files: [assets]
+utteranc:
+  github_repo:
 
 # Authors
 authors:

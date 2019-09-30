@@ -123,20 +123,19 @@ post_class: post-template
             <!-- End Tags -->
 
             <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.url }}{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title | truncatewords:4}}</a>
-            {% endif %}
-            {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.url }}{{ site.baseurl }}{{page.next.url}}">{{page.next.title | truncatewords:4}} &raquo; </a>
-            {% endif %}
-            <div class="clearfix"></div>
-            </div>
+<!--            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">-->
+<!--            {% if page.previous.url %}-->
+<!--            <a class="prev d-block col-md-6" href="{{ site.url }}{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title | truncatewords:4}}</a>-->
+<!--            {% endif %}-->
+<!--            {% if page.next.url %}-->
+<!--            <a class="next d-block col-md-6 text-lg-right" href="{{ site.url }}{{ site.baseurl }}{{page.next.url}}">{{page.next.title | truncatewords:4}} &raquo; </a>-->
+<!--            {% endif %}-->
+<!--            <div class="clearfix"></div>-->
+<!--            </div>-->
             <!-- End Categories -->
 
         </div>
         <!-- End Post -->
-
     </div>
 </div>
 <!-- End Article
@@ -145,10 +144,11 @@ post_class: post-template
 <!-- Begin Comments
 ================================================== -->
 {% if page.comments != false %}
-    <div class="container">
+    <div class="container" style="margin-top: -5rem">
         <div id="comments" class="row justify-content-center mb-5">
             <div class="col-md-8">
-                {% include disqus.html %}
+                {% include utterances.html %}
+                <p style="color: #a5a5a5;font-size: 0.8rem;">1.5k이상 start를 받고있는 utterances라는 댓글 앱으로, Github 계정으로 댓글을 남길 수 있습니다. Sign in때 권한 요청을 할 수 있습니다.</p>
             </div>
         </div>
     </div>
