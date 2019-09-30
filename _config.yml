@@ -8,7 +8,7 @@ url : 'https://baek.dev'
 baseurl: ''
 assetsurl: 'assets'
 google_analytics: 'UA-148617191-1'
-disqus: '1oopro-com'
+disqus: 'baekdev'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /post/:title/
@@ -19,7 +19,7 @@ authors:
   baekdev:
     name: 'baekdev'
     display_name: '개발자 백'
-    avatar: 'assets/images/profile9.png'
+    avatar: 'assets/images/profile.jpg'
     email: 'diveintotechnology@gmail.com'
     web: 'https://baek.dev'
     twitter: 'https://twitter.com/dev_baek'

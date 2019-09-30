@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About 1oopro
+title: About BAEKDEV
 permalink: /about
 comments: false
 ---
