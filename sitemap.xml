@@ -31,26 +31,19 @@ layout: null
   </url>
   {% endif %}
   {% endfor %}
-
-  {% for tag in site.tags %}
-  {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/tags#{{tag_name}}</loc>
-    <changefreq>monthly</changefreq>
+    <loc>{{ site.url }}/tags</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  {% endfor %}
-
-  {% for category in  site.categories %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}</loc>
-    <changefreq>monthly</changefreq>
+    <loc>{{ site.url }}/categories</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  {% endfor %}
   <url>
     <loc>{{ site.url }}/TIL</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
