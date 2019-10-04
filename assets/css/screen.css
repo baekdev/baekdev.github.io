@@ -18,6 +18,7 @@ a {
 
 a>.sitetitle{
     color: #212529;
+    font-weight: 600;
 }
 
 a:hover {
@@ -146,7 +147,7 @@ section.recent-posts {
 
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.25;
 }
@@ -313,7 +314,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.posttitle {
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -335,7 +336,7 @@ span.post-read-more a:hover {
 
 .article-post {
     font-family: Merriweather;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
 }
@@ -721,7 +722,7 @@ h6 {
 .article-post h4,
 .article-post h5,
 .article-post h6 {
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 1.5rem;
 }
 
