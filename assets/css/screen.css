@@ -5,7 +5,7 @@ License: https://www.wowthemes.net/freebies-license/
 */
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
+    .container {max-width:90%;}
 }
 .mainheading {
     padding: 1rem 0rem;
@@ -102,6 +102,11 @@ section.recent-posts {
     }
 }
 
+@media (max-width:600px) {
+    #toc-list {
+        display: none !important;
+    }
+}
 @media (min-width:992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.8rem;
@@ -943,4 +948,26 @@ iframe {
 hr {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.footnotes ol {
+    margin-bottom: 2.5rem;
+}
+.footnotes ol li p {
+    margin: 0;
+}
+
+div.toc ul {
+    list-style: disc;
+}
+div.toc ul li {
+    font-size: 0.8rem;
+}
+
+#toc-list li {
+    display: block;
+}
+
+#toc-list div.lead {
+    margin-top: 0.5rem !important;
 }
