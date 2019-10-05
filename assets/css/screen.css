@@ -971,3 +971,8 @@ div.toc ul li {
 #toc-list div.lead {
     margin-top: 0.5rem !important;
 }
+
+
+h3, .h3 { font-size: 1.5rem; }
+h4, .h4 { font-size: 1.3rem; }
+h5, .h5 { font-size: 1.15rem; }
