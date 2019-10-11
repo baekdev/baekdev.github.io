@@ -43,6 +43,7 @@ layout: null
   </url>
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}/til</loc>
+    <lastmod>{{ '2019-10-11' | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
