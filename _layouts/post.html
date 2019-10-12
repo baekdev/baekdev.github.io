@@ -49,10 +49,10 @@ post_class: post-template
                 <h1 class="posttitle">{{ page.title }}</h1>
                 <!-- Post Date -->
                 <p style="margin-top: 0.1rem">
-                    <small>
+                    <small style="color: rgba(0, 0, 0, .44) !important;">
                         <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></span>
-                        {% if page.last_modified_at %}
-                        (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>)
+                        {% if page.lastmod %}
+                        ( Updated <time datetime="{{ page.lastmod | date_to_xmlschema }}" itemprop="dateModified">{{ page.lastmod | date: "%Y-%m-%d" }}</time> )
                         {% endif %}
                     </small>
                 </p>
