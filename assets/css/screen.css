@@ -218,6 +218,10 @@ section.recent-posts {
     font-size: 0.95rem;
 }
 
+.utterances {
+    max-width: 100% !important;
+}
+
 .toc ul {
     list-style: decimal;
     font-weight: 400;
