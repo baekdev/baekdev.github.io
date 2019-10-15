@@ -49,10 +49,10 @@ post_class: post-template
                 <h1 class="posttitle">{{ page.title }}</h1>
                 <!-- Post Date -->
                 <p style="margin-top: 0.1rem">
-                    <small>
+                    <small style="color: rgba(0, 0, 0, .44) !important;">
                         <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time></span>
-                        {% if page.last_modified_at %}
-                        (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>)
+                        {% if page.lastmod %}
+                        ( Updated <time datetime="{{ page.lastmod | date_to_xmlschema }}" itemprop="dateModified">{{ page.lastmod | date: "%Y-%m-%d" }}</time> )
                         {% endif %}
                     </small>
                 </p>
@@ -108,9 +108,9 @@ post_class: post-template
             </div>
             <!-- End Tags -->
 
-            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="standard" data-width="300" data-action="like" data-show-faces="true"
-                 data-share="true"></div>
-            <br/><br/>
+<!--            <div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="standard" data-width="300" data-action="like" data-show-faces="true"-->
+<!--                 data-share="true"></div>-->
+<!--            <br/><br/>-->
 
             <!-- Prev/Next -->
 <!--            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">-->
@@ -124,26 +124,27 @@ post_class: post-template
 <!--            </div>-->
             <!-- End Categories -->
 
+            <!-- Begin Comments -->
+            <div>
+                {% if page.comments != false %}
+                <div id="comments" class="row justify-content-center mb-5">
+                    <div class="col-md-12">
+                        {% include utterances.html %}
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row">
+                    {% include google-ads.html %}
+                </div>
+            </div>
+            <!--End Comments -->
+
         </div>
         <!-- End Post -->
+
     </div>
 </div>
 <!-- End Article
-================================================== -->
-
-<!-- Begin Comments
-================================================== -->
-{% if page.comments != false %}
-    <div class="container" style="margin-top: -5rem">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                {% include utterances.html %}
-<!--                <p style="color: #a5a5a5;font-size: 0.8rem;">1.5k이상 start를 받고있는 utterances라는 댓글 앱으로, Github 계정으로 댓글을 남길 수 있습니다. Sign in때 권한 요청을 할 수 있습니다.</p>-->
-            </div>
-        </div>
-    </div>
-{% endif %}
-<!--End Comments
 ================================================== -->
 
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
