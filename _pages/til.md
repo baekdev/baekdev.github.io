@@ -240,6 +240,13 @@ ex) [![Blog](https://img.shields.io/badge/Blog-baek.dev-green.svg)](https://baek
 ./gradlew springboot-app:dependencies > dependencies.log  
 ```  
 
+### intelliJ에서 project build out을 못찾는 경우   
+- gradle refresh를 해본다  
+- 그래도 안되면, project structure - project에서 out path를 강제로 명시한 뒤, 빌드해본다   
+
+### TODO. IntelliJ project build without gradle  
+TBU  
+
 <br/>  
 
 # I  
