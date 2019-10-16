@@ -260,9 +260,13 @@ TBU
 - [How to increase the memory heap size on IntelliJ IDEA?](https://stackoverflow.com/questions/17221725/how-to-increase-the-memory-heap-size-on-intellij-idea)  
 
 ## iTerm 커서 이동  
-`iTerm - Preferences - profiles - key tab  에서 + 버튼을 클릭`하여 다음과 같이 추가해준다.   
-- 뒤로 이동은 b(back)  
+`iTerm - Preferences - profiles - key tab  에서 + 버튼을 클릭`하여 다음과 같이 추가해준다.  
+
 - 앞으로 이동은 f(forward)  
+    <img src="{{site.baseurl}}/{{site.assetsurl}}/images/til/iterm_cursor_001.png" style="width: 500px;" />  
+    
+- 뒤로 이동은 b(back)  
+    <img src="{{site.baseurl}}/{{site.assetsurl}}/images/til/iterm_cursor_002.png" style="width: 500px;" />     
 
 
 <br/>  
