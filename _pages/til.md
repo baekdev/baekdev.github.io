@@ -339,6 +339,14 @@ UserInfo userInfo = local.get();
 자세한 내용은 [최범균님의 블로그](https://javacan.tistory.com/entry/ThreadLocalUsage?fbclid=IwAR2UTKebrhhbAEpSGL2b9jh-jq22yi3wow-aVpO1rTeRQgzleuJ09FHcEFE) 에서 확인 할 수 있다.  
 
 
+## json  
+### ObjectMapper - Unknown Properties  
+```java  
+import com.fasterxml.jackson.databind.ObjectMapper;  
+
+ObjectMapper objectMapper = new ObjectMapper();
+objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+```
 
 # K  
   
