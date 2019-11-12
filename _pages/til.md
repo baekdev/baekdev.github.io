@@ -485,7 +485,13 @@ $> python -m SimpleHttpServer [<port number>]
 $> python3 -m http.server [<port number>]
 ```  
 
-
+# S  
+## serdes  
+```  
+sereds = seriaization and deserialization  
+```  
+  
+  
 # T  
 
 ## Timestamp vs UnixTimestamp  
