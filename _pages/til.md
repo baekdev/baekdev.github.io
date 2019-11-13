@@ -24,6 +24,10 @@ lastmod: 2019-10-11
 
 # A  
 
+## Avro  
+아파치의 하둡 프로젝트에서 개발된 원격 프로시저 호출(RPC) 및 데이터 직렬화 프레임워크 [위키백과](https://ko.wikipedia.org/wiki/%EC%95%84%ED%8C%8C%EC%B9%98_%EC%95%84%EB%B8%8C%EB%A1%9C)  
+
+
 ## AWS  
 
 ### AWS Region Latency
