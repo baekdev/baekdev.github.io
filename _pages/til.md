@@ -58,6 +58,10 @@ $> cd /usr/local/etc/
 <br/>
 # C  
 
+## Carbon  
+코드 캡쳐 이미지를 Mac Window처럼 만들어주는 사이트
+[https://carbon.now.sh/](https://carbon.now.sh/)  
+
 ## Circuit breaker   
 트레이딩 커브(trading curb)의 일종인 주식 용어이다.  
 트레이딩 커브(trading curb)는 주식시장에서 가격이 급격히 떨어지는 경우에 반응하여, 시장을 진정시키기 위해 매매를 일시적으로 정지시키는 것을 말한다.  
