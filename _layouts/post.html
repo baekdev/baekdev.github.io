@@ -110,18 +110,6 @@ post_class: post-template
 
             {% include facebook_like.html %}
 
-            <!-- Prev/Next -->
-<!--            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">-->
-<!--            {% if page.previous.url %}-->
-<!--            <a class="prev d-block col-md-6" href="{{ site.url }}{{ site.baseurl }}{{page.previous.url}}"> &laquo; {{page.previous.title | truncatewords:4}}</a>-->
-<!--            {% endif %}-->
-<!--            {% if page.next.url %}-->
-<!--            <a class="next d-block col-md-6 text-lg-right" href="{{ site.url }}{{ site.baseurl }}{{page.next.url}}">{{page.next.title | truncatewords:4}} &raquo; </a>-->
-<!--            {% endif %}-->
-<!--            <div class="clearfix"></div>-->
-<!--            </div>-->
-            <!-- End Categories -->
-
             <!-- Begin Comments -->
             <div>
                 {% if page.comments != false %}
@@ -133,6 +121,28 @@ post_class: post-template
                 {% endif %}
                 <div class="col-md-12">
                     {% include google-ads-horizon.html %}
+                </div>
+                <div>
+                    <!-- Prev/Next -->
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                        <div class="col-md-12"><h6>More reads</h6></div>
+                        <div class="col-md-12">
+                        <ul>
+                            {% if page.previous.url %}
+                            <li>
+                                <a class="" href="{{ site.url }}{{ site.baseurl }}{{page.previous.url}}"> {{page.previous.title | truncatewords:8}}</a>
+                            </li>
+                            {% endif %}
+                            {% if page.next.url %}
+                            <li>
+                                <a class="" href="{{ site.url }}{{ site.baseurl }}{{page.next.url}}">{{page.next.title | truncatewords:8}} </a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    </div>
+                    <!-- End Categories -->
                 </div>
             </div>
             <!--End Comments -->
