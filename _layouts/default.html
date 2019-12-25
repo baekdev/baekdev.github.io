@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 {% include google-analytics.html %}
 <meta charset="utf-8">
@@ -9,7 +9,14 @@
 
 <title>{{ page.title }} | {{site.title}}</title>
 
-{% seo lang=kr%}
+{% seo lang=kR title=false%}
+<meta property="og:locale" content="ko_KR" />
+{% if page.keywords %}
+<meta name="keywords" content="{{ page.keywords | join:',' }}">
+{% else %}
+<meta name="keywords" content="{{ site.keywords | join:',' }}">
+{% endif %}
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }} Feed" href="{{ site.rss | default:'feed.xml' | absolute_url }}">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
