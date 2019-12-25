@@ -14,6 +14,7 @@ disqus: 'baekdev'
 include: ["_pages"]
 permalink: /post/:title/
 keep_files: [assets]
+keywords: ["백엔드 개발자", "개발자 블로그"]
 utteranc:
   github_repo:
 
