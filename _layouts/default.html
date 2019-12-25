@@ -8,9 +8,8 @@
 <link rel="icon" href="{{ site.baseurl }}/{{ site.assetsurl }}/images/logo.png">
 
 <title>{{ page.title }} | {{site.title}}</title>
-
-{% seo lang=kR title=false%}
 <meta property="og:locale" content="ko_KR" />
+{% seo lang=kR title=false%}
 {% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords | join:',' }}">
 {% else %}
