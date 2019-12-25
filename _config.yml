@@ -1,12 +1,13 @@
 # Site
 name: "baek.dev"
 title: "아웃풋 트레이닝"
-description: "개발 블로그입니다. 토이 프로젝트, 기술 서적 리뷰, 컨퍼런스 등 다양한 정보를 공유합니다."
+description: ""
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 url : 'https://baek.dev'
 baseurl: ''
 assetsurl: 'assets'
+rss: 'feed.xml'
 google_analytics: 'UA-148617191-1'
 disqus: 'baekdev'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
@@ -24,9 +25,9 @@ authors:
     avatar: 'assets/images/profile.jpg'
     email: 'diveintotechnology@gmail.com'
     web: 'https://baek.dev'
-    # twitter: 'https://twitter.com/dev_baek'
+    twitter: 'https://twitter.com/dev_baek'
     github: 'https://github.com/baekdev'
-    description: "백엔드 개발자 & 아웃풋 트레이닝 중"
+    description: "자바 둘 타세요-에서 &lt;자바 인력1&gt;을 맡고 있습니다."
 
 # Plugins
 plugins:
