@@ -294,6 +294,17 @@ $> lsof -i tcp:8080
 $> kill -9 [PID Number]
 ```   
 
+### Lxc/Linux Container   
+- 리눅스 상에서 프로세스는 특정 사용자에 의해 실행되고 설정된 permission을 기반으로 특정 기능을 사용  
+- 프로세스는 다른 프로세스를 생성 할 수 있음  
+- 터미널에서 프로세스를 실행시키면 생성된 자식 프로세스는 일반적으로 터미널 프로세스의 자식으로 간주  
+- 리눅스 커널의 역할은 이러한 프로세스 트리를 관리하는 것  
+- 무거운 가상화 머신보다 프로비저닝이 훨씬 빠름  
+- VM이 시작하는 데 수분이 걸린다는 것은 특이한 일이 아님, 하지만 LXC는 몇 초 만에 시작  
+- 컨테이너는 또한 리소스 할당 면에서도 더 세세한 통제가 가능, 하부의 하드웨어를 최대한 활용하기 위한 손쉬운 미세 설정  
+- 경량 컨테이너로 동일한 하드웨어서 VM보다 더 많은 컨테이너를 실행시킬 수 있음  
+<img src="{{site.baseurl}}/{{site.assetsurl}}/images/post/2019/2019_013_001.jpg" alt="Service in operation in a detached container"/>
+      
 ### Linux에서 WebServer 사용  
 - [리눅스에서 웹서버 사용](https://www.youtube.com/watch?v=lmDslNR_ymc)  
 
