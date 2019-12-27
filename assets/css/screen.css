@@ -737,8 +737,14 @@ h6 {
 }
 
 .article-post>h2,
-.article-post>h3  {
+.article-post>h3 {
     margin-top: 4rem;
+}
+
+.article-post>h4,
+.article-post>h5,
+.article-post>h6 {
+    margin-top: 2rem;
 }
 
 .article-post>h2,
