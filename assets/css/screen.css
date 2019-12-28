@@ -991,3 +991,11 @@ h5, .h5 { font-size: 1.15rem; }
 div.article-post>ins.adsbygoogle {
     margin-bottom: 1.0rem;
 }
+
+div.article-post>p>img {
+    margin: 1.5rem 0px;
+}
+
+code {
+    font-size: 100%;
+}
