@@ -15,7 +15,7 @@ include: ["_pages"]
 permalink: /post/:title/
 keep_files: [assets]
 keywords: ["백엔드 개발자", "개발자 블로그"]
-timezone: "Asia/Seoul"
+timezone: Asia/Seoul
 utteranc:
   github_repo:
 
