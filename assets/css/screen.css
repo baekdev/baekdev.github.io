@@ -357,9 +357,12 @@ blockquote {
     color: rgba(0, 0, 0, .5);
 }
 
-.article-post p,
-.article-post blockquote {
+.article-post p {
     margin: 0 0 0.5rem 0;
+}
+
+.article-post blockquote {
+    margin: 2rem 0;
 }
 
 .featured-image {
