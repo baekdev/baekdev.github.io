@@ -511,6 +511,12 @@ $> ~/Downloads/program/mat.app/Contents/MacOS/MemoryAnalyzer -data ~/Downloads/w
 html을 볼 수 있게 서버를 실행
 [http-server install](https://www.npmjs.com/package/http-server)  
 
+# O  
+## oAuth와 sso 차이  
+**oAuth(open standard for authorization)** 는 인증 프로토콜 구현 방법 중의 하나로 사용자는 A라는 쇼핑몰에 개인 정보를 직접 제공하지 않고 페이스북 로그인 혹은 네이버 로그인을 통해 쇼핑몰 이용이 가능한 인증 방법이다.  
+**SSO(Single Sign On)** 은 한번 로그인 하면 여러 사이트를 중복 로그인 하지 않고도 세션이 유지되는 것을 말한다.  
+<a href="https://gilnami.tistory.com/22" target="_blank">출처 - oAuth와 SSO의 차이</a>  
+
 # P  
 
 ## Provisioning / 프로비저닝  
