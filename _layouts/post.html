@@ -154,9 +154,27 @@ post_class: post-template
                 <div class="col-md-12 right">
                     <small style="float: right;font-size: 60%;color: #bdbdbd;">왼쪽 사이드바 광고는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받고 있습니다.</small>
                 </div>
+
+                <div class="col-md-12 latest-page-list">
+                    <h5><img class="list-bullet-memo" src="{{site.url}}{{site.baseUrl}}/assets/images/herb.png" style="margin-bottom: 5px;"/>이 글은 보셨어요? :)</h5>
+
+                    {% assign min = 1 %}
+                    {% assign max = site.posts.size | minus: 4 %}
+                    {% assign diff = max | minus: min %}
+                    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+                    {% assign maxIndex = randomNumber | plus: 5 %}
+                    {% for post in site.posts %}
+
+                    {% if forloop.index < randomNumber or forloop.index > maxIndex %}
+                    {% else %}
+                    <li>
+                        <img class="list-bullet-memo" src="{{site.url}}{{site.baseUrl}}/assets/images/memo.png" /><a href="{{ site.url }}{{ site.baseUrl}}{{ post.url }}">{{ post.title }}</a>&nbsp;
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </div>
             </div>
             <!--End Comments -->
-
         </div>
         <!-- End Post -->
 
