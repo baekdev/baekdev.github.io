@@ -1006,3 +1006,19 @@ code {
 ins.adsbygoogle {
     text-align: left !important;
 }
+
+.latest-page-list {
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 1px #eee dashed;
+    list-style: none;
+}
+
+.latest-page-list li {
+  margin-bottom: 5px;
+  border-bottom: 1px #eee dashed;
+}
+.list-bullet-memo {
+    max-width: 22px;
+    margin-right: 5px;
+}
