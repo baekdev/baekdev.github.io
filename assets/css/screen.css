@@ -152,7 +152,7 @@ section.recent-posts {
 
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.25;
 }
@@ -160,7 +160,7 @@ section.recent-posts {
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
     color: rgba(0, 0, 0, .44);
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     line-height: 1.6;
     font-weight: 400;
 }
