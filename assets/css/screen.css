@@ -1002,3 +1002,7 @@ div.article-post>p>img {
 code {
     font-size: 100%;
 }
+
+ins.adsbygoogle {
+    text-align: left !important;
+}
