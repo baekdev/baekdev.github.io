@@ -1022,3 +1022,8 @@ ins.adsbygoogle {
     max-width: 22px;
     margin-right: 5px;
 }
+
+.gist .gist-file {
+    margin-top: 2rem !important;
+    margin-bottom: 2em !important;
+}
