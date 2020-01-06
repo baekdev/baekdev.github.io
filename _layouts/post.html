@@ -82,6 +82,15 @@ post_class: post-template
                             {% include facebook_like.html %}
                         </li>
                         <li style="display: none">
+                            {% assign hostName = site.url | replace: "https://", "" | replace: "http://", "" | replace: "baek.dev", "baekdev" %}
+                            {% assign pathArr = page.url | split: "/" %}
+                            {% assign length = page.url | size | abs %}
+                            {% assign endIndex = length | minus: 1 %}
+                            {% if page.url == "/til" %}
+                            <img src="http://hits.dwyl.io/{{hostName}}{{ page.url }}.svg"/>
+                            {% else %}
+                            <img src="http://hits.dwyl.io/{{hostName}}{{ page.url | slice: 0, endIndex }}.svg"/>
+                            {% endif %}
                             {% assign replacedPath = page.url | replace: "/", "%2F" %}
                             <a href="https://hits.seeyoufarm.com"/><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ site.url | replace: "https://", "https%3A%2F%2F" | replace: "http://", "http%3A%2F%2F"}}{{replacedPath}}"/></a>
                         </li>
