@@ -81,6 +81,10 @@ post_class: post-template
                         <li>
                             {% include facebook_like.html %}
                         </li>
+                        <li style="display: none">
+                            {% assign replacedPath = page.url | replace: "/", "%2F" %}
+                            <a href="https://hits.seeyoufarm.com"/><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ site.url | replace: "https://", "https%3A%2F%2F" | replace: "http://", "http%3A%2F%2F"}}{{replacedPath}}"/></a>
+                        </li>
                     </ul>
                 </div>
                 <!-- End Categories -->
