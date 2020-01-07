@@ -343,7 +343,15 @@ $> kill -9 [PID Number]
 ### StrSubstitutor
 - [텍스트 템플릿 구현](http://jsonobject.tistory.com/230)
 
+### Mac/Linux - JAVA_HOME  
+```shell  
+$> /usr/libexec/java_home -V  
+Matching Java Virtual Machines (1):
+    1.8.0_221, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
 
+/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home  
+```  
+  
 ### Why does Stream.allMatch() return true for an empty stream?  
 [공진리란?](https://freshrimpsushi.tistory.com/399)  
 예를 들어 "신은 죽었다." 라는 말에서 신이 존재하지 않는다면, 가정부터 틀려먹었다면 어떻게 되는 걸까?  
