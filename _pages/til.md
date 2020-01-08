@@ -291,6 +291,21 @@ TBU
     - checked *Enable annotation processing*  
 - [How to increase the memory heap size on IntelliJ IDEA?](https://stackoverflow.com/questions/17221725/how-to-increase-the-memory-heap-size-on-intellij-idea)  
 
+### Live Template(=Code Template)
+많이 사용하는 축약어를 일컫는 말  
+- Prefencese > Live Template  
+    - psvm = public void static main  
+    - sout = system.out.println  
+    - ifn = if ( a == null )  
+    - inn = if ( a ≠ null )  
+    ```java
+    // psvm  
+    public void static main(String[] args) {  
+        // sout  
+        System.out.println("Hello World!");  
+    }  
+    ```
+
 ## iTerm 커서 이동  
 `iTerm - Preferences - profiles - key tab  에서 + 버튼을 클릭`하여 다음과 같이 추가해준다.  
 
