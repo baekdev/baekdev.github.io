@@ -293,7 +293,7 @@ TBU
 
 ### Live Template(=Code Template)
 많이 사용하는 축약어를 일컫는 말  
-- Prefencese > Live Template  
+- Preference > Live Template  
     - psvm = public void static main  
     - sout = system.out.println  
     - ifn = if ( a == null )  
