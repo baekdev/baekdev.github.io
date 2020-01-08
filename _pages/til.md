@@ -298,13 +298,7 @@ TBU
     - sout = system.out.println  
     - ifn = if ( a == null )  
     - inn = if ( a ≠ null )  
-    ```java
-    // psvm  
-    public void static main(String[] args) {  
-        // sout  
-        System.out.println("Hello World!");  
-    }  
-    ```
+    <script src="https://gist.github.com/baekdev/f338fb46198574072820bc45c3f5ef01.js"></script>  
 
 ## iTerm 커서 이동  
 `iTerm - Preferences - profiles - key tab  에서 + 버튼을 클릭`하여 다음과 같이 추가해준다.  
