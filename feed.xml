@@ -13,7 +13,7 @@ layout: null
     <generator>Jekyll v{{ jekyll.version }}</generator>
     <image>
       <title>BAEKDEV️</title>
-      <url>https://avatars1.githubusercontent.com/u/49097666</url>
+      <url>{{ site.url }}{{ site.baseUrl }}/assets/images/profile.jpg</url>
       <link>{{ site.url }}{{ site.baseUrl }}</link>
       <description>{{ site.description }}</description>
     </image>
