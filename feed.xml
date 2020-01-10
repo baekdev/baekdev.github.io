@@ -11,6 +11,12 @@ layout: null
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
+    <image>
+      <title>BAEKDEV️</title>
+      <url>https://avatars1.githubusercontent.com/u/49097666</url>
+      <link>{{ site.url }}{{ site.baseUrl }}</link>
+      <description>{{ site.description }}</description>
+    </image>
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
