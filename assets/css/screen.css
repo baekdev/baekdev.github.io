@@ -1040,7 +1040,7 @@ figure {
 }
 
 .article-post figure img {
-    width: 100%;
+    max-width: 100%;
     /*border: 1px solid #e6e6e6;*/
     cursor: pointer;
 }
