@@ -6,7 +6,20 @@ License: https://www.wowthemes.net/freebies-license/
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:90%;}
+    .container-post {
+         max-width: 1500px;
+     }
+    .article-post figure img {
+        max-width: 50% !important;
+    }
 }
+
+@media screen and (min-width:1000px) {
+    .article-post figure img {
+        max-width: 50% !important;
+    }
+}
+
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -1003,6 +1016,7 @@ div.article-post>p>img {
 
 code {
     font-size: 100%;
+    word-spacing: -6px;
 }
 
 ins.adsbygoogle {
@@ -1040,7 +1054,7 @@ figure {
 }
 
 .article-post figure img {
-    max-width: 50%;
+    max-width: 80%;
     /*border: 1px solid #e6e6e6;*/
     cursor: pointer;
 }
