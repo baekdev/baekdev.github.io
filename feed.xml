@@ -14,9 +14,7 @@ layout: null
     <managingEditor>{{ site.authors.baekdev.display_name }}</managingEditor>
     <image>
       <title>{{ site.title | xml_escape }}</title>
-      <url>
-        {{ site.url }}{{site.baseurl}}/{{site.assetsurl}}/images/profile_750.jpg
-      </url>
+      <url>{{ site.url }}{{site.baseurl}}/{{site.assetsurl}}/images/profile_750.jpg</url>
       <link>{{ site.url }}{{ site.baseurl }}/</link>
       <description>{{ site.description | xml_escape }}</description>
     </image>
