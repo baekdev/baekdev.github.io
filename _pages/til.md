@@ -555,6 +555,18 @@ $> python -m SimpleHttpServer [<port number>]
 $> python3 -m http.server [<port number>]
 ```  
 
+
+### pip install  
+```shell  
+pip install --upgrade pip  
+pip install beautifulsoup4  
+```  
+
+### python package list export file  
+```shell  
+pip freeze > requirements.txt  
+```   
+
 # S  
 ## serdes  
 ```  
