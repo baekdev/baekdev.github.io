@@ -1,4 +1,4 @@
-## Welcome :)  and below is FYI!  
+## Welcome :)  and below is FYI! :smile:
 [![Blog](https://img.shields.io/badge/Blog-baek.dev-green.svg)](https://baek.dev/)
 
 - [BaekDev's Blog](https://baek.dev)  
