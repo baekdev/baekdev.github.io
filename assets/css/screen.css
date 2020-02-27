@@ -25,12 +25,12 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 a {
-    color: #ffc107;
+    color: #00ab6b;
     transition: all 0.2s;
 }
 
 div.article-post a {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 a>.sitetitle{
@@ -1021,7 +1021,7 @@ div.article-post>p>img {
 code {
     font-size: 100%;
     word-spacing: -6px;
-    color: #28a745;
+    color: #f76b78;
 }
 
 ins.adsbygoogle {
