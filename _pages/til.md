@@ -300,6 +300,9 @@ TBU
     - inn = if ( a ≠ null )  
     <script src="https://gist.github.com/baekdev/f338fb46198574072820bc45c3f5ef01.js"></script>  
 
+### IntelliJ Error: java: invalid source release: 12
+- <a href="https://countryxide.tistory.com/92" target="_blank">[IntelliJ] Error: java: invalid source release: n<a/>
+    
 ## iTerm 커서 이동  
 `iTerm - Preferences - profiles - key tab  에서 + 버튼을 클릭`하여 다음과 같이 추가해준다.  
 
