@@ -25,12 +25,14 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 a {
-    color: #00ab6b;
+    color: rgba(0, 0, 0, .8);
     transition: all 0.2s;
 }
 
 div.article-post a {
-    /*text-decoration: underline;*/
+    text-decoration:none;
+    border-bottom:1px solid #00ab6b;
+    padding-bottom:3px;
 }
 
 a>.sitetitle{
@@ -40,7 +42,9 @@ a>.sitetitle{
 
 a:hover {
     color: #038252;
-    text-decoration: none;
+    text-decoration:none;
+    border-bottom:1px solid #038252;
+    padding-bottom:3px;
 }
 
 pre {
@@ -362,8 +366,8 @@ span.post-read-more a:hover {
 
 .article-post {
     font-family: Merriweather;
-    font-size: 0.9rem;
-    line-height: 1.84;
+    font-size: 0.85rem;
+    line-height: 2;
     color: rgba(0, 0, 0, .8);
 }
 
@@ -375,7 +379,7 @@ blockquote {
 }
 
 .article-post p {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .article-post blockquote {
@@ -1070,4 +1074,20 @@ figure {
     line-height: 14px;
     color: #9a9a9a;
     font-style: italic;
+}
+
+table {
+    border: 1px solid #eeeeee;
+}
+
+table th {
+    border: 1px solid #dddddd;
+    background: #eeeeee;
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid #eeeeee;
+    padding: 10px;
 }

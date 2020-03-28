@@ -22,7 +22,7 @@
         // });
 
         // turn img alt into caption
-        $('.article-post > p > img').replaceWith(function () {
+        $('.article-post img').replaceWith(function () {
             var result = '<figure>'
                 + '<a href="' + $(this).attr('src') + '" class="mg-link">'
                 + '<img src="' + $(this).attr('src') + '" style="' + $(this).attr('style') + '" alt="' + $(this).attr('alt') + '" />'
