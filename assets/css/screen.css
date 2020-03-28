@@ -35,16 +35,16 @@ div.article-post a {
     padding-bottom:3px;
 }
 
-a>.sitetitle{
-    color: #212529;
-    font-weight: 600;
-}
-
-a:hover {
+div.article-post a:hover {
     color: #038252;
     text-decoration:none;
     border-bottom:1px solid #038252;
-    padding-bottom:3px;
+    padding-bottom:2px;
+}
+
+a>.sitetitle{
+    color: #212529;
+    font-weight: 600;
 }
 
 pre {
