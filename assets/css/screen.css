@@ -1023,9 +1023,11 @@ div.article-post>p>img {
 }
 
 code {
-    font-size: 100%;
+    font-size: 95%;
     word-spacing: -6px;
-    color: #f76b78;
+    color: #ffffff;
+    background-color: #ff3e3e;
+    padding: 2px 6px;
 }
 
 ins.adsbygoogle {
