@@ -25,20 +25,26 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 a {
-    color: rgba(0, 0, 0, .8);
+    color: #00ab6b;
     transition: all 0.2s;
 }
 
+a:hover {
+    color: #038252;
+    text-decoration: none;
+}
+
 div.article-post a {
+    color: rgba(0, 0, 0, .8);
     text-decoration:none;
-    border-bottom:1px solid #00ab6b;
+    border-bottom:2px solid #00ab6b;
     padding-bottom:3px;
 }
 
 div.article-post a:hover {
-    color: #038252;
-    text-decoration:none;
-    border-bottom:1px solid #038252;
+    color: #00ab6b;
+    text-decoration: none;
+    border-bottom:2px solid #00ab6b;
     padding-bottom:2px;
 }
 
