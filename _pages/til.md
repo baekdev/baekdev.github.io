@@ -205,10 +205,11 @@ Mac -> Keychain -> git관련 키체인 삭제
 ### Github 대시보드에서 Commit/Push가 카운트 되지 않을 때 (Why are my contributions not showing up on my profile?)  
 
 git config를 확인한다.   
-	- 저장소에 contributors로 등록되지 않은 계정은(즉 내가 아니면) 카운트 되지 않음  
-	- 이런 경우는 보통 하나의 컴퓨터에 다수의 git계정을 사용하는 경우 발생.   
-	- 나는 회사가 gitlab을 사용하다 보니 겹쳐서 종종 내 repo에 회사 이메일로 commit이 되곤 했다.    
-```shell  
+	- 저장소에 contributors로 등록되지 않은 계정은(즉 내가 아니면) 카운트 되지 않음    
+	- 이런 경우는 보통 하나의 컴퓨터에 다수의 git계정을 사용하는 경우 발생.    
+	- 나는 회사가 gitlab을 사용하다 보니 겹쳐서 종종 내 repo에 회사 이메일로 commit이 되곤 했다.      
+	
+```shell   
 $> git config user.email  
 $> my-company@email.com  
 ```  
@@ -220,9 +221,9 @@ $> git config —local user.email “my-repo@email.com”
 ```  
 
 참고 링크   
-	- [여러 개의 github 계정 사용하기 – Hanju Jo – Software Engineer](https://aweekj.github.io/using-multiple-accounts-in-git/)
-	- [github - git에 등록된 계정 변경하는 방법 | Hashcode](http://hashcode.co.kr/questions/4342/git%EC%97%90-%EB%93%B1%EB%A1%9D%EB%90%9C-%EA%B3%84%EC%A0%95-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
-	- [Learn how we count contributions.](https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/)
+	- [여러 개의 github 계정 사용하기 – Hanju Jo – Software Engineer](https://aweekj.github.io/using-multiple-accounts-in-git/)  
+	- [github - git에 등록된 계정 변경하는 방법 | Hashcode](http://hashcode.co.kr/questions/4342/git%EC%97%90-%EB%93%B1%EB%A1%9D%EB%90%9C-%EA%B3%84%EC%A0%95-%EB%B3%80%EA%B2%BD%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)  
+	- [Learn how we count contributions.](https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/)  
   
 
 ### Change Git editor   
@@ -576,6 +577,15 @@ pip freeze > requirements.txt
 sereds = seriaization and deserialization  
 ```  
   
+  
+## Spring  
+spring-boot로 연습 중 빌드하는데 아래와 같은 메시지가 발생하면서 메이븐 빌드 실패가 발생했다.  
+```shell
+Run 'spring-javaformat:apply'
+```  
+소스 코드 중 **@Autowired** 어노테이션 사용으로 변경한 부분이 있었는데 이는 Unrecommended DI라 규칙에 맞는 문법으로 수정하라는 메시지이다.  
+생성자를 통한 빈 객체 주입받는 문법한 허용한다.  
+
   
 # T  
 
