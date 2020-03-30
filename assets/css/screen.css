@@ -1099,3 +1099,15 @@ table td {
     border: 1px solid #eeeeee;
     padding: 10px;
 }
+
+code > table,
+code > table th,
+code > table td
+{
+    border: 0;
+    padding: 0;
+}
+
+.highlight code {
+    background-color: transparent !important;
+}
