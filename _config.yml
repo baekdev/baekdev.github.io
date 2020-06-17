@@ -24,10 +24,9 @@ authors:
   baekdev:
     name: 'baekdev'
     display_name: 'BAEKDEV'
-    avatar: 'assets/images/profile.jpg'
+    avatar: 'assets/images/profile4.jpg'
     email: 'diveintotechnology@gmail.com'
     web: 'https://baek.dev'
-    twitter: 'https://twitter.com/dev_baek'
     github: 'https://github.com/baekdev'
     description: "자바 둘 타세요-에서 &lt;자바 인력1&gt;을 맡고 있습니다."
 
