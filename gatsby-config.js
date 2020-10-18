@@ -187,7 +187,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: config.siteUrl,
-          sitemap: `${config.siteUrl}/sitemap.xml`,
+          sitemap: `${config.siteUrl}sitemap.xml`,
           policy: [{ userAgent: '*', allow: '/' }],
       }
     }
