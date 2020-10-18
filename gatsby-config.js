@@ -89,6 +89,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-cname`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -182,6 +183,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: config.siteUrl,
+          sitemap: `${config.siteUrl}/sitemap.xml`,
+          policy: [{ userAgent: '*', allow: '/' }],
+      }
+    }
   ],
 }
 

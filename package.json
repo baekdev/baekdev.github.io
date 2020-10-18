@@ -9,19 +9,19 @@
     "gatsby-theme",
     "starter"
   ],
-  "homepage": "https://github.com/baekdev/dummyblog",
+  "homepage": "https://github.com/baekdev/baekdev.github.io",
   "bugs": {
-    "url": "https://github.com/baekdev/dummyblog/issues"
+    "url": "https://github.com/baekdev/baekdev.github.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/baekdev/dummyblog.git"
+    "url": "https://github.com/baekdev/baekdev.github.io.git"
   },
   "license": "MIT",
   "author": "BAEKDEV <diveintotechnology@gmail.com>",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js' 'data/siteConfig.js' 'gatsby-*.js' 'scripts/*.js'",
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js",
@@ -30,7 +30,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b master"
   },
   "bin": {
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
@@ -43,6 +43,7 @@
     "gatsby": "^2.24.80",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-buildtime-timezone": "^1.0.3",
+    "gatsby-plugin-cname": "^1.0.0",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-feed": "^2.5.14",
     "gatsby-plugin-google-adsense": "^1.1.3",
@@ -52,6 +53,7 @@
     "gatsby-plugin-offline": "^3.1.5",
     "gatsby-plugin-page-creator": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.2.5",
+    "gatsby-plugin-robots-txt": "^1.5.3",
     "gatsby-plugin-sharp": "^2.5.7",
     "gatsby-plugin-sitemap": "^2.4.15",
     "gatsby-plugin-styled-components": "^3.2.4",
