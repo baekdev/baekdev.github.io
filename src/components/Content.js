@@ -6,15 +6,37 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 const ContentBody = styled.div`
   line-height: 1.6;
 
+  & > h1 {
+    color: var(--color-h2);
+    padding-top: 3rem;
+    border-bottom: 1px solid #ececec;
+    font-size: 2em;
+  }
+  
   & > h2 {
     color: var(--color-h2);
     padding-top: 3rem;
-    margin-top: 3rem;
     border-bottom: 1px solid #ececec;
   }
 
   & > h3 {
     padding-top: 3rem;
+    font-size: 1.3em;
+  }
+  
+  & > h4 {
+    padding-top: 3rem;
+    font-size: 1.2em;
+  }
+  
+  & > h5 {
+    padding-top: 3rem;
+    font-size: 1.1em;
+  }  
+  
+  & > h6 {
+    padding-top: 3rem;
+    font-size: 1em;
   }
 
   & > p {
@@ -123,7 +145,7 @@ const ContentBody = styled.div`
   & li > code.language-text,
   & em > code.language-text,
   & strong > code.language-text {
-    background: var(--color-yellow);
+    background: var(--color-lightYellow);
     color: black;
     padding: 2px 6px;
     font-size: 0.9em;
@@ -146,12 +168,14 @@ const ContentBody = styled.div`
     border-collapse: collapse;
     border-radius: 0.5em;
     overflow: hidden;
+    width: 100%;
 
     & th,
     & td {
       padding: 0.5em;
       background-color: var(--color-secondaryContentBackground);
     }
+    
     & tr {
       border-bottom: 2px solid var(--color-white);
     }
