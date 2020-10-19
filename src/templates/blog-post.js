@@ -56,9 +56,6 @@ class BlogPostTemplate extends React.Component {
 
         <PrevNextPost previous={previous} next={next} />
 
-        <Wrapper as="aside">
-           <GoogleAD />  
-        </Wrapper>
       </Layout>
     )
   }
