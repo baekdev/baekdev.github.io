@@ -42,6 +42,10 @@ ol {
   margin: 1em 0 0 0;
 }
 
+.utterances {
+  max-width: 100% !important;
+}
+
 *::selection {
   background-color: var(--color-secondary);
 }

@@ -214,7 +214,7 @@ const MobileHeader = ({ headerLinks }) => {
         <MobilePanel>
           <MobileNav>
             <HeaderLinks headerLinks={headerLinks} />
-            {/* <DarkToggle isExpanded={true} /> */}
+            <DarkToggle isExpanded={true} />
           </MobileNav>
         </MobilePanel>
       )}
@@ -245,7 +245,7 @@ const Header = () => {
         </HeaderLinkTitle>
         <HeaderLinksContainer>
           <HeaderLinks headerLinks={headerLinks} />
-           {/* <DarkToggle /> */}
+           <DarkToggle />
         </HeaderLinksContainer>
         <MobileHeader headerLinks={headerLinks} />
       </HeaderNav>

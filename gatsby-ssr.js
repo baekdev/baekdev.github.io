@@ -20,13 +20,13 @@ function setColorsByTheme() {
 
   let colorMode = 'light'
 
-  const hasUsedToggle = typeof persistedPreference === 'string'
+  // const hasUsedToggle = typeof persistedPreference === 'string'
 
-  if (hasUsedToggle) {
-    colorMode = persistedPreference
-  } else {
-    colorMode = prefersDarkFromMQ ? 'light' : 'dark'
-  }
+  // if (hasUsedToggle) {
+  //   colorMode = persistedPreference
+  // } else {
+  //   colorMode = prefersDarkFromMQ ? 'light' : 'dark'
+  // }
 
   // console.log('hasUsedToggle:', hasUsedToggle, 'persistedPreference:', persistedPreference, 'prefersDarkFromMQ:', prefersDarkFromMQ, 'colorMode:', colorMode, 'colorModeCssProp:', colorModeCssProp);
 
