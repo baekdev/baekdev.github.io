@@ -8,7 +8,7 @@ import ContentHeader from '../components/ContentHeader'
 import Article from '../components/Article'
 import PrevNextPost from '../components/PrevNextPost'
 import SEO from '../components/SEO'
-// import Disqus from '../components/Disqus'
+import Comments from '../components/Comments'
 import GoogleAD from '../components/GoogleAD'
 
 class BlogPostTemplate extends React.Component {
@@ -44,17 +44,21 @@ class BlogPostTemplate extends React.Component {
           : ( <Hero heroImg={post.frontmatter.cover && post.frontmatter.cover.publicURL} /> )
         } 
 
-        <GoogleAD />
-
+          <GoogleAD />
           <Article post={post} siteMetadata={siteMetadata} />
           <GoogleAD />
         </Wrapper>
 
-        {/* <Wrapper as="aside"> */}
-          {/*  <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} /> */}
-        {/* </Wrapper> */}
+        <Wrapper as="aside">
+           {/* <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} /> */}
+           <Comments />  
+        </Wrapper>
 
         <PrevNextPost previous={previous} next={next} />
+
+        <Wrapper as="aside">
+           <GoogleAD />  
+        </Wrapper>
       </Layout>
     )
   }
