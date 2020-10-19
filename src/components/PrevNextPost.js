@@ -102,7 +102,7 @@ const PrevNextPost = props => {
                       {title}
                     </h3>
                   </header>
-                  <section style={{ 'font-size':'0.9rem'}}>
+                  <section style={{ 'font-size':'0.9rem', 'line-height': '1.4em'}}>
                     <p>{excerpt}</p>
                   </section>
                   <footer style={{ 'font-size':'0.7rem'}}>

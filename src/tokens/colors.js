@@ -18,6 +18,9 @@ const colors = {
   darkBlue: '#022a4b',
   beige: '#fff9d9',
   red: '#ff0000',
+  sky: '#87ceeb',
+  emerald: '#18cd8c',
+
 }
 
 export const COLORS = {
