@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://baek.dev</id>
-    <title>아웃풋 트레이닝</title>
-    <updated>2020-11-16T15:51:54.816Z</updated>
-    <generator>BAEKDEV</generator>
-    <author>
-        <name>BAEKDEV</name>
-        <email>diveintotechnology@gmail.com</email>
-        <uri>https://baek.dev/</uri>
-    </author>
-    <link rel="alternate" href="https://baek.dev"/>
-    <link rel="self" href="https://baek.dev/feed.xml"/>
-    <subtitle>자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.</subtitle>
-    <logo>https://baek.dev/assets/basic/001.png</logo>
-    <icon>https://baek.dev/favicon.ico</icon>
-    <rights>All rights reserved 2020, BAEKDEV</rights>
-    <entry>
-        <title type="html"><![CDATA[다시 또 글또를 시작하게 된 2가지 이유]]></title>
-        <id>https://baek.devpost/29/</id>
-        <link href="https://baek.devpost/29/"/>
-        <updated>2020-11-15T20:30:00.009Z</updated>
-        <summary type="html"><![CDATA[글또에 지난 4기에 이어 5기로 다시 참여한다. 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다. 첫번째 이유, 글을 단 1개도 쓰지 않았다. 지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!) 글또…]]></summary>
-        <content type="html"><![CDATA[<p>글또에 지난 4기에 이어 5기로 다시 참여한다.<br>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>아웃풋 트레이닝</title>
+        <link>https://baek.dev</link>
+        <description>자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.</description>
+        <lastBuildDate>Mon, 16 Nov 2020 15:51:54 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>BAEKDEV</generator>
+        <language>ko</language>
+        <image>
+            <title>아웃풋 트레이닝</title>
+            <url>https://baek.dev/assets/basic/001.png</url>
+            <link>https://baek.dev</link>
+        </image>
+        <copyright>All rights reserved 2020, BAEKDEV</copyright>
+        <atom:link href="https://baek.dev/atom.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[다시 또 글또를 시작하게 된 2가지 이유]]></title>
+            <link>https://baek.devpost/29/</link>
+            <guid>https://baek.devpost/29/</guid>
+            <pubDate>Sun, 15 Nov 2020 20:30:00 GMT</pubDate>
+            <description><![CDATA[글또에 지난 4기에 이어 5기로 다시 참여한다. 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다. 첫번째 이유, 글을 단 1개도 쓰지 않았다. 지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!) 글또…]]></description>
+            <content:encoded><![CDATA[<p>글또에 지난 4기에 이어 5기로 다시 참여한다.<br>
 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다.</p>
 <h2>첫번째 이유, 글을 단 1개도 쓰지 않았다.</h2>
 <p>지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!)</p>
@@ -55,16 +55,16 @@
 <p>이 글의 대표 이미지도 이 프로젝트를 통해 간단히 생성했다. 간단하고 사소하지만 그동안 짤 만들기 해보고 싶었던 작은 목표를 이루었다.<br>
 다음 글은 <a href="https://baek.dev/doolys-welcome">"도우너 어서오고 짤 만들기"</a> 토이 플젝을 소개하고 프로젝트를 진행하면서 고민한 부분과 향후 더 발전시킬 부분에 대해 이야기해보려고 한다.</p>
 <p>그럼 글또 5기 화이팅!</p>
-<p><img src="https://baek.dev/assets/images/post/2020/2020_029_001.png" alt="도우너 어서오고 짤 생성기"></p>]]></content>
-        <published>2020-11-15T20:30:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[개발자의 사이드 프로젝트 - 커리어 스킬(2)]]></title>
-        <id>https://baek.devpost/28/</id>
-        <link href="https://baek.devpost/28/"/>
-        <updated>2020-09-06T15:44:00.009Z</updated>
-        <summary type="html"><![CDATA[경력을 발전시키고 싶다면 - 커리어 스킬(1) 개발자의 사이드 프로젝트 - 커리어 스킬(…]]></summary>
-        <content type="html"><![CDATA[<ul>
+<p><img src="https://baek.dev/assets/images/post/2020/2020_029_001.png" alt="도우너 어서오고 짤 생성기"></p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_029.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[개발자의 사이드 프로젝트 - 커리어 스킬(2)]]></title>
+            <link>https://baek.devpost/28/</link>
+            <guid>https://baek.devpost/28/</guid>
+            <pubDate>Sun, 06 Sep 2020 15:44:00 GMT</pubDate>
+            <description><![CDATA[경력을 발전시키고 싶다면 - 커리어 스킬(1) 개발자의 사이드 프로젝트 - 커리어 스킬(…]]></description>
+            <content:encoded><![CDATA[<ul>
 <li><a href="/post/26/">경력을 발전시키고 싶다면 - 커리어 스킬(1)</a></li>
 <li><a href="/post/28/">개발자의 사이드 프로젝트 - 커리어 스킬(2)</a></li>
 </ul>
@@ -164,16 +164,16 @@
 <p>꿈은 좇는 것이고 목표는 행동해서 실현하는 것이다.</p>
 </blockquote>
 <hr>
-<p>출처 - <a href="https://coupa.ng/bHkYTv">커리스 스킬 / 존 손메즈 지음</a> 중 사이드 프로젝트에 대해 요약 정리한 내용입니다.</p>]]></content>
-        <published>2020-09-06T15:44:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[블로그를 하면 가장 좋은 점은]]></title>
-        <id>https://baek.devpost/27/</id>
-        <link href="https://baek.devpost/27/"/>
-        <updated>2020-08-16T21:00:00.009Z</updated>
-        <summary type="html"><![CDATA[블로그를 하면 가장 좋은 점은 얼마 전 지인으로부터 도움받은 글이라며 링크 하나를 공유해 줬다. 개발자 이력서 작성하는 방법 - 9…]]></summary>
-        <content type="html"><![CDATA[<h2>블로그를 하면 가장 좋은 점은</h2>
+<p>출처 - <a href="https://coupa.ng/bHkYTv">커리스 스킬 / 존 손메즈 지음</a> 중 사이드 프로젝트에 대해 요약 정리한 내용입니다.</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_026.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[블로그를 하면 가장 좋은 점은]]></title>
+            <link>https://baek.devpost/27/</link>
+            <guid>https://baek.devpost/27/</guid>
+            <pubDate>Sun, 16 Aug 2020 21:00:00 GMT</pubDate>
+            <description><![CDATA[블로그를 하면 가장 좋은 점은 얼마 전 지인으로부터 도움받은 글이라며 링크 하나를 공유해 줬다. 개발자 이력서 작성하는 방법 - 9…]]></description>
+            <content:encoded><![CDATA[<h2>블로그를 하면 가장 좋은 점은</h2>
 <p>얼마 전 지인으로부터 도움받은 글이라며 링크 하나를 공유해 줬다. <a href="/post/2/">개발자 이력서 작성하는 방법 - 99콘 이력서 후기</a>라는 내가 지난해 작성한 글로, 조회 수 및 다른 블로그에 많이 링크된 글이지만 포스팅 후 나조차도 상세 내용을 잊고 있었다. 헌데 요즘 내가 고민 중인 내용의 답이 이 포스팅 안에 있었다.<br>
 슬럼프가 온 어느 날, 아무것도 해낼 수 없을 것 같은 땐 내가 작성했던 <a href="/post/16">털어놓기 어려웠던 개발자로서 고민을 해결해 준 책, 함께 자라기</a>를 다시 읽어 보고 마음을 다 잡는다.</p>
 <blockquote>
@@ -211,16 +211,16 @@
 <hr>
 <p>블로그는 오픈 된 공간이라서 부담스럽고 소위 있어 보이는 글을 쓰기에 주저하는 분들이 계실 것이다. 시작하기 주저된다면 책이나 강의 후기, 기술 요약 포스팅처럼 <strong>글감의 원천이 내가 아닌 다른 것에서부터 시작</strong>하면 좋다. 그다음에는 나에 대해 돌아보는 포스팅으로 이어지면 더 좋다 :)<br>
 그러니 이제 지금 시작하면 됩니다.</p>
-<p><img src="https://baek.dev/assets/images/post/2020/2020_027.png"></p>]]></content>
-        <published>2020-08-16T21:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[경력을 발전 시키고 싶다면 - 커리어 스킬(1)]]></title>
-        <id>https://baek.devpost/26/</id>
-        <link href="https://baek.devpost/26/"/>
-        <updated>2020-08-02T21:45:00.009Z</updated>
-        <summary type="html"><![CDATA[import ExternalLink from 'components/ExternalLink'; 경력을 발전시키고 싶다면 - 커리어 스킬(1) 개발자의 사이드 프로젝트 - 커리어 스킬(…]]></summary>
-        <content type="html"><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+<p><img src="https://baek.dev/assets/images/post/2020/2020_027.png"></p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_027.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[경력을 발전 시키고 싶다면 - 커리어 스킬(1)]]></title>
+            <link>https://baek.devpost/26/</link>
+            <guid>https://baek.devpost/26/</guid>
+            <pubDate>Sun, 02 Aug 2020 21:45:00 GMT</pubDate>
+            <description><![CDATA[import ExternalLink from 'components/ExternalLink'; 경력을 발전시키고 싶다면 - 커리어 스킬(1) 개발자의 사이드 프로젝트 - 커리어 스킬(…]]></description>
+            <content:encoded><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
 <ul>
 <li><a href="/post/26/">경력을 발전시키고 싶다면 - 커리어 스킬(1)</a></li>
 <li><a href="/post/28/">개발자의 사이드 프로젝트 - 커리어 스킬(2)</a></li>
@@ -445,16 +445,16 @@
 <li>끈기있게 노력하면 결국은 목적이에 도달할 것</li>
 </ul>
 <hr>
-<p>출처 - <a href="https://coupa.ng/bHkYTv">커리스 스킬 / 존 손메즈 지음</a> 중 경력 발전 시키기에 대해 요약 정리한 내용입니다.</p>]]></content>
-        <published>2020-08-02T21:45:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[포스트 코로나 시대 재택근무의 상반기 회고]]></title>
-        <id>https://baek.devpost/25/</id>
-        <link href="https://baek.devpost/25/"/>
-        <updated>2020-07-05T23:50:00.009Z</updated>
-        <summary type="html"><![CDATA[지난 2월에 시도했던 매월하는 회고는…]]></summary>
-        <content type="html"><![CDATA[<p><a href="/post/18/">지난 2월에 시도했던 매월하는 회고</a>는 1회로 그치고 말았다. 왜냐하면 정말 일밖에 한게 없어서.. 할 이야기가 없었다.<br>
+<p>출처 - <a href="https://coupa.ng/bHkYTv">커리스 스킬 / 존 손메즈 지음</a> 중 경력 발전 시키기에 대해 요약 정리한 내용입니다.</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_026.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[포스트 코로나 시대 재택근무의 상반기 회고]]></title>
+            <link>https://baek.devpost/25/</link>
+            <guid>https://baek.devpost/25/</guid>
+            <pubDate>Sun, 05 Jul 2020 23:50:00 GMT</pubDate>
+            <description><![CDATA[지난 2월에 시도했던 매월하는 회고는…]]></description>
+            <content:encoded><![CDATA[<p><a href="/post/18/">지난 2월에 시도했던 매월하는 회고</a>는 1회로 그치고 말았다. 왜냐하면 정말 일밖에 한게 없어서.. 할 이야기가 없었다.<br>
 하지만 나는 현재 개발이란 일을 하고 있고, 이 블로그는 개발 블로그이니 일 이야기로 회고를 하는 건 방향에 부합해 몇 가지 회고를 해볼까 한다.</p>
 <p>올 2월 중하순부터 본격적으로 코로나 사태가 심각해지면서 회사는 주 5일 온전한 재택근무로 전환했다.<br>
 현재 회사는 이전에도 재택근무를 주 1회하고 있어기에 이번 코로나 사태로 인해 근무 형태가 바뀐 것은 내게 큰 일은 아니었다.<br>
@@ -507,16 +507,16 @@
 저렴한 가격에 무접점을 입문해보고 싶다면 한성, 콕스, 앱코 중에서 개인 취향에 맞는 제품을 구매하면 된다. 나는 좀 더 사용해보다 리얼포스나 레오폴드로 업글하려고 한다.</p>
 <hr>
 <p>물론 일은 여전히 많고 여전히 바쁠 예정이다.<br>
-하지만 하반기에는 여러가지 변화를 꾀하려고 한다. 그래서 다음 회고에는 새로운 변화를 이야기해볼 수 있으면 좋겠다.</p>]]></content>
-        <published>2020-07-05T23:50:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[비슷해보이지만 다른 두 친구를 소개합니다. Authentication vs Authorization]]></title>
-        <id>https://baek.devpost/24/</id>
-        <link href="https://baek.devpost/24/"/>
-        <updated>2020-06-21T23:08:00.009Z</updated>
-        <summary type="html"><![CDATA[내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 Auth에 대해 들어보셨을텐데요, 보통 Auth라고 하면 Authentication을 말하거나 Authentication + Authorization…]]></summary>
-        <content type="html"><![CDATA[<p>내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 <strong>Auth</strong>에 대해 들어보셨을텐데요,<br>
+하지만 하반기에는 여러가지 변화를 꾀하려고 한다. 그래서 다음 회고에는 새로운 변화를 이야기해볼 수 있으면 좋겠다.</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/basic/001.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[비슷해보이지만 다른 두 친구를 소개합니다. Authentication vs Authorization]]></title>
+            <link>https://baek.devpost/24/</link>
+            <guid>https://baek.devpost/24/</guid>
+            <pubDate>Sun, 21 Jun 2020 23:08:00 GMT</pubDate>
+            <description><![CDATA[내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 Auth에 대해 들어보셨을텐데요, 보통 Auth라고 하면 Authentication을 말하거나 Authentication + Authorization…]]></description>
+            <content:encoded><![CDATA[<p>내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 <strong>Auth</strong>에 대해 들어보셨을텐데요,<br>
 보통 Auth라고 하면 Authentication을 말하거나 Authentication + Authorization를 통칭합니다.<br>
 윗줄에 구분지어 분리를 해놓은 거 보니 다른 것 같긴한데 과연 무엇이 어떻게 다를까요?</p>
 <p>각각을 한 단어로 바꿔 표현해보겠습니다.</p>
@@ -730,16 +730,16 @@ Authorization(권한 부여)는 액세스 제어로 사용자가 읽기, 수정,
 <ul>
 <li><a href="https://www.loginradius.com/blog/2020/06/authentication-vs-authorization-infographic/">https://www.loginradius.com/blog/2020/06/authentication-vs-authorization-infographic/</a></li>
 <li><a href="https://dev.to/caffiendkitten/authentication-vs-authorization-25lc">https://dev.to/caffiendkitten/authentication-vs-authorization-25lc</a></li>
-</ul>]]></content>
-        <published>2020-06-21T23:08:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apache Cassandra에 대해 알아보자]]></title>
-        <id>https://baek.devpost/23/</id>
-        <link href="https://baek.devpost/23/"/>
-        <updated>2020-05-10T22:12:00.009Z</updated>
-        <summary type="html"><![CDATA[Apache Cassandra Apache Cassandra는 대규모로 확장 가능한 분산 NoSQL DB로 Facebook…]]></summary>
-        <content type="html"><![CDATA[<h2>Apache Cassandra</h2>
+</ul>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_024.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Apache Cassandra에 대해 알아보자]]></title>
+            <link>https://baek.devpost/23/</link>
+            <guid>https://baek.devpost/23/</guid>
+            <pubDate>Sun, 10 May 2020 22:12:00 GMT</pubDate>
+            <description><![CDATA[Apache Cassandra Apache Cassandra는 대규모로 확장 가능한 분산 NoSQL DB로 Facebook…]]></description>
+            <content:encoded><![CDATA[<h2>Apache Cassandra</h2>
 <p><code>Apache Cassandra는 대규모로 확장 가능한 분산 NoSQL DB</code>로 Facebook 내부에서 시작하여 오픈소스로 출시되었습니다.</p>
 <ul>
 <li>아파치 카산드라는 다운 타임 없이 지속적인 가용성과 <strong>고성능 및 선형 확장성</strong>을 제공합니다.</li>
@@ -887,16 +887,16 @@ UPDATE MyTable
 <a href="#fnref-1" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2020-05-10T22:12:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[객체지향을 한 단어로 설명한다면 그것은 클래스가 아니라 메시지이다]]></title>
-        <id>https://baek.devpost/22/</id>
-        <link href="https://baek.devpost/22/"/>
-        <updated>2020-05-10T18:25:00.009Z</updated>
-        <summary type="html"><![CDATA[의도는 "메시징"이다. 훌륭하고 성장 가능한 시스템을 만들기 위한 핵심은 모듈 내부의 속성과 행동이 어떤가보다 모듈이 어떻게 커뮤니케이션하는가에 달려있다. Alan Curtis Kay…]]></summary>
-        <content type="html"><![CDATA[<blockquote>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_023.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[객체지향을 한 단어로 설명한다면 그것은 클래스가 아니라 메시지이다]]></title>
+            <link>https://baek.devpost/22/</link>
+            <guid>https://baek.devpost/22/</guid>
+            <pubDate>Sun, 10 May 2020 18:25:00 GMT</pubDate>
+            <description><![CDATA[의도는 "메시징"이다. 훌륭하고 성장 가능한 시스템을 만들기 위한 핵심은 모듈 내부의 속성과 행동이 어떤가보다 모듈이 어떻게 커뮤니케이션하는가에 달려있다. Alan Curtis Kay…]]></description>
+            <content:encoded><![CDATA[<blockquote>
 <p>의도는 "메시징"이다.<br>
 훌륭하고 성장 가능한 시스템을 만들기 위한 핵심은 모듈 내부의 속성과 행동이 어떤가보다<br>
 모듈이 어떻게 커뮤니케이션하는가에 달려있다.</p>
@@ -1032,17 +1032,17 @@ UPDATE MyTable
 이런 특성들이 모여 객체지향을 다른 패러다임보다 우월하게 만든다는 사실을 이해하는 것이 매우 중요하다.</p>
 <p><code>객체지향의 강력함을 누리기 위한 출발점은 책임을 자율적으로 만드는 것이다.</code></p>
 <hr>
-<p>출처 : 객체지향의 사실과 오해 5장 &#x3C;책임과 메시지></p>]]></content>
-        <published>2020-05-10T18:25:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Spring Framework에서 의존성을 주입받는 방법 3가지 - DI / Dependency Injection]]></title>
-        <id>https://baek.devpost/21/</id>
-        <link href="https://baek.devpost/21/"/>
-        <updated>2020-04-12T11:25:00.009Z</updated>
-        <summary type="html"><![CDATA[Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
-그 전에 DI…]]></summary>
-        <content type="html"><![CDATA[<p>Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
+<p>출처 : 객체지향의 사실과 오해 5장 &#x3C;책임과 메시지></p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_022.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Spring Framework에서 의존성을 주입받는 방법 3가지 - DI / Dependency Injection]]></title>
+            <link>https://baek.devpost/21/</link>
+            <guid>https://baek.devpost/21/</guid>
+            <pubDate>Sun, 12 Apr 2020 11:25:00 GMT</pubDate>
+            <description><![CDATA[Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
+그 전에 DI…]]></description>
+            <content:encoded><![CDATA[<p>Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
 그 전에 DI(의존성 주입)라는 사전 개념이 수반되어야 합니다. 그래서 이번 포스팅에서는 DI에 대해 알아보고 다음 포스팅에서 Spring Framework Triangle을 알아보겠습니다.</p>
 <ul>
 <li><a href="/post/21" target="_blank">Spring Framework에서 의존성을 주입받는 방법(DI) 3가지</a></li>
@@ -1181,16 +1181,16 @@ public class BookController {
 <a href="#fnref-2" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2020-04-12T11:25:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apache Kafka - 높은 처리량과 실시간으로 대량의 데이터를 취급하는 카프카]]></title>
-        <id>https://baek.devpost/20/</id>
-        <link href="https://baek.devpost/20/"/>
-        <updated>2020-03-29T22:05:00.009Z</updated>
-        <summary type="html"><![CDATA[import ResizeImage from 'components/ResizeImage' Apache Kafka…]]></summary>
-        <content type="html"><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_021.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Apache Kafka - 높은 처리량과 실시간으로 대량의 데이터를 취급하는 카프카]]></title>
+            <link>https://baek.devpost/20/</link>
+            <guid>https://baek.devpost/20/</guid>
+            <pubDate>Sun, 29 Mar 2020 22:05:00 GMT</pubDate>
+            <description><![CDATA[import ResizeImage from 'components/ResizeImage' Apache Kafka…]]></description>
+            <content:encoded><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
 <p><a href="http://kafka.apache.org/" target="_blank">Apache Kafka</a>는 여러 대의 분산 서버에서 대량의 데이터를 처리하는 분산 메시징 시스템입니다.<br>
 메시지를 받고, 받은 메시지를 다른 시스템이나 장치에 보내기 위해 사용하는데요, <code>높은 처리량과 실시간으로 대량의 데이터를 취급</code>하기 위해 초점을 맞췄으나 이제는 기능과 신뢰성을 향상시켜 현재는 데이터가 들어오는 대로 순차 실행하는 플랫폼이 되고 있습니다. 애플, 드롭박스, 넷플릭스, 트위터, 우버 등에서 카프카를 사용하고 있습니다.</p>
 <p>오픈소스인 카프카는 링크드인에서 개발했습니다. 링크드인 웹사이트에서 생성되는 로그를 처리하여 웹사이트 활동을 추적하는 것을 목적으로 개발했습니다. 링크드인에서 누군가의 프로필을 조회하거나 아티클을 보거나 특정 키워드로 검색하거나 혹은 광고를 클릭하는 등의 모든 행위가 낳는 로그들은 매우 방대했습니다. 우리는 이것을 <strong>빅데이터</strong>라고 부릅니다. 이 빅데이터 파이프라인에서 카프카는 주요 멤버로 자리매김했습니다.</p>
@@ -1638,16 +1638,16 @@ Ack=all인 경우</td>
 <a href="#fnref-1" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2020-03-29T22:05:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[글쓰는 또라이가 세상을 바꾼다 - 글또 4기에 참여해요]]></title>
-        <id>https://baek.devpost/19/</id>
-        <link href="https://baek.devpost/19/"/>
-        <updated>2020-02-27T22:43:00.009Z</updated>
-        <summary type="html"><![CDATA[…]]></summary>
-        <content type="html"><![CDATA[<h2>글쓰기를 하는 이유</h2>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_020.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[글쓰는 또라이가 세상을 바꾼다 - 글또 4기에 참여해요]]></title>
+            <link>https://baek.devpost/19/</link>
+            <guid>https://baek.devpost/19/</guid>
+            <pubDate>Thu, 27 Feb 2020 22:43:00 GMT</pubDate>
+            <description><![CDATA[…]]></description>
+            <content:encoded><![CDATA[<h2>글쓰기를 하는 이유</h2>
 <p>아직은 성장할 날이 더 많은 작은 키의 글쓰기 솜씨이지만, 글쓰기를 통해 많은 것을 배우고 있습니다.</p>
 <p>우리는 누구나 다 열심히 살지만 돌이켜 보면 딱히 생각나는 것이 없는 경우가 종종 있습니다. 가까운 예로 회고 작성할 때 이 감정을 많이 느꼈습니다. 1년을 정말 바삐 살아왔는데 손에 쥔 건 아무것도 없는 공허함이 밀려왔습니다. 쉬지 않고 달려왔지만 돌이켜보면 하루하루 연명하기 바빴던 것 같습니다. 같은 날을 보내더라도 블로깅을 하고자 한 뒤부터는 모든 것을 한 번 더 생각하게 되고, 한 번 더 눈여겨보게 되었습니다. 예전에는 그저 지나쳤을 모든 것들이 이제는 글감의 대상이 되고 있습니다. 그래서 개발과 관련된 어떤 이벤트이건 간에 글로 남겨야겠다고 다짐했습니다.</p>
 <p>이렇게 글쓰기는 또 하나의 장점이 있는데 <strong>과거 봉착했던 문제를 다시 마주했을 때 저만의 스타일로 정리된 글을 보며 다시 복기할 수</strong> 있습니다. 블로깅 이전에는 단순히 포스트잇에 문제와 답을 작성하는 느낌으로 메모를 갈무리하는 정도였고, 이것은 문제집 뒤에 있는 답안지와 다르지 않아 개발 성숙도에서 바랄 볼 때 효용가치가 크지 않았습니다. 하여 어떤 문제에 직면했고, 어떤 방향으로 해결하는지 <code>스토리를 담아 작성한 글은 설령 해당 기술의 버전이 바뀌었을지라도 미래의 나에게 문제 접근 해결 방식에 대한 영감을 줄 수 있다</code>고 생각합니다.</p>
@@ -1679,16 +1679,16 @@ Ack=all인 경우</td>
 </blockquote>
 <p>이처럼 글감을 모으고 있다 보니 몇 개의 글감이 항상 대기 중에 있어 이제는 글감이 없어 글을 못 쓴단 이야기는 못 하게 되었습니다 :p</p>
 <hr>
-<p>앞으로 여러 시각과 다양한 주제들이 넘쳐날 글또 참여가 매우 기대되며, 글또를 통해 많이 배우고 저도 다른 분들에게 적극적인 피드백을 드리며 서로 <strong>상생</strong>하는 과정이 되도록 노력해야겠습니다.</p>]]></content>
-        <published>2020-02-27T22:43:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[월말회고 - 2020년 01월]]></title>
-        <id>https://baek.devpost/18/</id>
-        <link href="https://baek.devpost/18/"/>
-        <updated>2020-02-14T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[import ResizeImage from 'components/ResizeImage' 보통…]]></summary>
-        <content type="html"><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+<p>앞으로 여러 시각과 다양한 주제들이 넘쳐날 글또 참여가 매우 기대되며, 글또를 통해 많이 배우고 저도 다른 분들에게 적극적인 피드백을 드리며 서로 <strong>상생</strong>하는 과정이 되도록 노력해야겠습니다.</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_019.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[월말회고 - 2020년 01월]]></title>
+            <link>https://baek.devpost/18/</link>
+            <guid>https://baek.devpost/18/</guid>
+            <pubDate>Fri, 14 Feb 2020 09:00:00 GMT</pubDate>
+            <description><![CDATA[import ResizeImage from 'components/ResizeImage' 보통…]]></description>
+            <content:encoded><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
 <p>보통 1년 회고를 연말에 많이 하는데, 올해부터는 매월을 보내고 하는 월말 회고를 시작하려고 합니다. 얼마 전 우연히 '월말 회고' 포스팅을 접했다가 꽤 좋은 아이디어라고 생각했고, 매월 작성하면 1년도 저절로 알차지지 않을까요?<br>
 그럼 회고는 높임말 없이 편하게 작성하겠습니다 :)</p>
 <h2>블로그 포스팅</h2>
@@ -1726,16 +1726,16 @@ yes24 북클럽, 리디북스, 밀리의 서재, 교보문고 샘 등 전자책(
 <h3>2월 목표</h3>
 <ul>
 <li>스터디 참여하기</li>
-</ul>]]></content>
-        <published>2020-02-14T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[자동으로 스터디 모집 글을 모아 알림을 주는 파이썬 크롤러 만들기(with Github Actions)]]></title>
-        <id>https://baek.devpost/17/</id>
-        <link href="https://baek.devpost/17/"/>
-        <updated>2020-02-07T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[…]]></summary>
-        <content type="html"><![CDATA[<p>이번 설 연휴 동안 다짐했던 목표가 있었습니다. 바로 파이썬 공부 시작과 함께 파이썬 크롤러 만들기! 파이썬 기본 문법과 자료구조를 빠르게 공부한 뒤, 바로 파이썬 크롤러 만들기에 들어갔습니다. 파이썬 크롤러 코드가 이해가 되고 해보고 싶은 만큼 조금씩 변형해볼 수 있으니 너무 재밌었습니다.</p>
+</ul>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/basic/001.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[자동으로 스터디 모집 글을 모아 알림을 주는 파이썬 크롤러 만들기(with Github Actions)]]></title>
+            <link>https://baek.devpost/17/</link>
+            <guid>https://baek.devpost/17/</guid>
+            <pubDate>Fri, 07 Feb 2020 09:00:00 GMT</pubDate>
+            <description><![CDATA[…]]></description>
+            <content:encoded><![CDATA[<p>이번 설 연휴 동안 다짐했던 목표가 있었습니다. 바로 파이썬 공부 시작과 함께 파이썬 크롤러 만들기! 파이썬 기본 문법과 자료구조를 빠르게 공부한 뒤, 바로 파이썬 크롤러 만들기에 들어갔습니다. 파이썬 크롤러 코드가 이해가 되고 해보고 싶은 만큼 조금씩 변형해볼 수 있으니 너무 재밌었습니다.</p>
 <p>이번에 단순히 크롤링하는 라이브러리를 익혀보는 것으로 끝내기보다, 평소 갈증이 있었던 스터디 모집 새글 알림을 받도록하는 크롤링을 목표로 발전시켰습니다. 그럼 이번 공부를 <strong><code>아웃풋</code></strong> 할 수 있을 것 같았습니다. 그래서 <code>Python + Github Issue + Github Actions</code>를 이용하여 진행하기로 했습니다.</p>
 <blockquote>
 <ol>
@@ -1916,16 +1916,16 @@ jobs:
 <a href="#fnref-2" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2020-02-07T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[털어놓기 어려웠던 개발자로서 고민을 해결해준 책, 함께 자라기]]></title>
-        <id>https://baek.devpost/16/</id>
-        <link href="https://baek.devpost/16/"/>
-        <updated>2020-01-13T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[…]]></summary>
-        <content type="html"><![CDATA[<div class="row">
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_017.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[털어놓기 어려웠던 개발자로서 고민을 해결해준 책, 함께 자라기]]></title>
+            <link>https://baek.devpost/16/</link>
+            <guid>https://baek.devpost/16/</guid>
+            <pubDate>Mon, 13 Jan 2020 09:00:00 GMT</pubDate>
+            <description><![CDATA[…]]></description>
+            <content:encoded><![CDATA[<div class="row">
   <div class="col-md-5">
       <a href="https://coupa.ng/bl0Era" target="_blank"><ResizeImage src="https://image.aladin.co.kr/product/17597/74/cover500/8966262333_1.jpg" height="300px;" alt="함께 자라기 - 애자일로 가는 길" /></a>  
   </div>
@@ -2026,16 +2026,16 @@ B 영역은 실력보다 작업 난이도가 더 높은 지역으로 불안함�
 <a href="#fnref-2" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2020-01-13T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[찾기 힘든 버그를 유발하는 Java DTO 컨버팅 노가다, 리팩토링하기]]></title>
-        <id>https://baek.devpost/15/</id>
-        <link href="https://baek.devpost/15/"/>
-        <updated>2020-01-03T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다. 이럴 경우 휴먼 에러가 발생 할 확률이 매우 높습니다. 같이 아래 예시를 볼까요? (본문 코드는 github에서 확인 가능합니다.) 여기 BookDTO…]]></summary>
-        <content type="html"><![CDATA[<p>자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다.<br>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_016.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[찾기 힘든 버그를 유발하는 Java DTO 컨버팅 노가다, 리팩토링하기]]></title>
+            <link>https://baek.devpost/15/</link>
+            <guid>https://baek.devpost/15/</guid>
+            <pubDate>Fri, 03 Jan 2020 09:00:00 GMT</pubDate>
+            <description><![CDATA[자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다. 이럴 경우 휴먼 에러가 발생 할 확률이 매우 높습니다. 같이 아래 예시를 볼까요? (본문 코드는 github에서 확인 가능합니다.) 여기 BookDTO…]]></description>
+            <content:encoded><![CDATA[<p>자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다.<br>
 이럴 경우 휴먼 에러가 발생 할 확률이 매우 높습니다. 같이 아래 예시를 볼까요?<br>
 (본문 코드는 <a href="https://github.com/baekdev/modelmapper-ex" target="_blank">github</a>에서 확인 가능합니다.)</p>
 <p>여기 BookDTO와 BookVO가 있습니다.<br>
@@ -2310,16 +2310,16 @@ public void test_validate() {
 <hr>
 <p>자, 이렇게 간단히 ModelMapper 라이브러리를 살펴봤습니다.<br>
 적용이 어렵지 않기 때문에 현재 소스상에서 get/set을 정성스레 작성하고 계셨다면 이 라이브러리 도입을 통해 코드 리팩토링을 해보시는 건 어떨까요?<br>
-본문 코드는 <a href="https://github.com/baekdev/modelmapper-ex" target="_blank">github</a>에서 확인 가능하며, 공식 사이트는 <a href="http://modelmapper.org/" target="_blank">modelmapper.org</a> 입니다.</p>]]></content>
-        <published>2020-01-03T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2019년 회고 - 처음 쓰는 한해 마무리 회고]]></title>
-        <id>https://baek.devpost/14/</id>
-        <link href="https://baek.devpost/14/"/>
-        <updated>2019-12-30T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[import ExternalLink from 'components/ExternalLink'; 2~…]]></summary>
-        <content type="html"><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+본문 코드는 <a href="https://github.com/baekdev/modelmapper-ex" target="_blank">github</a>에서 확인 가능하며, 공식 사이트는 <a href="http://modelmapper.org/" target="_blank">modelmapper.org</a> 입니다.</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_015.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[2019년 회고 - 처음 쓰는 한해 마무리 회고]]></title>
+            <link>https://baek.devpost/14/</link>
+            <guid>https://baek.devpost/14/</guid>
+            <pubDate>Mon, 30 Dec 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[import ExternalLink from 'components/ExternalLink'; 2~…]]></description>
+            <content:encoded><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
 <p>2~3년 전부터 작성하고 싶었던 <strong>한해 마무리 회고</strong>를 드디어 처음으로 작성한다.<br>
 매년 바쁘고 글감이 부족하단 이유로 흐지부지되었는데, 얼마 전 잠실 모각코<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup> 송년회 모임을 하면서 한해 회고를 가볍게 진행했다. 이때 작성한 회고를 좀 더 발전시켜 첫 회고 포스팅을 시작한다.</p>
 <h2>블로그 개설</h2>
@@ -2443,16 +2443,16 @@ public void test_validate() {
 <a href="#fnref-1" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2019-12-30T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[마이크로서비스 아키텍처 구축(2) - 배포와 모니터링를 거쳐 대규모 마이크로서비스]]></title>
-        <id>https://baek.devpost/13/</id>
-        <link href="https://baek.devpost/13/"/>
-        <updated>2019-12-28T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[import ExternalLink from 'components/ExternalLink'; 6. 배포 지속적 통합(CI/Continuous Integration) CI…]]></summary>
-        <content type="html"><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_014.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[마이크로서비스 아키텍처 구축(2) - 배포와 모니터링를 거쳐 대규모 마이크로서비스]]></title>
+            <link>https://baek.devpost/13/</link>
+            <guid>https://baek.devpost/13/</guid>
+            <pubDate>Sat, 28 Dec 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[import ExternalLink from 'components/ExternalLink'; 6. 배포 지속적 통합(CI/Continuous Integration) CI…]]></description>
+            <content:encoded><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
 <h2>6. 배포</h2>
 <h3>지속적 통합(CI/Continuous Integration)</h3>
 <ul>
@@ -3114,16 +3114,16 @@ public void test_validate() {
 <a href="#fnref-3" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2019-12-28T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[마이크로서비스 아키텍처 구축(1) - MSA를 지탱하는 기본 개념]]></title>
-        <id>https://baek.devpost/12/</id>
-        <link href="https://baek.devpost/12/"/>
-        <updated>2019-12-24T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[은총알은 없으니 경험이 많지 않거나 비즈니스 도메인에 대한 이해가 낮다면 무리한 마이크로서비스의 도입보다는 모놀리스에서 시작해서 점진적으로 분해하는 것이 좋다. 마이크로서비스 아키텍쳐 구축 1. 마이크로서비스 Infrastructure…]]></summary>
-        <content type="html"><![CDATA[<blockquote>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_012.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[마이크로서비스 아키텍처 구축(1) - MSA를 지탱하는 기본 개념]]></title>
+            <link>https://baek.devpost/12/</link>
+            <guid>https://baek.devpost/12/</guid>
+            <pubDate>Tue, 24 Dec 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[은총알은 없으니 경험이 많지 않거나 비즈니스 도메인에 대한 이해가 낮다면 무리한 마이크로서비스의 도입보다는 모놀리스에서 시작해서 점진적으로 분해하는 것이 좋다. 마이크로서비스 아키텍쳐 구축 1. 마이크로서비스 Infrastructure…]]></description>
+            <content:encoded><![CDATA[<blockquote>
 <p>은총알은 없으니 경험이 많지 않거나 비즈니스 도메인에 대한 이해가 낮다면<br>
 무리한 마이크로서비스의 도입보다는 모놀리스에서 시작해서 점진적으로 분해하는 것이 좋다.</p>
 <ul>
@@ -3683,16 +3683,16 @@ public void test_validate() {
 <a href="#fnref-2" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2019-12-24T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[99콘 연봉협상 후기 - 개발자 연봉협상을 똑똑하게 하는 방법]]></title>
-        <id>https://baek.devpost/11/</id>
-        <link href="https://baek.devpost/11/"/>
-        <updated>2019-12-22T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[import ExternalLink from 'components/ExternalLink'; 지난 12월 14일, 에서 주최한 99콘 제4회 연봉협상에 참석해 후기를 작성한다. 먼저 9…]]></summary>
-        <content type="html"><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_012.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[99콘 연봉협상 후기 - 개발자 연봉협상을 똑똑하게 하는 방법]]></title>
+            <link>https://baek.devpost/11/</link>
+            <guid>https://baek.devpost/11/</guid>
+            <pubDate>Sun, 22 Dec 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[import ExternalLink from 'components/ExternalLink'; 지난 12월 14일, 에서 주최한 99콘 제4회 연봉협상에 참석해 후기를 작성한다. 먼저 9…]]></description>
+            <content:encoded><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
 <p>지난 12월 14일, <ExternalLink href="https://www.weirdx.io/" target="_blank" text="이상한 모임" />에서 주최한 99콘 제4회 연봉협상에 참석해 후기를 작성한다.</p>
 <p>먼저 99콘에 대해 잠깐 설명하자면, <strong>수습생활 - 성과평가 - 이력서 - 연봉협상의 주제를 가지고 올 한해 기획된 행사</strong>다. 나는 성과평가 회차를 제외한 모든 회차에 참여했는데 정말 너무 만족스러운 행사였다. 세션마다 내용이 모두 알찼고 같은 분야에 종사하는 연사들의 발표 내용은 매우 공감되었으며 꿀팁들이 참 많았다. 일정상 참여가 여러워 제2회 성과평과를 참여하지 못했는데 참 아쉬웠다.<br>
 이번 제4회는 연봉협상에 관한 내용이 메인이지만 메인 세션 전에 연말정산 하는 취지에서 1회부터 ~ 3회까지의 세션을 하나씩 더 가졌다. 지난 회차와 동일한 내용이 반복되는 것은 아닐까 걱정했지만, 지난 세션 내용에 그 이후 내용까지 더 해져서 보강된 발표라 더 좋았다.</p>
@@ -3925,17 +3925,17 @@ A. 그건 회사 측에 여쭤봐도 된다. 정말 다양한 사유가 존재�
 멀리 떠나지 않아도 놀러 온 분위기를 낼 수 있어 팀이 소규모 워크샵을 하거나 조용히 이야기를 나누거나 요리를 할 수도 있는 공간이다.</p>
 <p>이렇게 2019 마지막 99콘의 행사가 끝났다. 아쉽게도 내년에는 행사 계획이 없다고 한다.<br>
 포스팅으로나마 <strong>좋은 행사 기획해주셔서 감사의 말씀 드리고 싶다.</strong></p>
-<p>다음에도 99콘이 열린다면 꼭 참석할께요 :)</p>]]></content>
-        <published>2019-12-22T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[단기속성 4주완성 퀵퀵각코, 운영 회고록]]></title>
-        <id>https://baek.devpost/10/</id>
-        <link href="https://baek.devpost/10/"/>
-        <updated>2019-10-28T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[import ResizeImage from 'components/ResizeImage'
-import ExternalLink from 'components/ExternalLink' 지난 2…]]></summary>
-        <content type="html"><![CDATA[<p>import ResizeImage from 'components/ResizeImage'
+<p>다음에도 99콘이 열린다면 꼭 참석할께요 :)</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_011.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[단기속성 4주완성 퀵퀵각코, 운영 회고록]]></title>
+            <link>https://baek.devpost/10/</link>
+            <guid>https://baek.devpost/10/</guid>
+            <pubDate>Mon, 28 Oct 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[import ResizeImage from 'components/ResizeImage'
+import ExternalLink from 'components/ExternalLink' 지난 2…]]></description>
+            <content:encoded><![CDATA[<p>import ResizeImage from 'components/ResizeImage'
 import ExternalLink from 'components/ExternalLink'</p>
 <p>지난 26일 토요일에 퀵퀵각코 마지막 모임인 <code>발표&#x26;회고</code>를 진행했다. 단기속성 4주완성 기간제 목표형 모각코인 퀵퀵각코가 도래하기까지의 어떤 고민이 있었고 어떤 방법으로 풀었는지 회고하는 시간을 가져본다.</p>
 <blockquote>
@@ -4027,16 +4027,16 @@ import ExternalLink from 'components/ExternalLink'</p>
 <li>그 중간인 6주 운영에 대한 의견도 나왔다.</li>
 </ul>
 <p>사실 기간은 너무 길지만 않으면 크게 중요하지 않은 것 같다. 목표를 이룰 수 있도록 서로 선의의 감시자가 되어주고 다독여주는 동료가 되어가는 것이 더 의미가 있는 것 같다.</p>
-<p>이제 목표 달성에 대한 부담감을 잠시 내려놓고 늦잠을 자거나 여가를 보낼 수 있도록 토요일 오전을 마음껏 즐겨야겠다.</p>]]></content>
-        <published>2019-10-28T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[쿠버네티스 Controller 살펴보기1 Deployment - 기초(4)]]></title>
-        <id>https://baek.devpost/9/</id>
-        <link href="https://baek.devpost/9/"/>
-        <updated>2019-10-27T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></summary>
-        <content type="html"><![CDATA[<blockquote>
+<p>이제 목표 달성에 대한 부담감을 잠시 내려놓고 늦잠을 자거나 여가를 보낼 수 있도록 토요일 오전을 마음껏 즐겨야겠다.</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_003.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[쿠버네티스 Controller 살펴보기1 Deployment - 기초(4)]]></title>
+            <link>https://baek.devpost/9/</link>
+            <guid>https://baek.devpost/9/</guid>
+            <pubDate>Sun, 27 Oct 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description>
+            <content:encoded><![CDATA[<blockquote>
 <p>쿠버네티스 기초 시리즈</p>
 <ul>
 <li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
@@ -4141,16 +4141,16 @@ kubectl delete replicationcontrollers replication1 --cascade=false
 <li>새로운 버전의 애플리케이션을 1개의 레플리카 셋으로 기존 버전의 애플리케이션에 추가로 생성</li>
 <li>에러나 장애가 없으면 새로운 버전의 애플리케이션의 레플리카 셋을 원하는 수만큼으로 늘림</li>
 <li>기존 버전의 애플리케이션의 레플리카 셋을 0으로 조정하여 배포를 마침</li>
-</ul>]]></content>
-        <published>2019-10-27T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRanger - 기초(3)]]></title>
-        <id>https://baek.devpost/8/</id>
-        <link href="https://baek.devpost/8/"/>
-        <updated>2019-10-15T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></summary>
-        <content type="html"><![CDATA[<blockquote>
+</ul>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_005.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRanger - 기초(3)]]></title>
+            <link>https://baek.devpost/8/</link>
+            <guid>https://baek.devpost/8/</guid>
+            <pubDate>Tue, 15 Oct 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description>
+            <content:encoded><![CDATA[<blockquote>
 <p>쿠버네티스 기초 시리즈</p>
 <ul>
 <li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
@@ -4391,16 +4391,16 @@ spec:
           memory: 0.1Gi
         limits:
           memory: 0.5Gi
-</code></pre>]]></content>
-        <published>2019-10-15T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[리뷰] 나는 LINE 개발자입니다 - 라인 개발자의 일상을 간접 경험해볼 수 있다]]></title>
-        <id>https://baek.devpost/7/</id>
-        <link href="https://baek.devpost/7/"/>
-        <updated>2019-10-14T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[<나는 LINE…]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=204587884">&#x3C;나는 LINE 개발자입니다></a> 책은 라인의 여러 분야의 개발자들이 어떻게 커리어를 쌓았고 어떻게 라인에서 일하는지에 대한 책이다. 라인의 솔루션 아키텍트, 보안 서비스, 메시징 서비스, 커뮤니케이션 서버, 동영상 생중계 플랫폼, 딜리버리 플랫폼, 라인파이낸셜플러스, 블록체인, 테크니컬 라이터, 에반젤리스트 등 다양한 분야의 개발자가 가져왔던 고민과 경험을 간접적으로 경험해볼 수 있는 책이다.</p>
+</code></pre>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_005.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[[리뷰] 나는 LINE 개발자입니다 - 라인 개발자의 일상을 간접 경험해볼 수 있다]]></title>
+            <link>https://baek.devpost/7/</link>
+            <guid>https://baek.devpost/7/</guid>
+            <pubDate>Mon, 14 Oct 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[<나는 LINE…]]></description>
+            <content:encoded><![CDATA[<p><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=204587884">&#x3C;나는 LINE 개발자입니다></a> 책은 라인의 여러 분야의 개발자들이 어떻게 커리어를 쌓았고 어떻게 라인에서 일하는지에 대한 책이다. 라인의 솔루션 아키텍트, 보안 서비스, 메시징 서비스, 커뮤니케이션 서버, 동영상 생중계 플랫폼, 딜리버리 플랫폼, 라인파이낸셜플러스, 블록체인, 테크니컬 라이터, 에반젤리스트 등 다양한 분야의 개발자가 가져왔던 고민과 경험을 간접적으로 경험해볼 수 있는 책이다.</p>
 <p>이 책은 마치 우리가 기대하는 바를 꿰뚫어 보기라도 한 것처럼 <strong>라인에 입사하는 비책과 같은 내용은 없다고 책 초반부터 강조</strong>한다. 하지만 나는 <strong>이 책을 다 읽고 나니 실제 라인의 개발자들이 어떻게 일하는지 알게 되었고, 그들이 일하는 방법에서 라인 개발자라면 필요한 덕목을 짐작</strong>할 수 있다. 라인 입사에 희망하는 분들은 이 책을 반드시 읽겠지만, 꼭 입사 희망자가 아니더라도 다음과 같은 상황에 있는 분들도 읽어두면 좋은 내용이다.</p>
 <blockquote>
 <ul>
@@ -4434,16 +4434,16 @@ spec:
 <a href="#fnref-1" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2019-10-14T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)]]></title>
-        <id>https://baek.devpost/6/</id>
-        <link href="https://baek.devpost/6/"/>
-        <updated>2019-10-05T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></summary>
-        <content type="html"><![CDATA[<blockquote>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_007.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)]]></title>
+            <link>https://baek.devpost/6/</link>
+            <guid>https://baek.devpost/6/</guid>
+            <pubDate>Sat, 05 Oct 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description>
+            <content:encoded><![CDATA[<blockquote>
 <p>쿠버네티스 기초 시리즈</p>
 <ul>
 <li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
@@ -4650,16 +4650,16 @@ spec:
 <hr>
 <ul>
 <li><a href="https://kubernetes.io/docs/concepts/services-networking/service/">kubernetes.io</a></li>
-</ul>]]></content>
-        <published>2019-10-05T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[쿠버네티스란 무엇인지 살펴보기 - 기초(1)]]></title>
-        <id>https://baek.devpost/5/</id>
-        <link href="https://baek.devpost/5/"/>
-        <updated>2019-10-04T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></summary>
-        <content type="html"><![CDATA[<blockquote>
+</ul>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_005.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[쿠버네티스란 무엇인지 살펴보기 - 기초(1)]]></title>
+            <link>https://baek.devpost/5/</link>
+            <guid>https://baek.devpost/5/</guid>
+            <pubDate>Fri, 04 Oct 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description>
+            <content:encoded><![CDATA[<blockquote>
 <p>쿠버네티스 기초 시리즈</p>
 <ul>
 <li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
@@ -4776,16 +4776,16 @@ spec:
 <a href="#fnref-3" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></content>
-        <published>2019-10-04T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[utterances를 블로그 댓글로 적용하기]]></title>
-        <id>https://baek.devpost/4/</id>
-        <link href="https://baek.devpost/4/"/>
-        <updated>2019-10-01T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요? 오늘은 utterances라는 아주 가벼우면서 설정이 쉬운 댓글 앱을 소개해 드리려고 합니다. utterances 도입 계기 저는 그동안 블로그에 facebook comments 혹은 disqus…]]></summary>
-        <content type="html"><![CDATA[<p>여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요?<br>
+</div>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_005.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[utterances를 블로그 댓글로 적용하기]]></title>
+            <link>https://baek.devpost/4/</link>
+            <guid>https://baek.devpost/4/</guid>
+            <pubDate>Tue, 01 Oct 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요? 오늘은 utterances라는 아주 가벼우면서 설정이 쉬운 댓글 앱을 소개해 드리려고 합니다. utterances 도입 계기 저는 그동안 블로그에 facebook comments 혹은 disqus…]]></description>
+            <content:encoded><![CDATA[<p>여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요?<br>
 오늘은 utterances라는 아주 가벼우면서 설정이 쉬운 댓글 앱을 소개해 드리려고 합니다.</p>
 <h2>utterances 도입 계기</h2>
 <p>저는 그동안 블로그에 facebook comments 혹은 disqus를 이용하여 댓글을 운영했습니다. 티스토리 혹은 미디엄 등에서 블로그를 운영하시는 분들이라면 어떤 댓글 앱을 쓸지 따로 크게 고민이 필요치 않은 부분입니다. 하지만 utterances는 깃허브 블로그에만 운영할 수 있는 것은 아닙니다. 다양한 방식으로 github issue와 맵핑만 할 수 있다면 어느 곳에서든 댓글 앱으로 채택할 수 있습니다.</p>
@@ -4878,16 +4878,16 @@ origins안의 value는 각자 블로그의 도메인으로 지정하면 됩니�
 <p>이에 따라 전 메일로 알림을 받게 되었습니다.<br>
 <img src="https://baek.dev/assets/images/post/2019/2019_004_007.png" alt="received email that the created issue"></p>
 <p>길고 먼 여정처럼 설명이 길었지만 보신 바와 같이 utterances 셋팅은 정말 간단합니다. 이제 사용자는 깃헙 로그인을 통해 댓글을 남길 수 있고, 필요하다면 특정 포스팅의 댓글 알림도 같이 받을 수 있습니다. 운영자는 댓글 설정 및 관리에 필요 이상의 투자를 하지 않아도 되죠. <code>조금 더 개발자스러운 댓글 앱, utterances를 적용해보니 정말 마음에 듭니다.</code></p>
-<p>지금 이 글을 읽고 계신다면 깃헙 로그인을 통해 <strong>테스트 댓글을 하나 남겨보시면 어떨까요?</strong></p>]]></content>
-        <published>2019-10-01T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[쿠버네티스 - 퀵퀵각코 회고록]]></title>
-        <id>https://baek.devpost/3/</id>
-        <link href="https://baek.devpost/3/"/>
-        <updated>2019-09-29T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[import ResizeImage from 'components/ResizeImage' 퀵퀵각코에 참여하며 진행하는 쿠버네티스 스터디 회고록입니다. 총 4회 모임과 마지막 발표로 마무리하기까지 계속 업데이트됩니다. ✍🏻 1주차 - 2019.09.2…]]></summary>
-        <content type="html"><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+<p>지금 이 글을 읽고 계신다면 깃헙 로그인을 통해 <strong>테스트 댓글을 하나 남겨보시면 어떨까요?</strong></p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_004_title_1.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[쿠버네티스 - 퀵퀵각코 회고록]]></title>
+            <link>https://baek.devpost/3/</link>
+            <guid>https://baek.devpost/3/</guid>
+            <pubDate>Sun, 29 Sep 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[import ResizeImage from 'components/ResizeImage' 퀵퀵각코에 참여하며 진행하는 쿠버네티스 스터디 회고록입니다. 총 4회 모임과 마지막 발표로 마무리하기까지 계속 업데이트됩니다. ✍🏻 1주차 - 2019.09.2…]]></description>
+            <content:encoded><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
 <p><a href="https://www.notion.so/baekdev/4-0a3e47e8583e4019b5215a1ec83d5a1a">퀵퀵각코</a>에 참여하며 진행하는 쿠버네티스 스터디 회고록입니다. 총 4회 모임과 마지막 발표로 마무리하기까지 계속 업데이트됩니다. ✍🏻</p>
 <h2>1주차 - 2019.09.29</h2>
 <p>킥오프인 만큼 다들 각자 자기소개와 어떤 목표를 삼았는지 공유하는 시간을 가졌습니다.<br>
@@ -4930,16 +4930,16 @@ origins안의 value는 각자 블로그의 도메인으로 지정하면 됩니�
 <p>마지막 5주차는 발표로 마무리하는 시간을 가졌다. 아쉽게도 야근이 매일같이 있던 주라 지난주에 발생한 <strong>목표의 유령 정체</strong>를 해결하지 못하였다. 그래도 <code>83.3%</code>라는 목표 성과는 달성할 수 있었다. 간단히 쿠버네티스에서 대해 설명하고 운영자로서의 회고로 발표를 하고 퀵퀵각코를 마무리했다.</p>
 <ResizeImage src="https://baek.dev/assets/images/post/2019/2019_003_004.png" alt="퀵퀵각코 목표 성과" height="500px" />
 <p>아직 남은 목표가 조금 있고, 중급으로 더 깊게 공부하기 위해서 쿠버네티스 스터디는 계속 진행할 것이다.</p>
-<p>퀵퀵각코 전체에 대한 회고는 <a href="%7B%7Bsite.url%7D%7D%7B%7Bsite.baseurl%7D%7D/post/10">이 곳에서</a> 볼 수 있다.</p>]]></content>
-        <published>2019-09-29T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[개발자 이력서 작성 방법 - 99콘 이력서 후기]]></title>
-        <id>https://baek.devpost/2/</id>
-        <link href="https://baek.devpost/2/"/>
-        <updated>2019-09-21T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[import ResizeImage from 'components/ResizeImage…]]></summary>
-        <content type="html"><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+<p>퀵퀵각코 전체에 대한 회고는 <a href="%7B%7Bsite.url%7D%7D%7B%7Bsite.baseurl%7D%7D/post/10">이 곳에서</a> 볼 수 있다.</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_003.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[개발자 이력서 작성 방법 - 99콘 이력서 후기]]></title>
+            <link>https://baek.devpost/2/</link>
+            <guid>https://baek.devpost/2/</guid>
+            <pubDate>Sat, 21 Sep 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[import ResizeImage from 'components/ResizeImage…]]></description>
+            <content:encoded><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
 <p>이력서는 가능하면 자주 업데이트해서 최대한 최신의 상태를 유지하라는 조언을 많이 들어 봤을 것입니다. 하지만 목전에 이직이 놓여 있지 않은 이상, 발등에 불이 떨어지지 않는 이상 업데이트하기 어렵습니다. 더욱이 이력서 파일을 열어놓고 드는 생각은 매번 같습니다.</p>
 <blockquote>
 <p>어떻게 하면 이력서를 서류 탈락 되지 않고 면접까지 이어질 수 있을까?</p>
@@ -5445,17 +5445,17 @@ origins안의 value는 각자 블로그의 도메인으로 지정하면 됩니�
 <li>왜 배웠나? 뭐가 부족했나? 거기서 무엇을 배웠나?</li>
 <li>배운 후 어떻게 활용하고 있나?</li>
 <li>지원 직무와 관련된 부분을 어필한다</li>
-</ul>]]></content>
-        <published>2019-09-21T09:00:00.009Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Github 블로그에 개인 도메인 연결해보고 sub github pages 셋팅하기]]></title>
-        <id>https://baek.devpost/1/</id>
-        <link href="https://baek.devpost/1/"/>
-        <updated>2019-09-11T09:00:00.009Z</updated>
-        <summary type="html"><![CDATA[Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
-인터넷 서핑을 하다 종종 만나게 되는 baekdev.github.io 와 같은 주소들이 모두 github pages…]]></summary>
-        <content type="html"><![CDATA[<p>Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
+</ul>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_002.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Github 블로그에 개인 도메인 연결해보고 sub github pages 셋팅하기]]></title>
+            <link>https://baek.devpost/1/</link>
+            <guid>https://baek.devpost/1/</guid>
+            <pubDate>Wed, 11 Sep 2019 09:00:00 GMT</pubDate>
+            <description><![CDATA[Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
+인터넷 서핑을 하다 종종 만나게 되는 baekdev.github.io 와 같은 주소들이 모두 github pages…]]></description>
+            <content:encoded><![CDATA[<p>Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
 인터넷 서핑을 하다 종종 만나게 되는 <strong><a href="https://baekdev.github.io">baekdev.github.io</a></strong> 와 같은 주소들이 모두 <a href="https://help.github.com/en/articles/what-is-github-pages">github pages</a> 를 이용한 사이트입니다.
 이 주소를 대부분 그대로 이용하기도 하지만, 개인 브랜딩을 위해서 커스텀 도메인을 적용하기도 합니다.</p>
 <p>그럼 우리도 함께 적용해보고 깃허브 서브 페이지까지 어떻게 적용할 수 있을지 시작해보겠습니다.</p>
@@ -5491,7 +5491,8 @@ HTTPS를 적용하면 js, css 등 파일 경로가 http로 적용되어 깨질 �
 Github Pages 영역에서 Branch를 master로 선택하면 해당 repository를 baekdev.github.io/TIL의 서브페이지로 셋팅이 됩니다.<br>
 단, 우리는 baekdev.github.io를 baek.dev 커스텀 도메인으로 연결했기 때문에, 나의 커스텀 도메인의 하위 페이지로 셋팅이 된 alert을 확인 할 수 있습니다. <a href="https://baek.dev/TIL/">baek.dev/TIL</a></p>
 <p>이와 같은 sub page를 추가함으로써 <strong>하나의 계정에 여러개의 깃헙 페이지를 운영</strong> 할 수 있으니 이력서나, 포트폴리오 또는 구인 공고 같은 static page를 활용해 볼 수 있는 장점이 될 것입니다.</p>
-<p>그럼 이제 새로운 도메인으로 블로깅을 시작해보세요 😀</p>]]></content>
-        <published>2019-09-11T09:00:00.009Z</published>
-    </entry>
-</feed>
+<p>그럼 이제 새로운 도메인으로 블로깅을 시작해보세요 😀</p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2019/2019_001.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>
