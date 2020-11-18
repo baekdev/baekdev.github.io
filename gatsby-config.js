@@ -167,28 +167,134 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-plugin-feed`,
+			resolve: `@darth-knoppix/gatsby-plugin-feed`,
 			options: {
-				query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
+				baseUrl: `https://baek.dev`,
+				query: `{
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              author
+            }
+            pathPrefix
+          }
+        }`,
+				setup: options => {
+					const { pathPrefix } = options.query.site
+					const {
+						author,
+						description,
+						siteUrl,
+						title,
+					} = options.query.site.siteMetadata
+					const baseUrl = siteUrl + pathPrefix
+					const currentYear = new Date().getUTCFullYear()
+
+					return {
+						...options,
+						encoding: "utf8",
+						language: "ko",
+						id: baseUrl,
+						link: baseUrl,
+						baseUrl,
+						title,
+						description,
+						copyright: `All rights reserved ${currentYear}, ${author}`,
+						updated: moment(Date.now()).tz("Asia/Seoul").format(),
+						author: {
+							name: author,
+							link: "https://baek.dev/",
+							email: "diveintotechnology@gmail.com",
+						},
+						generator: "BAEKDEV",
+						image: `${baseUrl}/assets/basic/001.png`,
+						favicon: `${baseUrl}/favicon.ico`,
+						feedLinks: {
+							atom: `${baseUrl}/feed.xml`,
+							json: `${baseUrl}/rss.json`,
+							rss: `${baseUrl}/atom.xml`,
+						},
+						categories: [
+							"Web development",
+							"Software Engineer",
+							"Toy projects",
+						],
+					}
+				},
+				feeds: [
+					{
+						query: `{
+              allMarkdownRemark(
+                limit: 100
+                filter: {
+            fileAbsolutePath: {regex: "/content/posts/"}
+            frontmatter: { 
+              published: { ne: false } 
             }
           }
-        `,
-				feeds: [
-					getBlogFeed({
-						output: "/feed.xml",
+                sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    frontmatter {
+                      title
+                      date
+                      slug
+                      hero
+                    }
+                  }
+                }
+              }
+            }`,
+						serialize: ({
+							query: {
+								allMarkdownRemark,
+								site: {
+									pathPrefix,
+									siteMetadata: { siteUrl },
+								},
+							},
+						}) =>
+							allMarkdownRemark.edges.map(({ node }) => {
+								// const date = new Date(Date.parse(node.frontmatter.date))
+								const date = moment(node.frontmatter.date)
+									.tz("Asia/Seoul")
+									.format()
+
+								const imgSrcPattern = new RegExp(
+									`(${pathPrefix})?/assets/`,
+									"g"
+								)
+
+								const link = siteUrl + pathPrefix + "/" + node.frontmatter.slug
+								let image = node.frontmatter.hero
+									? siteUrl + node.frontmatter.hero
+									: null
+
+								return {
+									id: link,
+									link,
+									title: node.frontmatter.title,
+									date,
+									published: date,
+									description: node.excerpt,
+									content: node.html.replace(
+										imgSrcPattern,
+										`${siteUrl}/assets/`
+									),
+									image,
+								}
+							}),
 						title: "아웃풋 트레이닝",
-					}),
+					},
 				],
 			},
 		},
+
 		{
 			resolve: "gatsby-plugin-robots-txt",
 			options: {
@@ -198,72 +304,4 @@ module.exports = {
 			},
 		},
 	],
-}
-
-function getBlogFeed(overrides) {
-	return {
-		serialize: ({ query: { site, allMarkdownRemark } }) => {
-			return allMarkdownRemark.edges.map(edge => {
-				const siteUrl = site.siteMetadata.siteUrl
-				const postText = `
-          <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at 아웃풋 트레이닝. You can read it online by <a href="${
-						siteUrl + edge.node.frontmatter.slug
-					}">clicking here</a>.)</div>
-        `
-				let html = edge.node.html
-				// Hacky workaround for https://github.com/gaearon/overreacted.io/issues/65
-				html = html
-					.replace(/href="\//g, `href="${siteUrl}/`)
-					.replace(/src="\//g, `src="${siteUrl}/`)
-					.replace(/"\/static\//g, `"${siteUrl}/static/`)
-					.replace(/,\s*\/static\//g, `,${siteUrl}/static/`)
-
-				console.log(
-					edge.node.frontmatter.date,
-					"==>",
-					new Date(
-						moment(edge.node.frontmatter.date).tz("Asia/Seoul").format()
-					).toISOString()
-				)
-
-				return Object.assign({}, edge.node.frontmatter, {
-					description: edge.node.excerpt,
-					// date: new Date(edge.node.frontmatter.date).toISOString(),
-					url: site.siteMetadata.siteUrl + "/" + edge.node.frontmatter.slug,
-					guid: site.siteMetadata.siteUrl + "/" + edge.node.frontmatter.slug,
-					custom_elements: [
-						{
-							"content:encoded": html + postText,
-						},
-					],
-				})
-			})
-		},
-		query: `
-      {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] },
-          filter: {
-            fileAbsolutePath: {regex: "/content/posts/"}
-            frontmatter: { 
-              published: { ne: false } 
-            }
-          }
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 250)
-              html
-              frontmatter {
-                title
-                date
-                slug
-              }
-            }
-          }
-        }
-      }
-    `,
-		...overrides,
-	}
 }

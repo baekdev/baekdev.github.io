@@ -21,7 +21,7 @@
   "author": "BAEKDEV <diveintotechnology@gmail.com>",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js' 'data/siteConfig.js' 'gatsby-*.js' 'scripts/*.js'",
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js",
@@ -36,6 +36,7 @@
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
   },
   "dependencies": {
+    "@darth-knoppix/gatsby-plugin-feed": "^2.0.2",
     "@mdx-js/mdx": "^1.5.9",
     "@mdx-js/react": "^1.5.9",
     "babel-plugin-styled-components": "^1.10.6",
