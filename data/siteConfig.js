@@ -42,7 +42,7 @@ module.exports = {
 			links: [
 				{
 					label: "Blog",
-					url: "/",
+					url: "https://baek.dev",
 				},
 			],
 		},
@@ -56,6 +56,10 @@ module.exports = {
 				{
 					label: "Website",
 					url: "https://baek.dev",
+				},
+				{
+					label: "Twitter",
+					url: "https://twitter.com/_baekdev",
 				},
 			],
 		},
