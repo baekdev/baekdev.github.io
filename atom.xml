@@ -4,17 +4,60 @@
         <title>아웃풋 트레이닝</title>
         <link>https://baek.dev</link>
         <description>자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.</description>
-        <lastBuildDate>Sun, 22 Nov 2020 12:50:26 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 Nov 2020 02:32:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>BAEKDEV</generator>
         <language>ko</language>
         <image>
             <title>아웃풋 트레이닝</title>
-            <url>https://baek.dev/assets/basic/001.png</url>
+            <url>https://baek.dev/assets/images/basic/001.png</url>
             <link>https://baek.dev</link>
         </image>
         <copyright>All rights reserved 2020, BAEKDEV</copyright>
         <atom:link href="https://baek.dev/atom.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[다시]]></title>
+            <link>https://baek.dev/post/30/</link>
+            <guid>https://baek.dev/post/30/</guid>
+            <pubDate>Tue, 24 Nov 2020 02:06:00 GMT</pubDate>
+            <description><![CDATA[글또에 지난 4기에 이어 5기로 다시 참여한다. 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다. 첫번째 이유, 글을 단 1개도 쓰지 않았다. 지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!) 글또…]]></description>
+            <content:encoded><![CDATA[<p>글또에 지난 4기에 이어 5기로 다시 참여한다.<br>
+왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다.</p>
+<h2>첫번째 이유, 글을 단 1개도 쓰지 않았다.</h2>
+<p>지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!)</p>
+<p>글또 4기가 마치면서 이제 글 쓰는 습관이 좀 잡혔을까 싶었으나 <del>바쁘다 바빠 현대사회에서 우선순위가 높지 않은</del> 글쓰기는 어느새 새까맣게 잊혀졌다.
+그래서 글쓰기 모임은 예치금 사수라는 미션이 있으니 아무래도 텐션이 생기는 것 같아 다시 시작하게 되었다.</p>
+<p>물론 2주마다 글을 쓴다는 건 사실 직장인에게 쉽지 않다.
+업무로 야근 한두 번 하면 평일은 후루룩 지나가게 되고 주말에도 공부를 하거나 휴식을 취하게 되면 정말 2주가 금방이다.
+6개월 동안 매 2주에 한 번씩 미션을 치야 하는 것은 스트레스도 크고 울며 겨자 먹기로 썼던 적도 몇 번 있었기에 솔직히 그다음엔 참여하지 않으려 했다.</p>
+<p>하지만, <code>글은 꾸준히 쓰고 싶고 무엇인가를 남기고 싶은 욕심은 있기에 이것을 이루려면 그 무게를 견뎌야 하는 것이 인지상정 아니겠는가.</code>
+그 무게를 함께 견디는 다른 참가자들이 있어 알게 모르게 의지가 되고, 힘이 된다.</p>
+<h2>두번째 이유, 같은 직군의 커뮤니티</h2>
+<p>글또는 직군 별로 참가자들이 그룹핑되고 그 안에서 글쓰기 미션과 피드백이라는 상호작용이 이뤄진다.<br>
+그룹은 머신러닝 엔지니어, 데이터 엔지니어, 데이터 분석, 백엔드 개발, 프론트엔드 개발, 클라이언트 개발 정도로 나뉜다.
+이 안에서 직군 내의 관심사가 공유되기도 하고 질문이 오고 가니 건설적이다.</p>
+<p>특히 나는 새로운 도전을 앞두고 기존과 다른 포지션으로 지원을 했다.
+그래서 <code>아는 것보다 모르는 게 더 많은 나의 부족한 점을 기존 선배들에게 더 빠르게 피드백 받을 수 있는 점도 기대</code>가 된다.</p>
+<p>아쉽게도 지난 4기에는 코로나 유행이 시작된 직후에 글또도 시작되어 모임이 거의 없었지만, 이번 5기에는 온오프등 다양한 방법으로 더 많은 대화를 나눌 수 있었으면 좋겠다!</p>
+<h2>에헴, 출사표요</h2>
+<p>지난 4기때는 공부한 내용을 정리하고 작성하는 유형으로 많이 진행했는데, 개인적으로 요약정리집을 만들기만 한다는 것이 크게 성취감이 들진 않았다.</p>
+<p>이번 5기에는 최소 절반 이상은 <code>빠르고 작게 토이 프로젝트를 만들어서 그 후기를 정리하는 형태로 진행</code>해보려 한다. 쉽지 않을 것이고 내겐 엄청난 도전이지만 이 기회를 빌어 많은 성장을 할 수 있을 것이다.</p>
+<p>어느 날 SNS에서 본 아래 내용이 인상 깊었다.</p>
+<blockquote>
+<p>야근으로 늦게까지 일하고 피곤해도<br>
+내가 좋아하는 걸 잠깐이라도 해야 그날 하루가 보람차다고 느낀다.</p>
+</blockquote>
+<p>나는 올해 일밖에 한 게 없었다. 그래서 블랙아웃 된 것 같다고 종종 말한다. 허나 위 글을 본 이후부터는 가능하면 내 것을 단 30분이라도 하고 하루를 마무리하려고 한다.</p>
+<p>지금 글또 다짐 글을 쓰기 전까지 1개의 토이 프로젝트를 진행했다. 야근이 있었던 날도 업무를 마치고 프로젝트를 진행했다. 너무 피곤하지만 단 한 줄이라도 내 코딩을 하니 뿌듯하게 마무리할 수 있었다.</p>
+<blockquote>
+<p><a href="https://baek.dev/doolys-welcome">"도우너 어서오고 짤 만들기"</a></p>
+</blockquote>
+<p>이 글의 대표 이미지도 이 프로젝트를 통해 간단히 생성했다. 간단하고 사소하지만 그동안 짤 만들기 해보고 싶었던 작은 목표를 이루었다.<br>
+다음 글은 <a href="https://baek.dev/doolys-welcome">"도우너 어서오고 짤 만들기"</a> 토이 플젝을 소개하고 프로젝트를 진행하면서 고민한 부분과 향후 더 발전시킬 부분에 대해 이야기해보려고 한다.</p>
+<p>그럼 글또 5기 화이팅!</p>
+<p><img src="https://baek.dev/assets/images/post/2020/2020_029_001.png" alt="도우너 어서오고 짤 생성기"></p>]]></content:encoded>
+            <enclosure url="https://baek.dev/assets/images/post/2020/2020_019.png" length="0" type="image/png"/>
+        </item>
         <item>
             <title><![CDATA[다시 또 글또를 시작하게 된 2가지 이유]]></title>
             <link>https://baek.dev/post/29/</link>
