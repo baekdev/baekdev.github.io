@@ -1,0 +1,40 @@
+$color-green: #cfdd83;
+$color-lightgray: #eee;
+$color-gray: #ddd;
+
+.memeContainer {
+	width: 100%;
+	margin: 0px auto;
+	display: flex;
+}
+
+.row {
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0;
+	& input {
+		width: 100%;
+		padding: 10px 20px;
+		border-radius: 30px;
+		border: 1px solid $color-gray;
+		font-size: 15px;
+	}
+}
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+button {
+	border-radius: 30px;
+	padding: 10px 20px;
+	border: 1px solid $color-green;
+	background-color: $color-green;
+}
+
+.memePreview canvas {
+	max-width: 100%;
+}
