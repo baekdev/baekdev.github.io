@@ -3,7 +3,6 @@
 <url> <loc>https://baek.dev/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/pages/2</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/pages/3</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://baek.dev/post/30/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/29/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/28/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/27/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
@@ -33,9 +32,8 @@
 <url> <loc>https://baek.dev/post/3/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/2/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/1/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://baek.dev/about</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/projects</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://baek.dev/tags/사이드 프로젝트</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/about</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/글또</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/book</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/diary</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
