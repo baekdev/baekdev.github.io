@@ -1,4 +1,271 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 28 Nov 2020 08:21:11 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[다시 또 글또를 시작하게 된 2가지 이유]]></title><description><![CDATA[글또에 지난 4기에 이어 5기로 다시 참여한다. 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다. 첫번째 이유, 글을 단 1개도 쓰지 않았다. 지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!) 글또…]]></description><link>https://baek.dev/post/29/</link><guid isPermaLink="false">https://baek.dev/post/29/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 15 Nov 2020 11:30:00 GMT</pubDate><content:encoded>&lt;p&gt;글또에 지난 4기에 이어 5기로 다시 참여한다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Nov 2020 13:33:11 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[둘리 & 도우너 어서오고 짤 생성기 회고]]></title><description><![CDATA[그간 해보고 싶었던 사이드 프로젝트 중 짤(Meme…]]></description><link>https://baek.dev/post/33/</link><guid isPermaLink="false">https://baek.dev/post/33/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 29 Nov 2020 13:30:00 GMT</pubDate><content:encoded>&lt;p&gt;그간 해보고 싶었던 사이드 프로젝트 중 &lt;code&gt;짤(Meme) 생성기&lt;/code&gt;를 만들었다. 짤 생성기는 적은 시간 투자 대비 만족도와 활용도가 높은 편이라 꼭 해보고 싶었던 사이드 프로젝트 중 하나다.  &lt;/p&gt;
+&lt;p&gt;엉덩국님의 애기 공룡 웹툰 중 &apos;도우너 어서오고&apos; 컷이 많은 베리에이션으로 화제가 되고 있는 와중에,
+어떤 온라인 커뮤니티에서 한 유저가 문구 수정을 아이폰 단축키를 이용하여 번거롭게 그리고 예쁘지 않게 만드는 것을 보고 주제를 정하게 되었다.  &lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;div style=&quot;width: 100%; text-align: center;&quot;&gt;
+&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_033_001.png&quot; width=&quot;400px&quot; alt=&quot;둘리 &amp; 도우너 어서오고 짤 생성기&quot;/&gt;
+&lt;/div&gt;   
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;p&gt;결과 부터 공유하면 &lt;a href=&quot;https://baek.dev/doolys-welcome&quot;&gt;둘리 &amp;#x26; 도우너 어서오고 짤 생성기&lt;/a&gt;를 통해 운영 중이다!&lt;br&gt;
+현재는 총 4종류이고, 템플릿화했기 때문에 데이터 프리셋에 값만 추가 해주면 반복적인 코드 작업없이 생성 되도록 만들었다.  &lt;/p&gt;
+&lt;p&gt;이 과정에서 어떤 고민이 있었고 어떻게 해결했는지 회고를 통해 공유하려고 한다 :)  &lt;/p&gt;
+&lt;div style=&quot;width: 100%; text-align: center; &quot;&gt;  
+&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_033_010.png&quot; /&gt;&lt;br/&gt;
+&lt;p&gt;( 동접수 실화? +_+ )&lt;/p&gt;  
+&lt;/div&gt;  
+&lt;h2&gt;시작은 미미하지만, 일단 시작해보자!&lt;/h2&gt;
+&lt;p&gt;프론트 초보인 나는(!) 소위 프론트엔드 프레임워크나 라이브러리를 써서 만들기에는 아는 것보다 모르는게 더 많아서 그 자체가 &lt;strong&gt;프로젝트 병목&lt;/strong&gt;이 될 것이 자명했다.&lt;br&gt;
+그래서 조금 할 줄 아는 Vanilla.js로 일단 만들어보는 것이 1차 목표였다.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;짤은 캔버스를 이용하는 것 같아 캔버스 사용법을 찾아보고&lt;/li&gt;
+&lt;li&gt;input에서 타이핑하는 메시지가 캔버스에 바로바로 그려지는지 먼저 확인했다.  &lt;/li&gt;
+&lt;li&gt;이때 화자가 2명이므로 input을 2개로 설정했다.  &lt;/li&gt;
+&lt;li&gt;이어서 캔버스를 이미지 다운로드 하도록 기능을 추가했다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이렇게 가장 메인이 되는 첫번째 어서오고 짤 생성기를 만들었다.   &lt;/p&gt;
+&lt;p&gt;이후 React를 공부하면서 바로 적용해볼 수 있는 것들은 점차 적용하기 시작했다. 그래서 현재는 CRA를 이용해 React로 포팅했고, 운영에도 반영했다.&lt;br&gt;
+만약 내가 처음부터 React를 이용해서 만들려고 했다면, 분명 React를 잘 알지 못해 작동하지 않는 부분에서 나는 수업이 좌절했을 것이고 작동하는 early work&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;를 만들지 못하고 끝냈을 수도 있을 것이다.  &lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;div style=&quot;width: 100%; text-align: center; &quot;&gt;  
+  &lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_033_006.gif&quot;&gt;
+&lt;/div&gt;  
+&lt;br&gt;
+&lt;br&gt;
+&lt;h2&gt;주요 개발 포인트&lt;/h2&gt;
+&lt;h3&gt;다양한 화자들을 고려한 데이터셋 정의하기&lt;/h3&gt;
+&lt;p&gt;애기 공룡 만화 컷에는 둘리와 도우너가 같이 나오는 2명의 화자가 있는 컷, 혹은 혼자 나오는 1인 화자 컷이 있다.
+화자가 몇명인지, 각각의 화자는 어떤 기본 데이터를 갖게 하고 싶은지 JSON으로 정의한다.&lt;br&gt;
+이렇게 하는 이유는 컴포넌트를 재사용 가능하도록 분리하고, 가변적일 수 있는 데이터는 로직에서 분리하도록 하기 위함이다.   &lt;/p&gt;
+&lt;p&gt;아래 코드를 보면 4개의 짤 유형별로 Actors.js에서 오브젝트를 불러오고 BuildMeme에 데이터를 던지기만 하면 자동 반복 생성된다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;import {Welcome, Hoi, Smoke, Over} from &apos;../data/Actors.js&apos;;
+import BuildMeme from &apos;./BuildMeme&apos;;
+
+const DoolysWelcome = () =&gt; {
+
+  const actors = [Welcome, Hoi, Smoke, Over];
+
+  return (
+    &amp;#x3C;div&gt;
+      {actors.map((actor, index) =&gt; {
+        return &amp;#x3C;BuildMeme key={`actor-${index}`} actorConst={actor} /&gt;;
+      })}
+    &amp;#x3C;/div&gt;
+  );
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;그럼 첫번째 Welcome 데이터가 &apos;도우너 어서오고&apos;의 프리셋인데, 이것으로 프리셋 구조를 소개해보려 한다.      &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;// Actors.js  
+
+const Welcome = {
+    title: &quot;어서오고&quot;,      // 짤 제목
+    source: {
+        imageSrc: &quot;bg_1.png&quot;, // 배경 이미지 파일
+        imageWidth: 519,      // 배경 이미지 가로 크기 
+        imageHeight: 606,     // 배경 이미지 세로 크기 
+
+        twoLineTextId: &quot;inputWelcomeStranger&quot;, // input name
+        threeLineTextId: &quot;inputWelcomeDooly&quot;,  // input name
+
+        filename: &quot;doolys-welcome&quot;, // 이미지 저장 파일 명
+    },
+    presets: {
+        twoLineConst: { // 최대 2줄을 갖는 화자의 프리셋
+            placeholder: &quot;어이 둘리.&quot;, // input placeholder
+            maxMessageLength: 12, // input에 입력 가능한 max length
+            lineLimitLength: { // 2줄 중 각 라인별 최대 글자 수
+                first: 7,
+                second: 5,
+            },
+            positions: { // 라인 별 x, y 좌표 값 
+                init: {
+                    x: 100,
+                    y: 70,
+                },
+                firstRow: {
+                    x: 70,
+                    y: 55,
+                },
+                secondRow: {
+                    x: 70,
+                    y: 90,
+                },
+            },
+            countForMove: 4, // 이 글자수 이상 입력되면 왼쪽으로 메시지 이동을 시작 
+            lineHeight: 20,
+        },
+        threeLineConst: { // 최대 3줄을 갖는 화자의 프리셋
+            // twoLineConst의 하위 프리셋과 구조가 동일하여 생략  
+        },
+    },
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위 Welcome은 도우너 어서오고에 주입할 데이터이며, 이어서 초능력 맛 좀 볼래, 선넘네 등도 동일한 구조로 값을 각각에 맞게 추가 정의하면 된다.  &lt;/p&gt;
+&lt;h3&gt;글자수에 따른 x, y 좌표 포지션 계산하기&lt;/h3&gt;
+&lt;p&gt;유저가 화자의 메시지를 입력할 때마다 바로바로 캔버스에 동적으로 그려주면 좀 더 만드는 재미가 생길 것 같아 프로젝트 처음부터 생각했던 부분이다.&lt;br&gt;
+단순히 20자 정도 되는 메시지를 말풍선에 한줄로 표현하진 않아야 한다. &lt;code&gt;만화를 보면 개행이 이뤄지기 때문에 그것을 반영하기로 했다.&lt;/code&gt; 그러기 위해선 글자가 입력될 때마다 &lt;strong&gt;동적 좌표&lt;/strong&gt;가 필요했다.  &lt;/p&gt;
+&lt;p&gt;앞서 소개한 위 Actors.js에서 &lt;strong&gt;presets &gt; positions&lt;/strong&gt; 이 말풍선 안에 메시지를 위치시키기 위한 좌표이다. 각 이미지마다 말풍선의 위치는 다르므로 각각의 화자가 다른 좌표를 갖는 것이다.  &lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_033_007.gif&quot; alt=&quot;좌표가 변하는 예시&quot;&gt;  &lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;p&gt;첫줄 안에서도 일정 개수 만큼 메시지가 입력되면 말풍선이 왼쪽으로 움직이도록 좌표를 업데이트 한다. 이후 2번째 줄에서도 계속 메시지는 움직이게 된다.&lt;br&gt;
+위 presets &gt; positions 에서 정의된 좌표들은 메시지가 &lt;strong&gt;왼쪽으로 이동하는 한계&lt;/strong&gt;를 뜻하기도 한다.  &lt;/p&gt;
+&lt;p&gt;입력받은 메시지는 각 라인별 최대 길이 맞게 slice하고 좌표를 계산하는 정제를 수행한다.
+slice한 메시지와 그 메시지에 맞는 좌표는 오브젝트에 각각 프로퍼티 text와 x,y를 갖는 pos로 구성하여 배열로 리턴한다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;[
+  { text: &apos;메시지1&apos;, 
+    pos: {
+      x: 100, y: 100
+  }}
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;로직은 일정 값 이상이 되면 왼쪽으로 이동하도록 좌표를 계산하는 포인트와 말풍선의 각 라인에 맞게 메시지를 자르는 것이다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;  // ThreeLineText.js 중 일부   
+    
+  // 첫번째 라인의 최대 개수로 메시지 처음을 자르고 
+  const messageHead = inputText.slice(0, lineLimitLength.second);
+  // 나머지 메시지는 두번째 라인에 넣을 것  
+  const messageTail = inputText.slice(lineLimitLength.second);   
+
+  // countForMove는 메시지가 이 숫자 이상 입력되기 시작하면 왼쪽으로 이동하도록 셋팅한 값이다.  
+  // 왼쪽으로 이동한다는 것은 x좌표가 점점 줄어드는 것을 의미하므로 늘어나는 개수만큼 x 좌표를 줄여준다. 
+  const secondPosX = positions.init.x - lineHeight * (messageTail.length - countForMove &amp;#x3C; 0 ? 0 : messageTail.length - countForMove);
+  const positionMessageTail = {
+    // 하지만 말풍선을 넘도록 좌표를 줄일 순 없으므로 셋팅된 x좌표 한계에 다다르면 더 이상 줄이지 않는다.  
+    x: secondPosX &amp;#x3C; positions.thirdRow.x ? positions.thirdRow.x : secondPosX,
+    y: positions.secondRow.y + 20,
+  };
+
+  // split된 메시지를 배열에 담아 리턴한다.
+  let result = [];   
+  result.push({
+    text: messageHead,
+    pos: { x: positions.secondRow.x, y: positions.secondRow.y - lineHeight },
+  });
+  result.push({ text: messageTail, pos: positionMessageTail });
+  return result;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;유저 입력 메시지를 실시간으로 캔버스에 업데이트 하기&lt;/h3&gt;
+&lt;p&gt;이제 말풍선 메시지는 적절히 나누면서 좌표까지 가졌으니 캔버스에 그리기만 하면 된다.&lt;br&gt;
+input에 keyup 이벤트를 추가해주고 input의 value를 setState로 업데이트 해준 뒤 캔버스에 이 메시지로 텍스트 좌표를 지정하면 끝!    &lt;/p&gt;
+&lt;p&gt;처음에는 input 컴포넌트는 메인 컴포넌트에 함께 있었지만 점차 리팩토링하면서 분리를 했다.
+이로인해 리액트에서 자식 컴포넌트가 부모 컴포넌트로 데이터를 전달하도록 부모 함수를 props로 전달받아 호출하도록 구성했다.&lt;br&gt;
+부모로 부터 전달 받은 함수 onKeyUp에 필요한 데이터를 담아 호출하면 onKeyUp의 구현부인 부모는 필요한 데이터를 setState하고 캔버스는 이 데이터를 갖고 rerendering 된다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;  // ActorsMessage.js 중 일부  
+  
+  const inputRef = useRef();
+  useEffect( () =&gt; {
+    inputRef.current.addEventListener(&apos;keyup&apos;, handleChange);
+    return () =&gt; {
+      inputRef.current.removeEventListener(&apos;keyup&apos;, handleChange);
+    };
+  });
+
+  const handleChange = (e) =&gt; {
+    // onKeyUp은 부모의 함수
+    props.onKeyUp({&apos;name&apos;: e.target.name, &apos;value&apos;: e.target.value});
+  };
+
+  return (
+
+    &amp;#x3C;div&gt;
+      &amp;#x3C;input
+        type=&quot;text&quot;
+        name={inputName}
+        ref={inputRef}
+        placeholder={placeholder}
+        onKeyUp={handleChange}
+        maxLength={maxLength}
+      /&gt;
+
+    &amp;#x3C;/div&gt;
+
+  );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;  // DrawingCanvas.js 
+ 
+  const canvasRef = useRef();  
+  const initCanvas = () =&gt; {
+    const canvas = canvasRef.current;  
+    const items = props.items; // 좌표를 갖는 split된 메시지 배열
+    // 중략   
+
+    const bgImage = new Image();
+    bgImage.src = selectBackgroundImg(source.imageSrc);
+    bgImage.onload = function () {
+      // 이미지가 준비되면 캔버스에 업데이트 한다.
+      drawPreviewImage(canvas, bgImage, items);  
+    };
+  };
+
+  const drawPreviewImage = (canvas, bgImage, items) =&gt; {
+    // 중략 
+    items.forEach((v) =&gt; {   
+      drawTextWithPostion(ctx, v.text, v.pos);
+    });
+  };
+
+  const drawTextWithPostion = (ctx, text, position) =&gt; {
+    // 중략
+    ctx.fillText(text, position.x, position.y);
+  };
+
+  return (
+      &amp;#x3C;div&gt;
+        &amp;#x3C;canvas ref={canvasRef} 
+                width={source.imageWidth} height={source.imageHeight} /&gt;
+      &amp;#x3C;/div&gt;
+  );
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;컴포넌트 분리하기&lt;/h3&gt;
+&lt;p&gt;초기에는 거의 단일 파일에 코드를 작성해서 일단 돌아가는(?)것이 목표였다. 기능 구현이 다 되고 난 이후는 컴포넌트 분리가 필요했다.&lt;br&gt;
+기능과 역할 별로 적절히 구성을 나눴고, 이에 코드도 변경이 필요했다. 예로 앞서 소개한 input과 canvas 분리가 가장 큰 분리였던 것 같다.   &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;src
+ ㄴ components
+    ㄴ download
+       ㄴ DownloadImage.js
+    ㄴ draw
+       ㄴ ActorMessage.js
+       ㄴ DrawingCanvas.js
+    ㄴ layout
+       ㄴ Footer.js
+       ㄴ Header.js
+       ㄴ Menu.js
+    ㄴ util
+       ㄴ ThreeLineText.js
+       ㄴ TwoLineText.js
+    ㄴ BuildMeme.js
+    ㄴ DoolysWelcome.js
+ ㄴ data
+    ㄴ Actors.js
+ ㄴ images
+    ㄴ bg_1.png
+ ㄴ style
+    ㄴ style.scss
+App.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;처음부터 자동차를 만들지 마세요&lt;/h2&gt;
+&lt;p&gt;나는 최소한 속도를 낼 수 있는 작은 바뀌 두개와 두개 발을 올릴 수 있는 나무 판 한개로 구성된 작은 보드 한개를 만들었다.
+직접 바퀴를 깎았고, 직접 나무 판을 구해서 손수 조립했다.  &lt;/p&gt;
+&lt;p&gt;이후 리액트를 공부하면서 공부한 내용을 바로바로 적용하면서 리액트 앱으로 포팅했다.&lt;br&gt;
+처음엔 리액트로 기능 그 자체를 만드는 것에 의미를 두었고, 이후에 모듈 분리를 하면서 필요한 코드 리팩토링을 점진적으로 적용했다.  &lt;/p&gt;
+&lt;p&gt;물론 리액트 고수 분들이 보면 내 둘리짤 생성기는 한 없이 작고 귀여운 스파게티일지도 모른다.&lt;br&gt;
+하지만 이것은 베이비 스텝일 뿐이다.  &lt;/p&gt;
+&lt;p&gt;이 짤 생성기를 고도화해서 좀 더 자동화하고 싶은 욕심이 있다.&lt;br&gt;
+그것은 좀 더 리액트를 익혀본 이후에 도전해봐야겠다 :)  &lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://paulgraham.com/early.html&quot;&gt;http://paulgraham.com/early.html&lt;/a&gt;  &lt;/p&gt;
+&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[다시 또 글또를 시작하게 된 2가지 이유]]></title><description><![CDATA[글또에 지난 4기에 이어 5기로 다시 참여한다. 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다. 첫번째 이유, 글을 단 1개도 쓰지 않았다. 지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!) 글또…]]></description><link>https://baek.dev/post/29/</link><guid isPermaLink="false">https://baek.dev/post/29/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 15 Nov 2020 11:30:00 GMT</pubDate><content:encoded>&lt;p&gt;글또에 지난 4기에 이어 5기로 다시 참여한다.&lt;br&gt;
 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다.&lt;/p&gt;
 &lt;h2&gt;첫번째 이유, 글을 단 1개도 쓰지 않았다.&lt;/h2&gt;
 &lt;p&gt;지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!)&lt;/p&gt;
