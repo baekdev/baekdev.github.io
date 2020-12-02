@@ -6,16 +6,18 @@ module.exports = {
 	twitterUsername: "",
 	authorAvatar: "profile8.jpg", // file in content/images
 	defaultLang: "", // show flag if lang is not default. Leave empty to enable flags in post lists
+	language: "ko",
 	authorDescription: ``,
 	siteUrl: "https://baek.dev/",
 	disqusSiteUrl: "",
 	// Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
 	pathPrefix: "", // Note: it must *not* have a trailing slash.
+	siteHero: "https://baek.dev/assets/images/basic/profile.jpg",
 	siteCover: "001.png", // file in content/images
 	googleAnalyticsId: "UA-148617191-1",
 	googleAdsence: {
-	  adClient: "ca-pub-6059434733081357",
-	  adSlot: "5099949480",
+		adClient: "ca-pub-6059434733081357",
+		adSlot: "5099949480",
 	},
 	background_color: "#ffffff",
 	theme_color: "#222222",
