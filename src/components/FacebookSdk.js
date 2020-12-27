@@ -20,7 +20,6 @@ window.fbAsyncInit = function() {
 (function(d, s, id){
     
     var js, fjs = d.getElementsByTagName(s)[0];
-    console.log('js:', js, 'fjs:', fjs);
 
     if (d.getElementById(id)) {return;}
     if (fjs === undefined) {return;}

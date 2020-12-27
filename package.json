@@ -22,7 +22,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby clean && gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write 'src/**/*.js' 'data/siteConfig.js' 'gatsby-*.js' 'scripts/*.js'",
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js",
     "lh": "lighthousebot",
