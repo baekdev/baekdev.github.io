@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 28 Dec 2020 04:43:18 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[뉴노멀 중심에서 하는 2020 회고]]></title><description><![CDATA[코로나가 가져다준 기회 문서 정리 연초에 참여한 TF…]]></description><link>https://baek.dev/post/34/</link><guid isPermaLink="false">https://baek.dev/post/34/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 27 Dec 2020 12:14:00 GMT</pubDate><content:encoded>&lt;h2&gt;코로나가 가져다준 기회&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 16 Jan 2021 02:40:01 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[뉴노멀 중심에서 하는 2020 회고]]></title><description><![CDATA[<h2>코로나가 가져다준 기회</h2>
+<h3>문서 정리</h3>
+<p>연초에 참여한 TF가 꽤 기억에 남는다. 정량화된 목표를 달성하는 것은 매우 재밌었고 스릴 넘쳤다. 하지만 그만큼 매우 힘들었던 것은 안 비밀. 그래도 이 프로젝트 덕분에 <code>문서의 중요성</code>을 알게 되었고, 어떤 일을 하든 꼭 문서화한다. 코로나 전에는 모두 모여서 일을 하니 그때그때 바로 궁금한 것을 확인하면 되지만, 아무래도 비동기로 일을 하다 보니 즉각적인 확인에 어려움이 있다. 그리고 같은 이야기를 하고 있는 것 같지만 의외로 싱크가 안 맞는 경우도 있다]]></description><link>https://baek.dev/post/34/</link><guid isPermaLink="false">https://baek.dev/post/34/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 27 Dec 2020 12:14:00 GMT</pubDate><content:encoded>&lt;h2&gt;코로나가 가져다준 기회&lt;/h2&gt;
 &lt;h3&gt;문서 정리&lt;/h3&gt;
 &lt;p&gt;연초에 참여한 TF가 꽤 기억에 남는다. 정량화된 목표를 달성하는 것은 매우 재밌었고 스릴 넘쳤다. 하지만 그만큼 매우 힘들었던 것은 안 비밀. 그래도 이 프로젝트 덕분에 &lt;code&gt;문서의 중요성&lt;/code&gt;을 알게 되었고, 어떤 일을 하든 꼭 문서화한다. 코로나 전에는 모두 모여서 일을 하니 그때그때 바로 궁금한 것을 확인하면 되지만, 아무래도 비동기로 일을 하다 보니 즉각적인 확인에 어려움이 있다. 그리고 같은 이야기를 하고 있는 것 같지만 의외로 싱크가 안 맞는 경우도 있다. 그래서 문서 작성에 대해 매우 중요하게 생각하게 되었다. 예전에는 &apos;개발에 문서가 왜 필요할까? 문서 작성이 병목이 돼선 안된다&apos;고 생각했던 시절도 있었는데, 이건 정말 &lt;del&gt;경기도&lt;/del&gt; 오산이었다.  &lt;/p&gt;
 &lt;p&gt;물론 코드를 형상관리(svn, git) 하지만 코드에 담을 수 있는 내용엔 한계가 있다. 해당 피처가 시작된 백그라운드, 의사 결정, 엣지 케이스, 다음 단계에 대한 계획 등 코드가 품을 수 없는 이상의 것들이 있다. 또한 개발자가 커뮤니케이션할 땐 코드로 말하지 않는 비개발의 직군들도 많기 때문이다. 그리고 여러 도구를 이용해 일어나는 대화를 한곳으로 모아주는 역할도 한다. 누군가 내게 질문하면 해당 문서의 링크만 전달해 주면 되는 것이다.&lt;br&gt;
@@ -59,7 +61,12 @@
 &lt;hr&gt;
 &lt;p&gt;내년에도 집콕하겠지만 잘 견뎌내 코로나를 피하고, 백신 맞으러 가야겠다 :)&lt;/p&gt;
 &lt;p&gt;이미지 출처 : &lt;a href=&quot;https://blog.naver.com/minumworld/222180449907&quot;&gt;민음사 인생일력&lt;/a&gt;&lt;br&gt;
-&lt;/p&gt;</content:encoded></item><item><title><![CDATA[둘리 & 도우너 어서오고 짤 생성기 회고]]></title><description><![CDATA[그간 해보고 싶었던 사이드 프로젝트 중 짤(Meme…]]></description><link>https://baek.dev/post/33/</link><guid isPermaLink="false">https://baek.dev/post/33/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 29 Nov 2020 13:30:00 GMT</pubDate><content:encoded>&lt;p&gt;그간 해보고 싶었던 사이드 프로젝트 중 &lt;code&gt;짤(Meme) 생성기&lt;/code&gt;를 만들었다. 짤 생성기는 적은 시간 투자 대비 만족도와 활용도가 높은 편이라 꼭 해보고 싶었던 사이드 프로젝트 중 하나다.  &lt;/p&gt;
+&lt;/p&gt;</content:encoded></item><item><title><![CDATA[둘리 & 도우너 어서오고 짤 생성기 회고]]></title><description><![CDATA[<p>그간 해보고 싶었던 사이드 프로젝트 중 <code>짤(Meme) 생성기</code>를 만들었다. 짤 생성기는 적은 시간 투자 대비 만족도와 활용도가 높은 편이라 꼭 해보고 싶었던 사이드 프로젝트 중 하나다.  </p>
+<p>웹툰 중 '도우너 어서오고' 컷이 많은 베리에이션으로 화제가 되고 있는 와중에,
+어떤 온라인 커뮤니티에서 한 유저가 문구 수정을 아이폰 단축키를 이용하여 번거롭게 그리고 예쁘지 않게 만드는 것을 보고 주제를 정하게 되었다.  </p>
+<br/>
+<br/>
+<div style="width: 100%; text-align: ce]]></description><link>https://baek.dev/post/33/</link><guid isPermaLink="false">https://baek.dev/post/33/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 29 Nov 2020 13:30:00 GMT</pubDate><content:encoded>&lt;p&gt;그간 해보고 싶었던 사이드 프로젝트 중 &lt;code&gt;짤(Meme) 생성기&lt;/code&gt;를 만들었다. 짤 생성기는 적은 시간 투자 대비 만족도와 활용도가 높은 편이라 꼭 해보고 싶었던 사이드 프로젝트 중 하나다.  &lt;/p&gt;
 &lt;p&gt;웹툰 중 &apos;도우너 어서오고&apos; 컷이 많은 베리에이션으로 화제가 되고 있는 와중에,
 어떤 온라인 커뮤니티에서 한 유저가 문구 수정을 아이폰 단축키를 이용하여 번거롭게 그리고 예쁘지 않게 만드는 것을 보고 주제를 정하게 되었다.  &lt;/p&gt;
 &lt;br/&gt;
@@ -331,7 +338,12 @@ App.js
 &lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[다시 또 글또를 시작하게 된 2가지 이유]]></title><description><![CDATA[글또에 지난 4기에 이어 5기로 다시 참여한다. 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다. 첫번째 이유, 글을 단 1개도 쓰지 않았다. 지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!) 글또…]]></description><link>https://baek.dev/post/29/</link><guid isPermaLink="false">https://baek.dev/post/29/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 15 Nov 2020 11:30:00 GMT</pubDate><content:encoded>&lt;p&gt;글또에 지난 4기에 이어 5기로 다시 참여한다.&lt;br&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[다시 또 글또를 시작하게 된 2가지 이유]]></title><description><![CDATA[<p>글또에 지난 4기에 이어 5기로 다시 참여한다.<br>
+왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다.</p>
+<h2>첫번째 이유, 글을 단 1개도 쓰지 않았다.</h2>
+<p>지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!)</p>
+<p>글또 4기가 마치면서 이제 글 쓰는 습관이 좀 잡혔을까 싶었으나 <del>바쁘다 바빠 현대사회에서 우선순위가 높지 않은</del> 글쓰기는 어느새 새까맣게 잊혀졌다.
+그래서 글쓰기 모임은 예치금 사수라는 미션이 있으니 아무래도 텐션이 생기는 것 같아 다시 시작하게 ]]></description><link>https://baek.dev/post/29/</link><guid isPermaLink="false">https://baek.dev/post/29/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 15 Nov 2020 11:30:00 GMT</pubDate><content:encoded>&lt;p&gt;글또에 지난 4기에 이어 5기로 다시 참여한다.&lt;br&gt;
 왜 다시 참여하게 되었는지 2가지 이유와 함께 출사표를 던져본다.&lt;/p&gt;
 &lt;h2&gt;첫번째 이유, 글을 단 1개도 쓰지 않았다.&lt;/h2&gt;
 &lt;p&gt;지난 9월 초, 글또 4기가 마무리된 이후 단 1개의 글도 쓰지 않았다(!)&lt;/p&gt;
@@ -365,7 +377,13 @@ App.js
 &lt;p&gt;이 글의 대표 이미지도 이 프로젝트를 통해 간단히 생성했다. 간단하고 사소하지만 그동안 짤 만들기 해보고 싶었던 작은 목표를 이루었다.&lt;br&gt;
 다음 글은 &lt;a href=&quot;https://baek.dev/doolys-welcome&quot;&gt;&quot;도우너 어서오고 짤 만들기&quot;&lt;/a&gt; 토이 플젝을 소개하고 프로젝트를 진행하면서 고민한 부분과 향후 더 발전시킬 부분에 대해 이야기해보려고 한다.&lt;/p&gt;
 &lt;p&gt;그럼 글또 5기 화이팅!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_029_001.png&quot; alt=&quot;도우너 어서오고 짤 생성기&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자의 사이드 프로젝트 - 커리어 스킬(2)]]></title><description><![CDATA[경력을 발전시키고 싶다면 - 커리어 스킬(1) 개발자의 사이드 프로젝트 - 커리어 스킬(…]]></description><link>https://baek.dev/post/28/</link><guid isPermaLink="false">https://baek.dev/post/28/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 06 Sep 2020 06:44:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_029_001.png&quot; alt=&quot;도우너 어서오고 짤 생성기&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자의 사이드 프로젝트 - 커리어 스킬(2)]]></title><description><![CDATA[<ul>
+<li><a href="/post/26/">경력을 발전시키고 싶다면 - 커리어 스킬(1)</a></li>
+<li><a href="/post/28/">개발자의 사이드 프로젝트 - 커리어 스킬(2)</a></li>
+</ul>
+<h2>인생의 변곡점</h2>
+<p>사이드 프로젝트를 해보겠다고 한 번도 생각하지 않은 소프트웨어 개발자는 본 적이 없다. 나만해도 사이드 프로젝트를 많이 해왔다. 아, 좀 더 명확히 말하면 사이드 프로젝트를 많이 시작했다. <strong>솔직히 말해서 시작한 프로젝트 중 끝낸 건 별로 없다.</strong><br>
+꿈과 ]]></description><link>https://baek.dev/post/28/</link><guid isPermaLink="false">https://baek.dev/post/28/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 06 Sep 2020 06:44:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/post/26/&quot;&gt;경력을 발전시키고 싶다면 - 커리어 스킬(1)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/post/28/&quot;&gt;개발자의 사이드 프로젝트 - 커리어 스킬(2)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -465,7 +483,9 @@ App.js
 &lt;p&gt;꿈은 좇는 것이고 목표는 행동해서 실현하는 것이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;p&gt;출처 - &lt;a href=&quot;https://coupa.ng/bHkYTv&quot;&gt;커리스 스킬 / 존 손메즈 지음&lt;/a&gt; 중 사이드 프로젝트에 대해 요약 정리한 내용입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[블로그를 하면 가장 좋은 점은]]></title><description><![CDATA[블로그를 하면 가장 좋은 점은 얼마 전 지인으로부터 도움받은 글이라며 링크 하나를 공유해 줬다. 개발자 이력서 작성하는 방법 - 9…]]></description><link>https://baek.dev/post/27/</link><guid isPermaLink="false">https://baek.dev/post/27/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 16 Aug 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;블로그를 하면 가장 좋은 점은&lt;/h2&gt;
+&lt;p&gt;출처 - &lt;a href=&quot;https://coupa.ng/bHkYTv&quot;&gt;커리스 스킬 / 존 손메즈 지음&lt;/a&gt; 중 사이드 프로젝트에 대해 요약 정리한 내용입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[블로그를 하면 가장 좋은 점은]]></title><description><![CDATA[<h2>블로그를 하면 가장 좋은 점은</h2>
+<p>얼마 전 지인으로부터 도움받은 글이라며 링크 하나를 공유해 줬다. <a href="/post/2/">개발자 이력서 작성하는 방법 - 99콘 이력서 후기</a>라는 내가 지난해 작성한 글로, 조회 수 및 다른 블로그에 많이 링크된 글이지만 포스팅 후 나조차도 상세 내용을 잊고 있었다. 헌데 요즘 내가 고민 중인 내용의 답이 이 포스팅 안에 있었다.<br>
+슬럼프가 온 어느 날, 아무것도 해낼 수 없을 것 같은 땐 내가 작성했던 <a href="/post/16">털어놓기 어려웠던 개발자로서 고민을 해결]]></description><link>https://baek.dev/post/27/</link><guid isPermaLink="false">https://baek.dev/post/27/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 16 Aug 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;블로그를 하면 가장 좋은 점은&lt;/h2&gt;
 &lt;p&gt;얼마 전 지인으로부터 도움받은 글이라며 링크 하나를 공유해 줬다. &lt;a href=&quot;/post/2/&quot;&gt;개발자 이력서 작성하는 방법 - 99콘 이력서 후기&lt;/a&gt;라는 내가 지난해 작성한 글로, 조회 수 및 다른 블로그에 많이 링크된 글이지만 포스팅 후 나조차도 상세 내용을 잊고 있었다. 헌데 요즘 내가 고민 중인 내용의 답이 이 포스팅 안에 있었다.&lt;br&gt;
 슬럼프가 온 어느 날, 아무것도 해낼 수 없을 것 같은 땐 내가 작성했던 &lt;a href=&quot;/post/16&quot;&gt;털어놓기 어려웠던 개발자로서 고민을 해결해 준 책, 함께 자라기&lt;/a&gt;를 다시 읽어 보고 마음을 다 잡는다.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -503,7 +523,12 @@ App.js
 &lt;hr&gt;
 &lt;p&gt;블로그는 오픈 된 공간이라서 부담스럽고 소위 있어 보이는 글을 쓰기에 주저하는 분들이 계실 것이다. 시작하기 주저된다면 책이나 강의 후기, 기술 요약 포스팅처럼 &lt;strong&gt;글감의 원천이 내가 아닌 다른 것에서부터 시작&lt;/strong&gt;하면 좋다. 그다음에는 나에 대해 돌아보는 포스팅으로 이어지면 더 좋다 :)&lt;br&gt;
 그러니 이제 지금 시작하면 됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_027.png&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[경력을 발전 시키고 싶다면 - 커리어 스킬(1)]]></title><description><![CDATA[import ExternalLink from 'components/ExternalLink'; 경력을 발전시키고 싶다면 - 커리어 스킬(1) 개발자의 사이드 프로젝트 - 커리어 스킬(…]]></description><link>https://baek.dev/post/26/</link><guid isPermaLink="false">https://baek.dev/post/26/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 02 Aug 2020 12:45:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_027.png&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[경력을 발전 시키고 싶다면 - 커리어 스킬(1)]]></title><description><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+<ul>
+<li><a href="/post/26/">경력을 발전시키고 싶다면 - 커리어 스킬(1)</a></li>
+<li><a href="/post/28/">개발자의 사이드 프로젝트 - 커리어 스킬(2)</a></li>
+</ul>
+<p>소프트 스킬에서는 경력을 비롯한 소프트웨어 개발자의 생활 전반에 초점을 맞추었다면 이 <a href="https://coupa.ng/bHkYTv">커리스 스킬</a>은 오로지 경력에 집중한다. <a href="ht]]></description><link>https://baek.dev/post/26/</link><guid isPermaLink="false">https://baek.dev/post/26/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 02 Aug 2020 12:45:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/post/26/&quot;&gt;경력을 발전시키고 싶다면 - 커리어 스킬(1)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/post/28/&quot;&gt;개발자의 사이드 프로젝트 - 커리어 스킬(2)&lt;/a&gt;&lt;/li&gt;
@@ -728,7 +753,10 @@ App.js
 &lt;li&gt;끈기있게 노력하면 결국은 목적이에 도달할 것&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;출처 - &lt;a href=&quot;https://coupa.ng/bHkYTv&quot;&gt;커리스 스킬 / 존 손메즈 지음&lt;/a&gt; 중 경력 발전 시키기에 대해 요약 정리한 내용입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[포스트 코로나 시대 재택근무의 상반기 회고]]></title><description><![CDATA[지난 2월에 시도했던 매월하는 회고는…]]></description><link>https://baek.dev/post/25/</link><guid isPermaLink="false">https://baek.dev/post/25/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 05 Jul 2020 14:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/post/18/&quot;&gt;지난 2월에 시도했던 매월하는 회고&lt;/a&gt;는 1회로 그치고 말았다. 왜냐하면 정말 일밖에 한게 없어서.. 할 이야기가 없었다.&lt;br&gt;
+&lt;p&gt;출처 - &lt;a href=&quot;https://coupa.ng/bHkYTv&quot;&gt;커리스 스킬 / 존 손메즈 지음&lt;/a&gt; 중 경력 발전 시키기에 대해 요약 정리한 내용입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[포스트 코로나 시대 재택근무의 상반기 회고]]></title><description><![CDATA[<p><a href="/post/18/">지난 2월에 시도했던 매월하는 회고</a>는 1회로 그치고 말았다. 왜냐하면 정말 일밖에 한게 없어서.. 할 이야기가 없었다.<br>
+하지만 나는 현재 개발이란 일을 하고 있고, 이 블로그는 개발 블로그이니 일 이야기로 회고를 하는 건 방향에 부합해 몇 가지 회고를 해볼까 한다.</p>
+<p>올 2월 중하순부터 본격적으로 코로나 사태가 심각해지면서 회사는 주 5일 온전한 재택근무로 전환했다.<br>
+현재 회사는 이전에도 재택근무를 주 1회하고 있어기에 이번 코로나 사태로 인해 근무 형태가 바뀐 것은 내게 큰 ]]></description><link>https://baek.dev/post/25/</link><guid isPermaLink="false">https://baek.dev/post/25/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 05 Jul 2020 14:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/post/18/&quot;&gt;지난 2월에 시도했던 매월하는 회고&lt;/a&gt;는 1회로 그치고 말았다. 왜냐하면 정말 일밖에 한게 없어서.. 할 이야기가 없었다.&lt;br&gt;
 하지만 나는 현재 개발이란 일을 하고 있고, 이 블로그는 개발 블로그이니 일 이야기로 회고를 하는 건 방향에 부합해 몇 가지 회고를 해볼까 한다.&lt;/p&gt;
 &lt;p&gt;올 2월 중하순부터 본격적으로 코로나 사태가 심각해지면서 회사는 주 5일 온전한 재택근무로 전환했다.&lt;br&gt;
 현재 회사는 이전에도 재택근무를 주 1회하고 있어기에 이번 코로나 사태로 인해 근무 형태가 바뀐 것은 내게 큰 일은 아니었다.&lt;br&gt;
@@ -781,7 +809,13 @@ App.js
 저렴한 가격에 무접점을 입문해보고 싶다면 한성, 콕스, 앱코 중에서 개인 취향에 맞는 제품을 구매하면 된다. 나는 좀 더 사용해보다 리얼포스나 레오폴드로 업글하려고 한다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;물론 일은 여전히 많고 여전히 바쁠 예정이다.&lt;br&gt;
-하지만 하반기에는 여러가지 변화를 꾀하려고 한다. 그래서 다음 회고에는 새로운 변화를 이야기해볼 수 있으면 좋겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[비슷해보이지만 다른 두 친구를 소개합니다. Authentication vs Authorization]]></title><description><![CDATA[내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 Auth에 대해 들어보셨을텐데요, 보통 Auth라고 하면 Authentication을 말하거나 Authentication + Authorization…]]></description><link>https://baek.dev/post/24/</link><guid isPermaLink="false">https://baek.dev/post/24/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 21 Jun 2020 14:08:00 GMT</pubDate><content:encoded>&lt;p&gt;내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 &lt;strong&gt;Auth&lt;/strong&gt;에 대해 들어보셨을텐데요,&lt;br&gt;
+하지만 하반기에는 여러가지 변화를 꾀하려고 한다. 그래서 다음 회고에는 새로운 변화를 이야기해볼 수 있으면 좋겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[비슷해보이지만 다른 두 친구를 소개합니다. Authentication vs Authorization]]></title><description><![CDATA[<p>내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 <strong>Auth</strong>에 대해 들어보셨을텐데요,<br>
+보통 Auth라고 하면 Authentication을 말하거나 Authentication + Authorization를 통칭합니다.<br>
+윗줄에 구분지어 분리를 해놓은 거 보니 다른 것 같긴한데 과연 무엇이 어떻게 다를까요?</p>
+<p>각각을 한 단어로 바꿔 표현해보겠습니다.</p>
+<ul>
+<li><code>Authentication : 로그인</code></li>
+<li><code>Authorization]]></description><link>https://baek.dev/post/24/</link><guid isPermaLink="false">https://baek.dev/post/24/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 21 Jun 2020 14:08:00 GMT</pubDate><content:encoded>&lt;p&gt;내외부 관련된 서비스를 런칭하거나 기능을 추가할때 같이 논의되는 &lt;strong&gt;Auth&lt;/strong&gt;에 대해 들어보셨을텐데요,&lt;br&gt;
 보통 Auth라고 하면 Authentication을 말하거나 Authentication + Authorization를 통칭합니다.&lt;br&gt;
 윗줄에 구분지어 분리를 해놓은 거 보니 다른 것 같긴한데 과연 무엇이 어떻게 다를까요?&lt;/p&gt;
 &lt;p&gt;각각을 한 단어로 바꿔 표현해보겠습니다.&lt;/p&gt;
@@ -995,7 +1029,11 @@ Authorization(권한 부여)는 액세스 제어로 사용자가 읽기, 수정,
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.loginradius.com/blog/2020/06/authentication-vs-authorization-infographic/&quot;&gt;https://www.loginradius.com/blog/2020/06/authentication-vs-authorization-infographic/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://dev.to/caffiendkitten/authentication-vs-authorization-25lc&quot;&gt;https://dev.to/caffiendkitten/authentication-vs-authorization-25lc&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Apache Cassandra에 대해 알아보자]]></title><description><![CDATA[Apache Cassandra Apache Cassandra는 대규모로 확장 가능한 분산 NoSQL DB로 Facebook…]]></description><link>https://baek.dev/post/23/</link><guid isPermaLink="false">https://baek.dev/post/23/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 10 May 2020 13:12:00 GMT</pubDate><content:encoded>&lt;h2&gt;Apache Cassandra&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Apache Cassandra에 대해 알아보자]]></title><description><![CDATA[<h2>Apache Cassandra</h2>
+<p><code>Apache Cassandra는 대규모로 확장 가능한 분산 NoSQL DB</code>로 Facebook 내부에서 시작하여 오픈소스로 출시되었습니다.</p>
+<ul>
+<li>아파치 카산드라는 다운 타임 없이 지속적인 가용성과 <strong>고성능 및 선형 확장성</strong>을 제공합니다.</li>
+<li>데이터 센터와 지역에 걸쳐 단순하고 손쉬운 복제, 페타 바이트 규모의 정보와 초당 수천 건의 동시 작업을 처리 할 수 있는 카산드라는 하이브리드 클라우드<sup id="fnref-1"]]></description><link>https://baek.dev/post/23/</link><guid isPermaLink="false">https://baek.dev/post/23/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 10 May 2020 13:12:00 GMT</pubDate><content:encoded>&lt;h2&gt;Apache Cassandra&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Apache Cassandra는 대규모로 확장 가능한 분산 NoSQL DB&lt;/code&gt;로 Facebook 내부에서 시작하여 오픈소스로 출시되었습니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;아파치 카산드라는 다운 타임 없이 지속적인 가용성과 &lt;strong&gt;고성능 및 선형 확장성&lt;/strong&gt;을 제공합니다.&lt;/li&gt;
@@ -1143,7 +1181,18 @@ UPDATE MyTable
 &lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[객체지향을 한 단어로 설명한다면 그것은 클래스가 아니라 메시지이다]]></title><description><![CDATA[의도는 "메시징"이다. 훌륭하고 성장 가능한 시스템을 만들기 위한 핵심은 모듈 내부의 속성과 행동이 어떤가보다 모듈이 어떻게 커뮤니케이션하는가에 달려있다. Alan Curtis Kay…]]></description><link>https://baek.dev/post/22/</link><guid isPermaLink="false">https://baek.dev/post/22/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 10 May 2020 09:25:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[객체지향을 한 단어로 설명한다면 그것은 클래스가 아니라 메시지이다]]></title><description><![CDATA[<blockquote>
+<p>의도는 "메시징"이다.<br>
+훌륭하고 성장 가능한 시스템을 만들기 위한 핵심은 모듈 내부의 속성과 행동이 어떤가보다<br>
+모듈이 어떻게 커뮤니케이션하는가에 달려있다.</p>
+<ul>
+<li>Alan Curtis Kay</li>
+</ul>
+</blockquote>
+<h2>자율적인 책임</h2>
+<p><code>객체지향 공동체를 구성하는 기본 단위는 자율적인 객체다.</code><br>
+자율적인 객체란 스스로 정한 원칙에 따라 판단하고 스스로의 의지를 기반으로 행동하는 객체다.
+객체가 어떤 행동을 하는 유일한 이유는 다른]]></description><link>https://baek.dev/post/22/</link><guid isPermaLink="false">https://baek.dev/post/22/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 10 May 2020 09:25:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;의도는 &quot;메시징&quot;이다.&lt;br&gt;
 훌륭하고 성장 가능한 시스템을 만들기 위한 핵심은 모듈 내부의 속성과 행동이 어떤가보다&lt;br&gt;
 모듈이 어떻게 커뮤니케이션하는가에 달려있다.&lt;/p&gt;
@@ -1279,8 +1328,11 @@ UPDATE MyTable
 이런 특성들이 모여 객체지향을 다른 패러다임보다 우월하게 만든다는 사실을 이해하는 것이 매우 중요하다.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;객체지향의 강력함을 누리기 위한 출발점은 책임을 자율적으로 만드는 것이다.&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;출처 : 객체지향의 사실과 오해 5장 &amp;#x3C;책임과 메시지&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Framework에서 의존성을 주입받는 방법 3가지 - DI / Dependency Injection]]></title><description><![CDATA[Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
-그 전에 DI…]]></description><link>https://baek.dev/post/21/</link><guid isPermaLink="false">https://baek.dev/post/21/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 12 Apr 2020 02:25:00 GMT</pubDate><content:encoded>&lt;p&gt;Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
+&lt;p&gt;출처 : 객체지향의 사실과 오해 5장 &amp;#x3C;책임과 메시지&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Framework에서 의존성을 주입받는 방법 3가지 - DI / Dependency Injection]]></title><description><![CDATA[<p>Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
+그 전에 DI(의존성 주입)라는 사전 개념이 수반되어야 합니다. 그래서 이번 포스팅에서는 DI에 대해 알아보고 다음 포스팅에서 Spring Framework Triangle을 알아보겠습니다.</p>
+<ul>
+<li><a href="/post/21" target="_blank">Spring Framework에서 의존성을 주입받는 방법(DI) 3가지</a></li>
+]]></description><link>https://baek.dev/post/21/</link><guid isPermaLink="false">https://baek.dev/post/21/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 12 Apr 2020 02:25:00 GMT</pubDate><content:encoded>&lt;p&gt;Spring Framework Triangle이라 불리는 스프링 프레임워크 핵심 3요소 IoC(역전 제어), AOP(관심 지향 프로그래밍), PSA(서비스 추상화)를 다룰 예정입니다.
 그 전에 DI(의존성 주입)라는 사전 개념이 수반되어야 합니다. 그래서 이번 포스팅에서는 DI에 대해 알아보고 다음 포스팅에서 Spring Framework Triangle을 알아보겠습니다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/post/21&quot; target=&quot;_blank&quot;&gt;Spring Framework에서 의존성을 주입받는 방법(DI) 3가지&lt;/a&gt;&lt;/li&gt;
@@ -1419,7 +1471,9 @@ public class BookController {
 &lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Apache Kafka - 높은 처리량과 실시간으로 대량의 데이터를 취급하는 카프카]]></title><description><![CDATA[import ResizeImage from 'components/ResizeImage' Apache Kafka…]]></description><link>https://baek.dev/post/20/</link><guid isPermaLink="false">https://baek.dev/post/20/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 29 Mar 2020 13:05:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Apache Kafka - 높은 처리량과 실시간으로 대량의 데이터를 취급하는 카프카]]></title><description><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+<p><a href="http://kafka.apache.org/" target="_blank">Apache Kafka</a>는 여러 대의 분산 서버에서 대량의 데이터를 처리하는 분산 메시징 시스템입니다.<br>
+메시지를 받고, 받은 메시지를 다른 시스템이나 장치에 보내기 위해 사용하는데요, <code>높은 처리량과 실시간으로 대량의 데이터를 취급</code>하기 위해 초점을 맞췄으나 이제는 기능과 신뢰성을 향상시켜 현재는 데이터가 들어오는 대로 순차]]></description><link>https://baek.dev/post/20/</link><guid isPermaLink="false">https://baek.dev/post/20/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 29 Mar 2020 13:05:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://kafka.apache.org/&quot; target=&quot;_blank&quot;&gt;Apache Kafka&lt;/a&gt;는 여러 대의 분산 서버에서 대량의 데이터를 처리하는 분산 메시징 시스템입니다.&lt;br&gt;
 메시지를 받고, 받은 메시지를 다른 시스템이나 장치에 보내기 위해 사용하는데요, &lt;code&gt;높은 처리량과 실시간으로 대량의 데이터를 취급&lt;/code&gt;하기 위해 초점을 맞췄으나 이제는 기능과 신뢰성을 향상시켜 현재는 데이터가 들어오는 대로 순차 실행하는 플랫폼이 되고 있습니다. 애플, 드롭박스, 넷플릭스, 트위터, 우버 등에서 카프카를 사용하고 있습니다.&lt;/p&gt;
 &lt;p&gt;오픈소스인 카프카는 링크드인에서 개발했습니다. 링크드인 웹사이트에서 생성되는 로그를 처리하여 웹사이트 활동을 추적하는 것을 목적으로 개발했습니다. 링크드인에서 누군가의 프로필을 조회하거나 아티클을 보거나 특정 키워드로 검색하거나 혹은 광고를 클릭하는 등의 모든 행위가 낳는 로그들은 매우 방대했습니다. 우리는 이것을 &lt;strong&gt;빅데이터&lt;/strong&gt;라고 부릅니다. 이 빅데이터 파이프라인에서 카프카는 주요 멤버로 자리매김했습니다.&lt;/p&gt;
@@ -1867,7 +1921,9 @@ Ack=all인 경우&lt;/td&gt;
 &lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[글쓰는 또라이가 세상을 바꾼다 - 글또 4기에 참여해요]]></title><description><![CDATA[…]]></description><link>https://baek.dev/post/19/</link><guid isPermaLink="false">https://baek.dev/post/19/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Thu, 27 Feb 2020 13:43:00 GMT</pubDate><content:encoded>&lt;h2&gt;글쓰기를 하는 이유&lt;/h2&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[글쓰는 또라이가 세상을 바꾼다 - 글또 4기에 참여해요]]></title><description><![CDATA[<h2>글쓰기를 하는 이유</h2>
+<p>아직은 성장할 날이 더 많은 작은 키의 글쓰기 솜씨이지만, 글쓰기를 통해 많은 것을 배우고 있습니다.</p>
+<p>우리는 누구나 다 열심히 살지만 돌이켜 보면 딱히 생각나는 것이 없는 경우가 종종 있습니다. 가까운 예로 회고 작성할 때 이 감정을 많이 느꼈습니다. 1년을 정말 바삐 살아왔는데 손에 쥔 건 아무것도 없는 공허함이 밀려왔습니다. 쉬지 않고 달려왔지만 돌이켜보면 하루하루 연명하기 바빴던 것 같습니다. 같은 날을 보내더라도 블로깅을 하고자 한 뒤부터는 모든 것을 한 번 더 생각하게 되고, 한 번 더 ]]></description><link>https://baek.dev/post/19/</link><guid isPermaLink="false">https://baek.dev/post/19/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Thu, 27 Feb 2020 13:43:00 GMT</pubDate><content:encoded>&lt;h2&gt;글쓰기를 하는 이유&lt;/h2&gt;
 &lt;p&gt;아직은 성장할 날이 더 많은 작은 키의 글쓰기 솜씨이지만, 글쓰기를 통해 많은 것을 배우고 있습니다.&lt;/p&gt;
 &lt;p&gt;우리는 누구나 다 열심히 살지만 돌이켜 보면 딱히 생각나는 것이 없는 경우가 종종 있습니다. 가까운 예로 회고 작성할 때 이 감정을 많이 느꼈습니다. 1년을 정말 바삐 살아왔는데 손에 쥔 건 아무것도 없는 공허함이 밀려왔습니다. 쉬지 않고 달려왔지만 돌이켜보면 하루하루 연명하기 바빴던 것 같습니다. 같은 날을 보내더라도 블로깅을 하고자 한 뒤부터는 모든 것을 한 번 더 생각하게 되고, 한 번 더 눈여겨보게 되었습니다. 예전에는 그저 지나쳤을 모든 것들이 이제는 글감의 대상이 되고 있습니다. 그래서 개발과 관련된 어떤 이벤트이건 간에 글로 남겨야겠다고 다짐했습니다.&lt;/p&gt;
 &lt;p&gt;이렇게 글쓰기는 또 하나의 장점이 있는데 &lt;strong&gt;과거 봉착했던 문제를 다시 마주했을 때 저만의 스타일로 정리된 글을 보며 다시 복기할 수&lt;/strong&gt; 있습니다. 블로깅 이전에는 단순히 포스트잇에 문제와 답을 작성하는 느낌으로 메모를 갈무리하는 정도였고, 이것은 문제집 뒤에 있는 답안지와 다르지 않아 개발 성숙도에서 바랄 볼 때 효용가치가 크지 않았습니다. 하여 어떤 문제에 직면했고, 어떤 방향으로 해결하는지 &lt;code&gt;스토리를 담아 작성한 글은 설령 해당 기술의 버전이 바뀌었을지라도 미래의 나에게 문제 접근 해결 방식에 대한 영감을 줄 수 있다&lt;/code&gt;고 생각합니다.&lt;/p&gt;
@@ -1899,7 +1955,11 @@ Ack=all인 경우&lt;/td&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;이처럼 글감을 모으고 있다 보니 몇 개의 글감이 항상 대기 중에 있어 이제는 글감이 없어 글을 못 쓴단 이야기는 못 하게 되었습니다 :p&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;앞으로 여러 시각과 다양한 주제들이 넘쳐날 글또 참여가 매우 기대되며, 글또를 통해 많이 배우고 저도 다른 분들에게 적극적인 피드백을 드리며 서로 &lt;strong&gt;상생&lt;/strong&gt;하는 과정이 되도록 노력해야겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[월말회고 - 2020년 01월]]></title><description><![CDATA[import ResizeImage from 'components/ResizeImage' 보통…]]></description><link>https://baek.dev/post/18/</link><guid isPermaLink="false">https://baek.dev/post/18/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
+&lt;p&gt;앞으로 여러 시각과 다양한 주제들이 넘쳐날 글또 참여가 매우 기대되며, 글또를 통해 많이 배우고 저도 다른 분들에게 적극적인 피드백을 드리며 서로 &lt;strong&gt;상생&lt;/strong&gt;하는 과정이 되도록 노력해야겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[월말회고 - 2020년 01월]]></title><description><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+<p>보통 1년 회고를 연말에 많이 하는데, 올해부터는 매월을 보내고 하는 월말 회고를 시작하려고 합니다. 얼마 전 우연히 '월말 회고' 포스팅을 접했다가 꽤 좋은 아이디어라고 생각했고, 매월 작성하면 1년도 저절로 알차지지 않을까요?<br>
+그럼 회고는 높임말 없이 편하게 작성하겠습니다 :)</p>
+<h2>블로그 포스팅</h2>
+<p><strong>1.5주당 글 1개</strong> 쓰는 것이 개인적인 목표라 이번 달엔 3개를 작성하면 되고, 결과적]]></description><link>https://baek.dev/post/18/</link><guid isPermaLink="false">https://baek.dev/post/18/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
 &lt;p&gt;보통 1년 회고를 연말에 많이 하는데, 올해부터는 매월을 보내고 하는 월말 회고를 시작하려고 합니다. 얼마 전 우연히 &apos;월말 회고&apos; 포스팅을 접했다가 꽤 좋은 아이디어라고 생각했고, 매월 작성하면 1년도 저절로 알차지지 않을까요?&lt;br&gt;
 그럼 회고는 높임말 없이 편하게 작성하겠습니다 :)&lt;/p&gt;
 &lt;h2&gt;블로그 포스팅&lt;/h2&gt;
@@ -1937,7 +1997,8 @@ yes24 북클럽, 리디북스, 밀리의 서재, 교보문고 샘 등 전자책(
 &lt;h3&gt;2월 목표&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;스터디 참여하기&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[자동으로 스터디 모집 글을 모아 알림을 주는 파이썬 크롤러 만들기(with Github Actions)]]></title><description><![CDATA[…]]></description><link>https://baek.dev/post/17/</link><guid isPermaLink="false">https://baek.dev/post/17/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 07 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번 설 연휴 동안 다짐했던 목표가 있었습니다. 바로 파이썬 공부 시작과 함께 파이썬 크롤러 만들기! 파이썬 기본 문법과 자료구조를 빠르게 공부한 뒤, 바로 파이썬 크롤러 만들기에 들어갔습니다. 파이썬 크롤러 코드가 이해가 되고 해보고 싶은 만큼 조금씩 변형해볼 수 있으니 너무 재밌었습니다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[자동으로 스터디 모집 글을 모아 알림을 주는 파이썬 크롤러 만들기(with Github Actions)]]></title><description><![CDATA[<p>이번 설 연휴 동안 다짐했던 목표가 있었습니다. 바로 파이썬 공부 시작과 함께 파이썬 크롤러 만들기! 파이썬 기본 문법과 자료구조를 빠르게 공부한 뒤, 바로 파이썬 크롤러 만들기에 들어갔습니다. 파이썬 크롤러 코드가 이해가 되고 해보고 싶은 만큼 조금씩 변형해볼 수 있으니 너무 재밌었습니다.</p>
+<p>이번에 단순히 크롤링하는 라이브러리를 익혀보는 것으로 끝내기보다, 평소 갈증이 있었던 스터디 모집 새글 알림을 받도록하는 크롤링을 목표로 발전시켰습니다. 그럼 이번 공부를 <strong><code>아웃풋</code></strong> 할 수 있을]]></description><link>https://baek.dev/post/17/</link><guid isPermaLink="false">https://baek.dev/post/17/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 07 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번 설 연휴 동안 다짐했던 목표가 있었습니다. 바로 파이썬 공부 시작과 함께 파이썬 크롤러 만들기! 파이썬 기본 문법과 자료구조를 빠르게 공부한 뒤, 바로 파이썬 크롤러 만들기에 들어갔습니다. 파이썬 크롤러 코드가 이해가 되고 해보고 싶은 만큼 조금씩 변형해볼 수 있으니 너무 재밌었습니다.&lt;/p&gt;
 &lt;p&gt;이번에 단순히 크롤링하는 라이브러리를 익혀보는 것으로 끝내기보다, 평소 갈증이 있었던 스터디 모집 새글 알림을 받도록하는 크롤링을 목표로 발전시켰습니다. 그럼 이번 공부를 &lt;strong&gt;&lt;code&gt;아웃풋&lt;/code&gt;&lt;/strong&gt; 할 수 있을 것 같았습니다. 그래서 &lt;code&gt;Python + Github Issue + Github Actions&lt;/code&gt;를 이용하여 진행하기로 했습니다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
@@ -2118,7 +2179,16 @@ jobs:
 &lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[털어놓기 어려웠던 개발자로서 고민을 해결해준 책, 함께 자라기]]></title><description><![CDATA[…]]></description><link>https://baek.dev/post/16/</link><guid isPermaLink="false">https://baek.dev/post/16/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;row&quot;&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[털어놓기 어려웠던 개발자로서 고민을 해결해준 책, 함께 자라기]]></title><description><![CDATA[<div class="row">
+  <div class="col-md-5">
+      <a href="https://coupa.ng/bl0Era" target="_blank"><ResizeImage src="https://image.aladin.co.kr/product/17597/74/cover500/8966262333_1.jpg" height="300px;" alt="함께 자라기 - 애자일로 가는 길" /></a>  
+  </div>
+  
+  <div class="col-md-7">
+  
+    <blockquote>
+      <p>
+     ]]></description><link>https://baek.dev/post/16/</link><guid isPermaLink="false">https://baek.dev/post/16/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-md-5&quot;&gt;
       &lt;a href=&quot;https://coupa.ng/bl0Era&quot; target=&quot;_blank&quot;&gt;&lt;ResizeImage src=&quot;https://image.aladin.co.kr/product/17597/74/cover500/8966262333_1.jpg&quot; height=&quot;300px;&quot; alt=&quot;함께 자라기 - 애자일로 가는 길&quot; /&gt;&lt;/a&gt;  
   &lt;/div&gt;
@@ -2219,7 +2289,11 @@ B 영역은 실력보다 작업 난이도가 더 높은 지역으로 불안함�
 &lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[찾기 힘든 버그를 유발하는 Java DTO 컨버팅 노가다, 리팩토링하기]]></title><description><![CDATA[자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다. 이럴 경우 휴먼 에러가 발생 할 확률이 매우 높습니다. 같이 아래 예시를 볼까요? (본문 코드는 github에서 확인 가능합니다.) 여기 BookDTO…]]></description><link>https://baek.dev/post/15/</link><guid isPermaLink="false">https://baek.dev/post/15/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다.&lt;br&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[찾기 힘든 버그를 유발하는 Java DTO 컨버팅 노가다, 리팩토링하기]]></title><description><![CDATA[<p>자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다.<br>
+이럴 경우 휴먼 에러가 발생 할 확률이 매우 높습니다. 같이 아래 예시를 볼까요?<br>
+(본문 코드는 <a href="https://github.com/baekdev/modelmapper-ex" target="_blank">github</a>에서 확인 가능합니다.)</p>
+<p>여기 BookDTO와 BookVO가 있습니다.<br>
+DTO에서 VO로 혹은 반대로 VO에서 DTO로, 엔티티로 등등 다른 객체 타입으로 컨버팅을 하는 일은 실무에서 비일비]]></description><link>https://baek.dev/post/15/</link><guid isPermaLink="false">https://baek.dev/post/15/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 03 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;자바에서 DTO 컨버팅을 할 때 멤버 필드를 하나하나 명시해서 변환을 많이 하곤 합니다.&lt;br&gt;
 이럴 경우 휴먼 에러가 발생 할 확률이 매우 높습니다. 같이 아래 예시를 볼까요?&lt;br&gt;
 (본문 코드는 &lt;a href=&quot;https://github.com/baekdev/modelmapper-ex&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;에서 확인 가능합니다.)&lt;/p&gt;
 &lt;p&gt;여기 BookDTO와 BookVO가 있습니다.&lt;br&gt;
@@ -2494,7 +2568,10 @@ public void test_validate() {
 &lt;hr&gt;
 &lt;p&gt;자, 이렇게 간단히 ModelMapper 라이브러리를 살펴봤습니다.&lt;br&gt;
 적용이 어렵지 않기 때문에 현재 소스상에서 get/set을 정성스레 작성하고 계셨다면 이 라이브러리 도입을 통해 코드 리팩토링을 해보시는 건 어떨까요?&lt;br&gt;
-본문 코드는 &lt;a href=&quot;https://github.com/baekdev/modelmapper-ex&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;에서 확인 가능하며, 공식 사이트는 &lt;a href=&quot;http://modelmapper.org/&quot; target=&quot;_blank&quot;&gt;modelmapper.org&lt;/a&gt; 입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2019년 회고 - 처음 쓰는 한해 마무리 회고]]></title><description><![CDATA[import ExternalLink from 'components/ExternalLink'; 2~…]]></description><link>https://baek.dev/post/14/</link><guid isPermaLink="false">https://baek.dev/post/14/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
+본문 코드는 &lt;a href=&quot;https://github.com/baekdev/modelmapper-ex&quot; target=&quot;_blank&quot;&gt;github&lt;/a&gt;에서 확인 가능하며, 공식 사이트는 &lt;a href=&quot;http://modelmapper.org/&quot; target=&quot;_blank&quot;&gt;modelmapper.org&lt;/a&gt; 입니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2019년 회고 - 처음 쓰는 한해 마무리 회고]]></title><description><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+<p>2~3년 전부터 작성하고 싶었던 <strong>한해 마무리 회고</strong>를 드디어 처음으로 작성한다.<br>
+매년 바쁘고 글감이 부족하단 이유로 흐지부지되었는데, 얼마 전 잠실 모각코<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup> 송년회 모임을 하면서 한해 회고를 가볍게 진행했다. 이때 작성한 회고를 좀 더 발전시켜 첫 회고 포스팅을 시작한다.</p>
+<h2>블로]]></description><link>https://baek.dev/post/14/</link><guid isPermaLink="false">https://baek.dev/post/14/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
 &lt;p&gt;2~3년 전부터 작성하고 싶었던 &lt;strong&gt;한해 마무리 회고&lt;/strong&gt;를 드디어 처음으로 작성한다.&lt;br&gt;
 매년 바쁘고 글감이 부족하단 이유로 흐지부지되었는데, 얼마 전 잠실 모각코&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 송년회 모임을 하면서 한해 회고를 가볍게 진행했다. 이때 작성한 회고를 좀 더 발전시켜 첫 회고 포스팅을 시작한다.&lt;/p&gt;
 &lt;h2&gt;블로그 개설&lt;/h2&gt;
@@ -2618,7 +2695,18 @@ public void test_validate() {
 &lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[마이크로서비스 아키텍처 구축(2) - 배포와 모니터링를 거쳐 대규모 마이크로서비스]]></title><description><![CDATA[import ExternalLink from 'components/ExternalLink'; 6. 배포 지속적 통합(CI/Continuous Integration) CI…]]></description><link>https://baek.dev/post/13/</link><guid isPermaLink="false">https://baek.dev/post/13/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 28 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[마이크로서비스 아키텍처 구축(2) - 배포와 모니터링를 거쳐 대규모 마이크로서비스]]></title><description><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+<h2>6. 배포</h2>
+<h3>지속적 통합(CI/Continuous Integration)</h3>
+<ul>
+<li>CI를 통한 핵심 목표는 모든 사람이 서로 동기를 맞추는 것</li>
+<li>새롭게 체크인된 코드가 기존 코드와 적절히 통합됨을 보장함으로 달성할 수 있음</li>
+<li>
+<p>CI 서버는 아래에 대한 검증을 함</p>
+<ul>
+<li>코드의 커밋을 감지</li>
+<li>체크아웃</li>
+<li>코드의 컴파일과 테스트 통과를 ]]></description><link>https://baek.dev/post/13/</link><guid isPermaLink="false">https://baek.dev/post/13/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 28 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
 &lt;h2&gt;6. 배포&lt;/h2&gt;
 &lt;h3&gt;지속적 통합(CI/Continuous Integration)&lt;/h3&gt;
 &lt;ul&gt;
@@ -3280,7 +3368,21 @@ public void test_validate() {
 &lt;a href=&quot;#fnref-3&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[마이크로서비스 아키텍처 구축(1) - MSA를 지탱하는 기본 개념]]></title><description><![CDATA[은총알은 없으니 경험이 많지 않거나 비즈니스 도메인에 대한 이해가 낮다면 무리한 마이크로서비스의 도입보다는 모놀리스에서 시작해서 점진적으로 분해하는 것이 좋다. 마이크로서비스 아키텍쳐 구축 1. 마이크로서비스 Infrastructure…]]></description><link>https://baek.dev/post/12/</link><guid isPermaLink="false">https://baek.dev/post/12/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Tue, 24 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[마이크로서비스 아키텍처 구축(1) - MSA를 지탱하는 기본 개념]]></title><description><![CDATA[<blockquote>
+<p>은총알은 없으니 경험이 많지 않거나 비즈니스 도메인에 대한 이해가 낮다면<br>
+무리한 마이크로서비스의 도입보다는 모놀리스에서 시작해서 점진적으로 분해하는 것이 좋다.</p>
+<ul>
+<li>마이크로서비스 아키텍쳐 구축</li>
+</ul>
+</blockquote>
+<h2>1. 마이크로서비스</h2>
+<h3>Infrastructure automation</h3>
+<ul>
+<li>
+<p>scale up/down</p>
+<ul>
+<li>수직 확장</li>
+<li>머신 리소스(CPU, Memory, Storage)를 추가</li]]></description><link>https://baek.dev/post/12/</link><guid isPermaLink="false">https://baek.dev/post/12/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Tue, 24 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;은총알은 없으니 경험이 많지 않거나 비즈니스 도메인에 대한 이해가 낮다면&lt;br&gt;
 무리한 마이크로서비스의 도입보다는 모놀리스에서 시작해서 점진적으로 분해하는 것이 좋다.&lt;/p&gt;
 &lt;ul&gt;
@@ -3840,7 +3942,9 @@ public void test_validate() {
 &lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[99콘 연봉협상 후기 - 개발자 연봉협상을 똑똑하게 하는 방법]]></title><description><![CDATA[import ExternalLink from 'components/ExternalLink'; 지난 12월 14일, 에서 주최한 99콘 제4회 연봉협상에 참석해 후기를 작성한다. 먼저 9…]]></description><link>https://baek.dev/post/11/</link><guid isPermaLink="false">https://baek.dev/post/11/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 22 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[99콘 연봉협상 후기 - 개발자 연봉협상을 똑똑하게 하는 방법]]></title><description><![CDATA[<p>import ExternalLink from 'components/ExternalLink';</p>
+<p>지난 12월 14일, <ExternalLink href="https://www.weirdx.io/" target="_blank" text="이상한 모임" />에서 주최한 99콘 제4회 연봉협상에 참석해 후기를 작성한다.</p>
+<p>먼저 99콘에 대해 잠깐 설명하자면, <strong>수습생활 - 성과평가 - 이력서 - 연봉협상의 주제를 가지고 올 한해 기획된 행사</strong>다. 나는 성과평가 회차를 제외한 모든 회차에 참여했는데 정말 ]]></description><link>https://baek.dev/post/11/</link><guid isPermaLink="false">https://baek.dev/post/11/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 22 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ExternalLink from &apos;components/ExternalLink&apos;;&lt;/p&gt;
 &lt;p&gt;지난 12월 14일, &lt;ExternalLink href=&quot;https://www.weirdx.io/&quot; target=&quot;_blank&quot; text=&quot;이상한 모임&quot; /&gt;에서 주최한 99콘 제4회 연봉협상에 참석해 후기를 작성한다.&lt;/p&gt;
 &lt;p&gt;먼저 99콘에 대해 잠깐 설명하자면, &lt;strong&gt;수습생활 - 성과평가 - 이력서 - 연봉협상의 주제를 가지고 올 한해 기획된 행사&lt;/strong&gt;다. 나는 성과평가 회차를 제외한 모든 회차에 참여했는데 정말 너무 만족스러운 행사였다. 세션마다 내용이 모두 알찼고 같은 분야에 종사하는 연사들의 발표 내용은 매우 공감되었으며 꿀팁들이 참 많았다. 일정상 참여가 여러워 제2회 성과평과를 참여하지 못했는데 참 아쉬웠다.&lt;br&gt;
 이번 제4회는 연봉협상에 관한 내용이 메인이지만 메인 세션 전에 연말정산 하는 취지에서 1회부터 ~ 3회까지의 세션을 하나씩 더 가졌다. 지난 회차와 동일한 내용이 반복되는 것은 아닐까 걱정했지만, 지난 세션 내용에 그 이후 내용까지 더 해져서 보강된 발표라 더 좋았다.&lt;/p&gt;
@@ -4073,8 +4177,14 @@ A. 그건 회사 측에 여쭤봐도 된다. 정말 다양한 사유가 존재�
 멀리 떠나지 않아도 놀러 온 분위기를 낼 수 있어 팀이 소규모 워크샵을 하거나 조용히 이야기를 나누거나 요리를 할 수도 있는 공간이다.&lt;/p&gt;
 &lt;p&gt;이렇게 2019 마지막 99콘의 행사가 끝났다. 아쉽게도 내년에는 행사 계획이 없다고 한다.&lt;br&gt;
 포스팅으로나마 &lt;strong&gt;좋은 행사 기획해주셔서 감사의 말씀 드리고 싶다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;다음에도 99콘이 열린다면 꼭 참석할께요 :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[단기속성 4주완성 퀵퀵각코, 운영 회고록]]></title><description><![CDATA[import ResizeImage from 'components/ResizeImage'
-import ExternalLink from 'components/ExternalLink' 지난 2…]]></description><link>https://baek.dev/post/10/</link><guid isPermaLink="false">https://baek.dev/post/10/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;
+&lt;p&gt;다음에도 99콘이 열린다면 꼭 참석할께요 :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[단기속성 4주완성 퀵퀵각코, 운영 회고록]]></title><description><![CDATA[<p>import ResizeImage from 'components/ResizeImage'
+import ExternalLink from 'components/ExternalLink'</p>
+<p>지난 26일 토요일에 퀵퀵각코 마지막 모임인 <code>발표&#x26;회고</code>를 진행했다. 단기속성 4주완성 기간제 목표형 모각코인 퀵퀵각코가 도래하기까지의 어떤 고민이 있었고 어떤 방법으로 풀었는지 회고하는 시간을 가져본다.</p>
+<blockquote>
+<p>참고</p>
+<ul>
+<li>
+<ExternalLink href="https://www]]></description><link>https://baek.dev/post/10/</link><guid isPermaLink="false">https://baek.dev/post/10/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 28 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;
 import ExternalLink from &apos;components/ExternalLink&apos;&lt;/p&gt;
 &lt;p&gt;지난 26일 토요일에 퀵퀵각코 마지막 모임인 &lt;code&gt;발표&amp;#x26;회고&lt;/code&gt;를 진행했다. 단기속성 4주완성 기간제 목표형 모각코인 퀵퀵각코가 도래하기까지의 어떤 고민이 있었고 어떤 방법으로 풀었는지 회고하는 시간을 가져본다.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -4166,7 +4276,13 @@ import ExternalLink from &apos;components/ExternalLink&apos;&lt;/p&gt;
 &lt;li&gt;그 중간인 6주 운영에 대한 의견도 나왔다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;사실 기간은 너무 길지만 않으면 크게 중요하지 않은 것 같다. 목표를 이룰 수 있도록 서로 선의의 감시자가 되어주고 다독여주는 동료가 되어가는 것이 더 의미가 있는 것 같다.&lt;/p&gt;
-&lt;p&gt;이제 목표 달성에 대한 부담감을 잠시 내려놓고 늦잠을 자거나 여가를 보낼 수 있도록 토요일 오전을 마음껏 즐겨야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 Controller 살펴보기1 Deployment - 기초(4)]]></title><description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description><link>https://baek.dev/post/9/</link><guid isPermaLink="false">https://baek.dev/post/9/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 27 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;이제 목표 달성에 대한 부담감을 잠시 내려놓고 늦잠을 자거나 여가를 보낼 수 있도록 토요일 오전을 마음껏 즐겨야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 Controller 살펴보기1 Deployment - 기초(4)]]></title><description><![CDATA[<blockquote>
+<p>쿠버네티스 기초 시리즈</p>
+<ul>
+<li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
+<li><a href="/post/6">쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)</a></li>
+<li><a href="/post/8">쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRanger - 기초(3)</a></li>
+<li><a href="/post/9">쿠버]]></description><link>https://baek.dev/post/9/</link><guid isPermaLink="false">https://baek.dev/post/9/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 27 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;쿠버네티스 기초 시리즈&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/post/5&quot;&gt;쿠버네티스란 무엇인지 살펴보기 - 기초(1)&lt;/a&gt;&lt;/li&gt;
@@ -4271,7 +4387,13 @@ kubectl delete replicationcontrollers replication1 --cascade=false
 &lt;li&gt;새로운 버전의 애플리케이션을 1개의 레플리카 셋으로 기존 버전의 애플리케이션에 추가로 생성&lt;/li&gt;
 &lt;li&gt;에러나 장애가 없으면 새로운 버전의 애플리케이션의 레플리카 셋을 원하는 수만큼으로 늘림&lt;/li&gt;
 &lt;li&gt;기존 버전의 애플리케이션의 레플리카 셋을 0으로 조정하여 배포를 마침&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRanger - 기초(3)]]></title><description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description><link>https://baek.dev/post/8/</link><guid isPermaLink="false">https://baek.dev/post/8/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Tue, 15 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRanger - 기초(3)]]></title><description><![CDATA[<blockquote>
+<p>쿠버네티스 기초 시리즈</p>
+<ul>
+<li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
+<li><a href="/post/6">쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)</a></li>
+<li><a href="/post/8">쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRanger - 기초(3)</a></li>
+<li><a href="/post/9">쿠버]]></description><link>https://baek.dev/post/8/</link><guid isPermaLink="false">https://baek.dev/post/8/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Tue, 15 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;쿠버네티스 기초 시리즈&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/post/5&quot;&gt;쿠버네티스란 무엇인지 살펴보기 - 기초(1)&lt;/a&gt;&lt;/li&gt;
@@ -4512,7 +4634,8 @@ spec:
           memory: 0.1Gi
         limits:
           memory: 0.5Gi
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[[리뷰] 나는 LINE 개발자입니다 - 라인 개발자의 일상을 간접 경험해볼 수 있다]]></title><description><![CDATA[<나는 LINE…]]></description><link>https://baek.dev/post/7/</link><guid isPermaLink="false">https://baek.dev/post/7/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 14 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=204587884&quot;&gt;&amp;#x3C;나는 LINE 개발자입니다&gt;&lt;/a&gt; 책은 라인의 여러 분야의 개발자들이 어떻게 커리어를 쌓았고 어떻게 라인에서 일하는지에 대한 책이다. 라인의 솔루션 아키텍트, 보안 서비스, 메시징 서비스, 커뮤니케이션 서버, 동영상 생중계 플랫폼, 딜리버리 플랫폼, 라인파이낸셜플러스, 블록체인, 테크니컬 라이터, 에반젤리스트 등 다양한 분야의 개발자가 가져왔던 고민과 경험을 간접적으로 경험해볼 수 있는 책이다.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[[리뷰] 나는 LINE 개발자입니다 - 라인 개발자의 일상을 간접 경험해볼 수 있다]]></title><description><![CDATA[<p><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=204587884">&#x3C;나는 LINE 개발자입니다></a> 책은 라인의 여러 분야의 개발자들이 어떻게 커리어를 쌓았고 어떻게 라인에서 일하는지에 대한 책이다. 라인의 솔루션 아키텍트, 보안 서비스, 메시징 서비스, 커뮤니케이션 서버, 동영상 생중계 플랫폼, 딜리버리 플랫폼, 라인파이낸셜플러스, 블록체인, 테크니컬 라이터, 에반젤리스트 등 다양한 분야의 개발자가 가져왔던 고민과 경험을 간접적으로 경험해볼 수 있는 책이다.</p>
+<p]]></description><link>https://baek.dev/post/7/</link><guid isPermaLink="false">https://baek.dev/post/7/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 14 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=204587884&quot;&gt;&amp;#x3C;나는 LINE 개발자입니다&gt;&lt;/a&gt; 책은 라인의 여러 분야의 개발자들이 어떻게 커리어를 쌓았고 어떻게 라인에서 일하는지에 대한 책이다. 라인의 솔루션 아키텍트, 보안 서비스, 메시징 서비스, 커뮤니케이션 서버, 동영상 생중계 플랫폼, 딜리버리 플랫폼, 라인파이낸셜플러스, 블록체인, 테크니컬 라이터, 에반젤리스트 등 다양한 분야의 개발자가 가져왔던 고민과 경험을 간접적으로 경험해볼 수 있는 책이다.&lt;/p&gt;
 &lt;p&gt;이 책은 마치 우리가 기대하는 바를 꿰뚫어 보기라도 한 것처럼 &lt;strong&gt;라인에 입사하는 비책과 같은 내용은 없다고 책 초반부터 강조&lt;/strong&gt;한다. 하지만 나는 &lt;strong&gt;이 책을 다 읽고 나니 실제 라인의 개발자들이 어떻게 일하는지 알게 되었고, 그들이 일하는 방법에서 라인 개발자라면 필요한 덕목을 짐작&lt;/strong&gt;할 수 있다. 라인 입사에 희망하는 분들은 이 책을 반드시 읽겠지만, 꼭 입사 희망자가 아니더라도 다음과 같은 상황에 있는 분들도 읽어두면 좋은 내용이다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -4546,7 +4669,13 @@ spec:
 &lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)]]></title><description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description><link>https://baek.dev/post/6/</link><guid isPermaLink="false">https://baek.dev/post/6/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 05 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)]]></title><description><![CDATA[<blockquote>
+<p>쿠버네티스 기초 시리즈</p>
+<ul>
+<li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
+<li><a href="/post/6">쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)</a></li>
+<li><a href="/post/8">쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRange - 기초(3)</a></li>
+<li><a href="/post/9">쿠버네]]></description><link>https://baek.dev/post/6/</link><guid isPermaLink="false">https://baek.dev/post/6/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 05 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;쿠버네티스 기초 시리즈&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/post/5&quot;&gt;쿠버네티스란 무엇인지 살펴보기 - 기초(1)&lt;/a&gt;&lt;/li&gt;
@@ -4753,7 +4882,13 @@ spec:
 &lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/concepts/services-networking/service/&quot;&gt;kubernetes.io&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스란 무엇인지 살펴보기 - 기초(1)]]></title><description><![CDATA[쿠버네티스 기초 시리즈 쿠버네티스란 무엇인지 살펴보기 - 기초(1) 쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2) 쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace…]]></description><link>https://baek.dev/post/5/</link><guid isPermaLink="false">https://baek.dev/post/5/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 04 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스란 무엇인지 살펴보기 - 기초(1)]]></title><description><![CDATA[<blockquote>
+<p>쿠버네티스 기초 시리즈</p>
+<ul>
+<li><a href="/post/5">쿠버네티스란 무엇인지 살펴보기 - 기초(1)</a></li>
+<li><a href="/post/6">쿠버네티스 Object 살펴보기1 Pod/Service/Volume - 기초(2)</a></li>
+<li><a href="/post/8">쿠버네티스 Object 살펴보기2 ConfigMap, Secret, Namespace, ResourceQuota, LimitRange - 기초(3)</a></li>
+<li><a href="/post/9">쿠버네]]></description><link>https://baek.dev/post/5/</link><guid isPermaLink="false">https://baek.dev/post/5/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Fri, 04 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;쿠버네티스 기초 시리즈&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/post/5&quot;&gt;쿠버네티스란 무엇인지 살펴보기 - 기초(1)&lt;/a&gt;&lt;/li&gt;
@@ -4870,7 +5005,10 @@ spec:
 &lt;a href=&quot;#fnref-3&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[utterances를 블로그 댓글로 적용하기]]></title><description><![CDATA[여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요? 오늘은 utterances라는 아주 가벼우면서 설정이 쉬운 댓글 앱을 소개해 드리려고 합니다. utterances 도입 계기 저는 그동안 블로그에 facebook comments 혹은 disqus…]]></description><link>https://baek.dev/post/4/</link><guid isPermaLink="false">https://baek.dev/post/4/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요?&lt;br&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[utterances를 블로그 댓글로 적용하기]]></title><description><![CDATA[<p>여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요?<br>
+오늘은 utterances라는 아주 가벼우면서 설정이 쉬운 댓글 앱을 소개해 드리려고 합니다.</p>
+<h2>utterances 도입 계기</h2>
+<p>저는 그동안 블로그에 facebook comments 혹은 disqus를 이용하여 댓글을 운영했습니다. 티스토리 혹은 미디엄 등에서 블로그를 운영하시는 분들이라면 어떤 댓글 앱을 쓸지 따로 크게 고민이 필요치 않은 부분입니다. 하지만 utterances는 깃허브 블로그에만 운영할 수 있는 것은 아닙니다. 다양한 방식으로 github]]></description><link>https://baek.dev/post/4/</link><guid isPermaLink="false">https://baek.dev/post/4/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;여러분은 블로그 댓글을 어떤 앱으로 운영하고 계신가요?&lt;br&gt;
 오늘은 utterances라는 아주 가벼우면서 설정이 쉬운 댓글 앱을 소개해 드리려고 합니다.&lt;/p&gt;
 &lt;h2&gt;utterances 도입 계기&lt;/h2&gt;
 &lt;p&gt;저는 그동안 블로그에 facebook comments 혹은 disqus를 이용하여 댓글을 운영했습니다. 티스토리 혹은 미디엄 등에서 블로그를 운영하시는 분들이라면 어떤 댓글 앱을 쓸지 따로 크게 고민이 필요치 않은 부분입니다. 하지만 utterances는 깃허브 블로그에만 운영할 수 있는 것은 아닙니다. 다양한 방식으로 github issue와 맵핑만 할 수 있다면 어느 곳에서든 댓글 앱으로 채택할 수 있습니다.&lt;/p&gt;
@@ -4963,7 +5101,11 @@ origins안의 value는 각자 블로그의 도메인으로 지정하면 됩니�
 &lt;p&gt;이에 따라 전 메일로 알림을 받게 되었습니다.&lt;br&gt;
 &lt;img src=&quot;https://baek.dev/assets/images/post/2019/2019_004_007.png&quot; alt=&quot;received email that the created issue&quot;&gt;&lt;/p&gt;
 &lt;p&gt;길고 먼 여정처럼 설명이 길었지만 보신 바와 같이 utterances 셋팅은 정말 간단합니다. 이제 사용자는 깃헙 로그인을 통해 댓글을 남길 수 있고, 필요하다면 특정 포스팅의 댓글 알림도 같이 받을 수 있습니다. 운영자는 댓글 설정 및 관리에 필요 이상의 투자를 하지 않아도 되죠. &lt;code&gt;조금 더 개발자스러운 댓글 앱, utterances를 적용해보니 정말 마음에 듭니다.&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;지금 이 글을 읽고 계신다면 깃헙 로그인을 통해 &lt;strong&gt;테스트 댓글을 하나 남겨보시면 어떨까요?&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 - 퀵퀵각코 회고록]]></title><description><![CDATA[import ResizeImage from 'components/ResizeImage' 퀵퀵각코에 참여하며 진행하는 쿠버네티스 스터디 회고록입니다. 총 4회 모임과 마지막 발표로 마무리하기까지 계속 업데이트됩니다. ✍🏻 1주차 - 2019.09.2…]]></description><link>https://baek.dev/post/3/</link><guid isPermaLink="false">https://baek.dev/post/3/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 29 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
+&lt;p&gt;지금 이 글을 읽고 계신다면 깃헙 로그인을 통해 &lt;strong&gt;테스트 댓글을 하나 남겨보시면 어떨까요?&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[쿠버네티스 - 퀵퀵각코 회고록]]></title><description><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+<p><a href="https://www.notion.so/baekdev/4-0a3e47e8583e4019b5215a1ec83d5a1a">퀵퀵각코</a>에 참여하며 진행하는 쿠버네티스 스터디 회고록입니다. 총 4회 모임과 마지막 발표로 마무리하기까지 계속 업데이트됩니다. ✍🏻</p>
+<h2>1주차 - 2019.09.29</h2>
+<p>킥오프인 만큼 다들 각자 자기소개와 어떤 목표를 삼았는지 공유하는 시간을 가졌습니다.<br>
+저는 이번 모각코에 쿠]]></description><link>https://baek.dev/post/3/</link><guid isPermaLink="false">https://baek.dev/post/3/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 29 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.notion.so/baekdev/4-0a3e47e8583e4019b5215a1ec83d5a1a&quot;&gt;퀵퀵각코&lt;/a&gt;에 참여하며 진행하는 쿠버네티스 스터디 회고록입니다. 총 4회 모임과 마지막 발표로 마무리하기까지 계속 업데이트됩니다. ✍🏻&lt;/p&gt;
 &lt;h2&gt;1주차 - 2019.09.29&lt;/h2&gt;
 &lt;p&gt;킥오프인 만큼 다들 각자 자기소개와 어떤 목표를 삼았는지 공유하는 시간을 가졌습니다.&lt;br&gt;
@@ -5006,7 +5148,12 @@ origins안의 value는 각자 블로그의 도메인으로 지정하면 됩니�
 &lt;p&gt;마지막 5주차는 발표로 마무리하는 시간을 가졌다. 아쉽게도 야근이 매일같이 있던 주라 지난주에 발생한 &lt;strong&gt;목표의 유령 정체&lt;/strong&gt;를 해결하지 못하였다. 그래도 &lt;code&gt;83.3%&lt;/code&gt;라는 목표 성과는 달성할 수 있었다. 간단히 쿠버네티스에서 대해 설명하고 운영자로서의 회고로 발표를 하고 퀵퀵각코를 마무리했다.&lt;/p&gt;
 &lt;ResizeImage src=&quot;https://baek.dev/assets/images/post/2019/2019_003_004.png&quot; alt=&quot;퀵퀵각코 목표 성과&quot; height=&quot;500px&quot; /&gt;
 &lt;p&gt;아직 남은 목표가 조금 있고, 중급으로 더 깊게 공부하기 위해서 쿠버네티스 스터디는 계속 진행할 것이다.&lt;/p&gt;
-&lt;p&gt;퀵퀵각코 전체에 대한 회고는 &lt;a href=&quot;%7B%7Bsite.url%7D%7D%7B%7Bsite.baseurl%7D%7D/post/10&quot;&gt;이 곳에서&lt;/a&gt; 볼 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자 이력서 작성 방법 - 99콘 이력서 후기]]></title><description><![CDATA[import ResizeImage from 'components/ResizeImage…]]></description><link>https://baek.dev/post/2/</link><guid isPermaLink="false">https://baek.dev/post/2/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 21 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
+&lt;p&gt;퀵퀵각코 전체에 대한 회고는 &lt;a href=&quot;%7B%7Bsite.url%7D%7D%7B%7Bsite.baseurl%7D%7D/post/10&quot;&gt;이 곳에서&lt;/a&gt; 볼 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자 이력서 작성 방법 - 99콘 이력서 후기]]></title><description><![CDATA[<p>import ResizeImage from 'components/ResizeImage'</p>
+<p>이력서는 가능하면 자주 업데이트해서 최대한 최신의 상태를 유지하라는 조언을 많이 들어 봤을 것입니다. 하지만 목전에 이직이 놓여 있지 않은 이상, 발등에 불이 떨어지지 않는 이상 업데이트하기 어렵습니다. 더욱이 이력서 파일을 열어놓고 드는 생각은 매번 같습니다.</p>
+<blockquote>
+<p>어떻게 하면 이력서를 서류 탈락 되지 않고 면접까지 이어질 수 있을까?</p>
+</blockquote>
+<p>어떻게 써야 간결하고 일목요연하고 나의 부]]></description><link>https://baek.dev/post/2/</link><guid isPermaLink="false">https://baek.dev/post/2/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 21 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;import ResizeImage from &apos;components/ResizeImage&apos;&lt;/p&gt;
 &lt;p&gt;이력서는 가능하면 자주 업데이트해서 최대한 최신의 상태를 유지하라는 조언을 많이 들어 봤을 것입니다. 하지만 목전에 이직이 놓여 있지 않은 이상, 발등에 불이 떨어지지 않는 이상 업데이트하기 어렵습니다. 더욱이 이력서 파일을 열어놓고 드는 생각은 매번 같습니다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;어떻게 하면 이력서를 서류 탈락 되지 않고 면접까지 이어질 수 있을까?&lt;/p&gt;
@@ -5512,8 +5659,9 @@ origins안의 value는 각자 블로그의 도메인으로 지정하면 됩니�
 &lt;li&gt;왜 배웠나? 뭐가 부족했나? 거기서 무엇을 배웠나?&lt;/li&gt;
 &lt;li&gt;배운 후 어떻게 활용하고 있나?&lt;/li&gt;
 &lt;li&gt;지원 직무와 관련된 부분을 어필한다&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Github 블로그에 개인 도메인 연결해보고 sub github pages 셋팅하기]]></title><description><![CDATA[Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
-인터넷 서핑을 하다 종종 만나게 되는 baekdev.github.io 와 같은 주소들이 모두 github pages…]]></description><link>https://baek.dev/post/1/</link><guid isPermaLink="false">https://baek.dev/post/1/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Wed, 11 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Github 블로그에 개인 도메인 연결해보고 sub github pages 셋팅하기]]></title><description><![CDATA[<p>Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
+인터넷 서핑을 하다 종종 만나게 되는 <strong><a href="https://baekdev.github.io">baekdev.github.io</a></strong> 와 같은 주소들이 모두 <a href="https://help.github.com/en/articles/what-is-github-pages">github pages</a> 를 이용한 사이트입니다.
+이 주소를 대부분 그대로 이용하기도 하지만, 개인 브랜딩을 위해서 커스텀 도메]]></description><link>https://baek.dev/post/1/</link><guid isPermaLink="false">https://baek.dev/post/1/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Wed, 11 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Github는 정적 페이지 사이트를 제공하는데, 이를 활용하면 블로그 사이트를 운영할 수 있습니다..
 인터넷 서핑을 하다 종종 만나게 되는 &lt;strong&gt;&lt;a href=&quot;https://baekdev.github.io&quot;&gt;baekdev.github.io&lt;/a&gt;&lt;/strong&gt; 와 같은 주소들이 모두 &lt;a href=&quot;https://help.github.com/en/articles/what-is-github-pages&quot;&gt;github pages&lt;/a&gt; 를 이용한 사이트입니다.
 이 주소를 대부분 그대로 이용하기도 하지만, 개인 브랜딩을 위해서 커스텀 도메인을 적용하기도 합니다.&lt;/p&gt;
 &lt;p&gt;그럼 우리도 함께 적용해보고 깃허브 서브 페이지까지 어떻게 적용할 수 있을지 시작해보겠습니다.&lt;/p&gt;
