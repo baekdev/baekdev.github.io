@@ -42,6 +42,11 @@ ol {
   margin: 1em 0 0 0;
 }
 
+ul ul,
+ol ol {
+ margin: 0;
+}
+
 .utterances {
   max-width: 100% !important;
 }
