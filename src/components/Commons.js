@@ -54,6 +54,10 @@ ol ol {
 *::selection {
   background-color: var(--color-secondary);
 }
+
+code[class*="language-"], pre[class*="language-"]{
+  font-size: 0.9em;
+}
 `
 export const StyledLink = styled(Link)`
   box-shadow: 0 2px 0 0 var(--color-secondary);
