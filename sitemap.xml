@@ -36,8 +36,8 @@
 <url> <loc>https://baek.dev/post/3/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/2/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/1/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://baek.dev/projects</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/about</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/projects</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/javascript</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/hoisting</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/회고</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
