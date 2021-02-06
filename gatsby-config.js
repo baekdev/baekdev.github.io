@@ -213,7 +213,10 @@ module.exports = {
 
 								return Object.assign({}, edge.node.frontmatter, {
 									author: "BAEKDEV",
-									description: edge.node.html.slice(0,310) + "..",
+									description: edge.node.html.replace(
+										imgSrcPattern,
+										`${site.siteMetadata.siteUrl}/assets/`
+									),
 									date: edge.node.frontmatter.date,
 									url: link,
 									guid: link,
