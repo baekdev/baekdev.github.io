@@ -1,4 +1,262 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 Jan 2021 01:15:59 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[예제로 만나보는 자바스크립트 호이스팅(hoisting)]]></title><description><![CDATA[<h2>코드를 변경하지 않는 호이스팅</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Feb 2021 07:20:06 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[자바스크립의 실행 컨텍스트]]></title><description><![CDATA[<h2>실행 컨텍스트(execution context)</h2>
+<ul>
+<li>실행할 코드에 제공할 환경 정보들을 모아놓은 객체</li>
+<li>동일한 환경에 있는 코드들을 실행할 때 필요한 환경 정보들을 모아 컨텍스트를 구성</li>
+<li>이 구성을 call stack에 쌓아올렸다가, 가장 위에 쌓여있는 컨텍스트와 관련 있는 코드들을 실행하여 전체 코드의 환경과 순서를 보장</li>
+<li>
+<p>구성방법은 전역공간, eval() 함수, 함수 등이 있어 거의 함수를 실행하는 것으로 구성이 가능</p>
+<ul>
+<li>ES6에서는 블록에 의해서도 새로운 실행 컨텍스트가 생성됨</li>
+</ul>
+</li>
+<li>이 객체는 브라우저 엔진이 활용할 목적으로 생성할 뿐 개발자가 코드를 통해 확인할 수는 없음</li>
+</ul>
+<p><img src="https://baek.dev/assets/images/post/2021/2021_036_001.png" alt="call stack">  </p>
+<p>다음은 실행 컨텍스트의 수집 정보들이다.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VariableEnvironment</td>
+<td>environmentRecord(snapshot) <br/>outerEnvironment(snapshot)</td>
+</tr>
+<tr>
+<td>LexicalEnvironment</td>
+<td>environmentRecord <br/>outerEnvironment</td>
+</tr>
+<tr>
+<td>ThisBinding</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2>VariableEnviroment</h2>
+<ul>
+<li>현재 컨텍스트 내의 식별자들에 대한 정보 및 외부 환경 정보</li>
+<li>선언 시점의 LexicalEnvironment의 snapshot으로, 변경 사항은 반영되지 않음</li>
+<li>
+<p>실행 컨텍스트를 생성할 때 VariableEnvironment에 정보를 먼저 담은 다음</p>
+<ul>
+<li>이를 그대로 복사해서 LexicalEnvironment를 만들고</li>
+<li>이후에는 주로 LexicalEnvironment를 주로 활용함</li>
+</ul>
+</li>
+<li>일반 추상 개념 variable environment를 자바스크립트에서 구현한 구체적 대상이 VariableEnvironment</li>
+</ul>
+<h2>LexicalEnvironment</h2>
+<ul>
+<li>수시로 변하는 환경 정보</li>
+<li>
+<p>컨텍스트를 구성하는 환경 정보들을 사전에서 접하는 느낌으로 모아놓은 것</p>
+<ul>
+<li>예로 현재 컨텍스트의 내부에는 a, b, c와 같은 식별자들이 있고 그 외부 정보는 D를 참조하도록 구성</li>
+</ul>
+</li>
+<li>일반 추상 개념 lexical environment를 자바스크립트에서 구현한 구체적 대상이 LexicalEnvironment</li>
+<li>처음에는 VariableEnvironment와 같지만 변경 사항이 실시간으로 반영됨</li>
+</ul>
+<h3>environmentRecord</h3>
+<ul>
+<li>
+<p>현재 컨텍스트와 관련된 코드의 식별자 정보들이 저장됨</p>
+<ul>
+<li>매개변수의 이름 : 컨텍스트를 구성하는 함수에 지정된 매개변수 식별자</li>
+<li>함수 선언 : 선안한 함수가 있는 경우 함수 그 자체</li>
+<li>변수명 : var로 선언된 변수의 식별자</li>
+</ul>
+</li>
+<li>
+<p>컨텍스트 내부 전체를 처음부터 끝까지 쭉 훑어나가며 순서대로 수집</p>
+<ul>
+<li>수집을 마쳤다하더라도 아직 코드들은 실행되기 전 상태이지만</li>
+<li>이미 해당 환경에 속한 코드의 변수명들을 모두 알게 되는 셈</li>
+</ul>
+</li>
+</ul>
+<h3>hoisting</h3>
+<ul>
+<li>
+<p>엔진의 실제 동작 방식 대신에 '자바스크립트 엔진은 식별자들을 최상단으로 끌어올려놓은 다음 실제 코드를 실행한다'라고 생각한다면</p>
+<ul>
+<li>변수 정보를 수집하는 과정을 더욱 이해하기 쉬운 방법으로 대체한 가상의 개념</li>
+</ul>
+</li>
+<li>
+<p>자바스크립트 엔진이 실제로 끌어올리지는 않지만 편의상 끌어올린 것으로 간주하자</p>
+<ul>
+<li>변수 혹은 함수 선언부만 끌어올려지며</li>
+<li>할당부는 그 자리에 그대로 유지됨</li>
+</ul>
+</li>
+<li>
+<p>함수도 호이스팅 됨</p>
+<ul>
+<li>자바스크립트의 창시자인 브랜든 아이크가 자바스크립트를 유연하고 배우기 쉬운 언어로 만들고자 해서 탄생한 개념</li>
+<li>덕분에 함수를 선언한 위치와 무관한게 그 함수를 실행할 수 있게 됐지만 오히려 이로 인해 더 많은 혼란을 야기하기도 함</li>
+</ul>
+</li>
+</ul>
+<p>호이스팅은 이 글 - <a href="https://baek.dev/post/36/">예제로 만나보는 자바스크립트 호이스팅</a>에서 자세히 살펴 볼 수 있다.  </p>
+<h3>Scope Chain</h3>
+<ul>
+<li>
+<p>스코프  </p>
+<ul>
+<li>식별자에 대한 유효범위  </li>
+<li>어떤 경계 A의 외부에서 선언한 변수 A의 외부에서 접근 가능</li>
+<li>A의 내부에서도 접근이 가능</li>
+<li>A의 내부에서 선언한 변수는 오직 A의 내부에서만 접근 가능  </li>
+</ul>
+</li>
+<li>
+<p>스코프 체인</p>
+<ul>
+<li>식별자의 유효범위를 안에서부터 바깥으로 차례로 검색해나가는 것  </li>
+<li>특정 함수 안에서 새로운 함수를 선언했다면 2번째 함수는 outerEnvironmentReference는 바깥에 있는 함수의 LexicalEnviromnet를 참조</li>
+<li>이런식으로 현재 함수가 선언된 함수들의 outerEnvironment가 연결리스트 형태를 띄게 됨</li>
+<li>선언 시점의 LexicalEnvironment를 계속 찾아 올가라면 결국 최상위에는 전역 컨텍스트의 LexicalEnvironment가 있을 것  </li>
+</ul>
+</li>
+</ul>
+<h5>References</h5>
+<ul>
+<li><a href="https://coupa.ng/bQhYRC">코어 자바스크립트</a>  </li>
+<li><a href="https://poiemaweb.com/js-execution-context">실행 컨텍스트와 자바스크립트의 동작 원리</a>  </li>
+</ul>]]></description><link>https://baek.dev/post/37/</link><guid isPermaLink="false">https://baek.dev/post/37/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 07 Feb 2021 07:14:00 GMT</pubDate><content:encoded>&lt;h2&gt;실행 컨텍스트(execution context)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;실행할 코드에 제공할 환경 정보들을 모아놓은 객체&lt;/li&gt;
+&lt;li&gt;동일한 환경에 있는 코드들을 실행할 때 필요한 환경 정보들을 모아 컨텍스트를 구성&lt;/li&gt;
+&lt;li&gt;이 구성을 call stack에 쌓아올렸다가, 가장 위에 쌓여있는 컨텍스트와 관련 있는 코드들을 실행하여 전체 코드의 환경과 순서를 보장&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;구성방법은 전역공간, eval() 함수, 함수 등이 있어 거의 함수를 실행하는 것으로 구성이 가능&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ES6에서는 블록에 의해서도 새로운 실행 컨텍스트가 생성됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;이 객체는 브라우저 엔진이 활용할 목적으로 생성할 뿐 개발자가 코드를 통해 확인할 수는 없음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2021/2021_036_001.png&quot; alt=&quot;call stack&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;다음은 실행 컨텍스트의 수집 정보들이다.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;VariableEnvironment&lt;/td&gt;
+&lt;td&gt;environmentRecord(snapshot) &lt;br/&gt;outerEnvironment(snapshot)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LexicalEnvironment&lt;/td&gt;
+&lt;td&gt;environmentRecord &lt;br/&gt;outerEnvironment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ThisBinding&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;VariableEnviroment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;현재 컨텍스트 내의 식별자들에 대한 정보 및 외부 환경 정보&lt;/li&gt;
+&lt;li&gt;선언 시점의 LexicalEnvironment의 snapshot으로, 변경 사항은 반영되지 않음&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;실행 컨텍스트를 생성할 때 VariableEnvironment에 정보를 먼저 담은 다음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이를 그대로 복사해서 LexicalEnvironment를 만들고&lt;/li&gt;
+&lt;li&gt;이후에는 주로 LexicalEnvironment를 주로 활용함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;일반 추상 개념 variable environment를 자바스크립트에서 구현한 구체적 대상이 VariableEnvironment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;LexicalEnvironment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;수시로 변하는 환경 정보&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;컨텍스트를 구성하는 환경 정보들을 사전에서 접하는 느낌으로 모아놓은 것&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;예로 현재 컨텍스트의 내부에는 a, b, c와 같은 식별자들이 있고 그 외부 정보는 D를 참조하도록 구성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;일반 추상 개념 lexical environment를 자바스크립트에서 구현한 구체적 대상이 LexicalEnvironment&lt;/li&gt;
+&lt;li&gt;처음에는 VariableEnvironment와 같지만 변경 사항이 실시간으로 반영됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;environmentRecord&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;현재 컨텍스트와 관련된 코드의 식별자 정보들이 저장됨&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;매개변수의 이름 : 컨텍스트를 구성하는 함수에 지정된 매개변수 식별자&lt;/li&gt;
+&lt;li&gt;함수 선언 : 선안한 함수가 있는 경우 함수 그 자체&lt;/li&gt;
+&lt;li&gt;변수명 : var로 선언된 변수의 식별자&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;컨텍스트 내부 전체를 처음부터 끝까지 쭉 훑어나가며 순서대로 수집&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;수집을 마쳤다하더라도 아직 코드들은 실행되기 전 상태이지만&lt;/li&gt;
+&lt;li&gt;이미 해당 환경에 속한 코드의 변수명들을 모두 알게 되는 셈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;hoisting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;엔진의 실제 동작 방식 대신에 &apos;자바스크립트 엔진은 식별자들을 최상단으로 끌어올려놓은 다음 실제 코드를 실행한다&apos;라고 생각한다면&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;변수 정보를 수집하는 과정을 더욱 이해하기 쉬운 방법으로 대체한 가상의 개념&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;자바스크립트 엔진이 실제로 끌어올리지는 않지만 편의상 끌어올린 것으로 간주하자&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;변수 혹은 함수 선언부만 끌어올려지며&lt;/li&gt;
+&lt;li&gt;할당부는 그 자리에 그대로 유지됨&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;함수도 호이스팅 됨&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;자바스크립트의 창시자인 브랜든 아이크가 자바스크립트를 유연하고 배우기 쉬운 언어로 만들고자 해서 탄생한 개념&lt;/li&gt;
+&lt;li&gt;덕분에 함수를 선언한 위치와 무관한게 그 함수를 실행할 수 있게 됐지만 오히려 이로 인해 더 많은 혼란을 야기하기도 함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;호이스팅은 이 글 - &lt;a href=&quot;https://baek.dev/post/36/&quot;&gt;예제로 만나보는 자바스크립트 호이스팅&lt;/a&gt;에서 자세히 살펴 볼 수 있다.  &lt;/p&gt;
+&lt;h3&gt;Scope Chain&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;스코프  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;식별자에 대한 유효범위  &lt;/li&gt;
+&lt;li&gt;어떤 경계 A의 외부에서 선언한 변수 A의 외부에서 접근 가능&lt;/li&gt;
+&lt;li&gt;A의 내부에서도 접근이 가능&lt;/li&gt;
+&lt;li&gt;A의 내부에서 선언한 변수는 오직 A의 내부에서만 접근 가능  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;스코프 체인&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;식별자의 유효범위를 안에서부터 바깥으로 차례로 검색해나가는 것  &lt;/li&gt;
+&lt;li&gt;특정 함수 안에서 새로운 함수를 선언했다면 2번째 함수는 outerEnvironmentReference는 바깥에 있는 함수의 LexicalEnviromnet를 참조&lt;/li&gt;
+&lt;li&gt;이런식으로 현재 함수가 선언된 함수들의 outerEnvironment가 연결리스트 형태를 띄게 됨&lt;/li&gt;
+&lt;li&gt;선언 시점의 LexicalEnvironment를 계속 찾아 올가라면 결국 최상위에는 전역 컨텍스트의 LexicalEnvironment가 있을 것  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;References&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://coupa.ng/bQhYRC&quot;&gt;코어 자바스크립트&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://poiemaweb.com/js-execution-context&quot;&gt;실행 컨텍스트와 자바스크립트의 동작 원리&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[예제로 만나보는 자바스크립트 호이스팅(hoisting)]]></title><description><![CDATA[<h2>코드를 변경하지 않는 호이스팅</h2>
 <p>호이스팅은 ECMAScript 2015 및 그 이전 표준 명세에서 사용된 적이 없는 용어이다. hoist라는 영단어 뜻이 끌어올린다라는 의미에서 유추해볼 수 있듯 hoisting은 변수와 함수를 최상단으로 끌어올린다고 <strong>개괄적</strong>으로 정의할 수 있다. 이에 호이스팅은 변수 및 함수 선언이 물리적으로 작성한 코드의 상단으로 옮겨지는 것으로 알려져 있지만, 실제로는 <code>컴파일 단계에서 메모리에 저장될 뿐, 코드 안에서는 그대로 유지</code>된다.</p>
 <p>호이스팅이 개념이 나오게 된 배경은 자바스크립트가 함수를 실행하기 전에 반드시 선언되어야 한다는 여타 언어들과 달리 이 순서를 지키지 않아도 무방하도록 설계한 데서 유래한다. 정의되지 않은 함수를 어떻게 호출할 수 있는 것인지, 자바스크립트에는 마법이라도 있는 것일까?</p>
 <h2>실행 컨텍스트와 절친인 호이스팅</h2>

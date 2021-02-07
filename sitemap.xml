@@ -4,6 +4,7 @@
 <url> <loc>https://baek.dev/pages/2</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/pages/3</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/pages/4</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/post/37/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/36/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/34/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/33/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
@@ -39,6 +40,8 @@
 <url> <loc>https://baek.dev/projects</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/about</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/javascript</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/tags/execution environment</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/tags/lexical environment</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/hoisting</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/회고</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/코로나</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
