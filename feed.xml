@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 12:39:15 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[CSS 사이즈 단위 - 절대 길이와 상대 길이]]></title><description><![CDATA[<p>CSS에서는 길이를 표현하기 위한 단위들이 있다. 이 단위들은 두가지 유형으로 분류 할 수 있는데 항상 동일한 크기를 가지는 <strong>절대 길이 단위</strong>와 <strong>상대 길이 단위</strong>이다.<br>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 13:03:48 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[CSS 사이즈 단위 - 절대 길이와 상대 길이]]></title><description><![CDATA[<p>CSS에서는 길이를 표현하기 위한 단위들이 있다. 이 단위들은 두가지 유형으로 분류 할 수 있는데 항상 동일한 크기를 가지는 <strong>절대 길이 단위</strong>와 <strong>상대 길이 단위</strong>이다.<br>
 먼저 상대 길이 단위부터 살펴보자.  </p>
 <h2>상대 길이 단위 / Relative length units</h2>
 <p>상대 길이 단위는 다른 요소나 부모 또는 창 크기에 비례여 크기가 조정되기 때문에 <code>반응형 사이트의 스타일을 지정</code>하는데 유용하다.
@@ -14,7 +14,7 @@
 <tbody>
 <tr>
 <td>em</td>
-<td><ul><li>재 글꼴 크기에 상대적</li><li>원래는 현재 서체 대문자 "M"을 기반으로한 활자체 측정</li><li>font-family를 바꾼다고 해서 영향 받지 않으며</li><li>font-size 변경시 같이 변경됨</li><li>css가 전혀 없다면,<br/>1em == 16px == 0.17in == 12pt == 1pc == 4.2mm == 0.42cm</li></ul></td>
+<td><ul><li>현재 글꼴 크기에 상대적</li><li>원래는 현재 서체 대문자 "M"을 기반으로한 활자체 측정</li><li>font-family를 바꾼다고 해서 영향 받지 않으며</li><li>font-size 변경시 같이 변경됨</li><li>css가 전혀 없다면,<br/>1em == 16px == 0.17in == 12pt == 1pc == 4.2mm == 0.42cm</li></ul></td>
 </tr>
 <tr>
 <td>rem</td>
@@ -116,12 +116,7 @@ div {
    on <a href="https://codepen.io">CodePen</a>.</span>
  </p>
 <h2>절대 길이 단위 / Absolute length units</h2>
-<p>절대 길이 단위는 상위 요소 또는 창 크기에 관계없이 <code>동일한 크기</code>를 의미한다. 절대 길이 단위는 반응형을 고려하지 않는 작업에 유용하며 주로 <strong>인쇄물</strong>에서 많이 사용되는 방법이다.
-예를들어 크기를 조정할 수 없는 키오스크 혹은 데스크톱이어도 반응형일 필요가 없는 앱이 그 대상일 수 있다.  </p>
-<h3>px / pixel</h3>
-<p>화면을 구성하는 가장 기본이 되는 단위로, 모니터의 1dot = 1pixel을 의미한다. 때문에 <strong>pixel은 해상도에 따라 상대적인 크기</strong>를 갖는다.
-컴퓨터 화면은 픽셀을 사용하여 콘텐츠를 표시하기 때문에 CSS에서 가장 일반적인 크기 단위이다. CSS의 픽셀은 절대 값을 정의하기 때문에 직관적이다.
-상속 된 다른 CSS로부터 영향을 받지 않는다. 또한 포지션과 간격을 위해 보편적으로 사용된다.  </p>
+<p>절대 길이 단위는 상위 요소 또는 창 크기에 관계없이 <code>동일한 크기</code>를 의미한다. 절대 길이 단위는 반응형을 고려하지 않는 작업에 유용하며 주로 <strong>인쇄물</strong>에서 많이 사용되는 방법이다. 또한 상속 된 다른 CSS로부터 영향을 받지 않는다. 그래서 포지셔닝과 간격에 보편적으로 사용된다. 반응형이 아닌 경우는 크기를 조정할 수 없는 키오스크 혹은 데스크톱이어도 반응형일 필요가 없는 앱이 그 대상일 수 있다.  </p>
 <table>
 <thead>
 <tr>
@@ -188,7 +183,7 @@ div {
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;em&lt;/td&gt;
-&lt;td&gt;&lt;ul&gt;&lt;li&gt;재 글꼴 크기에 상대적&lt;/li&gt;&lt;li&gt;원래는 현재 서체 대문자 &quot;M&quot;을 기반으로한 활자체 측정&lt;/li&gt;&lt;li&gt;font-family를 바꾼다고 해서 영향 받지 않으며&lt;/li&gt;&lt;li&gt;font-size 변경시 같이 변경됨&lt;/li&gt;&lt;li&gt;css가 전혀 없다면,&lt;br/&gt;1em == 16px == 0.17in == 12pt == 1pc == 4.2mm == 0.42cm&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;현재 글꼴 크기에 상대적&lt;/li&gt;&lt;li&gt;원래는 현재 서체 대문자 &quot;M&quot;을 기반으로한 활자체 측정&lt;/li&gt;&lt;li&gt;font-family를 바꾼다고 해서 영향 받지 않으며&lt;/li&gt;&lt;li&gt;font-size 변경시 같이 변경됨&lt;/li&gt;&lt;li&gt;css가 전혀 없다면,&lt;br/&gt;1em == 16px == 0.17in == 12pt == 1pc == 4.2mm == 0.42cm&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;rem&lt;/td&gt;
@@ -290,12 +285,7 @@ div {
    on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
  &lt;/p&gt;
 &lt;h2&gt;절대 길이 단위 / Absolute length units&lt;/h2&gt;
-&lt;p&gt;절대 길이 단위는 상위 요소 또는 창 크기에 관계없이 &lt;code&gt;동일한 크기&lt;/code&gt;를 의미한다. 절대 길이 단위는 반응형을 고려하지 않는 작업에 유용하며 주로 &lt;strong&gt;인쇄물&lt;/strong&gt;에서 많이 사용되는 방법이다.
-예를들어 크기를 조정할 수 없는 키오스크 혹은 데스크톱이어도 반응형일 필요가 없는 앱이 그 대상일 수 있다.  &lt;/p&gt;
-&lt;h3&gt;px / pixel&lt;/h3&gt;
-&lt;p&gt;화면을 구성하는 가장 기본이 되는 단위로, 모니터의 1dot = 1pixel을 의미한다. 때문에 &lt;strong&gt;pixel은 해상도에 따라 상대적인 크기&lt;/strong&gt;를 갖는다.
-컴퓨터 화면은 픽셀을 사용하여 콘텐츠를 표시하기 때문에 CSS에서 가장 일반적인 크기 단위이다. CSS의 픽셀은 절대 값을 정의하기 때문에 직관적이다.
-상속 된 다른 CSS로부터 영향을 받지 않는다. 또한 포지션과 간격을 위해 보편적으로 사용된다.  &lt;/p&gt;
+&lt;p&gt;절대 길이 단위는 상위 요소 또는 창 크기에 관계없이 &lt;code&gt;동일한 크기&lt;/code&gt;를 의미한다. 절대 길이 단위는 반응형을 고려하지 않는 작업에 유용하며 주로 &lt;strong&gt;인쇄물&lt;/strong&gt;에서 많이 사용되는 방법이다. 또한 상속 된 다른 CSS로부터 영향을 받지 않는다. 그래서 포지셔닝과 간격에 보편적으로 사용된다. 반응형이 아닌 경우는 크기를 조정할 수 없는 키오스크 혹은 데스크톱이어도 반응형일 필요가 없는 앱이 그 대상일 수 있다.  &lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
