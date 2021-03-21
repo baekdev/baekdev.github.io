@@ -1,4 +1,350 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 07 Feb 2021 07:20:06 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[자바스크립의 실행 컨텍스트]]></title><description><![CDATA[<h2>실행 컨텍스트(execution context)</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 12:26:38 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[CSS 사이즈 단위 - 절대 길이와 상대 길이]]></title><description><![CDATA[<p>CSS에서는 길이를 표현하기 위한 단위들이 있다. 이 단위들은 두가지 유형으로 분류 할 수 있는데 항상 동일한 크기를 가지는 <strong>절대 길이 단위</strong>와 <strong>상대 길이 단위</strong>이다.<br>
+먼저 상대 길이 단위부터 살펴보자.  </p>
+<h2>상대 길이 단위 / Relative length units</h2>
+<p>상대 길이 단위는 다른 요소나 부모 또는 창 크기에 비례여 크기가 조정되기 때문에 <code>반응형 사이트의 스타일을 지정</code>하는데 유용하다.
+종류로는 em, ex, ch, rem, vw, vh, vmin, vmax 등이 있으며 상대 길이에서도 글꼴과 viewport에 따라 유형을 분류할 수 있다.  </p>
+<h3>글꼴 상대 길이 단위</h3>
+<table>
+<thead>
+<tr>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>em</td>
+<td><ul><li>재 글꼴 크기에 상대적</li><li>원래는 현재 서체 대문자 "M"을 기반으로한 활자체 측정</li><li>font-family를 바꾼다고 해서 영향 받지 않으며</li><li>font-size 변경시 같이 변경됨</li><li>css가 전혀 없다면,<br/>1em == 16px == 0.17in == 12pt == 1pc == 4.2mm == 0.42cm</li></ul></td>
+</tr>
+<tr>
+<td>rem</td>
+<td><ul><li>root em</li><li>루트 요소의 글꼴 크기</li><li>em과 같은 상대 길이 단위이지만</li><li>계단식을 사용하지 않고 항상 root 요소(예로, html)에 상대적인 em임</li><li>이 개념은 상대 길이 단위 작업을 크게 단순화함</li><li>font-size 뿐만 아니라 grid system에도 사용 가능</li></ul></td>
+</tr>
+<tr>
+<td>pt</td>
+<td><ul><li>points</li><li>1pt == 1/72in에 대한 물리적 측정</li><li>css외부에서 유형의 크기를 조정하는 가장 일반적인 방법</li></ul></td>
+</tr>
+<tr>
+<td>pc</td>
+<td><ul><li>pica</li><li>pt와 같은 같은 기능을 하며</li><li>1pc == 12pt</li></ul></td>
+</tr>
+<tr>
+<td>ex</td>
+<td><ul><li>현재 글꼴 x문자의 height를 기반으로 한 측정</li></ul></td>
+</tr>
+<tr>
+<td>ch</td>
+<td><ul><li>x-height와 유사</li><li>ch만 x 문자의 높이 대신 숫자 "0" 문자의 너비를 기준으로 함</li><li>글꼴 모음이 변경됨에 따라 변경됨</li></ul></td>
+</tr>
+</tbody>
+</table>
+<h4>em &#x26; rem</h4>
+<p>아래와 같이 em 을 사용하여 css를 정의한다고 가정해보자.  </p>
+<pre><code class="language-css">body {
+  font-size: 14px;
+}
+div {
+  font-size: 1.4em; // 1.2배의 폰트 사이즈로 표현 -> 14px * 1.4em = 19.6px 
+}
+</code></pre>
+<p>그럼 아래 html이 계층 구조를 가지도록 준비할 경우 각 모든 요소의 font-size는 19.6px을 기대할 수 있을까?  </p>
+<pre><code class="language-html">&#x3C;body>
+  &#x3C;span>Hello, rem!&#x3C;/span>
+  &#x3C;div class="container">
+    &#x3C;div class="head">Head&#x3C;/div>
+    &#x3C;div class="contents">
+      &#x3C;span>Contents&#x3C;/span>
+      &#x3C;div class="main">Main&#x3C;/div>
+      &#x3C;div class="aside">Aside&#x3C;/div>
+    &#x3C;/div>  
+  &#x3C;/div>
+&#x3C;/body>
+</code></pre>
+<p>실제로는 각각의 div는 각 부모의 font-size를 <code>상속</code>받아 점점 커지게 된다. 그래서 em은 때때로 값을 계산하기 매우 <strong>번거롭다</strong>.  </p>
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="baek-dev" data-slug-hash="eYBqQmv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eYBqQmv">
+  <span>See the Pen <a href="https://codepen.io/baek-dev/pen/eYBqQmv">
+  eYBqQmv</a> by BAEKDEV (<a href="https://codepen.io/baek-dev">@baek-dev</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>  
+<p>이제 위 표에서 상대 길이 단위 작업을 크게 단순화한다고 한 rem의 예제를 살펴보자.
+<strong>rem은 root를 기준으로 계산</strong>하니 상속 여부와 상관없이 14px을 기준으로 1.4배를 적용하게 된다.</p>
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="baek-dev" data-slug-hash="YzpmJMj" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample - CSS rem">
+  <span>See the Pen <a href="https://codepen.io/baek-dev/pen/YzpmJMj">
+  Sample - CSS rem</a> by BAEKDEV (<a href="https://codepen.io/baek-dev">@baek-dev</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>  
+<p>앞서 글꼴 상대 길이 단위를 살펴보았고 이제는 viewport에 대응하는 상대 길이를 살펴보자.  </p>
+<h3>Viewport 상대 길이 단위</h3>
+<p>단위를 살펴보기 전에 필수 개념인 viewport를 먼저 확인해보자.  </p>
+<p><strong>viewport란?</strong>  </p>
+<blockquote>
+<p>현재 화면에 보여지고 있는 다각형(보통 직사각형)의 영역을 뜻하며,<br>
+웹 브라우에서는 현재 창에서 문서를 볼 수 있는 부분을 말한다.  </p>
+</blockquote>
+<p>뷰포트의 바깥의 콘텐츠를 스크롤하기 전엔 보이지 않고, 뷰포트 중에서도 지금 볼 수 있는 부분을 Visual Viewport라고 부른다. 특히 스마트폰에서 사용자가 화면을 <strong>확대(Scale)</strong>했을 때와 같은 특정 상황에서 Layout Viewport의 크기는 변하지 않지만 Visual View는 더 작아진다.  </p>
+<p><img src="https://baek.dev/assets/images/post/2021/2021_038_001.png" alt="viewport 예시">  </p>
+<p><code>보통 viewport는 device-width와 initial-scale=1.0</code>로 많이 설정하며 관련한 내용은 다른 글에 이어서 다뤄볼 예정이다. 요즘에는 Mobile first가 많다보니 viewport가 디바이스 화면 크기라고 이해하면 쉬울 것 같다.   </p>
+<table>
+<thead>
+<tr>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vw</td>
+<td><ul><li>viewport 너비의 1%</li><li>백분율과 비슷하지만</li><li>부모 요소 또는 부모 요소 너비에 관계없이 모든 요소에 대해 값이 일관적으로 유지됨</li><li>rem이 항상 루트에 상대적인 방식과 비슷</li></ul></td>
+</tr>
+<tr>
+<td>vh</td>
+<td><ul><li>viewport 높이의 1%</li><li>vw 단위와 동일하나 뷰포트 높이를 기반으로 함</li></ul></td>
+</tr>
+<tr>
+<td>vmin</td>
+<td><ul><li>viewport 의 작은 치수의 1%</li><li>vw 또는 vh 중 더 작은 값</li></ul></td>
+</tr>
+<tr>
+<td>vmax</td>
+<td><ul><li>viewport 의 큰 치수의 1%</li><li>vw 또는 vh 중 더 큰 값</li></ul></td>
+</tr>
+</tbody>
+</table>
+ <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="baek-dev" data-slug-hash="bGBXzqO" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample - CSS viewport units">
+   <span>See the Pen <a href="https://codepen.io/baek-dev/pen/bGBXzqO">
+   Sample - CSS viewport units</a> by BAEKDEV (<a href="https://codepen.io/baek-dev">@baek-dev</a>)
+   on <a href="https://codepen.io">CodePen</a>.</span>
+ </p>
+<h2>절대 길이 단위 / Absolute length units</h2>
+<p>절대 길이 단위는 상위 요소 또는 창 크기에 관계없이 <code>동일한 크기</code>를 의미한다. 절대 길이 단위는 반응형을 고려하지 않는 작업에 유용하며 주로 <strong>인쇄물</strong>에서 많이 사용되는 방법이다.
+예를들어 크기를 조정할 수 없는 키오스크 혹은 데스크톱이어도 반응형일 필요가 없는 앱이 그 대상일 수 있다.  </p>
+<h3>px / pixel</h3>
+<p>화면을 구성하는 가장 기본이 되는 단위로, 모니터의 1dot = 1pixel을 의미한다. 때문에 <strong>pixel은 해상도에 따라 상대적인 크기</strong>를 갖는다.
+컴퓨터 화면은 픽셀을 사용하여 콘텐츠를 표시하기 때문에 CSS에서 가장 일반적인 크기 단위이다. CSS의 픽셀은 절대 값을 정의하기 때문에 직관적이다.
+상속 된 다른 CSS로부터 영향을 받지 않는다. 또한 포지션과 간격을 위해 보편적으로 사용된다.  </p>
+<table>
+<thead>
+<tr>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>px</td>
+<td><ul><li>화면을 구성하는 가장 기본이 되는 단위로, 모니터의 1dot = 1pixel을 의미</li><li>때문에 pixel은 해상도에 따라 상대적인 크기를 갖음</li><li>상속 된 다른 CSS로부터 영향을 받지 않음</li></ul></td>
+</tr>
+<tr>
+<td>in</td>
+<td><ul><li>inch</li><li>인치는 물리적 측정이지만, CSS에서는 pixel에 직접 매칭됨</li><li>1in == 96px</li></ul></td>
+</tr>
+<tr>
+<td>cm</td>
+<td><ul><li>대부분의 세계에서 센티미터는 물리적 측정으로 더 친숙하고 유용함</li><li>역시 css에 매핑됨</li><li>1cm == 37.8px</li></ul></td>
+</tr>
+<tr>
+<td>mm</td>
+<td><ul><li>1mm == 0.1cm == 3.78px</li></ul></td>
+</tr>
+</tbody>
+</table>
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="SitePoint" data-slug-hash="ZGmGVR" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Demo using different absolute units in CSS">
+  <span>See the Pen <a href="https://codepen.io/SitePoint/pen/ZGmGVR">
+  Demo using different absolute units in CSS</a> by SitePoint (<a href="https://codepen.io/SitePoint">@SitePoint</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.iohttps://baek.dev/assets/embed/ei.js"></script>  
+<h2>마치며</h2>
+<p>px과 em을 계산할 때 <a href="http://pxtoem.com/">pixel to em</a>를 이용하면 많은 도움이 될 수도 있다. 더불어 특정 단위를 사용할 때는 브라우저 지원이 가능한지 반드시 확인을 해야한다. <a href="https://caniuse.com/viewport-units">Can I Use - Viewport units</a>를 통해 꼭 확인하자.  </p>
+<h5>References</h5>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">CSS values and units</a>  </li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API">Visual Viewport API</a>  </li>
+<li><a href="https://www.quirksmode.org/mobile/viewports2.html">Viewport</a>  </li>
+<li><a href="https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573?ec_unit=translation-info-language">7 CSS Units You Might Not Know About</a>    </li>
+</ul>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn-1">
+<p>상위 요소의 글꼴 크기 또는 viewport  </p>
+<a href="#fnref-1" class="footnote-backref">↩</a>
+</li>
+</ol>
+</div>]]></description><link>https://baek.dev/post/38/</link><guid isPermaLink="false">https://baek.dev/post/38/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 21 Mar 2021 12:22:00 GMT</pubDate><content:encoded>&lt;p&gt;CSS에서는 길이를 표현하기 위한 단위들이 있다. 이 단위들은 두가지 유형으로 분류 할 수 있는데 항상 동일한 크기를 가지는 &lt;strong&gt;절대 길이 단위&lt;/strong&gt;와 &lt;strong&gt;상대 길이 단위&lt;/strong&gt;이다.&lt;br&gt;
+먼저 상대 길이 단위부터 살펴보자.  &lt;/p&gt;
+&lt;h2&gt;상대 길이 단위 / Relative length units&lt;/h2&gt;
+&lt;p&gt;상대 길이 단위는 다른 요소나 부모 또는 창 크기에 비례여 크기가 조정되기 때문에 &lt;code&gt;반응형 사이트의 스타일을 지정&lt;/code&gt;하는데 유용하다.
+종류로는 em, ex, ch, rem, vw, vh, vmin, vmax 등이 있으며 상대 길이에서도 글꼴과 viewport에 따라 유형을 분류할 수 있다.  &lt;/p&gt;
+&lt;h3&gt;글꼴 상대 길이 단위&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Units&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;em&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;재 글꼴 크기에 상대적&lt;/li&gt;&lt;li&gt;원래는 현재 서체 대문자 &quot;M&quot;을 기반으로한 활자체 측정&lt;/li&gt;&lt;li&gt;font-family를 바꾼다고 해서 영향 받지 않으며&lt;/li&gt;&lt;li&gt;font-size 변경시 같이 변경됨&lt;/li&gt;&lt;li&gt;css가 전혀 없다면,&lt;br/&gt;1em == 16px == 0.17in == 12pt == 1pc == 4.2mm == 0.42cm&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rem&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;root em&lt;/li&gt;&lt;li&gt;루트 요소의 글꼴 크기&lt;/li&gt;&lt;li&gt;em과 같은 상대 길이 단위이지만&lt;/li&gt;&lt;li&gt;계단식을 사용하지 않고 항상 root 요소(예로, html)에 상대적인 em임&lt;/li&gt;&lt;li&gt;이 개념은 상대 길이 단위 작업을 크게 단순화함&lt;/li&gt;&lt;li&gt;font-size 뿐만 아니라 grid system에도 사용 가능&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pt&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;points&lt;/li&gt;&lt;li&gt;1pt == 1/72in에 대한 물리적 측정&lt;/li&gt;&lt;li&gt;css외부에서 유형의 크기를 조정하는 가장 일반적인 방법&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pc&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;pica&lt;/li&gt;&lt;li&gt;pt와 같은 같은 기능을 하며&lt;/li&gt;&lt;li&gt;1pc == 12pt&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ex&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;현재 글꼴 x문자의 height를 기반으로 한 측정&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ch&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;x-height와 유사&lt;/li&gt;&lt;li&gt;ch만 x 문자의 높이 대신 숫자 &quot;0&quot; 문자의 너비를 기준으로 함&lt;/li&gt;&lt;li&gt;글꼴 모음이 변경됨에 따라 변경됨&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4&gt;em &amp;#x26; rem&lt;/h4&gt;
+&lt;p&gt;아래와 같이 em 을 사용하여 css를 정의한다고 가정해보자.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;body {
+  font-size: 14px;
+}
+div {
+  font-size: 1.4em; // 1.2배의 폰트 사이즈로 표현 -&gt; 14px * 1.4em = 19.6px 
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;그럼 아래 html이 계층 구조를 가지도록 준비할 경우 각 모든 요소의 font-size는 19.6px을 기대할 수 있을까?  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;#x3C;body&gt;
+  &amp;#x3C;span&gt;Hello, rem!&amp;#x3C;/span&gt;
+  &amp;#x3C;div class=&quot;container&quot;&gt;
+    &amp;#x3C;div class=&quot;head&quot;&gt;Head&amp;#x3C;/div&gt;
+    &amp;#x3C;div class=&quot;contents&quot;&gt;
+      &amp;#x3C;span&gt;Contents&amp;#x3C;/span&gt;
+      &amp;#x3C;div class=&quot;main&quot;&gt;Main&amp;#x3C;/div&gt;
+      &amp;#x3C;div class=&quot;aside&quot;&gt;Aside&amp;#x3C;/div&gt;
+    &amp;#x3C;/div&gt;  
+  &amp;#x3C;/div&gt;
+&amp;#x3C;/body&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;실제로는 각각의 div는 각 부모의 font-size를 &lt;code&gt;상속&lt;/code&gt;받아 점점 커지게 된다. 그래서 em은 때때로 값을 계산하기 매우 &lt;strong&gt;번거롭다&lt;/strong&gt;.  &lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;265&quot; data-theme-id=&quot;dark&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;baek-dev&quot; data-slug-hash=&quot;eYBqQmv&quot; style=&quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;eYBqQmv&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/baek-dev/pen/eYBqQmv&quot;&gt;
+  eYBqQmv&lt;/a&gt; by BAEKDEV (&lt;a href=&quot;https://codepen.io/baek-dev&quot;&gt;@baek-dev&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;  
+&lt;p&gt;이제 위 표에서 상대 길이 단위 작업을 크게 단순화한다고 한 rem의 예제를 살펴보자.
+&lt;strong&gt;rem은 root를 기준으로 계산&lt;/strong&gt;하니 상속 여부와 상관없이 14px을 기준으로 1.4배를 적용하게 된다.&lt;/p&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;265&quot; data-theme-id=&quot;dark&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;baek-dev&quot; data-slug-hash=&quot;YzpmJMj&quot; data-preview=&quot;true&quot; style=&quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Sample - CSS rem&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/baek-dev/pen/YzpmJMj&quot;&gt;
+  Sample - CSS rem&lt;/a&gt; by BAEKDEV (&lt;a href=&quot;https://codepen.io/baek-dev&quot;&gt;@baek-dev&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;  
+&lt;p&gt;앞서 글꼴 상대 길이 단위를 살펴보았고 이제는 viewport에 대응하는 상대 길이를 살펴보자.  &lt;/p&gt;
+&lt;h3&gt;Viewport 상대 길이 단위&lt;/h3&gt;
+&lt;p&gt;단위를 살펴보기 전에 필수 개념인 viewport를 먼저 확인해보자.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;viewport란?&lt;/strong&gt;  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;현재 화면에 보여지고 있는 다각형(보통 직사각형)의 영역을 뜻하며,&lt;br&gt;
+웹 브라우에서는 현재 창에서 문서를 볼 수 있는 부분을 말한다.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;뷰포트의 바깥의 콘텐츠를 스크롤하기 전엔 보이지 않고, 뷰포트 중에서도 지금 볼 수 있는 부분을 Visual Viewport라고 부른다. 특히 스마트폰에서 사용자가 화면을 &lt;strong&gt;확대(Scale)&lt;/strong&gt;했을 때와 같은 특정 상황에서 Layout Viewport의 크기는 변하지 않지만 Visual View는 더 작아진다.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2021/2021_038_001.png&quot; alt=&quot;viewport 예시&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;보통 viewport는 device-width와 initial-scale=1.0&lt;/code&gt;로 많이 설정하며 관련한 내용은 다른 글에 이어서 다뤄볼 예정이다. 요즘에는 Mobile first가 많다보니 viewport가 디바이스 화면 크기라고 이해하면 쉬울 것 같다.   &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Units&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;vw&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;viewport 너비의 1%&lt;/li&gt;&lt;li&gt;백분율과 비슷하지만&lt;/li&gt;&lt;li&gt;부모 요소 또는 부모 요소 너비에 관계없이 모든 요소에 대해 값이 일관적으로 유지됨&lt;/li&gt;&lt;li&gt;rem이 항상 루트에 상대적인 방식과 비슷&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vh&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;viewport 높이의 1%&lt;/li&gt;&lt;li&gt;vw 단위와 동일하나 뷰포트 높이를 기반으로 함&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vmin&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;viewport 의 작은 치수의 1%&lt;/li&gt;&lt;li&gt;vw 또는 vh 중 더 작은 값&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vmax&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;viewport 의 큰 치수의 1%&lt;/li&gt;&lt;li&gt;vw 또는 vh 중 더 큰 값&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ &lt;p class=&quot;codepen&quot; data-height=&quot;265&quot; data-theme-id=&quot;dark&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;baek-dev&quot; data-slug-hash=&quot;bGBXzqO&quot; style=&quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Sample - CSS viewport units&quot;&gt;
+   &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/baek-dev/pen/bGBXzqO&quot;&gt;
+   Sample - CSS viewport units&lt;/a&gt; by BAEKDEV (&lt;a href=&quot;https://codepen.io/baek-dev&quot;&gt;@baek-dev&lt;/a&gt;)
+   on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+ &lt;/p&gt;
+&lt;h2&gt;절대 길이 단위 / Absolute length units&lt;/h2&gt;
+&lt;p&gt;절대 길이 단위는 상위 요소 또는 창 크기에 관계없이 &lt;code&gt;동일한 크기&lt;/code&gt;를 의미한다. 절대 길이 단위는 반응형을 고려하지 않는 작업에 유용하며 주로 &lt;strong&gt;인쇄물&lt;/strong&gt;에서 많이 사용되는 방법이다.
+예를들어 크기를 조정할 수 없는 키오스크 혹은 데스크톱이어도 반응형일 필요가 없는 앱이 그 대상일 수 있다.  &lt;/p&gt;
+&lt;h3&gt;px / pixel&lt;/h3&gt;
+&lt;p&gt;화면을 구성하는 가장 기본이 되는 단위로, 모니터의 1dot = 1pixel을 의미한다. 때문에 &lt;strong&gt;pixel은 해상도에 따라 상대적인 크기&lt;/strong&gt;를 갖는다.
+컴퓨터 화면은 픽셀을 사용하여 콘텐츠를 표시하기 때문에 CSS에서 가장 일반적인 크기 단위이다. CSS의 픽셀은 절대 값을 정의하기 때문에 직관적이다.
+상속 된 다른 CSS로부터 영향을 받지 않는다. 또한 포지션과 간격을 위해 보편적으로 사용된다.  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Units&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;px&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;화면을 구성하는 가장 기본이 되는 단위로, 모니터의 1dot = 1pixel을 의미&lt;/li&gt;&lt;li&gt;때문에 pixel은 해상도에 따라 상대적인 크기를 갖음&lt;/li&gt;&lt;li&gt;상속 된 다른 CSS로부터 영향을 받지 않음&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;inch&lt;/li&gt;&lt;li&gt;인치는 물리적 측정이지만, CSS에서는 pixel에 직접 매칭됨&lt;/li&gt;&lt;li&gt;1in == 96px&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cm&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;대부분의 세계에서 센티미터는 물리적 측정으로 더 친숙하고 유용함&lt;/li&gt;&lt;li&gt;역시 css에 매핑됨&lt;/li&gt;&lt;li&gt;1cm == 37.8px&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mm&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;&lt;li&gt;1mm == 0.1cm == 3.78px&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p class=&quot;codepen&quot; data-height=&quot;265&quot; data-theme-id=&quot;dark&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;SitePoint&quot; data-slug-hash=&quot;ZGmGVR&quot; style=&quot;height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-pen-title=&quot;Demo using different absolute units in CSS&quot;&gt;
+  &lt;span&gt;See the Pen &lt;a href=&quot;https://codepen.io/SitePoint/pen/ZGmGVR&quot;&gt;
+  Demo using different absolute units in CSS&lt;/a&gt; by SitePoint (&lt;a href=&quot;https://codepen.io/SitePoint&quot;&gt;@SitePoint&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/span&gt;
+&lt;/p&gt;
+&lt;script async src=&quot;https://cpwebassets.codepen.iohttps://baek.dev/assets/embed/ei.js&quot;&gt;&lt;/script&gt;  
+&lt;h2&gt;마치며&lt;/h2&gt;
+&lt;p&gt;px과 em을 계산할 때 &lt;a href=&quot;http://pxtoem.com/&quot;&gt;pixel to em&lt;/a&gt;를 이용하면 많은 도움이 될 수도 있다. 더불어 특정 단위를 사용할 때는 브라우저 지원이 가능한지 반드시 확인을 해야한다. &lt;a href=&quot;https://caniuse.com/viewport-units&quot;&gt;Can I Use - Viewport units&lt;/a&gt;를 통해 꼭 확인하자.  &lt;/p&gt;
+&lt;h5&gt;References&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units&quot;&gt;CSS values and units&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API&quot;&gt;Visual Viewport API&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quirksmode.org/mobile/viewports2.html&quot;&gt;Viewport&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://webdesign.tutsplus.com/articles/7-css-units-you-might-not-know-about--cms-22573?ec_unit=translation-info-language&quot;&gt;7 CSS Units You Might Not Know About&lt;/a&gt;    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;상위 요소의 글꼴 크기 또는 viewport  &lt;/p&gt;
+&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[자바스크립의 실행 컨텍스트]]></title><description><![CDATA[<h2>실행 컨텍스트(execution context)</h2>
 <ul>
 <li>실행할 코드에 제공할 환경 정보들을 모아놓은 객체</li>
 <li>동일한 환경에 있는 코드들을 실행할 때 필요한 환경 정보들을 모아 컨텍스트를 구성</li>
