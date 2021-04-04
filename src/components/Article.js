@@ -19,6 +19,12 @@ const ArticleFooter = styled.footer`
   border-bottom: 1px solid #ececec;
 `
 
+const CoupangPartners = styled.div`
+  text-align: center; 
+  font-size: .1em; 
+  color: #80808078;
+`
+
 class Article extends React.Component {
   render() {
 
@@ -38,6 +44,9 @@ class Article extends React.Component {
         <br/>
         <br/>
         <FacebookLike siteUrl={siteMetadata.siteUrl} slug={post.frontmatter.slug}/>
+        <CoupangPartners>
+          쿠팡 파트너스 활동을 통해 일정액의 커미션을 제공받을 수 있습니다.
+        </CoupangPartners>
         {/* <ArticleFooter>
           <Bio />
         </ArticleFooter> */}
