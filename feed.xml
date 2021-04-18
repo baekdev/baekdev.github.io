@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Apr 2021 16:57:03 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)]]></title><description><![CDATA[<ul>
-<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
-<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a></li>
-</ul>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Apr 2021 14:03:29 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)]]></title><description><![CDATA[<p>이전 글 - <a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>    </p>
 <hr>
 <h2>실리콘밸리의 구글러</h2>
 <h3>인터뷰</h3>
@@ -67,16 +64,13 @@
 <hr>
 <p>정말 너무 좋은 책을 오랜만에 만났다. <a href="https://coupa.ng/bVbAJ3">&#x3C;일은 배신하지 않는다></a>는 개발자의 에세이이지만, 개발자가 아닌 다른 일을 하는 모든 이들에게 추천하고 싶다. 겉치레가 아닌 본질에 대한 내용이 많기 때문이다.  </p>
 <ul>
-<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
-<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a>  </li>
+<li><a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
+<li><a href="https://baek.dev/post/40/">2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유</a></li>
 </ul>
 <h5>References</h5>
 <ul>
 <li><a href="https://coupa.ng/bVbAJ3">&#x3C;일은 배신하지 않는다>, 2021 아이스크림미디어</a>  </li>
-</ul>]]></description><link>https://baek.dev/post/40/</link><guid isPermaLink="false">https://baek.dev/post/40/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 17 Apr 2021 15:20:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+</ul>]]></description><link>https://baek.dev/post/40/</link><guid isPermaLink="false">https://baek.dev/post/40/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 17 Apr 2021 15:20:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글 - &lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;    &lt;/p&gt;
 &lt;hr&gt;
 &lt;h2&gt;실리콘밸리의 구글러&lt;/h2&gt;
 &lt;h3&gt;인터뷰&lt;/h3&gt;
@@ -142,15 +136,15 @@
 &lt;hr&gt;
 &lt;p&gt;정말 너무 좋은 책을 오랜만에 만났다. &lt;a href=&quot;https://coupa.ng/bVbAJ3&quot;&gt;&amp;#x3C;일은 배신하지 않는다&gt;&lt;/a&gt;는 개발자의 에세이이지만, 개발자가 아닌 다른 일을 하는 모든 이들에게 추천하고 싶다. 겉치레가 아닌 본질에 대한 내용이 많기 때문이다.  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5&gt;References&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://coupa.ng/bVbAJ3&quot;&gt;&amp;#x3C;일은 배신하지 않는다&gt;, 2021 아이스크림미디어&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[포트폴리오 하나로 구글 입사 제의를 받은 - 일은 배신하지 않는다(1)]]></title><description><![CDATA[<ul>
-<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
-<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a></li>
+<li><a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
+<li><a href="https://baek.dev/post/40/">2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유</a></li>
 </ul>
 <hr>
 <p>혹시 <strong>김종민</strong>님을 아시나요?<br>
@@ -248,17 +242,13 @@
 그때 동료의 HTML5 개인 작업물을 보고 HTML5의 가능성을 실감했다. 실력 있는 동료를 보고 자극받아 내 실력을 더 쌓을 수 있는 기회가 많은 것이 <strong>해외 취업의 장점</strong> 중 하나라고 생각한다.  </p>
 <br/>  
 <p><img src="https://baek.dev/assets/images/post/2021/2021_039_002.jpg">  </p>
-<p>그럼 다음 글에 이어서 책을 마저 소개하겠다.   </p>
-<ul>
-<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
-<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a></li>
-</ul>
+<p>이어서 다음 글 - <a href="https://baek.dev/post/40/">2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유</a>  </p>
 <h5>References</h5>
 <ul>
 <li><a href="https://coupa.ng/bVbAJ3">&#x3C;일은 배신하지 않는다>, 2021 아이스크림미디어</a>  </li>
 </ul>]]></description><link>https://baek.dev/post/39/</link><guid isPermaLink="false">https://baek.dev/post/39/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 04 Apr 2021 14:34:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;혹시 &lt;strong&gt;김종민&lt;/strong&gt;님을 아시나요?&lt;br&gt;
@@ -356,11 +346,7 @@
 그때 동료의 HTML5 개인 작업물을 보고 HTML5의 가능성을 실감했다. 실력 있는 동료를 보고 자극받아 내 실력을 더 쌓을 수 있는 기회가 많은 것이 &lt;strong&gt;해외 취업의 장점&lt;/strong&gt; 중 하나라고 생각한다.  &lt;/p&gt;
 &lt;br/&gt;  
 &lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2021/2021_039_002.jpg&quot;&gt;  &lt;/p&gt;
-&lt;p&gt;그럼 다음 글에 이어서 책을 마저 소개하겠다.   &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;이어서 다음 글 - &lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유&lt;/a&gt;  &lt;/p&gt;
 &lt;h5&gt;References&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://coupa.ng/bVbAJ3&quot;&gt;&amp;#x3C;일은 배신하지 않는다&gt;, 2021 아이스크림미디어&lt;/a&gt;  &lt;/li&gt;
