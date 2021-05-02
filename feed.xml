@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Apr 2021 14:03:29 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)]]></title><description><![CDATA[<p>이전 글 - <a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>    </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 May 2021 13:21:10 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[아디오스 글또!]]></title><description><![CDATA[<p>글또 5기를 시작한지 엊그제 같은데 벌써 이번이 글또로서 작성하는 마지막 글이되었다. 사실 5기에 참여할지 말지 고민을 많이 했었다. 4기에 참여하면서 글쓰는 것이 재밌기도 했지만 글을 쥐어짜며 쓴적도 있어 쉽지 않았기 때문이다. 이후 글또 5기 모집글을 보고서는 글을 하나도 쓰지 않은 나 자신을 발견하곤 무조건 참여가 필요하다 느꼈다.  </p>
+<ul>
+<li><a href="http://baek.dev/post/29/">다시 또 글또를 시작하게 된 이유 2가지</a>  </li>
+</ul>
+<p>이번 5기에 참여하면서는 꾸준히 글을 쓰는 것보다 새로운 공부를 하면서 글을 발행한다는 것이 더 힘들었다. 나의 짧은 지식으로 부족한 글을 쓰게 되면 누군가는 부족한 지식을 습득하게되지 않을까 두렵기도 했고, 아는 지식이 짧다보니 무엇을 써야하는지도 가늠하기 어려웠다.  </p>
+<p>누군가가 약속은 깨라고 있는 것이랬던가, 거창한 플랜은 지키지 못했고 이론적인 글과 추천하고 싶은 책 리뷰 정도로 글을 작성했다.   </p>
+<p><br/><br/>
+<a href="http://baek.dev/post/34/"><img src="https://baek.dev/assets/images/post/2020/2020_033.png"/></a><br/>  </p>
+<p><a href="http://baek.dev/post/33/">1. 둘리 &#x26; 도우너 어서오고 짤 생성기 회고</a>  </p>
+<ul>
+<li>하고 싶었던 짤 생성기 프로젝트에 대한 회고 포스팅이다.  </li>
+<li>짭짤한 트래픽 맛을 보게 해준 프로젝트를 어떻게 만들게 되었는지 공유했다.  </li>
+</ul>
+<p><br/><br/>
+<a href="http://baek.dev/post/34/"><img src="https://baek.dev/assets/images/post/2020/2020_034.png"/></a><br/></p>
+<p><a href="http://baek.dev/post/34/">2. 뉴노멀 중심에서 하는 2020 회고</a>  </p>
+<ul>
+<li>코로나가 메인이었던 2020년 회멀고를 하며 한 해를 마무리한다. 끝이 보이지 않는 터널을 지나는 기분이지만 돌이켜보니 많은 기회가 있었다.  </li>
+</ul>
+<p><br/><br/>
+<a href="http://baek.dev/post/34/"><img src="https://baek.dev/assets/images/post/2021/2021_035.png"/></a><br/></p>
+<p><a href="http://baek.dev/post/36/">3. 예제로 만나보는 자바스크립트 호이스팅(hoisting)</a><br>
+<a href="http://baek.dev/post/37/">4. 자바스크립의 실행 컨텍스트</a>  </p>
+<ul>
+<li>코어 자바스크립트 책을 공부하면서 일부 정리해본 내용이다.  </li>
+</ul>
+<p><br/><br/>
+<a href="http://baek.dev/post/34/"><img src="https://baek.dev/assets/images/post/2021/2021_038.png"/></a><br/></p>
+<p><a href="http://baek.dev/post/38/">5. CSS 사이즈 단위 - 절대 길이와 상대 길이</a>  </p>
+<ul>
+<li>반응형 사이트라면 필수적인 길이에 대한 개념을 정리했다.  </li>
+</ul>
+<p><br/><br/>
+<a href="http://baek.dev/post/34/"><img src="https://baek.dev/assets/images/post/2021/2021_039.png"/></a><br/></p>
+<p><a href="http://baek.dev/post/39/">6. 포트폴리오 하나로 구글 입사 제의를 받은 - 일은 배신하지 않는다(1)</a><br>
+<a href="http://baek.dev/post/40/">7. 아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)</a>  </p>
+<ul>
+<li>개발자 에세이로, 업을 갖고 있는 모든 회사원들에게 추천하고 싶은 책이다.  </li>
+<li>Google I/O 2014 발표, FWA 수상 등 세계 무대에서 활약중인 구글 UX Engineer 김종민님은 고졸이었던 PC방 알바가 포트폴리오 하나로 구글의 입사 제안을 받기까지의 과정을 책으로 다시 펴냈다. 직업을 바라보는 시각, 내가 하고 싶은 일과 해야하는 일의 괴리를 극복하는 방법, 계속 변하는 시장의 요구사항에서 살아남는 방법 등을 소개한다.   </li>
+</ul>
+<hr>
+<p>아쉬운 점도 많지만 좋은 분들도 알게 되고 글을 꾸준히 작성한 성취감도 얻어 보람찬 활동이었다. 다음에 기회가 된다면 더 글또 커뮤니티에 기여할 수 있는 참가자가 되고 싶다.<br>
+글또 여러분 고생하셨어요 :)  </p>]]></description><link>https://baek.dev/post/41/</link><guid isPermaLink="false">https://baek.dev/post/41/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 02 May 2021 12:26:00 GMT</pubDate><content:encoded>&lt;p&gt;글또 5기를 시작한지 엊그제 같은데 벌써 이번이 글또로서 작성하는 마지막 글이되었다. 사실 5기에 참여할지 말지 고민을 많이 했었다. 4기에 참여하면서 글쓰는 것이 재밌기도 했지만 글을 쥐어짜며 쓴적도 있어 쉽지 않았기 때문이다. 이후 글또 5기 모집글을 보고서는 글을 하나도 쓰지 않은 나 자신을 발견하곤 무조건 참여가 필요하다 느꼈다.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://baek.dev/post/29/&quot;&gt;다시 또 글또를 시작하게 된 이유 2가지&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이번 5기에 참여하면서는 꾸준히 글을 쓰는 것보다 새로운 공부를 하면서 글을 발행한다는 것이 더 힘들었다. 나의 짧은 지식으로 부족한 글을 쓰게 되면 누군가는 부족한 지식을 습득하게되지 않을까 두렵기도 했고, 아는 지식이 짧다보니 무엇을 써야하는지도 가늠하기 어려웠다.  &lt;/p&gt;
+&lt;p&gt;누군가가 약속은 깨라고 있는 것이랬던가, 거창한 플랜은 지키지 못했고 이론적인 글과 추천하고 싶은 책 리뷰 정도로 글을 작성했다.   &lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;a href=&quot;http://baek.dev/post/34/&quot;&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_033.png&quot;/&gt;&lt;/a&gt;&lt;br/&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://baek.dev/post/33/&quot;&gt;1. 둘리 &amp;#x26; 도우너 어서오고 짤 생성기 회고&lt;/a&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;하고 싶었던 짤 생성기 프로젝트에 대한 회고 포스팅이다.  &lt;/li&gt;
+&lt;li&gt;짭짤한 트래픽 맛을 보게 해준 프로젝트를 어떻게 만들게 되었는지 공유했다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;a href=&quot;http://baek.dev/post/34/&quot;&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2020/2020_034.png&quot;/&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://baek.dev/post/34/&quot;&gt;2. 뉴노멀 중심에서 하는 2020 회고&lt;/a&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;코로나가 메인이었던 2020년 회멀고를 하며 한 해를 마무리한다. 끝이 보이지 않는 터널을 지나는 기분이지만 돌이켜보니 많은 기회가 있었다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;a href=&quot;http://baek.dev/post/34/&quot;&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2021/2021_035.png&quot;/&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://baek.dev/post/36/&quot;&gt;3. 예제로 만나보는 자바스크립트 호이스팅(hoisting)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://baek.dev/post/37/&quot;&gt;4. 자바스크립의 실행 컨텍스트&lt;/a&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;코어 자바스크립트 책을 공부하면서 일부 정리해본 내용이다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;a href=&quot;http://baek.dev/post/34/&quot;&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2021/2021_038.png&quot;/&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://baek.dev/post/38/&quot;&gt;5. CSS 사이즈 단위 - 절대 길이와 상대 길이&lt;/a&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;반응형 사이트라면 필수적인 길이에 대한 개념을 정리했다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;a href=&quot;http://baek.dev/post/34/&quot;&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2021/2021_039.png&quot;/&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://baek.dev/post/39/&quot;&gt;6. 포트폴리오 하나로 구글 입사 제의를 받은 - 일은 배신하지 않는다(1)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://baek.dev/post/40/&quot;&gt;7. 아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)&lt;/a&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;개발자 에세이로, 업을 갖고 있는 모든 회사원들에게 추천하고 싶은 책이다.  &lt;/li&gt;
+&lt;li&gt;Google I/O 2014 발표, FWA 수상 등 세계 무대에서 활약중인 구글 UX Engineer 김종민님은 고졸이었던 PC방 알바가 포트폴리오 하나로 구글의 입사 제안을 받기까지의 과정을 책으로 다시 펴냈다. 직업을 바라보는 시각, 내가 하고 싶은 일과 해야하는 일의 괴리를 극복하는 방법, 계속 변하는 시장의 요구사항에서 살아남는 방법 등을 소개한다.   &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;아쉬운 점도 많지만 좋은 분들도 알게 되고 글을 꾸준히 작성한 성취감도 얻어 보람찬 활동이었다. 다음에 기회가 된다면 더 글또 커뮤니티에 기여할 수 있는 참가자가 되고 싶다.&lt;br&gt;
+글또 여러분 고생하셨어요 :)  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)]]></title><description><![CDATA[<p>이전 글 - <a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>    </p>
 <hr>
 <h2>실리콘밸리의 구글러</h2>
 <h3>인터뷰</h3>
