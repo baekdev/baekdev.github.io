@@ -5,6 +5,10 @@
 - [BaekDev's blog comments archive](https://github.com/baekdev/baekdev-comments)  
 - [Blog's theme : gatsby-starter-morning-dew](https://github.com/maxpou/gatsby-starter-morning-dew) and it is *free* under MIT license. Copyright (C) 2020 Maxence Poutord
 
+### Env
+- Node 14 
+- npm 8  
+
 ### Run on dev
 ```shell 
 $> npm install  
@@ -12,6 +16,6 @@ $> npm run develop
 ```  
 
 ### Deploy on prod
-```shell 
+```shell
 $> npm run deploy  
 ```  
