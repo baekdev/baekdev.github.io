@@ -1,4 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 09 May 2021 08:08:13 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[아디오스 글또!]]></title><description><![CDATA[<p>글또 5기를 시작한지 엊그제 같은데 벌써 이번이 글또로서 작성하는 마지막 글이되었다. 사실 5기에 참여할지 말지 고민을 많이 했었다. 4기에 참여하면서 글쓰는 것이 재밌기도 했지만 글을 쥐어짜며 쓴적도 있어 쉽지 않았기 때문이다. 이후 글또 5기 모집글을 보고서는 글을 하나도 쓰지 않은 나 자신을 발견하곤 무조건 참여가 필요하다 느꼈다.  </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Jan 2022 14:28:30 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[리액트 프로젝트 생성하기 / Create React App with npx]]></title><description><![CDATA[<p>우리가 웹사이트를 만들기 위해 필요한 것들을 하나씩 설치할 수 있지만, 이미 필요한 것들을 모아놓은 패키지를 이용하면 손쉬울 것이다.
+이게 바로 <strong>CRA(Create React App)</strong>이다.    </p>
+<p>CRA를 이용한 프로젝트 생성을 진행하기 위해서는 <strong>node</strong> 및 <strong>npm</strong> 설치가 되어 있어야 한다. (이 포스팅에서는 이 내용은 생략하고, node와 npm이 설치되어 있다고 전제하겠다.) 그럼 npm을 이용해 npx를 설치해보자.  </p>
+<pre><code class="language-shell">$> npm install -g npx  
+</code></pre>
+<p>대부분 많이 쓰는 <code>npm install -g create-react-app</code> 을 사용 하지 않는 이유는, -g 를 통해 전역적으로 create-react-app 가 설치됨으로서 여러 문제점을 야기한다.  </p>
+<ul>
+<li>
+<p>CRA의 무거운 의존성 라이브러리들이 로컬에 남음  </p>
+<ul>
+<li>앞서 소개했듯 필요한 것들을 모아놓은 패키지이기 때문에 많은 의존성 라이브러리들이 있음   </li>
+</ul>
+</li>
+<li>CRA 버전 업데이트 시, 전역으로 설치된 CRA를 재설치 해야함</li>
+</ul>
+<p>반대로 npx를 이용하면,  </p>
+<ul>
+<li>최신 CPA 패키지가 다운로드가 되고, 설정들을 세팅한 후에 CRA 패키지는 제거됨  </li>
+<li>무거운 의존성 라이브러리들도 남지 않고, 함께 제거되는 장점  </li>
+</ul>
+<p>그럼 npx로 CRA를 이용해 프로젝트를 생성해보자.  </p>
+<pre><code class="language-shell">$> npx create-react-app [프로젝트 이름]    
+$> npx create-react-app sample-project   
+</code></pre>
+<p>프로젝트는 바로 실행해 볼 수 있다.<br>
+생성한 프로젝트 이름의 폴더로 이동해서 npm run start를 실행한다.  </p>
+<pre><code class="language-shell">$> cd sample-project
+sample-project $> npm run start
+</code></pre>
+<p>실행이 완료되면 <a href="http://localhost:3000/">http://localhost:3000/</a> 과 같이 접속가능한 url을 터미널에 보여준다. 접속해 보면 이렇게 리액트 로고와 함께 페이지가 열린다.  </p>
+<p><img src="https://baek.dev/assets/images/post/2022/2022_042_001.png" alt="CRA">  </p>]]></description><link>https://baek.dev/post/42/</link><guid isPermaLink="false">https://baek.dev/post/42/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 22 Jan 2022 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;우리가 웹사이트를 만들기 위해 필요한 것들을 하나씩 설치할 수 있지만, 이미 필요한 것들을 모아놓은 패키지를 이용하면 손쉬울 것이다.
+이게 바로 &lt;strong&gt;CRA(Create React App)&lt;/strong&gt;이다.    &lt;/p&gt;
+&lt;p&gt;CRA를 이용한 프로젝트 생성을 진행하기 위해서는 &lt;strong&gt;node&lt;/strong&gt; 및 &lt;strong&gt;npm&lt;/strong&gt; 설치가 되어 있어야 한다. (이 포스팅에서는 이 내용은 생략하고, node와 npm이 설치되어 있다고 전제하겠다.) 그럼 npm을 이용해 npx를 설치해보자.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; npm install -g npx  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;대부분 많이 쓰는 &lt;code&gt;npm install -g create-react-app&lt;/code&gt; 을 사용 하지 않는 이유는, -g 를 통해 전역적으로 create-react-app 가 설치됨으로서 여러 문제점을 야기한다.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;CRA의 무거운 의존성 라이브러리들이 로컬에 남음  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;앞서 소개했듯 필요한 것들을 모아놓은 패키지이기 때문에 많은 의존성 라이브러리들이 있음   &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CRA 버전 업데이트 시, 전역으로 설치된 CRA를 재설치 해야함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;반대로 npx를 이용하면,  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;최신 CPA 패키지가 다운로드가 되고, 설정들을 세팅한 후에 CRA 패키지는 제거됨  &lt;/li&gt;
+&lt;li&gt;무거운 의존성 라이브러리들도 남지 않고, 함께 제거되는 장점  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그럼 npx로 CRA를 이용해 프로젝트를 생성해보자.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; npx create-react-app [프로젝트 이름]    
+$&gt; npx create-react-app sample-project   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;프로젝트는 바로 실행해 볼 수 있다.&lt;br&gt;
+생성한 프로젝트 이름의 폴더로 이동해서 npm run start를 실행한다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; cd sample-project
+sample-project $&gt; npm run start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;실행이 완료되면 &lt;a href=&quot;http://localhost:3000/&quot;&gt;http://localhost:3000/&lt;/a&gt; 과 같이 접속가능한 url을 터미널에 보여준다. 접속해 보면 이렇게 리액트 로고와 함께 페이지가 열린다.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2022/2022_042_001.png&quot; alt=&quot;CRA&quot;&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[아디오스 글또!]]></title><description><![CDATA[<p>글또 5기를 시작한지 엊그제 같은데 벌써 이번이 글또로서 작성하는 마지막 글이되었다. 사실 5기에 참여할지 말지 고민을 많이 했었다. 4기에 참여하면서 글쓰는 것이 재밌기도 했지만 글을 쥐어짜며 쓴적도 있어 쉽지 않았기 때문이다. 이후 글또 5기 모집글을 보고서는 글을 하나도 쓰지 않은 나 자신을 발견하곤 무조건 참여가 필요하다 느꼈다.  </p>
 <ul>
 <li><a href="http://baek.dev/post/29/">다시 또 글또를 시작하게 된 이유 2가지</a>  </li>
 </ul>
@@ -82,7 +142,11 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;아쉬운 점도 많지만 좋은 분들도 알게 되고 글을 꾸준히 작성한 성취감도 얻어 보람찬 활동이었다. 다음에 기회가 된다면 더 글또 커뮤니티에 기여할 수 있는 참가자가 되고 싶다.&lt;br&gt;
-글또 여러분 고생하셨어요 :)  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)]]></title><description><![CDATA[<p>이전 글 - <a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>    </p>
+글또 여러분 고생하셨어요 :)  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[아이들에게 코딩을 가르치지 않는 이유 - 일은 배신하지 않는다(2)]]></title><description><![CDATA[<ul>
+<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
+<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a></li>
+</ul>
+<hr>
 <h2>실리콘밸리의 구글러</h2>
 <h3>인터뷰</h3>
 <p>인터뷰 제안이 온 회사들 중 특정 회사는 <code>전체적인 작업 프로세스나 유저 인터랙션</code>에 대한 질문들보다 CSS와 Javascript의 속성, 개발 언어의 문법 등
@@ -147,13 +211,17 @@
 <hr>
 <p>정말 너무 좋은 책을 오랜만에 만났다. <a href="https://coupa.ng/bVbAJ3">&#x3C;일은 배신하지 않는다></a>는 개발자의 에세이이지만, 개발자가 아닌 다른 일을 하는 모든 이들에게 추천하고 싶다. 겉치레가 아닌 본질에 대한 내용이 많기 때문이다.  </p>
 <ul>
-<li><a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
-<li><a href="https://baek.dev/post/40/">2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유</a></li>
+<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
+<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a>  </li>
 </ul>
 <h5>References</h5>
 <ul>
 <li><a href="https://coupa.ng/bVbAJ3">&#x3C;일은 배신하지 않는다>, 2021 아이스크림미디어</a>  </li>
-</ul>]]></description><link>https://baek.dev/post/40/</link><guid isPermaLink="false">https://baek.dev/post/40/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 17 Apr 2021 15:20:00 GMT</pubDate><content:encoded>&lt;p&gt;이전 글 - &lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;    &lt;/p&gt;
+</ul>]]></description><link>https://baek.dev/post/40/</link><guid isPermaLink="false">https://baek.dev/post/40/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 17 Apr 2021 15:20:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2&gt;실리콘밸리의 구글러&lt;/h2&gt;
 &lt;h3&gt;인터뷰&lt;/h3&gt;
 &lt;p&gt;인터뷰 제안이 온 회사들 중 특정 회사는 &lt;code&gt;전체적인 작업 프로세스나 유저 인터랙션&lt;/code&gt;에 대한 질문들보다 CSS와 Javascript의 속성, 개발 언어의 문법 등
@@ -218,15 +286,15 @@
 &lt;hr&gt;
 &lt;p&gt;정말 너무 좋은 책을 오랜만에 만났다. &lt;a href=&quot;https://coupa.ng/bVbAJ3&quot;&gt;&amp;#x3C;일은 배신하지 않는다&gt;&lt;/a&gt;는 개발자의 에세이이지만, 개발자가 아닌 다른 일을 하는 모든 이들에게 추천하고 싶다. 겉치레가 아닌 본질에 대한 내용이 많기 때문이다.  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5&gt;References&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://coupa.ng/bVbAJ3&quot;&gt;&amp;#x3C;일은 배신하지 않는다&gt;, 2021 아이스크림미디어&lt;/a&gt;  &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[포트폴리오 하나로 구글 입사 제의를 받은 - 일은 배신하지 않는다(1)]]></title><description><![CDATA[<ul>
-<li><a href="https://baek.dev/post/39/">1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
-<li><a href="https://baek.dev/post/40/">2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유</a></li>
+<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
+<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a></li>
 </ul>
 <hr>
 <p>혹시 <strong>김종민</strong>님을 아시나요?<br>
@@ -247,7 +315,7 @@
 <br/>  
 <p>여하튼 디지털 작업 외에도 오프라인 작업물들도 만드는데 그중 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=63770885&#x26;start=slayer">인터랙티브 디벨로퍼</a>라는 책도 있었다. 아쉽게 책은 절판이 되어 구할 수 없었다. 책을 다시 찾는 이가 많아지면서 몇 의 가격으로 중고 거래되는 것을 본 종민님은 5년배 만에 책 내용을 보강하여 이번에 다시 출간했다.  </p>
 <p>그 책이 바로 <a href="https://coupa.ng/bVbAJ3">&#x3C;일은 배신하지 않는다></a>. 종민님은 일을 굉장히 중요하게 생각하는 사람 중의 한 명이라고 자신을 소개하는 것으로 책을 시작한다.     </p>
-<p><a href="https://coupa.ng/bVbAJ3" target="_blank"><img alt="&#xCC45; - &#xC77C;&#xC740; &#xBC30;&#xC2E0;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;" src="https://image.aladin.co.kr/product/26683/79/cover500/k412730981_1.jpg"></a>  </p>
+<p><a href="https://coupa.ng/bVbAJ3" target="_blank"><img alt="책 - 일은 배신하지 않는다" src="https://image.aladin.co.kr/product/26683/79/cover500/k412730981_1.jpg"></a>  </p>
 <p><br/><br/>  </p>
 <blockquote>
 <p>일은 단순히 돈을 벌고 먹고 살기 위해서 하는 것이 아니라,<br>
@@ -324,13 +392,17 @@
 그때 동료의 HTML5 개인 작업물을 보고 HTML5의 가능성을 실감했다. 실력 있는 동료를 보고 자극받아 내 실력을 더 쌓을 수 있는 기회가 많은 것이 <strong>해외 취업의 장점</strong> 중 하나라고 생각한다.  </p>
 <br/>  
 <p><img src="https://baek.dev/assets/images/post/2021/2021_039_002.jpg">  </p>
-<p>이어서 다음 글 - <a href="https://baek.dev/post/40/">2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유</a>  </p>
+<p>그럼 다음 글에 이어서 책을 마저 소개하겠다.   </p>
+<ul>
+<li><a href="https://baek.dev/post/39/">일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은</a>  </li>
+<li><a href="https://baek.dev/post/40/">일은 배신하지 않는다(2) - 구글에 가면 행복할까요?</a></li>
+</ul>
 <h5>References</h5>
 <ul>
 <li><a href="https://coupa.ng/bVbAJ3">&#x3C;일은 배신하지 않는다>, 2021 아이스크림미디어</a>  </li>
 </ul>]]></description><link>https://baek.dev/post/39/</link><guid isPermaLink="false">https://baek.dev/post/39/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 04 Apr 2021 14:34:00 GMT</pubDate><content:encoded>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;1/2 일은 배신하지 않는다 - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;혹시 &lt;strong&gt;김종민&lt;/strong&gt;님을 아시나요?&lt;br&gt;
@@ -351,7 +423,7 @@
 &lt;br/&gt;  
 &lt;p&gt;여하튼 디지털 작업 외에도 오프라인 작업물들도 만드는데 그중 &lt;a href=&quot;https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=63770885&amp;#x26;start=slayer&quot;&gt;인터랙티브 디벨로퍼&lt;/a&gt;라는 책도 있었다. 아쉽게 책은 절판이 되어 구할 수 없었다. 책을 다시 찾는 이가 많아지면서 몇 의 가격으로 중고 거래되는 것을 본 종민님은 5년배 만에 책 내용을 보강하여 이번에 다시 출간했다.  &lt;/p&gt;
 &lt;p&gt;그 책이 바로 &lt;a href=&quot;https://coupa.ng/bVbAJ3&quot;&gt;&amp;#x3C;일은 배신하지 않는다&gt;&lt;/a&gt;. 종민님은 일을 굉장히 중요하게 생각하는 사람 중의 한 명이라고 자신을 소개하는 것으로 책을 시작한다.     &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://coupa.ng/bVbAJ3&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;&amp;#xCC45; - &amp;#xC77C;&amp;#xC740; &amp;#xBC30;&amp;#xC2E0;&amp;#xD558;&amp;#xC9C0; &amp;#xC54A;&amp;#xB294;&amp;#xB2E4;&quot; src=&quot;https://image.aladin.co.kr/product/26683/79/cover500/k412730981_1.jpg&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://coupa.ng/bVbAJ3&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;책 - 일은 배신하지 않는다&quot; src=&quot;https://image.aladin.co.kr/product/26683/79/cover500/k412730981_1.jpg&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;&lt;br/&gt;  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;일은 단순히 돈을 벌고 먹고 살기 위해서 하는 것이 아니라,&lt;br&gt;
@@ -428,7 +500,11 @@
 그때 동료의 HTML5 개인 작업물을 보고 HTML5의 가능성을 실감했다. 실력 있는 동료를 보고 자극받아 내 실력을 더 쌓을 수 있는 기회가 많은 것이 &lt;strong&gt;해외 취업의 장점&lt;/strong&gt; 중 하나라고 생각한다.  &lt;/p&gt;
 &lt;br/&gt;  
 &lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2021/2021_039_002.jpg&quot;&gt;  &lt;/p&gt;
-&lt;p&gt;이어서 다음 글 - &lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;2/2 일은 배신하지 않는다 - 아이들에게 코딩을 가르치지 않는 이유&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;그럼 다음 글에 이어서 책을 마저 소개하겠다.   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/39/&quot;&gt;일은 배신하지 않는다(1) - 포트폴리오 하나로 구글 입사 제의를 받은&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://baek.dev/post/40/&quot;&gt;일은 배신하지 않는다(2) - 구글에 가면 행복할까요?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h5&gt;References&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://coupa.ng/bVbAJ3&quot;&gt;&amp;#x3C;일은 배신하지 않는다&gt;, 2021 아이스크림미디어&lt;/a&gt;  &lt;/li&gt;
@@ -5761,7 +5837,7 @@ B 영역은 실력보다 작업 난이도가 더 높은 지역으로 불안함�
 <a href="#fnref-2" class="footnote-backref">↩</a>
 </li>
 </ol>
-</div>]]></description><link>https://baek.dev/post/16/</link><guid isPermaLink="false">https://baek.dev/post/16/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 12 Jan 2020 23:23:00 GMT</pubDate><content:encoded>&lt;div class=&quot;row&quot;&gt;
+</div>]]></description><link>https://baek.dev/post/16/</link><guid isPermaLink="false">https://baek.dev/post/16/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Mon, 13 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-md-5&quot;&gt;
       &lt;a href=&quot;https://coupa.ng/bl0Era&quot; target=&quot;_blank&quot;&gt;&lt;ResizeImage src=&quot;https://image.aladin.co.kr/product/17597/74/cover500/8966262333_1.jpg&quot; height=&quot;300px;&quot; alt=&quot;함께 자라기 - 애자일로 가는 길&quot; /&gt;&lt;/a&gt;  
   &lt;/div&gt;
