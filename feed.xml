@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Mar 2022 13:15:19 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[Typescript/이펙티브 타입스크립트 - 2장 타입스크립트의 타입 시스템]]></title><description><![CDATA[<h2>아이템6. 편집기를 사용하여 타입 시스템 탐색하기</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Mar 2022 15:50:51 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[Typescript/이펙티브 타입스크립트 - 2장 타입스크립트의 타입 시스템]]></title><description><![CDATA[<h2>아이템6. 편집기를 사용하여 타입 시스템 탐색하기</h2>
 <h3>타입스크립트를 설치하면</h3>
 <ul>
 <li>타입스크립트 컴파일러(tsc)를 실행할 수 있음</li>
@@ -164,7 +164,7 @@ const c = new fn(); // 타입이 Cylinder
 <p>타입스크립트 코드가 잘 동작하지 않는다면 타입 공간과 값 공간을 혼동해서 잘못 작성했을 가능성이 큼  </p>
 </blockquote>
 <hr>
-<p>출처: <a href="https://link.coupang.com/a/ki28i">이펙티브 타입스크립트</a>  </p>]]></description><link>https://baek.dev/til/typescript/effective-typescript/ch02</link><guid isPermaLink="false">https://baek.dev/til/typescript/effective-typescript/ch02</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Thu, 10 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;아이템6. 편집기를 사용하여 타입 시스템 탐색하기&lt;/h2&gt;
+<p>출처: <a href="https://link.coupang.com/a/ki28i">이펙티브 타입스크립트</a>  </p>]]></description><link>https://baek.dev/til/typescript/effective-typescript/ch02</link><guid isPermaLink="false">https://baek.dev/til/typescript/effective-typescript/ch02</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Thu, 10 Mar 2022 13:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;아이템6. 편집기를 사용하여 타입 시스템 탐색하기&lt;/h2&gt;
 &lt;h3&gt;타입스크립트를 설치하면&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;타입스크립트 컴파일러(tsc)를 실행할 수 있음&lt;/li&gt;
@@ -544,7 +544,7 @@ calculateAge(birthDate); // 정상
 타입이 실제 값과 일치한다면 타입 정보를 기억해 둘 필요가 없음<br>
 타입스크립트가 타입 정보를 기억해 주기 때문  </p>
 <hr>
-<p>출처: <a href="https://link.coupang.com/a/ki28i">이펙티브 타입스크립트</a>  </p>]]></description><link>https://baek.dev/til/typescript/effective-typescript/ch01</link><guid isPermaLink="false">https://baek.dev/til/typescript/effective-typescript/ch01</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Thu, 03 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;아이템1. 타입스크립트와 자바스크립트의 관계 이해하기&lt;/h2&gt;
+<p>출처: <a href="https://link.coupang.com/a/ki28i">이펙티브 타입스크립트</a>  </p>]]></description><link>https://baek.dev/til/typescript/effective-typescript/ch01</link><guid isPermaLink="false">https://baek.dev/til/typescript/effective-typescript/ch01</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Thu, 03 Mar 2022 11:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;아이템1. 타입스크립트와 자바스크립트의 관계 이해하기&lt;/h2&gt;
 &lt;p&gt;타입스크립트(이하 ts)는 자바스크립트(이하 js)의 상위집합&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;타입스크립트는 타입이 정의된 자바스크립트의 상위집합&lt;/li&gt;
