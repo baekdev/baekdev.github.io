@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 
-import PostsListItem from './PostsListItem'
 import useSiteMetadata from '../hooks/use-site-config'
+import TilListItem from "./TilListItem";
 
-const PostsList = ({ posts }) => {
+const TilList = ({ posts }) => {
   const { defaultLang } = useSiteMetadata()
 
   return (
@@ -19,10 +19,11 @@ const PostsList = ({ posts }) => {
           tags: post.node.frontmatter.tags || [],
           hero: post.node.frontmatter.hero,
           cover: post.node.frontmatter.cover,
+          date: post.node.frontmatter.date,
         }
-        return <PostsListItem key={props.slug} {...props} />
+        return <TilListItem key={props.slug} {...props} />
       })}
     </Fragment>
   )
 }
-export default PostsList
+export default TilList

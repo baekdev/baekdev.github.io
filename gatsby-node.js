@@ -5,14 +5,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const BlogPostTemplate = require.resolve('./src/templates/blog-post.js')
-  const BlogPostShareImage = require.resolve(
-    './src/templates/blog-post-share-image.js'
-  )
-  const PageTemplate = require.resolve('./src/templates/page.js')
+  const BlogPostShareImage = require.resolve('./src/templates/blog-post-share-image.js')
   const PostsBytagTemplate = require.resolve('./src/templates/tags.js')
-  const ListPostsTemplate = require.resolve(
-    './src/templates/blog-list-template.js'
-  )
+  const AllPostsTemplate = require.resolve('./src/templates/blog-list-template.js')
+  const PostsListTemplate = require.resolve('./src/templates/blog-list-posts.js')
+  const TilListTemplate = require.resolve('./src/templates/blog-list-til.js')
 
   const allMarkdownQuery = await graphql(`
     {
@@ -38,6 +35,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               tags
               language
               hero
+              date
               cover {
                 publicURL
               }
@@ -66,23 +64,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   `)
 
   const markdownFiles = allMarkdownQuery.data.allMarkdown.edges
-
-  const posts = markdownFiles.filter(item =>
-    item.node.fileAbsolutePath.includes('/content/posts/')
-  )
-
-  const listedPosts = posts.filter(
-    item => item.node.frontmatter.unlisted !== true
-  )
+  const posts = markdownFiles
+      .filter(item => item.node.fileAbsolutePath.includes('/content/posts/') || item.node.fileAbsolutePath.includes('/content/til/'))
+      .filter(item => item.node.frontmatter.unlisted !== true)
 
   // generate paginated post list
   const postsPerPage = postPerPageQuery.data.site.siteMetadata.postsPerPage
-  const nbPages = Math.ceil(listedPosts.length / postsPerPage)
+  const nbPages = Math.ceil(posts.length / postsPerPage)
 
   Array.from({ length: nbPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/` : `/pages/${i + 1}`,
-      component: ListPostsTemplate,
+      component: AllPostsTemplate,
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -90,6 +83,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         nbPages: nbPages,
       },
     })
+  })
+
+  const blogPosts = markdownFiles
+      .filter(item => item.node.fileAbsolutePath.includes('/content/posts/'))
+      .filter(item => item.node.frontmatter.unlisted !== true)
+  const blogPostsNbPages = Math.ceil(blogPosts.length / postsPerPage)
+
+  Array.from({ length: blogPostsNbPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `post/` : `post/pages/${i + 1}`,
+      component: PostsListTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        currentPage: i + 1,
+        nbPages: blogPostsNbPages,
+      },
+    })
+  })
+
+  createPage({
+    path: `til/`,
+    component: TilListTemplate,
   })
 
   // generate blog posts
@@ -120,19 +136,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     }
   })
-
-  // generate pages
-  markdownFiles
-    .filter(item => item.node.fileAbsolutePath.includes('/content/pages/'))
-    .forEach(page => {
-      createPage({
-        path: page.node.frontmatter.slug,
-        component: PageTemplate,
-        context: {
-          slug: page.node.frontmatter.slug,
-        },
-      })
-    })
 
   // generate tag page
   markdownFiles

@@ -28,6 +28,13 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
+				name: "til",
+				path: "content/til",
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
 				name: "pages",
 				path: "content/pages",
 			},
@@ -236,7 +243,7 @@ module.exports = {
 							allMarkdownRemark(
 							  limit: 100
 							  filter: {
-						  fileAbsolutePath: {regex: "/content/posts/"}
+						  fileAbsolutePath: {regex: "\\/content\\/posts\\/|\\/content\\/til\\/"}
 						  frontmatter: {
 							published: { ne: false }
 						  }

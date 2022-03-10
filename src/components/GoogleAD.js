@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import {isProd} from "../utils";
 
 function GoogleAD() {
     const { site } = useStaticQuery(
@@ -20,7 +21,7 @@ function GoogleAD() {
       useEffect(()=>{
         (window.adsbygoogle = window.adsbygoogle || []).push({});   
       })
-        return(
+        return isProd() && (
             
                 <ins className="adsbygoogle"
                     style={{ "display":"block", "text-align":"center" }}

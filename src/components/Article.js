@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Bio from './Bio'
 import Content from './Content'
 import FacebookLike from './FacebookLike'
+import {isProd} from "../utils";
 
 const ArticleWrapper = styled.article`
   padding: 0;

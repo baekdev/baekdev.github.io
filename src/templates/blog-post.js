@@ -34,15 +34,15 @@ class BlogPostTemplate extends React.Component {
         />
 
         <Wrapper>
-        <HeroPost title={post.frontmatter.title} />
+        <HeroPost title={post.frontmatter.title} type={post.frontmatter.type}/>
         {(post.frontmatter.tags || post.frontmatter.date || post.frontmatter.translations) && (
-          <ContentHeader date={post.frontmatter.date} tags={post.frontmatter.tags} translations={post.frontmatter.translations} />
+          <ContentHeader date={post.frontmatter.date} updated={post.frontmatter.updated} tags={post.frontmatter.tags} translations={post.frontmatter.translations} />
         )}        
         {
           post.frontmatter.hero 
           ? ( <Hero heroImg={post.frontmatter.hero} /> )
           : ( <Hero heroImg={post.frontmatter.cover && post.frontmatter.cover.publicURL} /> )
-        } 
+        }
 
           <GoogleAD />
           <Article post={post} siteMetadata={siteMetadata} />
@@ -78,7 +78,9 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        type
         date
+        updated
         slug
         language
         tags

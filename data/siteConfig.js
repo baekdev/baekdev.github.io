@@ -29,8 +29,12 @@ module.exports = {
 	headerLinksIcon: "logo.png", //  (leave empty to disable: '')
 	headerLinks: [
 		{
-			label: "Blog",
-			url: "/",
+			label: "Article",
+			url: "/post",
+		},
+		{
+			label: "TIL",
+			url: "/til",
 		},
 	],
 	// Footer information (ex: Github, Netlify...)

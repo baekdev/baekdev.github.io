@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {isProd} from "../utils";
 
 class FacebookLike extends Component {
 
@@ -11,7 +12,7 @@ class FacebookLike extends Component {
             'text-align' : 'center',
         }
     
-        return(
+        return isProd() && (
             <div style={style}>               
                 <div className="fb-like" data-href={siteUrl + "/" + slug}
                     data-width="300" data-layout="button_count" data-action="like"

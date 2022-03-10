@@ -4,17 +4,11 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Wrapper from '../components/Wrapper'
 import PostsList from '../components/PostsList'
-import Pagination from '../components/Pagination'
 import SEO from '../components/SEO'
-import styled from 'styled-components'
+import PaginationPosts from "../components/PaginationPosts";
+import {PageTitle, PageTitleHr} from "./blog-list-template";
 
-export const PageTitle = styled.h2`
-`
-export const PageTitleHr = styled.hr`
-  margin: 20px 0 10px 0;
-`
-
-class BlogList extends React.Component {
+class BlogListPosts extends React.Component {
   render() {
     const posts = this.props.data.posts.edges
     const { pageContext } = this.props
@@ -22,14 +16,13 @@ class BlogList extends React.Component {
     return (
       <Layout location={this.props.location}>
         <SEO />
-        {/* <HeroMain title={title} subTitle={description} /> */}
         <Wrapper>
-          <PageTitle>All Posts</PageTitle>
-          <PageTitleHr/>
+            <PageTitle>Blog</PageTitle>
+            <PageTitleHr/>
           <PostsList posts={posts} />
         </Wrapper>
 
-        <Pagination
+        <PaginationPosts
           nbPages={pageContext.nbPages}
           currentPage={pageContext.currentPage}
         />
@@ -38,10 +31,10 @@ class BlogList extends React.Component {
   }
 }
 
-export default BlogList
+export default BlogListPosts
 
 export const pageQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
+  query BlogListPosts($skip: Int!, $limit: Int!) {
     site {
       siteMetadata {
         title
@@ -51,7 +44,7 @@ export const pageQuery = graphql`
     posts: allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        fileAbsolutePath: {regex: "/content/posts/|/content/til/"}
+        fileAbsolutePath: {regex: "/content/posts/"}
         frontmatter: { published: { ne: false }, unlisted: { ne: true } }
       }
       limit: $limit
@@ -63,7 +56,6 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
-            type
             tags
             language
             slug

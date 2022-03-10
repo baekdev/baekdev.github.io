@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import useSiteMetadata from '../hooks/use-site-config'
 import useSiteImages from '../hooks/use-site-images'
+import {getTitlePrefix} from "../utils";
 
 const HeroContainer = styled.div`
   position: relative;
@@ -41,7 +42,7 @@ const Hero = props => {
   return (
     <HeroContainer>
       <TitleContainer>
-        <HeroTitle>{props.title}</HeroTitle>
+        <HeroTitle>{getTitlePrefix(props.type)}{props.title}</HeroTitle>
         {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
       </TitleContainer>
     </HeroContainer>
