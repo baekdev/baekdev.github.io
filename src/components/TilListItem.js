@@ -30,7 +30,7 @@ const TilListItem = props => {
       <PostHeader>
         <h2>
           <PostTitleLink to={`/${slug}`}>
-            {getTitlePrefix(type)}{title}
+            {title}
           </PostTitleLink>
         </h2>
       </PostHeader>
