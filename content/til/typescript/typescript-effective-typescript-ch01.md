@@ -3,7 +3,7 @@ title: "Typescript/이펙티브 타입스크립트 - 1장 타입스크립트 알
 type: "til"
 slug: "til/typescript/effective-typescript/ch01"
 tags: [ "frontend", "typescript", "book" ]
-excerpt: "타입스크립트의 동작 원리, 해야 할 것과 하지 말아야 할 것에 대한 구체적인 조언을 담은 이펙티브 타입스크립트"
+excerpt: "typescript 설정 이해, 런타임에 타입 정보를 유지하는 방법, 구조적 타이핑, any 타입"
 hero: /assets/images/til/book-effective-typescript.png
 date: "2022-03-03 20:00"  
 updated: ""  

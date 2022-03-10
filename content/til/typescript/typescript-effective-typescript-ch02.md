@@ -3,7 +3,7 @@ title: "Typescript/이펙티브 타입스크립트 - 2장 타입스크립트의 
 type: "til"
 slug: "til/typescript/effective-typescript/ch02"
 tags: [ "frontend", "typescript", "book" ]
-excerpt: "타입스크립트의 동작 원리, 해야 할 것과 하지 말아야 할 것에 대한 구체적인 조언을 담은 이펙티브 타입스크립트"
+excerpt: "Literal Type, 타입 체커, 유니온 타입, 서브타입, 타입 공간, 값 공간의 심벌 구분, typeof, instanceof"
 hero: /assets/images/til/book-effective-typescript.png
 date: "2022-03-10 22:00"  
 updated: ""  
