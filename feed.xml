@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Mar 2022 16:11:47 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[알고리즘 - 선형 탐색 vs 이진 탐색]]></title><description><![CDATA[<h2>선형 탐색 알고리즘(Linear Search)</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Mar 2022 16:13:53 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[알고리즘 - 선형 탐색 vs 이진 탐색]]></title><description><![CDATA[<h2>선형 탐색 알고리즘(Linear Search)</h2>
 <p>순차 검색 알고리즘이라고도 부르는 선형 탐색은 찾고자 하는 값을 리스트의 맨 앞부터 끝까지 차례대로 찾아 나가는 것</p>
 <ul>
 <li>시간복잡도: O(n)  </li>
@@ -294,7 +294,7 @@ binarySearchTree.insert(5);
 
 console.log(binarySearchTree.has(8)); // true
 console.log(binarySearchTree.has(1)); // false
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[자바스크립트/자료구조 - 트라이(Trie)]]></title><description><![CDATA[<h2>트라이(Trie)란?</h2>
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[자료구조 - 트라이(Trie)]]></title><description><![CDATA[<h2>트라이(Trie)란?</h2>
 <ul>
 <li>
 <p>Retireval(탐색)에서 나온 단어  </p>
@@ -470,7 +470,7 @@ trie.insert(&apos;cant&apos;);
 console.log(trie.has(&apos;can&apos;));   // true
 console.log(trie.has(&apos;candy&apos;)); // true
 console.log(trie.has(&apos;con&apos;));   // false
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[Typescript/이펙티브 타입스크립트 - 2장 타입스크립트의 타입 시스템]]></title><description><![CDATA[<h2>아이템6. 편집기를 사용하여 타입 시스템 탐색하기</h2>
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[이펙티브 타입스크립트 - 2장 타입스크립트의 타입 시스템]]></title><description><![CDATA[<h2>아이템6. 편집기를 사용하여 타입 시스템 탐색하기</h2>
 <h3>타입스크립트를 설치하면</h3>
 <ul>
 <li>타입스크립트 컴파일러(tsc)를 실행할 수 있음</li>
@@ -802,7 +802,7 @@ const c = new fn(); // 타입이 Cylinder
 &lt;p&gt;타입스크립트 코드가 잘 동작하지 않는다면 타입 공간과 값 공간을 혼동해서 잘못 작성했을 가능성이 큼  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;p&gt;출처: &lt;a href=&quot;https://link.coupang.com/a/ki28i&quot;&gt;이펙티브 타입스크립트&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Typescript/이펙티브 타입스크립트 - 1장 타입스크립트 알아보기]]></title><description><![CDATA[<h2>아이템1. 타입스크립트와 자바스크립트의 관계 이해하기</h2>
+&lt;p&gt;출처: &lt;a href=&quot;https://link.coupang.com/a/ki28i&quot;&gt;이펙티브 타입스크립트&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[이펙티브 타입스크립트 - 1장 타입스크립트 알아보기]]></title><description><![CDATA[<h2>아이템1. 타입스크립트와 자바스크립트의 관계 이해하기</h2>
 <p>타입스크립트(이하 ts)는 자바스크립트(이하 js)의 상위집합</p>
 <ul>
 <li>타입스크립트는 타입이 정의된 자바스크립트의 상위집합</li>

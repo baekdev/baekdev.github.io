@@ -56,7 +56,6 @@
 <url> <loc>https://baek.dev/tags/algorithm</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/binary search</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/data structure</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://baek.dev/tags/javascript</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/frontend</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/typescript</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/book</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
@@ -67,6 +66,7 @@
 <url> <loc>https://baek.dev/tags/css</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/css length units</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/viewport</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/tags/javascript</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/execution environment</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/lexical environment</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/hoisting</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
