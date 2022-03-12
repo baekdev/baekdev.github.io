@@ -1,12 +1,12 @@
 ---
-title: "Typescript/이펙티브 타입스크립트 - 2장 타입스크립트의 타입 시스템"  
+title: "이펙티브 타입스크립트 - 2장 타입스크립트의 타입 시스템"  
 type: "til"
 slug: "til/typescript/effective-typescript/ch02"
 tags: [ "frontend", "typescript", "book" ]
 excerpt: "Literal Type, 타입 체커, 유니온 타입, 서브타입, 타입 공간, 값 공간의 심벌 구분, typeof, instanceof"
 hero: /assets/images/til/book-effective-typescript.png
 date: "2022-03-10 22:00"  
-updated: ""  
+updated: "2022-03-13 01:12"
 ---  
 
 

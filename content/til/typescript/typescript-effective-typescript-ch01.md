@@ -1,12 +1,12 @@
 ---
-title: "Typescript/이펙티브 타입스크립트 - 1장 타입스크립트 알아보기"  
+title: "이펙티브 타입스크립트 - 1장 타입스크립트 알아보기"  
 type: "til"
 slug: "til/typescript/effective-typescript/ch01"
 tags: [ "frontend", "typescript", "book" ]
 excerpt: "typescript 설정 이해, 런타임에 타입 정보를 유지하는 방법, 구조적 타이핑, any 타입"
 hero: /assets/images/til/book-effective-typescript.png
 date: "2022-03-03 20:00"  
-updated: ""  
+updated: "2022-03-13 01:12"
 ---  
 
 
