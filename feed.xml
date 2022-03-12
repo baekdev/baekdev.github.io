@@ -1,4 +1,300 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Mar 2022 17:19:47 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[자바스크립트/자료구조 - 트라이(Trie)]]></title><description><![CDATA[<h2>트라이(Trie)란?</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Mar 2022 16:08:24 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[알고리즘 - 선형 탐색 vs 이진 탐색]]></title><description><![CDATA[<h2>선형 탐색 알고리즘(Linear Search)</h2>
+<p>순차 검색 알고리즘이라고도 부르는 선형 탐색은 찾고자 하는 값을 리스트의 맨 앞부터 끝까지 차례대로 찾아 나가는 것</p>
+<ul>
+<li>시간복잡도: O(n)  </li>
+<li>장점: 검색 방법 중 가장 단순하여 구현이 쉽고 정렬되지 않은 리스트에서도 사용</li>
+<li>단점: 검색 길이가 길면 비효율적</li>
+</ul>
+<pre><code class="language-javascript">const search = (list, target) => {
+    for ( const i = 0 ; i &#x3C; list.length; i++ ) {
+        if ( list[i] === target ) return i;
+    } 
+    return -1;
+}
+</code></pre>
+<h2>이진 탐색 알고리즘(Binary Search Algorithm)</h2>
+<p>오름차순으로 정렬된 리스트에서 특정한 값의 위치를 찾는 알고리즘으로<br>
+임의의 중간값을 선택하여, 그 값과 찾고자 하는 값의 크고 작음을 비교하는 방식을 채택
+배열 혹은 이진 트리를 이용하여 구현할 수 있음  </p>
+<ul>
+<li>시간복잡도: O(log n)</li>
+<li>장점: 검색이 반복될 때마다 목표값을 찾을 확률은 두 배가 되므로 속도가 빠름  </li>
+<li>단점: 검색 원리상 정렬된 리스트에만 사용할 수 있음  </li>
+</ul>
+<h3>리스트에서 23 값을 찾는 이진 탐색 예시</h3>
+<p><img src="https://baek.dev/assets/images/til/binary_search_ex_1.png" alt="이진 탐색 알고리즘 예시">
+<img src="https://baek.dev/assets/images/til/binary_search_ex_2.png" alt="이진 탐색 알고리즘 예시">
+<img src="https://baek.dev/assets/images/til/binary_search_ex_3.png" alt="이진 탐색 알고리즘 예시">  </p>
+<h2>이진 탐색 트리</h2>
+<p>이진 탐색을 위한 이진 트리</p>
+<ul>
+<li>왼쪽 서브 트리는 루트보다 작은 값이 모임  </li>
+<li>오른쪽 서브 트리는 루트보다 큰 값이 모임  </li>
+<li>단점: 최악의 경우 한쪽으로 편향된 트리가 될 수 있음, 시간복잡고 O(n), <a href="https://ko.wikipedia.org/wiki/AVL_%ED%8A%B8%EB%A6%AC">AVL 트리</a>, <a href="https://ko.wikipedia.org/wiki/%EB%A0%88%EB%93%9C-%EB%B8%94%EB%9E%99_%ED%8A%B8%EB%A6%AC">레드-블랙 트리</a>로 해결 가능</li>
+</ul>
+<p><img src="https://baek.dev/assets/images/til/binary_search_tree.png" alt="이진 탐색 알고리즘 예시">  </p>
+<p>이진 탐색 트리 요소 추가  </p>
+<ul>
+<li>root보다 작으면 왼쪽, 크면 오른쪽에 정점에 추가함</li>
+</ul>
+<p>이진 탐색 트리 요소 삭제  </p>
+<ul>
+<li>제거되는 정점의 부모</li>
+</ul>
+<h3>이진 탐색 예제</h3>
+<pre><code class="language-javascript">const array = [1, 1, 10, 23, 474, 567, 678, 789, 1006, 1549];
+
+const binarySearch = (array, target) => {
+    let left = 0;
+    let right = array.length - 1;
+    let mid = Math.floor((left + right) /2);
+
+    while (left &#x3C; right) {
+
+        // console.log(`start ===> left: ${left} / mid: ${mid} / right: ${right} / array[mid]: ${array[mid]}`);
+        if (array[mid] === target) return mid;
+
+        if (array[mid] &#x3C; target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+
+        mid = Math.floor((left + right) /2);
+        // console.log(`end ===> left: ${left} / mid: ${mid} / right: ${right}`);
+    }
+
+    return -1;
+}
+
+
+console.log(binarySearch(array, 1006)); // 8
+console.log(binarySearch(array, 10));   // 2
+console.log(binarySearch(array, 9999)); // -1
+</code></pre>
+<h2>이진 탐색 트리 예제</h2>
+<pre><code class="language-javascript">class Node {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinarySearchTree {
+    constructor() {
+        this.root = null;
+    }
+
+    insert(value) {
+        const newNode = new Node(value);
+        if (this.root === null) {
+            this.root = newNode;
+            return;
+        }
+
+        let currentNode = this.root;
+        while ( currentNode !== null ) {
+            // 현재 노드 보다 값이 크면 오른쪽, 값이 작으면 왼쪽 정점에 추가하기 위한 분기
+            if (currentNode.value &#x3C; value) {
+
+                // 오른쪽 노드가 비었으면 셋팅하고
+                if (currentNode.right === null) {
+                    currentNode.right = newNode;
+                    break;
+                }
+                // 이미 차있으면 오른쪽 노드로 탐색을 이동하는 과정을 반복한다.
+                currentNode = currentNode.right;
+            } else {
+                // 왼쪽 노드가 비었으면 셋팅하고
+                if (currentNode.left === null) {
+                    currentNode.left = newNode;
+                    break;
+                }
+                // 이미 차있으면 왼쪽 노드로 탐색을 이동하는 과정을 반복한다.
+                currentNode = currentNode.left;
+            }
+        }
+    }
+
+    has(value) {
+        let currentNode = this.root;
+        while (currentNode !== null) {
+            if (currentNode.value === value) return true;
+
+            if (currentNode.value &#x3C; value) {
+                currentNode = currentNode.right;
+            } else {
+                currentNode = currentNode.left;
+            }
+        }
+
+        return false;
+    }
+}
+
+
+const binarySearchTree = new BinarySearchTree();
+binarySearchTree.insert(5);
+binarySearchTree.insert(4);
+binarySearchTree.insert(7);
+binarySearchTree.insert(6);
+binarySearchTree.insert(8);
+binarySearchTree.insert(3);
+binarySearchTree.insert(2);
+binarySearchTree.insert(5);
+
+console.log(binarySearchTree.has(8)); // true
+console.log(binarySearchTree.has(1)); // false
+</code></pre>]]></description><link>https://baek.dev/til/algorithm/binary-search</link><guid isPermaLink="false">https://baek.dev/til/algorithm/binary-search</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 12 Mar 2022 16:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;선형 탐색 알고리즘(Linear Search)&lt;/h2&gt;
+&lt;p&gt;순차 검색 알고리즘이라고도 부르는 선형 탐색은 찾고자 하는 값을 리스트의 맨 앞부터 끝까지 차례대로 찾아 나가는 것&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;시간복잡도: O(n)  &lt;/li&gt;
+&lt;li&gt;장점: 검색 방법 중 가장 단순하여 구현이 쉽고 정렬되지 않은 리스트에서도 사용&lt;/li&gt;
+&lt;li&gt;단점: 검색 길이가 길면 비효율적&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const search = (list, target) =&gt; {
+    for ( const i = 0 ; i &amp;#x3C; list.length; i++ ) {
+        if ( list[i] === target ) return i;
+    } 
+    return -1;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;이진 탐색 알고리즘(Binary Search Algorithm)&lt;/h2&gt;
+&lt;p&gt;오름차순으로 정렬된 리스트에서 특정한 값의 위치를 찾는 알고리즘으로&lt;br&gt;
+임의의 중간값을 선택하여, 그 값과 찾고자 하는 값의 크고 작음을 비교하는 방식을 채택
+배열 혹은 이진 트리를 이용하여 구현할 수 있음  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;시간복잡도: O(log n)&lt;/li&gt;
+&lt;li&gt;장점: 검색이 반복될 때마다 목표값을 찾을 확률은 두 배가 되므로 속도가 빠름  &lt;/li&gt;
+&lt;li&gt;단점: 검색 원리상 정렬된 리스트에만 사용할 수 있음  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;리스트에서 23 값을 찾는 이진 탐색 예시&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/til/binary_search_ex_1.png&quot; alt=&quot;이진 탐색 알고리즘 예시&quot;&gt;
+&lt;img src=&quot;https://baek.dev/assets/images/til/binary_search_ex_2.png&quot; alt=&quot;이진 탐색 알고리즘 예시&quot;&gt;
+&lt;img src=&quot;https://baek.dev/assets/images/til/binary_search_ex_3.png&quot; alt=&quot;이진 탐색 알고리즘 예시&quot;&gt;  &lt;/p&gt;
+&lt;h2&gt;이진 탐색 트리&lt;/h2&gt;
+&lt;p&gt;이진 탐색을 위한 이진 트리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;왼쪽 서브 트리는 루트보다 작은 값이 모임  &lt;/li&gt;
+&lt;li&gt;오른쪽 서브 트리는 루트보다 큰 값이 모임  &lt;/li&gt;
+&lt;li&gt;단점: 최악의 경우 한쪽으로 편향된 트리가 될 수 있음, 시간복잡고 O(n), &lt;a href=&quot;https://ko.wikipedia.org/wiki/AVL_%ED%8A%B8%EB%A6%AC&quot;&gt;AVL 트리&lt;/a&gt;, &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EB%A0%88%EB%93%9C-%EB%B8%94%EB%9E%99_%ED%8A%B8%EB%A6%AC&quot;&gt;레드-블랙 트리&lt;/a&gt;로 해결 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/til/binary_search_tree.png&quot; alt=&quot;이진 탐색 알고리즘 예시&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;이진 탐색 트리 요소 추가  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;root보다 작으면 왼쪽, 크면 오른쪽에 정점에 추가함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이진 탐색 트리 요소 삭제  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;제거되는 정점의 부모&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;이진 탐색 예제&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;const array = [1, 1, 10, 23, 474, 567, 678, 789, 1006, 1549];
+
+const binarySearch = (array, target) =&gt; {
+    let left = 0;
+    let right = array.length - 1;
+    let mid = Math.floor((left + right) /2);
+
+    while (left &amp;#x3C; right) {
+
+        // console.log(`start ===&gt; left: ${left} / mid: ${mid} / right: ${right} / array[mid]: ${array[mid]}`);
+        if (array[mid] === target) return mid;
+
+        if (array[mid] &amp;#x3C; target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+
+        mid = Math.floor((left + right) /2);
+        // console.log(`end ===&gt; left: ${left} / mid: ${mid} / right: ${right}`);
+    }
+
+    return -1;
+}
+
+
+console.log(binarySearch(array, 1006)); // 8
+console.log(binarySearch(array, 10));   // 2
+console.log(binarySearch(array, 9999)); // -1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;이진 탐색 트리 예제&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;class Node {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinarySearchTree {
+    constructor() {
+        this.root = null;
+    }
+
+    insert(value) {
+        const newNode = new Node(value);
+        if (this.root === null) {
+            this.root = newNode;
+            return;
+        }
+
+        let currentNode = this.root;
+        while ( currentNode !== null ) {
+            // 현재 노드 보다 값이 크면 오른쪽, 값이 작으면 왼쪽 정점에 추가하기 위한 분기
+            if (currentNode.value &amp;#x3C; value) {
+
+                // 오른쪽 노드가 비었으면 셋팅하고
+                if (currentNode.right === null) {
+                    currentNode.right = newNode;
+                    break;
+                }
+                // 이미 차있으면 오른쪽 노드로 탐색을 이동하는 과정을 반복한다.
+                currentNode = currentNode.right;
+            } else {
+                // 왼쪽 노드가 비었으면 셋팅하고
+                if (currentNode.left === null) {
+                    currentNode.left = newNode;
+                    break;
+                }
+                // 이미 차있으면 왼쪽 노드로 탐색을 이동하는 과정을 반복한다.
+                currentNode = currentNode.left;
+            }
+        }
+    }
+
+    has(value) {
+        let currentNode = this.root;
+        while (currentNode !== null) {
+            if (currentNode.value === value) return true;
+
+            if (currentNode.value &amp;#x3C; value) {
+                currentNode = currentNode.right;
+            } else {
+                currentNode = currentNode.left;
+            }
+        }
+
+        return false;
+    }
+}
+
+
+const binarySearchTree = new BinarySearchTree();
+binarySearchTree.insert(5);
+binarySearchTree.insert(4);
+binarySearchTree.insert(7);
+binarySearchTree.insert(6);
+binarySearchTree.insert(8);
+binarySearchTree.insert(3);
+binarySearchTree.insert(2);
+binarySearchTree.insert(5);
+
+console.log(binarySearchTree.has(8)); // true
+console.log(binarySearchTree.has(1)); // false
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[자바스크립트/자료구조 - 트라이(Trie)]]></title><description><![CDATA[<h2>트라이(Trie)란?</h2>
 <ul>
 <li>
 <p>Retireval(탐색)에서 나온 단어  </p>
