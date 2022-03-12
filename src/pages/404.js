@@ -35,10 +35,10 @@ const NotFoundPage = props => {
       posts: allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
         filter: {
-          fileAbsolutePath: { regex: "//content/posts//" }
+          fileAbsolutePath: {regex: "/content/posts/|/content/til/"}
           frontmatter: { published: { ne: false }, unlisted: { ne: true } }
         }
-        limit: 5
+        limit: 10
       ) {
         edges {
           node {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import {getTitlePrefix} from "../utils";
 
 const Post = styled.article`
   padding-bottom: 0.5rem;
