@@ -1,5 +1,5 @@
 ---
-title: "이펙티브 타입스크립트 - 1장 타입스크립트 알아보기"  
+title: "이펙티브 타입스크립트 - 1. 타입스크립트 알아보기"  
 type: "til"
 slug: "til/typescript/effective-typescript/ch01"
 tags: [ "frontend", "typescript", "book" ]
