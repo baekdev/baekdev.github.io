@@ -80,7 +80,7 @@
     "react-helmet": "^6.0.0",
     "rss": "^1.2.2",
     "styled-components": "^5.1.0",
-    "terser": "^4.6.11"
+    "terser": "^4.8.1"
   },
   "devDependencies": {
     "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
