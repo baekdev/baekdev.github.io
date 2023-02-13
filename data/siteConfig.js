@@ -11,7 +11,7 @@ module.exports = {
 	siteUrl: "https://baek.dev/",
 	disqusSiteUrl: "",
 	// Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
-	pathPrefix: "", // Note: it must *not* have a trailing slash.
+	pathPrefix: "/", // Note: it must *not* have a trailing slash.
 	siteHero: "https://baek.dev/assets/images/basic/profile.jpg",
 	siteCover: "001.png", // file in content/images
 	googleAnalyticsId: "UA-148617191-1",
