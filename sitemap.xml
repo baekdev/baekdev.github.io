@@ -9,6 +9,7 @@
 <url> <loc>https://baek.dev/post/pages/2</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/pages/3</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/pages/4</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/post/pages/5</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/til/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/44/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/til/typescript/effective-typescript/ch03/item25</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
