@@ -1,6 +1,6 @@
 module.exports = {
 	siteTitle: "아웃풋 트레이닝",
-	siteDescription: "자바 둘 타세요-에서 자바 인력1을 맡고 있습니다.",
+	siteDescription: "Frontend Software Engineer",
 	authorName: "BAEKDEV",
 	github: "baekdev",
 	twitterUsername: "",
