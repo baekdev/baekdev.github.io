@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Mar 2023 17:37:28 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[타입스크립트 예약어 중에 식별자(변수명, 함수명 등)로 사용할 수 있는 예약어가 있다?]]></title><description><![CDATA[<h2>예약어란 무엇인가?</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Mar 2023 17:45:56 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[타입스크립트 예약어 중에 식별자(변수명, 함수명 등)로 사용할 수 있는 예약어가 있다?]]></title><description><![CDATA[<h2>예약어란 무엇인가?</h2>
 <p>예약어란 프로그래밍 언어에서 특별한 의미를 가지고 있어서, 식별자로 사용할 수 없는 단어를 말한다. 예를 들어, JavaScript에서 let, if, else, return 등은 모두 예약어이다. 따라서 이러한 단어들을 변수 이름 등으로 사용할 수 없다.  </p>
 <h2>타입스크립트에서 예약어를 어떻게 처리할까?</h2>
 <p>타입스크립트에서도 JavaScript와 마찬가지로 예약어를 식별자로 사용할 수 없다. 타입스크립트 컴파일러는 예약어를 사용하는 코드를 발견하면, 컴파일을 실패시킨다. 모든 예약어를 실패처리하는 것은 아니고 TypeScript는 엄격한 모드(strict mode)유무에 따라 일부 예약어를 더욱 엄격하게 처리한다. 이는 가독성과 유지보수성을 높이기 위한 목적으로 도입되었다.  </p>
@@ -29,6 +29,43 @@ let obj = {
   await: false // 컴파일 에러 없음
 };
 </code></pre>
+<p>Contextual keywords 종류는 다음과 같다. </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>any</td>
+<td>boolean</td>
+<td>constructor</td>
+</tr>
+<tr>
+<td>declare</td>
+<td>get</td>
+<td>modeul</td>
+</tr>
+<tr>
+<td>require</td>
+<td>number</td>
+<td>set</td>
+</tr>
+<tr>
+<td>string</td>
+<td>symbol</td>
+<td>type</td>
+</tr>
+<tr>
+<td>from</td>
+<td>of</td>
+<td>async/await</td>
+</tr>
+</tbody>
+</table>
 <h2>식별자로 사용 가능한 일부 예약어들, 하지만 가독성과 유지보수를 위해 사용을 자제하는 이유와 주의점은?</h2>
 <p>Strict mode에서도 예약어로 취급되지 않는 일부 단어들이 있기 때문에, 이를 사용하는 것은 가능하다. 하지만 가독성과 유지보수 측면에서는 권장하고 싶지는 않다. 다른 개발자가 코드를 이해하기 어려워지고, 예상치 못한 오류가 발생할 수 있기 때문이다.
 그럼에도 불구하고 예약어를 식별자로 사용해야 하는 경우에는 어떻게 해야 할까?</p>
@@ -71,6 +108,43 @@ let obj = {
   await: false // 컴파일 에러 없음
 };
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Contextual keywords 종류는 다음과 같다. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;any&lt;/td&gt;
+&lt;td&gt;boolean&lt;/td&gt;
+&lt;td&gt;constructor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;declare&lt;/td&gt;
+&lt;td&gt;get&lt;/td&gt;
+&lt;td&gt;modeul&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;require&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;set&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;string&lt;/td&gt;
+&lt;td&gt;symbol&lt;/td&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;from&lt;/td&gt;
+&lt;td&gt;of&lt;/td&gt;
+&lt;td&gt;async/await&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h2&gt;식별자로 사용 가능한 일부 예약어들, 하지만 가독성과 유지보수를 위해 사용을 자제하는 이유와 주의점은?&lt;/h2&gt;
 &lt;p&gt;Strict mode에서도 예약어로 취급되지 않는 일부 단어들이 있기 때문에, 이를 사용하는 것은 가능하다. 하지만 가독성과 유지보수 측면에서는 권장하고 싶지는 않다. 다른 개발자가 코드를 이해하기 어려워지고, 예상치 못한 오류가 발생할 수 있기 때문이다.
 그럼에도 불구하고 예약어를 식별자로 사용해야 하는 경우에는 어떻게 해야 할까?&lt;/p&gt;
