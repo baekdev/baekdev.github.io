@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 12 Mar 2023 05:07:32 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[타입스크립트 예약어 중에 식별자(변수명, 함수명 등)로 사용할 수 있는 예약어가 있다?]]></title><description><![CDATA[<h2>예약어란 무엇인가?</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 12 Mar 2023 05:08:40 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[타입스크립트 예약어 중에 식별자(변수명, 함수명 등)로 사용할 수 있는 예약어가 있다?]]></title><description><![CDATA[<h2>예약어란 무엇인가?</h2>
 <p>예약어란 프로그래밍 언어에서 특별한 의미를 가지고 있어서, 식별자로 사용할 수 없는 단어를 말한다. 예를 들어, JavaScript에서 let, if, else, return 등은 모두 예약어이다. 따라서 이러한 단어들을 변수 이름 등으로 사용할 수 없다.  </p>
 <h2>타입스크립트에서 예약어를 어떻게 처리할까?</h2>
 <p>타입스크립트에서도 JavaScript와 마찬가지로 예약어를 식별자로 사용할 수 없다. 타입스크립트 컴파일러는 예약어를 사용하는 코드를 발견하면, 컴파일을 실패시킨다. 모든 예약어를 실패처리하는 것은 아니고 TypeScript는 엄격한 모드(strict mode)유무에 따라 일부 예약어를 더욱 엄격하게 처리한다. 이는 가독성과 유지보수성을 높이기 위한 목적으로 도입되었다.  </p>
@@ -17,32 +17,7 @@ function while() { // 오류 발생
 }
 </code></pre>
 <h3>Contextual keywords</h3>
-<p>Contextual keywords는 strict mode와 관계없이 예약어로 취급되는 것이 아니라, 특정 문맥에서만 예약어로 취급되는 단어들이다. </p>
-<pre><code class="language-typescript">// 타입스크립트에서의 타입 선언을 위한 'type'과 식별자로서의 type
-type ABC = 'A' | 'B' | 'C';
-
-let type = 'EXAMPLE'; // 컴파일 에러 없음
-</code></pre>
-<pre><code class="language-typescript">// number식별자와 그 타입, 그리고 interface의 식별자로 사용될 수 없는 number
-let number:number = 10; // 컴파일 에러 없음
-
-interface number { // 컴파일 에러
-  /* ... */
-}
-</code></pre>
-<p>예를 들어, async와 await는 ECMAScript 2017부터 추가된 개념으로, 일반적인 식별자로 사용 가능하지만, 특정 문맥에서는 예약어로 취급된다.</p>
-<pre><code class="language-typescript">let async = "example"; // 컴파일 에러가 발생하지 않음
-
-async function fetchData() { // 예약어로서 동작
-  // ...
-}
-
-let obj = {
-  async: true, // 컴파일 에러 없음
-  await: false // 컴파일 에러 없음
-};
-</code></pre>
-<p>Contextual keywords 종류는 다음과 같다. </p>
+<p>Contextual keywords는 strict mode와 관계없이 예약어로 취급되는 것이 아니라, 특정 문맥에서만 예약어로 취급되는 단어들이다. Contextual keywords 종류는 다음과 같다.</p>
 <table>
 <thead>
 <tr>
@@ -79,6 +54,30 @@ let obj = {
 </tr>
 </tbody>
 </table>
+<pre><code class="language-typescript">// 타입스크립트에서의 타입 선언을 위한 'type'과 식별자로서의 type
+type ABC = 'A' | 'B' | 'C';
+
+let type = 'EXAMPLE'; // 컴파일 에러 없음
+</code></pre>
+<pre><code class="language-typescript">// number식별자와 그 타입, 그리고 interface의 식별자로 사용될 수 없는 number
+let number:number = 10; // 컴파일 에러 없음
+
+interface number { // 컴파일 에러
+  /* ... */
+}
+</code></pre>
+<p>예를 들어, async와 await는 ECMAScript 2017부터 추가된 개념으로, 일반적인 식별자로 사용 가능하지만, 특정 문맥에서는 예약어로 취급된다.</p>
+<pre><code class="language-typescript">let async = "example"; // 컴파일 에러가 발생하지 않음
+
+async function fetchData() { // 예약어로서 동작
+  // ...
+}
+
+let obj = {
+  async: true, // 컴파일 에러 없음
+  await: false // 컴파일 에러 없음
+};
+</code></pre>
 <h2>식별자로 사용 가능한 일부 예약어들, 하지만 가독성과 유지보수를 위해 사용을 자제하는 이유와 주의점은?</h2>
 <p>Strict mode에서도 예약어로 취급되지 않는 일부 단어들이 있기 때문에, 이를 사용하는 것은 가능하다. 하지만 가독성과 유지보수 측면에서는 권장하고 싶지는 않다. 다른 개발자가 코드를 이해하기 어려워지고, 예상치 못한 오류가 발생할 수 있기 때문이다.
 그럼에도 불구하고 예약어를 식별자로 사용해야 하는 경우에는 어떻게 해야 할까?</p>
@@ -109,32 +108,7 @@ function while() { // 오류 발생
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;Contextual keywords&lt;/h3&gt;
-&lt;p&gt;Contextual keywords는 strict mode와 관계없이 예약어로 취급되는 것이 아니라, 특정 문맥에서만 예약어로 취급되는 단어들이다. &lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;// 타입스크립트에서의 타입 선언을 위한 &apos;type&apos;과 식별자로서의 type
-type ABC = &apos;A&apos; | &apos;B&apos; | &apos;C&apos;;
-
-let type = &apos;EXAMPLE&apos;; // 컴파일 에러 없음
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;// number식별자와 그 타입, 그리고 interface의 식별자로 사용될 수 없는 number
-let number:number = 10; // 컴파일 에러 없음
-
-interface number { // 컴파일 에러
-  /* ... */
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;예를 들어, async와 await는 ECMAScript 2017부터 추가된 개념으로, 일반적인 식별자로 사용 가능하지만, 특정 문맥에서는 예약어로 취급된다.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;let async = &quot;example&quot;; // 컴파일 에러가 발생하지 않음
-
-async function fetchData() { // 예약어로서 동작
-  // ...
-}
-
-let obj = {
-  async: true, // 컴파일 에러 없음
-  await: false // 컴파일 에러 없음
-};
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Contextual keywords 종류는 다음과 같다. &lt;/p&gt;
+&lt;p&gt;Contextual keywords는 strict mode와 관계없이 예약어로 취급되는 것이 아니라, 특정 문맥에서만 예약어로 취급되는 단어들이다. Contextual keywords 종류는 다음과 같다.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -171,6 +145,30 @@ let obj = {
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;// 타입스크립트에서의 타입 선언을 위한 &apos;type&apos;과 식별자로서의 type
+type ABC = &apos;A&apos; | &apos;B&apos; | &apos;C&apos;;
+
+let type = &apos;EXAMPLE&apos;; // 컴파일 에러 없음
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;// number식별자와 그 타입, 그리고 interface의 식별자로 사용될 수 없는 number
+let number:number = 10; // 컴파일 에러 없음
+
+interface number { // 컴파일 에러
+  /* ... */
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;예를 들어, async와 await는 ECMAScript 2017부터 추가된 개념으로, 일반적인 식별자로 사용 가능하지만, 특정 문맥에서는 예약어로 취급된다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;let async = &quot;example&quot;; // 컴파일 에러가 발생하지 않음
+
+async function fetchData() { // 예약어로서 동작
+  // ...
+}
+
+let obj = {
+  async: true, // 컴파일 에러 없음
+  await: false // 컴파일 에러 없음
+};
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;식별자로 사용 가능한 일부 예약어들, 하지만 가독성과 유지보수를 위해 사용을 자제하는 이유와 주의점은?&lt;/h2&gt;
 &lt;p&gt;Strict mode에서도 예약어로 취급되지 않는 일부 단어들이 있기 때문에, 이를 사용하는 것은 가능하다. 하지만 가독성과 유지보수 측면에서는 권장하고 싶지는 않다. 다른 개발자가 코드를 이해하기 어려워지고, 예상치 못한 오류가 발생할 수 있기 때문이다.
 그럼에도 불구하고 예약어를 식별자로 사용해야 하는 경우에는 어떻게 해야 할까?&lt;/p&gt;
