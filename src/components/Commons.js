@@ -39,12 +39,12 @@ hr {
 ul,
 ol {
   padding-left: 2em;
-  margin: 1em 0 0 0;
+  margin: 10px 0 10px 0;
 }
 
 ul ul,
 ol ol {
- margin: 0;
+ margin: 0 !important;
 }
 
 .utterances {
