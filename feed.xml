@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Apr 2023 15:47:24 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[Yarn PnP 사용시 IntelliJ에서 eslint 적용하기]]></title><description><![CDATA[<h2>Yarn PnP는 ESLint 적용이 npm과 다르다.</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Apr 2023 15:50:10 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[Yarn PnP 사용시 IntelliJ에서 ESLint 적용하기]]></title><description><![CDATA[<h2>Yarn PnP는 ESLint 적용이 npm과 다르다.</h2>
 <p>Yarn PnP를 적용하여 개발중인 프로젝트에서 eslint 적용하려고 하니 다음과 같은 오류가 발생했다. </p>
-<pre><code class="language-text">ESLint: Initialization error (ESLint). Cannot find module 'eslint/' 
+<pre><code class="language-text">ESLint: Initialization error (ESLint). Cannot find module 'ESLint/' 
 </code></pre>
 <h3>npm과 차이</h3>
 <p>Yarn PnP는 기존 npm을 이용한 패키지와 종속성 관리 방식이 다르기 때문이다.<br>
@@ -45,7 +45,7 @@
 </ol>
 <p><img src="https://baek.dev/assets/images/post/2023/2023_047_001.png" alt="IntelliJ ESLint 설정">  </p>]]></description><link>https://baek.dev/post/47/</link><guid isPermaLink="false">https://baek.dev/post/47/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 22 Apr 2023 15:45:00 GMT</pubDate><content:encoded>&lt;h2&gt;Yarn PnP는 ESLint 적용이 npm과 다르다.&lt;/h2&gt;
 &lt;p&gt;Yarn PnP를 적용하여 개발중인 프로젝트에서 eslint 적용하려고 하니 다음과 같은 오류가 발생했다. &lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;ESLint: Initialization error (ESLint). Cannot find module &apos;eslint/&apos; 
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;ESLint: Initialization error (ESLint). Cannot find module &apos;ESLint/&apos; 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;npm과 차이&lt;/h3&gt;
 &lt;p&gt;Yarn PnP는 기존 npm을 이용한 패키지와 종속성 관리 방식이 다르기 때문이다.&lt;br&gt;
