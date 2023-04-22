@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 Apr 2023 05:45:14 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[백엔드 개발자에게 원하는 걸 말했는데, 왜 대화가 안될까?]]></title><description><![CDATA[<p>얼마 전 주니어 개발자가 겪었던 사례를 소개하며 같은 개발자끼리도 커뮤니케이션이 왜 쉽지 않은지 소개하고 싶다.  </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Apr 2023 15:47:24 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[Yarn PnP 사용시 IntelliJ에서 eslint 적용하기]]></title><description><![CDATA[<h2>Yarn PnP는 ESLint 적용이 npm과 다르다.</h2>
+<p>Yarn PnP를 적용하여 개발중인 프로젝트에서 eslint 적용하려고 하니 다음과 같은 오류가 발생했다. </p>
+<pre><code class="language-text">ESLint: Initialization error (ESLint). Cannot find module 'eslint/' 
+</code></pre>
+<h3>npm과 차이</h3>
+<p>Yarn PnP는 기존 npm을 이용한 패키지와 종속성 관리 방식이 다르기 때문이다.<br>
+<code>PnP(Plug'n'Play)는 종속성을 효율적으로 관리하고 디스크 공간을 절약하기 위해 패키지를 중앙 '.pnp.js' 파일에 연결하고, 종속성 그래프를 관리</code>한다. 이로 인해 종속성 해결이 더 빠르고 안정적이게 된다.  </p>
+<p>그러나 이 새로운 접근 방식으로 인해, 일부 도구 및 라이브러리는 종속성을 찾는 데 사용하는 기존 메커니즘과 충돌이 발생할 수 있다. 그래서 ESLint와 같은 도구를 설정할때 추가 구성이 필요한 이유이다.  </p>
+<p><code>ESLint는 기본적으로 node_modules 디렉터리에서 패키지와 플러그인을 찾으려고 시도한다. Yarn PnP를 사용하면 패키지와 플러그인이 전통적인 위치에 없기 때문</code>에, ESLint 구성을 수정하여 필요한 플러그인 및 설정을 사용하도록 지시해야 한다.  </p>
+<h2>Yarn PnP를 위한 ESLint 추가 구성</h2>
+<p>문제를 해결하기 위해 추가로 <code>eslint-config-yarn-pnp</code>를 설치하고 ESLint 구성에 추가하는 것이 필요하다. 이 플러그인은 ESLint가 Yarn PnP에서 종속성을 올바르게 확인하고 해결하는 데 도움이 된다.  </p>
+<p>결론적으로, Yarn PnP의 독특한 패키지 관리 방식으로 인해 기존 도구 및 라이브러리와의 호환성을 보장하기 위해 추가 구성이 필요하다. 이것이 Yarn PnP를 사용할 때 ESLint를 설정하는 방법이 전통적인 npm 방식과 다른 이유다.</p>
+<p>먼저 프로젝트에 ESLint에 관한 설정은 되어 있다고 가정하겠다. </p>
+<ul>
+<li>eslint 의존성 추가  </li>
+<li>.eslintrc.js 또는 .eslintrc.json 를 이용한 ESLint 구성파일 생성 및 구성 추가  </li>
+</ul>
+<h3>추가 의존성 설치</h3>
+<p>다음으로 Yarn PnP와 함께 사용할 수 있는 <code>eslint-config-yarn-pnp</code> 구성을 설치한다. </p>
+<pre><code class="language-shell">yarn add eslint-config-yarn-pnp --dev  
+</code></pre>
+<h3>프로젝트내 .eslintrc.js 업데이트</h3>
+<p>extends와 plugins에 플러그인을 추가한다.  </p>
+<pre><code class="language-javascript">module.exports = {
+    extends: [
+        'eslint:recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
+    ],
+    // (중략)
+    plugins: [
+        'import',
+    ],
+}
+</code></pre>
+<h3>IntelliJ 설정 업데이트</h3>
+<p>IntelliJ 설정으로 이동하여 ESLint 설정을 확인하고 Yarn PnP를 사용하도록 설정한다.  </p>
+<ol>
+<li>IntelliJ에서 File > Settings (Windows/Linux) 또는 IntelliJ IDEA > Preferences (macOS) 메뉴를 선택한다.  </li>
+<li>왼쪽 패널에서 Languages &#x26; Frameworks > JavaScript > Code Quality Tools > ESLint를 선택한다.  </li>
+<li>Enable 체크 박스를 선택하여 ESLint를 활성화한다.  </li>
+<li><strong>Automatic ESLint configuration을 선택</strong>하고, IntelliJ가 설치된 ESLint 및 구성을 자동으로 찾도록 한다.   </li>
+<li>설정을 저장하고 IntelliJ를 재시작한다.  </li>
+</ol>
+<p><img src="https://baek.dev/assets/images/post/2023/2023_047_001.png" alt="IntelliJ ESLint 설정">  </p>]]></description><link>https://baek.dev/post/47/</link><guid isPermaLink="false">https://baek.dev/post/47/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 22 Apr 2023 15:45:00 GMT</pubDate><content:encoded>&lt;h2&gt;Yarn PnP는 ESLint 적용이 npm과 다르다.&lt;/h2&gt;
+&lt;p&gt;Yarn PnP를 적용하여 개발중인 프로젝트에서 eslint 적용하려고 하니 다음과 같은 오류가 발생했다. &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;ESLint: Initialization error (ESLint). Cannot find module &apos;eslint/&apos; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;npm과 차이&lt;/h3&gt;
+&lt;p&gt;Yarn PnP는 기존 npm을 이용한 패키지와 종속성 관리 방식이 다르기 때문이다.&lt;br&gt;
+&lt;code&gt;PnP(Plug&apos;n&apos;Play)는 종속성을 효율적으로 관리하고 디스크 공간을 절약하기 위해 패키지를 중앙 &apos;.pnp.js&apos; 파일에 연결하고, 종속성 그래프를 관리&lt;/code&gt;한다. 이로 인해 종속성 해결이 더 빠르고 안정적이게 된다.  &lt;/p&gt;
+&lt;p&gt;그러나 이 새로운 접근 방식으로 인해, 일부 도구 및 라이브러리는 종속성을 찾는 데 사용하는 기존 메커니즘과 충돌이 발생할 수 있다. 그래서 ESLint와 같은 도구를 설정할때 추가 구성이 필요한 이유이다.  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ESLint는 기본적으로 node_modules 디렉터리에서 패키지와 플러그인을 찾으려고 시도한다. Yarn PnP를 사용하면 패키지와 플러그인이 전통적인 위치에 없기 때문&lt;/code&gt;에, ESLint 구성을 수정하여 필요한 플러그인 및 설정을 사용하도록 지시해야 한다.  &lt;/p&gt;
+&lt;h2&gt;Yarn PnP를 위한 ESLint 추가 구성&lt;/h2&gt;
+&lt;p&gt;문제를 해결하기 위해 추가로 &lt;code&gt;eslint-config-yarn-pnp&lt;/code&gt;를 설치하고 ESLint 구성에 추가하는 것이 필요하다. 이 플러그인은 ESLint가 Yarn PnP에서 종속성을 올바르게 확인하고 해결하는 데 도움이 된다.  &lt;/p&gt;
+&lt;p&gt;결론적으로, Yarn PnP의 독특한 패키지 관리 방식으로 인해 기존 도구 및 라이브러리와의 호환성을 보장하기 위해 추가 구성이 필요하다. 이것이 Yarn PnP를 사용할 때 ESLint를 설정하는 방법이 전통적인 npm 방식과 다른 이유다.&lt;/p&gt;
+&lt;p&gt;먼저 프로젝트에 ESLint에 관한 설정은 되어 있다고 가정하겠다. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;eslint 의존성 추가  &lt;/li&gt;
+&lt;li&gt;.eslintrc.js 또는 .eslintrc.json 를 이용한 ESLint 구성파일 생성 및 구성 추가  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;추가 의존성 설치&lt;/h3&gt;
+&lt;p&gt;다음으로 Yarn PnP와 함께 사용할 수 있는 &lt;code&gt;eslint-config-yarn-pnp&lt;/code&gt; 구성을 설치한다. &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;yarn add eslint-config-yarn-pnp --dev  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;프로젝트내 .eslintrc.js 업데이트&lt;/h3&gt;
+&lt;p&gt;extends와 plugins에 플러그인을 추가한다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;module.exports = {
+    extends: [
+        &apos;eslint:recommended&apos;,
+        &apos;plugin:import/errors&apos;,
+        &apos;plugin:import/warnings&apos;,
+        &apos;plugin:import/typescript&apos;,
+    ],
+    // (중략)
+    plugins: [
+        &apos;import&apos;,
+    ],
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;IntelliJ 설정 업데이트&lt;/h3&gt;
+&lt;p&gt;IntelliJ 설정으로 이동하여 ESLint 설정을 확인하고 Yarn PnP를 사용하도록 설정한다.  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;IntelliJ에서 File &gt; Settings (Windows/Linux) 또는 IntelliJ IDEA &gt; Preferences (macOS) 메뉴를 선택한다.  &lt;/li&gt;
+&lt;li&gt;왼쪽 패널에서 Languages &amp;#x26; Frameworks &gt; JavaScript &gt; Code Quality Tools &gt; ESLint를 선택한다.  &lt;/li&gt;
+&lt;li&gt;Enable 체크 박스를 선택하여 ESLint를 활성화한다.  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automatic ESLint configuration을 선택&lt;/strong&gt;하고, IntelliJ가 설치된 ESLint 및 구성을 자동으로 찾도록 한다.   &lt;/li&gt;
+&lt;li&gt;설정을 저장하고 IntelliJ를 재시작한다.  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2023/2023_047_001.png&quot; alt=&quot;IntelliJ ESLint 설정&quot;&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[백엔드 개발자에게 원하는 걸 말했는데, 왜 대화가 안될까?]]></title><description><![CDATA[<p>얼마 전 주니어 개발자가 겪었던 사례를 소개하며 같은 개발자끼리도 커뮤니케이션이 왜 쉽지 않은지 소개하고 싶다.  </p>
 <h2>나의 언어로만 말하기: 고구마를 먹은 듯 목이 매이는 커뮤니케이션 시작</h2>
 <p>프론트엔드 주니어 개발자(이하 프론트엔드 개발자)가 개발을 담당하는 페이지의 API 스펙을 백엔드 개발자와 논의하고 있었다.
 프론트엔드 개발자는 한 가지 이슈가 있었다. 각각 독립적으로 수행되는 비동기 API A와 B, C 중, API C 응답을 처리하는 과정에서 API A와 B에 의존적이었다.
