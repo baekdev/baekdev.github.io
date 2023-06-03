@@ -1,4 +1,194 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 20 May 2023 16:15:20 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[설치된 라이브러리가 많은 프로젝트의 npm registry 변경하기 with package-lock.json 이해]]></title><description><![CDATA[<p>최근 회사에서 N년 이상 성숙된 프로젝트의 npm registry를 사내 registry로 변경하는 업무를 진행했다.<br>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Jun 2023 14:23:33 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[TypeScript의 강력함: Discriminated Union과 as const 활용하기]]></title><description><![CDATA[<h1>TypeScript의 강력함: Discriminated Union과 'as const' 활용하기</h1>
+<p>TypeScript는 JavaScript의 상위 집합(super-set)으로서, JavaScript의 모든 기능을 포함하고 있음과 동시에 정적 타입 시스템과 다양한 고급 기능을 제공한다.
+이러한 고급 기능들 덕분에 TypeScript는 많은 개발자들에게 사랑받고 있으며, 여러 프로젝트에서 중요한 역할을 담당하고 있다.   </p>
+<p>이번 글에서는 TypeScript의 Discriminated Union과 'as const'라는 두 가지 강력한 기능을 소개하고, 이들을 어떻게 활용하는지 살펴보겠다.</p>
+<h2>1. Discriminated Union</h2>
+<p>TypeScript에서의 Discriminated Union은 다양한 타입 중 하나가 될 수 있는 값에 대한 훌륭한 처리 방법을 제공한다. <code>Discriminated Union을 이용하면, 공통적으로 포함된 리터럴 타입의 필드를 바탕으로 타입을 구분하고 처리할 수 있다.</code></p>
+<p>예를 들어, 도형을 표현하는 객체가 있고 각 도형에 따라 속성이 달라진다고 가정해보자. 원은 반지름(radius)를, 직사각형은 너비(width)와 높이(height)를, 삼각형은 밑변(base)과 높이(height)를 속성으로 가진다. 이를 Discriminated Union을 활용해 아래와 같이 표현할 수 있다.</p>
+<pre><code class="language-typescript">type ShapeType = 
+  | 'circle'
+  | 'rectangle'
+  | 'triangle';
+
+interface BaseShape {
+  id: number;
+  type: ShapeType;
+}
+
+interface Circle extends BaseShape {
+  type: 'circle';
+  attributes: {
+    radius: number;
+  };
+}
+
+interface Rectangle extends BaseShape {
+  type: 'rectangle';
+  attributes: {
+    width: number;
+    height: number;
+  };
+}
+
+interface Triangle extends BaseShape {
+  type: 'triangle';
+  attributes: {
+    base: number;
+    height: number;
+  };
+}
+
+type Shape = Circle | Rectangle | Triangle;
+</code></pre>
+<p>위 코드에서 Shape는 Circle, Rectangle, Triangle 중 하나의 타입을 가진다. 이런 식으로 Discriminated Union을 활용하면 다양한 타입에 공통된 요소를 이용해 타입을 구분하고, 특정 상황에서만 존재하는 속성을 안전하게 처리할 수 있다.  </p>
+<h3>BaseShape.type 역할</h3>
+<p>BaseShape에서 정의한 type: ShapeType 프로퍼티는 Circle, Rectangle, Triangle과 같이 이를 확장하는 타입들에게 공통으로 필요한 프로퍼티임을 나타낸다. 이는 각 도형들이 반드시 type 프로퍼티를 가져야 함을 명시하는 역할을 한다.
+그렇지만 이를 확장하는 타입들에서 type 프로퍼티의 값을 특정하게 하기 위해서는 해당 타입에서 다시 type 프로퍼티를 명시해야 한다. 이 때 type 프로퍼티는 오버라이드되지 않고, 대신 상위 타입에서 명시한 프로퍼티의 값을 좁히는(subtype) 역할을 한다.
+예를 들어, BaseShape에서 type 프로퍼티의 타입은 ShapeType이지만 Circle에서는 type 프로퍼티의 타입이 'circle'이 된다. 여기서 'circle'은 ShapeType의 하위 타입이므로 BaseShape에서 정의한 type 프로퍼티의 타입을 준수하는 것이다.</p>
+<p>따라서, BaseShape에서 type 프로퍼티를 정의하는 것은 모든 도형이 type 프로퍼티를 가져야 한다는 것을 강제하며, 각 확장 타입에서 type 프로퍼티를 다시 정의하는 것은 해당 도형의 type 프로퍼티의 값을 특정하게 한다. 이 두 가지 조합이 Discriminated Union 패턴을 구현하는 데 필수적이다.</p>
+<h2>2. Const Assertions (as const)</h2>
+<p>TypeScript 3.4 버전에서 새롭게 도입된 as const 문법은 Const Assertions라고 부른다. 이 기능을 이용하면 TypeScript에게 특정 값이 변경되지 않을 것임을 알려줄 수 있다.</p>
+<p><code>as const를 사용하면 TypeScript는 객체의 모든 필드를 readonly 로 만들고, 배열을 readonly로 만들며, 리터럴 값은 그 값 자체의 타입으로 추론</code>한다. 이를 통해 TypeScript의 타입 추론이 더욱 정확하게 이루어지며, 의도하지 않은 값 변경을 방지할 수 있다.</p>
+<p>예를 들어, 다음과 같이 도형의 종류를 표현하는 객체가 있다고 해보자.  </p>
+<pre><code class="language-typescript">const SHAPE_TYPES = {
+  CIRCLE: 'circle',
+  RECTANGLE: 'rectangle',
+  TRIANGLE: 'triangle',
+};
+</code></pre>
+<p>위 코드에서 SHAPE<em>TYPES의 각 속성 값은 string으로 추론된다. 이는 SHAPE</em>TYPES.CIRCLE이 'circle'이라는 특정 값이 아닌 어떤 string이라도 될 수 있음을 의미한다. 하지만 as const를 사용하면 다음과 같이 각 속성 값의 타입이 정확하게 'circle', 'rectangle', 'triangle'으로 추론된다.</p>
+<pre><code class="language-typescript">const SHAPE_TYPES = {
+  CIRCLE: 'circle',
+  RECTANGLE: 'rectangle',
+  TRIANGLE: 'triangle',
+} as const;
+</code></pre>
+<p>이로 인해 SHAPE_TYPES.CIRCLE은 항상 'circle'이라는 값을 가지게 되며, 이를 보장할 수 있다.</p>
+<h2>3. as const와 Discriminated Union 함께 사용하기</h2>
+<p>Discriminated Union과 as const를 함께 사용하면 더욱 강력한 코드를 작성할 수 있다. as const로 정의된 상수를 Discriminated Union의 구분자로 사용하면, 실수로 잘못된 값을 입력하는 것을 방지할 수 있고, 코드의 가독성을 높일 수 있다.</p>
+<p>위에서 정의한 SHAPE_TYPES와 Shape 타입을 조합해 보자.  </p>
+<pre><code class="language-typescript">const SHAPE_TYPES = {
+  CIRCLE: 'circle',
+  RECTANGLE: 'rectangle',
+  TRIANGLE: 'triangle',
+} as const;
+
+type ShapeType = typeof SHAPE_TYPES[keyof typeof SHAPE_TYPES];
+
+interface BaseShape {
+  id: number;
+  type: ShapeType;
+}
+
+interface Circle extends BaseShape {
+  type: typeof SHAPE_TYPES.CIRCLE;
+  attributes: {
+    radius: number;
+  };
+}
+
+// ... Rectangle, Triangle 인터페이스도 동일하게 정의 ...
+
+type Shape = Circle | Rectangle | Triangle;
+</code></pre>
+<p>위 코드에서 Shape는 Circle, Rectangle, Triangle 중 하나의 타입을 가진다. 각 구체적인 타입에서 type 프로퍼티는 SHAPE_TYPES에 정의된 특정한 값을 가져야 한다. 이렇게 함께 사용하면, 상수의 값과 타입을 함께 보장하며, Discriminated Union을 이용한 타입 구분을 보다 안전하게 할 수 있다.</p>
+<h2>4. 결론</h2>
+<p>TypeScript의 Discriminated Union과 as const는 개발자에게 많은 유연성과 안전성을 제공한다. 이 두 기능을 적절히 활용하면 타입 오류를 줄이고 코드의 가독성을 높일 수 있으며, 더욱 견고한 프로그램을 작성할 수 있다. JavaScript에는 없는 이런 고급 기능들이 TypeScript를 더욱 매력적으로 만드는 요소 중 하나라고 할 수 있다.</p>]]></description><link>https://baek.dev/post/50/</link><guid isPermaLink="false">https://baek.dev/post/50/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sat, 03 Jun 2023 14:22:00 GMT</pubDate><content:encoded>&lt;h1&gt;TypeScript의 강력함: Discriminated Union과 &apos;as const&apos; 활용하기&lt;/h1&gt;
+&lt;p&gt;TypeScript는 JavaScript의 상위 집합(super-set)으로서, JavaScript의 모든 기능을 포함하고 있음과 동시에 정적 타입 시스템과 다양한 고급 기능을 제공한다.
+이러한 고급 기능들 덕분에 TypeScript는 많은 개발자들에게 사랑받고 있으며, 여러 프로젝트에서 중요한 역할을 담당하고 있다.   &lt;/p&gt;
+&lt;p&gt;이번 글에서는 TypeScript의 Discriminated Union과 &apos;as const&apos;라는 두 가지 강력한 기능을 소개하고, 이들을 어떻게 활용하는지 살펴보겠다.&lt;/p&gt;
+&lt;h2&gt;1. Discriminated Union&lt;/h2&gt;
+&lt;p&gt;TypeScript에서의 Discriminated Union은 다양한 타입 중 하나가 될 수 있는 값에 대한 훌륭한 처리 방법을 제공한다. &lt;code&gt;Discriminated Union을 이용하면, 공통적으로 포함된 리터럴 타입의 필드를 바탕으로 타입을 구분하고 처리할 수 있다.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;예를 들어, 도형을 표현하는 객체가 있고 각 도형에 따라 속성이 달라진다고 가정해보자. 원은 반지름(radius)를, 직사각형은 너비(width)와 높이(height)를, 삼각형은 밑변(base)과 높이(height)를 속성으로 가진다. 이를 Discriminated Union을 활용해 아래와 같이 표현할 수 있다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;type ShapeType = 
+  | &apos;circle&apos;
+  | &apos;rectangle&apos;
+  | &apos;triangle&apos;;
+
+interface BaseShape {
+  id: number;
+  type: ShapeType;
+}
+
+interface Circle extends BaseShape {
+  type: &apos;circle&apos;;
+  attributes: {
+    radius: number;
+  };
+}
+
+interface Rectangle extends BaseShape {
+  type: &apos;rectangle&apos;;
+  attributes: {
+    width: number;
+    height: number;
+  };
+}
+
+interface Triangle extends BaseShape {
+  type: &apos;triangle&apos;;
+  attributes: {
+    base: number;
+    height: number;
+  };
+}
+
+type Shape = Circle | Rectangle | Triangle;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위 코드에서 Shape는 Circle, Rectangle, Triangle 중 하나의 타입을 가진다. 이런 식으로 Discriminated Union을 활용하면 다양한 타입에 공통된 요소를 이용해 타입을 구분하고, 특정 상황에서만 존재하는 속성을 안전하게 처리할 수 있다.  &lt;/p&gt;
+&lt;h3&gt;BaseShape.type 역할&lt;/h3&gt;
+&lt;p&gt;BaseShape에서 정의한 type: ShapeType 프로퍼티는 Circle, Rectangle, Triangle과 같이 이를 확장하는 타입들에게 공통으로 필요한 프로퍼티임을 나타낸다. 이는 각 도형들이 반드시 type 프로퍼티를 가져야 함을 명시하는 역할을 한다.
+그렇지만 이를 확장하는 타입들에서 type 프로퍼티의 값을 특정하게 하기 위해서는 해당 타입에서 다시 type 프로퍼티를 명시해야 한다. 이 때 type 프로퍼티는 오버라이드되지 않고, 대신 상위 타입에서 명시한 프로퍼티의 값을 좁히는(subtype) 역할을 한다.
+예를 들어, BaseShape에서 type 프로퍼티의 타입은 ShapeType이지만 Circle에서는 type 프로퍼티의 타입이 &apos;circle&apos;이 된다. 여기서 &apos;circle&apos;은 ShapeType의 하위 타입이므로 BaseShape에서 정의한 type 프로퍼티의 타입을 준수하는 것이다.&lt;/p&gt;
+&lt;p&gt;따라서, BaseShape에서 type 프로퍼티를 정의하는 것은 모든 도형이 type 프로퍼티를 가져야 한다는 것을 강제하며, 각 확장 타입에서 type 프로퍼티를 다시 정의하는 것은 해당 도형의 type 프로퍼티의 값을 특정하게 한다. 이 두 가지 조합이 Discriminated Union 패턴을 구현하는 데 필수적이다.&lt;/p&gt;
+&lt;h2&gt;2. Const Assertions (as const)&lt;/h2&gt;
+&lt;p&gt;TypeScript 3.4 버전에서 새롭게 도입된 as const 문법은 Const Assertions라고 부른다. 이 기능을 이용하면 TypeScript에게 특정 값이 변경되지 않을 것임을 알려줄 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;as const를 사용하면 TypeScript는 객체의 모든 필드를 readonly 로 만들고, 배열을 readonly로 만들며, 리터럴 값은 그 값 자체의 타입으로 추론&lt;/code&gt;한다. 이를 통해 TypeScript의 타입 추론이 더욱 정확하게 이루어지며, 의도하지 않은 값 변경을 방지할 수 있다.&lt;/p&gt;
+&lt;p&gt;예를 들어, 다음과 같이 도형의 종류를 표현하는 객체가 있다고 해보자.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;const SHAPE_TYPES = {
+  CIRCLE: &apos;circle&apos;,
+  RECTANGLE: &apos;rectangle&apos;,
+  TRIANGLE: &apos;triangle&apos;,
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위 코드에서 SHAPE&lt;em&gt;TYPES의 각 속성 값은 string으로 추론된다. 이는 SHAPE&lt;/em&gt;TYPES.CIRCLE이 &apos;circle&apos;이라는 특정 값이 아닌 어떤 string이라도 될 수 있음을 의미한다. 하지만 as const를 사용하면 다음과 같이 각 속성 값의 타입이 정확하게 &apos;circle&apos;, &apos;rectangle&apos;, &apos;triangle&apos;으로 추론된다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;const SHAPE_TYPES = {
+  CIRCLE: &apos;circle&apos;,
+  RECTANGLE: &apos;rectangle&apos;,
+  TRIANGLE: &apos;triangle&apos;,
+} as const;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;이로 인해 SHAPE_TYPES.CIRCLE은 항상 &apos;circle&apos;이라는 값을 가지게 되며, 이를 보장할 수 있다.&lt;/p&gt;
+&lt;h2&gt;3. as const와 Discriminated Union 함께 사용하기&lt;/h2&gt;
+&lt;p&gt;Discriminated Union과 as const를 함께 사용하면 더욱 강력한 코드를 작성할 수 있다. as const로 정의된 상수를 Discriminated Union의 구분자로 사용하면, 실수로 잘못된 값을 입력하는 것을 방지할 수 있고, 코드의 가독성을 높일 수 있다.&lt;/p&gt;
+&lt;p&gt;위에서 정의한 SHAPE_TYPES와 Shape 타입을 조합해 보자.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-typescript&quot;&gt;const SHAPE_TYPES = {
+  CIRCLE: &apos;circle&apos;,
+  RECTANGLE: &apos;rectangle&apos;,
+  TRIANGLE: &apos;triangle&apos;,
+} as const;
+
+type ShapeType = typeof SHAPE_TYPES[keyof typeof SHAPE_TYPES];
+
+interface BaseShape {
+  id: number;
+  type: ShapeType;
+}
+
+interface Circle extends BaseShape {
+  type: typeof SHAPE_TYPES.CIRCLE;
+  attributes: {
+    radius: number;
+  };
+}
+
+// ... Rectangle, Triangle 인터페이스도 동일하게 정의 ...
+
+type Shape = Circle | Rectangle | Triangle;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위 코드에서 Shape는 Circle, Rectangle, Triangle 중 하나의 타입을 가진다. 각 구체적인 타입에서 type 프로퍼티는 SHAPE_TYPES에 정의된 특정한 값을 가져야 한다. 이렇게 함께 사용하면, 상수의 값과 타입을 함께 보장하며, Discriminated Union을 이용한 타입 구분을 보다 안전하게 할 수 있다.&lt;/p&gt;
+&lt;h2&gt;4. 결론&lt;/h2&gt;
+&lt;p&gt;TypeScript의 Discriminated Union과 as const는 개발자에게 많은 유연성과 안전성을 제공한다. 이 두 기능을 적절히 활용하면 타입 오류를 줄이고 코드의 가독성을 높일 수 있으며, 더욱 견고한 프로그램을 작성할 수 있다. JavaScript에는 없는 이런 고급 기능들이 TypeScript를 더욱 매력적으로 만드는 요소 중 하나라고 할 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[설치된 라이브러리가 많은 프로젝트의 npm registry 변경하기 with package-lock.json 이해]]></title><description><![CDATA[<p>최근 회사에서 N년 이상 성숙된 프로젝트의 npm registry를 사내 registry로 변경하는 업무를 진행했다.<br>
 처음에는 정석대로 프로젝트내 npm registry를 변경하고 npm i로 package-lock.json 을 재생성했다.
 버전 표기에 의해 각 라이브러리들은 버전이 변경 될 수 있음을 알았으나 의존성 변경으로 인해 코드 수정이 필요할 수 밖에 없었다.
 코드야 수정하면 되지만 이로 인한 <code>regression test도 필요하고 부수효과가 어떻게 생길지 모르기때문</code>에 큰 어려움이 생겼다.
