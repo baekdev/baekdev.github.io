@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Jun 2023 14:15:18 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[리뷰 요청하기 전, Git Commit 사이즈 관리하기]]></title><description><![CDATA[<p>회사에서 코드 리뷰를 진행하며, 동료의 커밋 크기가 상당히 큰 것을 확인했다. </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Jun 2023 14:31:19 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[git stat를 이용하여 코드 리뷰 요청 전 커밋 사이즈 관리하기]]></title><description><![CDATA[<p>회사에서 코드 리뷰를 진행하며, 동료의 커밋 크기가 상당히 큰 것을 확인했다. </p>
 <blockquote>
 <p>커밋 크기란,<br>
 추가된 라인 수와 삭제된 라인 수의 합계를 의미한다. </p>
@@ -131,15 +131,16 @@ printf ">>> " color BLACKC " Your commit size is " size ". " NORMALB NORMALC "\n
 <li>변경된 파일의 수, 추가된 라인 수, 삭제된 라인 수  </li>
 <li>계산된 커밋 사이즈와 그에 따른 색상  </li>
 </ul>
-<p>따라서 이 스크립트를 실행하면, 이 스크립트가 변경된 파일의 수와 추가/삭제된 라인의 수를 계산하여 이를 기반으로 커밋 사이즈를 판단하고, 그 결과를 색상화된 문자열로 출력하게 된다. 이렇게 하면 커밋 사이즈를 한눈에 알아볼 수 있어 효율적이다.<br>
-허나 스크립트를 매번 수동으로 특정 프로젝트마다 실행할 수는 없으니 git alias로 스크립트 실행을 단축키처럼 등록하여 사용성을 높히자.  </p>
-<p>그럼 이제 이 스크립트를 <code>git_local_changes_stat.sh</code>라는 이름의 파일로 저장한다.  </p>
+<p>따라서 이 스크립트를 실행하면, 이 스크립트가 변경된 파일의 수와 추가/삭제된 라인의 수를 계산하여 이를 기반으로 커밋 사이즈를 판단하고, 그 결과를 색상화된 문자열로 출력하게 된다. 이렇게 하면 커밋 사이즈를 한눈에 알아볼 수 있어 효율적이다.  </p>
+<p>허나 스크립트를 매번 수동으로 특정 프로젝트마다 실행할 수는 없으니 git alias로 스크립트 실행을 단축키처럼 등록하여 사용성을 높히자.
+그럼 이제 이 스크립트를 <code>git_local_changes_stat.sh</code>라는 이름의 파일로 저장한다.  </p>
 <h2>Git Alias 추가</h2>
 <h3>Step1. 파일 권한 설정</h3>
-<p>앞서 저장한 git<em>local</em>change_stat.sh 파일에 권한을 부여하자. 파일이 위치한 경로를 맞게 작성해준뒤 권한 부여 명령어를 실행한다.   </p>
+<p>앞서 저장한 git<em>local</em>change_stat.sh 파일에 권한을 부여하자.<br>
+파일이 위치한 경로를 맞게 작성해준뒤 권한 부여 명령어를 실행한다.   </p>
 <pre><code class="language-shell">$> chmod 755 ~/Downloads/git_local_changes_stat.sh   
 </code></pre>
-<h3>Step2. Git alias 추가</h3>
+<h3>Step2. Git Alias 추가</h3>
 <p>역시나 쉘 스크립트 파일이 위치한 경로에 맞게 작성해준뒤 git config에 alias를 추가한다.  </p>
 <pre><code class="language-shell">$> git config --global alias.stat '!sh ~/Downloads/git_local_changes_stat.sh'   
 </code></pre>
@@ -153,9 +154,15 @@ $ ~/projects/sample> git stat
 <h2>결과</h2>
 <p><img src="https://baek.dev/assets/images/post/2023/2023_051_000.gif" alt="git stat">  </p>
 <h2>마무리</h2>
-<p>이렇게 우리는 간단한 쉘 스크립트를 통해 Git commit 사이즈를 미리 알아볼 수 있게 되었다.
+<p>이렇게 우리는 쉘 스크립트를 통해 Git commit 사이즈를 미리 알아볼 수 있게 되었다.
 이제 커밋 사이즈에 따른 분석이 필요할 때마다 git stat 명령어를 통해 쉽게 확인할 수 있다.   </p>
-<p>이 스크립트는 자신의 워크플로우에 맞게 쉽게 커스텀할 수 있으므로, 여러분만의 버전을 만들어 보시기 바란다.  </p>
+<blockquote>
+<p>개인 개발자 혹은 팀 차원에서도 커밋 사이즈에 대한 구간별 협의를 맞춘다면,<br>
+이 스크립트의 활용하여 Ground Rule을 만들어 볼 수 있다.<br>
+이를 통해 효과적이고 빠른 리뷰를 통해 더 발전적인 문화를 만들 수 있을 것 이다.    </p>
+</blockquote>
+<p>이제 이 스크립트는 자신의 워크플로우에 맞게 쉽게 커스텀할 수 있으므로,<br>
+여러분만의 버전을 만들어 보시기 바란다.   </p>
 <hr>
 <p><strong>References</strong>  </p>
 <ul>
@@ -294,15 +301,16 @@ printf &quot;&gt;&gt;&gt; &quot; color BLACKC &quot; Your commit size is &quot; 
 &lt;li&gt;변경된 파일의 수, 추가된 라인 수, 삭제된 라인 수  &lt;/li&gt;
 &lt;li&gt;계산된 커밋 사이즈와 그에 따른 색상  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;따라서 이 스크립트를 실행하면, 이 스크립트가 변경된 파일의 수와 추가/삭제된 라인의 수를 계산하여 이를 기반으로 커밋 사이즈를 판단하고, 그 결과를 색상화된 문자열로 출력하게 된다. 이렇게 하면 커밋 사이즈를 한눈에 알아볼 수 있어 효율적이다.&lt;br&gt;
-허나 스크립트를 매번 수동으로 특정 프로젝트마다 실행할 수는 없으니 git alias로 스크립트 실행을 단축키처럼 등록하여 사용성을 높히자.  &lt;/p&gt;
-&lt;p&gt;그럼 이제 이 스크립트를 &lt;code&gt;git_local_changes_stat.sh&lt;/code&gt;라는 이름의 파일로 저장한다.  &lt;/p&gt;
+&lt;p&gt;따라서 이 스크립트를 실행하면, 이 스크립트가 변경된 파일의 수와 추가/삭제된 라인의 수를 계산하여 이를 기반으로 커밋 사이즈를 판단하고, 그 결과를 색상화된 문자열로 출력하게 된다. 이렇게 하면 커밋 사이즈를 한눈에 알아볼 수 있어 효율적이다.  &lt;/p&gt;
+&lt;p&gt;허나 스크립트를 매번 수동으로 특정 프로젝트마다 실행할 수는 없으니 git alias로 스크립트 실행을 단축키처럼 등록하여 사용성을 높히자.
+그럼 이제 이 스크립트를 &lt;code&gt;git_local_changes_stat.sh&lt;/code&gt;라는 이름의 파일로 저장한다.  &lt;/p&gt;
 &lt;h2&gt;Git Alias 추가&lt;/h2&gt;
 &lt;h3&gt;Step1. 파일 권한 설정&lt;/h3&gt;
-&lt;p&gt;앞서 저장한 git&lt;em&gt;local&lt;/em&gt;change_stat.sh 파일에 권한을 부여하자. 파일이 위치한 경로를 맞게 작성해준뒤 권한 부여 명령어를 실행한다.   &lt;/p&gt;
+&lt;p&gt;앞서 저장한 git&lt;em&gt;local&lt;/em&gt;change_stat.sh 파일에 권한을 부여하자.&lt;br&gt;
+파일이 위치한 경로를 맞게 작성해준뒤 권한 부여 명령어를 실행한다.   &lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; chmod 755 ~/Downloads/git_local_changes_stat.sh   
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Step2. Git alias 추가&lt;/h3&gt;
+&lt;h3&gt;Step2. Git Alias 추가&lt;/h3&gt;
 &lt;p&gt;역시나 쉘 스크립트 파일이 위치한 경로에 맞게 작성해준뒤 git config에 alias를 추가한다.  &lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; git config --global alias.stat &apos;!sh ~/Downloads/git_local_changes_stat.sh&apos;   
 &lt;/code&gt;&lt;/pre&gt;
@@ -316,9 +324,15 @@ $ ~/projects/sample&gt; git stat
 &lt;h2&gt;결과&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2023/2023_051_000.gif&quot; alt=&quot;git stat&quot;&gt;  &lt;/p&gt;
 &lt;h2&gt;마무리&lt;/h2&gt;
-&lt;p&gt;이렇게 우리는 간단한 쉘 스크립트를 통해 Git commit 사이즈를 미리 알아볼 수 있게 되었다.
+&lt;p&gt;이렇게 우리는 쉘 스크립트를 통해 Git commit 사이즈를 미리 알아볼 수 있게 되었다.
 이제 커밋 사이즈에 따른 분석이 필요할 때마다 git stat 명령어를 통해 쉽게 확인할 수 있다.   &lt;/p&gt;
-&lt;p&gt;이 스크립트는 자신의 워크플로우에 맞게 쉽게 커스텀할 수 있으므로, 여러분만의 버전을 만들어 보시기 바란다.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;개인 개발자 혹은 팀 차원에서도 커밋 사이즈에 대한 구간별 협의를 맞춘다면,&lt;br&gt;
+이 스크립트의 활용하여 Ground Rule을 만들어 볼 수 있다.&lt;br&gt;
+이를 통해 효과적이고 빠른 리뷰를 통해 더 발전적인 문화를 만들 수 있을 것 이다.    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;이제 이 스크립트는 자신의 워크플로우에 맞게 쉽게 커스텀할 수 있으므로,&lt;br&gt;
+여러분만의 버전을 만들어 보시기 바란다.   &lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;  &lt;/p&gt;
 &lt;ul&gt;
