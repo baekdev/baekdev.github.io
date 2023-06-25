@@ -1,4 +1,330 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Jun 2023 15:46:29 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[TypeScript의 강력함: Discriminated Union과 as const 활용하기]]></title><description><![CDATA[<h1>TypeScript의 강력함: Discriminated Union과 'as const' 활용하기</h1>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Jun 2023 14:15:18 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[리뷰 요청하기 전, Git Commit 사이즈 관리하기]]></title><description><![CDATA[<p>회사에서 코드 리뷰를 진행하며, 동료의 커밋 크기가 상당히 큰 것을 확인했다. </p>
+<blockquote>
+<p>커밋 크기란,<br>
+추가된 라인 수와 삭제된 라인 수의 합계를 의미한다. </p>
+</blockquote>
+<p>커밋이 크면, 변화가 크다는 내용이고, 즉 리뷰할 때 많은 내용을 봐야한다는 것을 의미한다.<br>
+동료는 이런 상황이 오기전에 <strong>커밋 사이즈를 미리 알 수 있다면, 작업 분량을 적절히 분리하는데 도움이 될 것 같다</strong>고 했다.   </p>
+<p>커밋 크기, 즉 코드 변경 크기는 주로 원격 저장소에 Merge를 시도할 때 확인되지만,<br>
+이는 <strong>사후적인 행동</strong>에 불과하다. 이보다는 사전에 이를 확인하고 조치하는 것이 효율적이다. </p>
+<p>그 이유는 다음과 같다.</p>
+<ol>
+<li>
+<p><strong>코드 리뷰의 부담 감소</strong></p>
+<ul>
+<li>하나의 커밋에서 많은 변경이 발생할 경우, 리뷰어에게 큰 부담이 되며, 리뷰시 버그나 오류를 발견하기 어렵게 한다.</li>
+</ul>
+</li>
+<li>
+<p><strong>작은 변경의 이점</strong></p>
+<ul>
+<li>작은 변경 크기는 컨텍스트를 간결하게 유지해, 릴리즈의 부담을 줄이고, 코드 리뷰 시에도 리뷰어의 부담을 감소시킨다. </li>
+<li>또한 버그나 오류를 상대적으로 더 쉽게 찾을 수 있다.</li>
+</ul>
+</li>
+<li>
+<p><strong>작업 분량의 적절한 분배</strong></p>
+<ul>
+<li>커밋 전에 변경 크기를 알 수 있다면, 작업량을 적절히 분배해 효율적으로 작업할 수 있다.  </li>
+</ul>
+</li>
+</ol>
+<p>동료가 제시한 문제를 해결하기 위해, Git의 로컬 변경 사항을 분석하는 쉘 스크립트를 만들었다.<br>
+간단한 시간을 투자하여 큰 사용성을 얻어 매우 효과적이었다.  </p>
+<blockquote>
+<ol>
+<li>쉘 스크립트를 만들어서 </li>
+<li><code>git stat</code>라는 alias를 추가하고, </li>
+<li>git stage에 있는 변경의 크기를 미리 알 수 있도록 작업한다.  </li>
+</ol>
+</blockquote>
+<p>이 스크립트는 <strong><a href="/git_local_changes_stat.sh">git<em>local</em>changes_stat.sh</a></strong> 를 통해 다운로드 가능하다.    </p>
+<h2>1. 스크립트 만들기</h2>
+<h3>Step 1. 변경사항 준비</h3>
+<p>먼저, Git의 변경 사항을 분석하고 그 크기를 알려주는 쉘 스크립트를 작성한다.<br>
+아래는 그러한 기능을 수행하는 쉘 스크립트의 코드이다.   </p>
+<pre><code class="language-shell">git add -A &#x26;&#x26; git diff --cached --numstat | awk '{
+  # ... 
+} END {
+  # ...
+}' 
+</code></pre>
+<p>위 스크립트는 아래와 같은 순서로 실행된다.</p>
+<ol>
+<li>
+<p>git add -A를 실행하여 모든 변경 사항을 stage 상태로 만든다.</p>
+<ul>
+<li>git add -A를 사용하는 이유는 unstaged 상태의 파일들까지 포함하기 위함이다.  </li>
+</ul>
+</li>
+<li>
+<p>git diff --cached --numstat를 실행하여 stage 상태의 파일들 간의 차이점을 계산하고, 추가 및 삭제된 라인 수를 출력한다.</p>
+<ul>
+<li>--cached 옵션은 staged 상태의 변경 사항들에 대해 작동하며, --numstat 옵션은 추가/삭제된 라인 수를 숫자로 출력한다.  </li>
+</ul>
+</li>
+<li>awk 명령어를 사용하여 각 파일에 대한 추가 및 삭제된 라인 수를 합산한다.  </li>
+</ol>
+<h3>Step2. 변수 초기화</h3>
+<pre><code class="language-shell">count+=1;
+plus+=$1;
+minus+=$2;
+</code></pre>
+<p>count는 변경된 파일 수를 저장, plus와 minus는 각각 추가된 라인 수와 삭제된 라인 수를 저장하는 변수이다.  </p>
+<h3>Step3. 컬러 변수 설정</h3>
+<pre><code class="language-shell">BLACKC="\033[30m";
+REDC="\033[31m";
+REDB="\033[41m";
+GREENB="\033[42m";
+YELLOWB="\033[43m";
+BLUEC="\033[34m";
+BLUEB="\033[44m";
+MAGENTB="\033[45m";
+NORMALB="\033[49m";
+NORMALC="\033[0m";
+</code></pre>
+<p>쉘 스크립트의 출력을 보기 좋게 하기 위해, 다양한 색상을 변수로 저장하여 사용한다.<br>
+컬러는 터미널의 테마 등에 다르게 보일 수 있으니 각자의 상황에 맞게 변경해도 무방하다.    </p>
+<h3>Step4. 커밋 사이즈 크기 범위 설정</h3>
+<pre><code class="language-shell">rangeTo["XS"] = 10;
+rangeTo["S"] = 50;
+rangeTo["M"] = 100;
+rangeTo["L"] = 250;
+</code></pre>
+<p>변경 사항의 크기를 XS, S, M, L, XL로 나누어 분류한다.<br>
+각 분류는 변경된 라인 수에 기반하여 결정된다. 250라인 이상은 XL이다.      </p>
+<h3>Step5. 결과 출력</h3>
+<pre><code class="language-shell">printf ">>> Git Local Changes Stat\n";  
+</code></pre>
+<p>여기서 스크립트는 git local change 결과를 출력하기 시작한다.  </p>
+<pre><code class="language-shell">if (plus &#x3C;= 0 &#x26;&#x26; minus &#x3C;= 0) {
+  printf "›>> Any no changes \n";
+  exit 0;
+}
+</code></pre>
+<p>추가나 삭제된 라인이 없는 경우, 변경 사항이 없음을 출력하고 스크립트를 종료한다.  </p>
+<pre><code class="language-shell">sum = plus + minus;
+size = "XS";
+color = GREENB;
+if ( sum &#x3C; rangeTo["XS"] ) {
+  size = "XS"
+  color = GREENB;
+} else if ( sum &#x3C; rangeTo["S"] ) {
+  size = "S";
+  color = BLUEB;
+} else if( sum &#x3C; rangeTo["M"] ) {
+  size = "M";
+  color = YELLOWB;
+} else if( sum &#x3C; rangeTo["L"] ) {
+  size = "L";
+  color = MAGENTB;
+} else {
+  size = "XL";
+  color = REDB;
+}
+printf ">>> " count " files," REDC plus " insertions(+), " BLUEC minus " deletions(-)" NORMALB NORMALC "\n";
+printf ">>> " color BLACKC " Your commit size is " size ". " NORMALB NORMALC "\n";
+</code></pre>
+<p>추가 및 삭제된 라인 수의 합계를 계산하고, 이를 기반으로 변경 사항의 크기를 분류한다.<br>
+그리고 그에 맞는 색상을 설정한다. 이 부분에서는 두 가지 정보를 출력한다.  </p>
+<ul>
+<li>변경된 파일의 수, 추가된 라인 수, 삭제된 라인 수  </li>
+<li>계산된 커밋 사이즈와 그에 따른 색상  </li>
+</ul>
+<p>따라서 이 스크립트를 실행하면, 이 스크립트가 변경된 파일의 수와 추가/삭제된 라인의 수를 계산하여 이를 기반으로 커밋 사이즈를 판단하고, 그 결과를 색상화된 문자열로 출력하게 된다. 이렇게 하면 커밋 사이즈를 한눈에 알아볼 수 있어 효율적이다.<br>
+허나 스크립트를 매번 수동으로 특정 프로젝트마다 실행할 수는 없으니 git alias로 스크립트 실행을 단축키처럼 등록하여 사용성을 높히자.  </p>
+<p>그럼 이제 이 스크립트를 <code>git_local_changes_stat.sh</code>라는 이름의 파일로 저장한다.  </p>
+<h2>Git Alias 추가</h2>
+<h3>Step1. 파일 권한 설정</h3>
+<p>앞서 저장한 git<em>local</em>change_stat.sh 파일에 권한을 부여하자. 파일이 위치한 경로를 맞게 작성해준뒤 권한 부여 명령어를 실행한다.   </p>
+<pre><code class="language-shell">$> chmod 755 ~/Downloads/git_local_changes_stat.sh   
+</code></pre>
+<h3>Step2. Git alias 추가</h3>
+<p>역시나 쉘 스크립트 파일이 위치한 경로에 맞게 작성해준뒤 git config에 alias를 추가한다.  </p>
+<pre><code class="language-shell">$> git config --global alias.stat '!sh ~/Downloads/git_local_changes_stat.sh'   
+</code></pre>
+<h2>테스트</h2>
+<p>마지막으로, 작성한 스크립트가 잘 동작하는지 테스트한다.  </p>
+<p>git이 설정된 프로젝트 폴더로 이동한뒤 <code>git stat</code> 별칭을 입력한다.<br>
+그러면 커밋 사이즈에 따라 서로 다른 색상의 메시지가 출력된다.  </p>
+<pre><code class="language-shell">$> cd ~/projects/sample
+$ ~/projects/sample> git stat  
+</code></pre>
+<h2>결과</h2>
+<p><img src="https://baek.dev/assets/images/post/2023/2023_051_000.gif" alt="git stat">  </p>
+<h2>마무리</h2>
+<p>이렇게 우리는 간단한 쉘 스크립트를 통해 Git commit 사이즈를 미리 알아볼 수 있게 되었다.
+이제 커밋 사이즈에 따른 분석이 필요할 때마다 git stat 명령어를 통해 쉽게 확인할 수 있다.   </p>
+<p>이 스크립트는 자신의 워크플로우에 맞게 쉽게 커스텀할 수 있으므로, 여러분만의 버전을 만들어 보시기 바란다.  </p>
+<hr>
+<p><strong>References</strong>  </p>
+<ul>
+<li><a target="_blank" href="https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html">ANSI Color https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html</a>    </li>
+<li><a target="_blank" href="https://www.thegeekstuff.com/2010/02/awk-conditional-statements/">awk https://www.thegeekstuff.com/2010/02/awk-conditional-statements/</a>    </li>
+</ul>]]></description><link>https://baek.dev/post/51/</link><guid isPermaLink="false">https://baek.dev/post/51/</guid><dc:creator><![CDATA[BAEKDEV]]></dc:creator><pubDate>Sun, 25 Jun 2023 14:14:00 GMT</pubDate><content:encoded>&lt;p&gt;회사에서 코드 리뷰를 진행하며, 동료의 커밋 크기가 상당히 큰 것을 확인했다. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;커밋 크기란,&lt;br&gt;
+추가된 라인 수와 삭제된 라인 수의 합계를 의미한다. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;커밋이 크면, 변화가 크다는 내용이고, 즉 리뷰할 때 많은 내용을 봐야한다는 것을 의미한다.&lt;br&gt;
+동료는 이런 상황이 오기전에 &lt;strong&gt;커밋 사이즈를 미리 알 수 있다면, 작업 분량을 적절히 분리하는데 도움이 될 것 같다&lt;/strong&gt;고 했다.   &lt;/p&gt;
+&lt;p&gt;커밋 크기, 즉 코드 변경 크기는 주로 원격 저장소에 Merge를 시도할 때 확인되지만,&lt;br&gt;
+이는 &lt;strong&gt;사후적인 행동&lt;/strong&gt;에 불과하다. 이보다는 사전에 이를 확인하고 조치하는 것이 효율적이다. &lt;/p&gt;
+&lt;p&gt;그 이유는 다음과 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;코드 리뷰의 부담 감소&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;하나의 커밋에서 많은 변경이 발생할 경우, 리뷰어에게 큰 부담이 되며, 리뷰시 버그나 오류를 발견하기 어렵게 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;작은 변경의 이점&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;작은 변경 크기는 컨텍스트를 간결하게 유지해, 릴리즈의 부담을 줄이고, 코드 리뷰 시에도 리뷰어의 부담을 감소시킨다. &lt;/li&gt;
+&lt;li&gt;또한 버그나 오류를 상대적으로 더 쉽게 찾을 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;작업 분량의 적절한 분배&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;커밋 전에 변경 크기를 알 수 있다면, 작업량을 적절히 분배해 효율적으로 작업할 수 있다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;동료가 제시한 문제를 해결하기 위해, Git의 로컬 변경 사항을 분석하는 쉘 스크립트를 만들었다.&lt;br&gt;
+간단한 시간을 투자하여 큰 사용성을 얻어 매우 효과적이었다.  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;쉘 스크립트를 만들어서 &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git stat&lt;/code&gt;라는 alias를 추가하고, &lt;/li&gt;
+&lt;li&gt;git stage에 있는 변경의 크기를 미리 알 수 있도록 작업한다.  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;이 스크립트는 &lt;strong&gt;&lt;a href=&quot;/git_local_changes_stat.sh&quot;&gt;git&lt;em&gt;local&lt;/em&gt;changes_stat.sh&lt;/a&gt;&lt;/strong&gt; 를 통해 다운로드 가능하다.    &lt;/p&gt;
+&lt;h2&gt;1. 스크립트 만들기&lt;/h2&gt;
+&lt;h3&gt;Step 1. 변경사항 준비&lt;/h3&gt;
+&lt;p&gt;먼저, Git의 변경 사항을 분석하고 그 크기를 알려주는 쉘 스크립트를 작성한다.&lt;br&gt;
+아래는 그러한 기능을 수행하는 쉘 스크립트의 코드이다.   &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;git add -A &amp;#x26;&amp;#x26; git diff --cached --numstat | awk &apos;{
+  # ... 
+} END {
+  # ...
+}&apos; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;위 스크립트는 아래와 같은 순서로 실행된다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;git add -A를 실행하여 모든 변경 사항을 stage 상태로 만든다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git add -A를 사용하는 이유는 unstaged 상태의 파일들까지 포함하기 위함이다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git diff --cached --numstat를 실행하여 stage 상태의 파일들 간의 차이점을 계산하고, 추가 및 삭제된 라인 수를 출력한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;--cached 옵션은 staged 상태의 변경 사항들에 대해 작동하며, --numstat 옵션은 추가/삭제된 라인 수를 숫자로 출력한다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;awk 명령어를 사용하여 각 파일에 대한 추가 및 삭제된 라인 수를 합산한다.  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Step2. 변수 초기화&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;count+=1;
+plus+=$1;
+minus+=$2;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;count는 변경된 파일 수를 저장, plus와 minus는 각각 추가된 라인 수와 삭제된 라인 수를 저장하는 변수이다.  &lt;/p&gt;
+&lt;h3&gt;Step3. 컬러 변수 설정&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;BLACKC=&quot;\033[30m&quot;;
+REDC=&quot;\033[31m&quot;;
+REDB=&quot;\033[41m&quot;;
+GREENB=&quot;\033[42m&quot;;
+YELLOWB=&quot;\033[43m&quot;;
+BLUEC=&quot;\033[34m&quot;;
+BLUEB=&quot;\033[44m&quot;;
+MAGENTB=&quot;\033[45m&quot;;
+NORMALB=&quot;\033[49m&quot;;
+NORMALC=&quot;\033[0m&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;쉘 스크립트의 출력을 보기 좋게 하기 위해, 다양한 색상을 변수로 저장하여 사용한다.&lt;br&gt;
+컬러는 터미널의 테마 등에 다르게 보일 수 있으니 각자의 상황에 맞게 변경해도 무방하다.    &lt;/p&gt;
+&lt;h3&gt;Step4. 커밋 사이즈 크기 범위 설정&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;rangeTo[&quot;XS&quot;] = 10;
+rangeTo[&quot;S&quot;] = 50;
+rangeTo[&quot;M&quot;] = 100;
+rangeTo[&quot;L&quot;] = 250;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;변경 사항의 크기를 XS, S, M, L, XL로 나누어 분류한다.&lt;br&gt;
+각 분류는 변경된 라인 수에 기반하여 결정된다. 250라인 이상은 XL이다.      &lt;/p&gt;
+&lt;h3&gt;Step5. 결과 출력&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;printf &quot;&gt;&gt;&gt; Git Local Changes Stat\n&quot;;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;여기서 스크립트는 git local change 결과를 출력하기 시작한다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;if (plus &amp;#x3C;= 0 &amp;#x26;&amp;#x26; minus &amp;#x3C;= 0) {
+  printf &quot;›&gt;&gt; Any no changes \n&quot;;
+  exit 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;추가나 삭제된 라인이 없는 경우, 변경 사항이 없음을 출력하고 스크립트를 종료한다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;sum = plus + minus;
+size = &quot;XS&quot;;
+color = GREENB;
+if ( sum &amp;#x3C; rangeTo[&quot;XS&quot;] ) {
+  size = &quot;XS&quot;
+  color = GREENB;
+} else if ( sum &amp;#x3C; rangeTo[&quot;S&quot;] ) {
+  size = &quot;S&quot;;
+  color = BLUEB;
+} else if( sum &amp;#x3C; rangeTo[&quot;M&quot;] ) {
+  size = &quot;M&quot;;
+  color = YELLOWB;
+} else if( sum &amp;#x3C; rangeTo[&quot;L&quot;] ) {
+  size = &quot;L&quot;;
+  color = MAGENTB;
+} else {
+  size = &quot;XL&quot;;
+  color = REDB;
+}
+printf &quot;&gt;&gt;&gt; &quot; count &quot; files,&quot; REDC plus &quot; insertions(+), &quot; BLUEC minus &quot; deletions(-)&quot; NORMALB NORMALC &quot;\n&quot;;
+printf &quot;&gt;&gt;&gt; &quot; color BLACKC &quot; Your commit size is &quot; size &quot;. &quot; NORMALB NORMALC &quot;\n&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;추가 및 삭제된 라인 수의 합계를 계산하고, 이를 기반으로 변경 사항의 크기를 분류한다.&lt;br&gt;
+그리고 그에 맞는 색상을 설정한다. 이 부분에서는 두 가지 정보를 출력한다.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;변경된 파일의 수, 추가된 라인 수, 삭제된 라인 수  &lt;/li&gt;
+&lt;li&gt;계산된 커밋 사이즈와 그에 따른 색상  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;따라서 이 스크립트를 실행하면, 이 스크립트가 변경된 파일의 수와 추가/삭제된 라인의 수를 계산하여 이를 기반으로 커밋 사이즈를 판단하고, 그 결과를 색상화된 문자열로 출력하게 된다. 이렇게 하면 커밋 사이즈를 한눈에 알아볼 수 있어 효율적이다.&lt;br&gt;
+허나 스크립트를 매번 수동으로 특정 프로젝트마다 실행할 수는 없으니 git alias로 스크립트 실행을 단축키처럼 등록하여 사용성을 높히자.  &lt;/p&gt;
+&lt;p&gt;그럼 이제 이 스크립트를 &lt;code&gt;git_local_changes_stat.sh&lt;/code&gt;라는 이름의 파일로 저장한다.  &lt;/p&gt;
+&lt;h2&gt;Git Alias 추가&lt;/h2&gt;
+&lt;h3&gt;Step1. 파일 권한 설정&lt;/h3&gt;
+&lt;p&gt;앞서 저장한 git&lt;em&gt;local&lt;/em&gt;change_stat.sh 파일에 권한을 부여하자. 파일이 위치한 경로를 맞게 작성해준뒤 권한 부여 명령어를 실행한다.   &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; chmod 755 ~/Downloads/git_local_changes_stat.sh   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Step2. Git alias 추가&lt;/h3&gt;
+&lt;p&gt;역시나 쉘 스크립트 파일이 위치한 경로에 맞게 작성해준뒤 git config에 alias를 추가한다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; git config --global alias.stat &apos;!sh ~/Downloads/git_local_changes_stat.sh&apos;   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;테스트&lt;/h2&gt;
+&lt;p&gt;마지막으로, 작성한 스크립트가 잘 동작하는지 테스트한다.  &lt;/p&gt;
+&lt;p&gt;git이 설정된 프로젝트 폴더로 이동한뒤 &lt;code&gt;git stat&lt;/code&gt; 별칭을 입력한다.&lt;br&gt;
+그러면 커밋 사이즈에 따라 서로 다른 색상의 메시지가 출력된다.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;$&gt; cd ~/projects/sample
+$ ~/projects/sample&gt; git stat  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;결과&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://baek.dev/assets/images/post/2023/2023_051_000.gif&quot; alt=&quot;git stat&quot;&gt;  &lt;/p&gt;
+&lt;h2&gt;마무리&lt;/h2&gt;
+&lt;p&gt;이렇게 우리는 간단한 쉘 스크립트를 통해 Git commit 사이즈를 미리 알아볼 수 있게 되었다.
+이제 커밋 사이즈에 따른 분석이 필요할 때마다 git stat 명령어를 통해 쉽게 확인할 수 있다.   &lt;/p&gt;
+&lt;p&gt;이 스크립트는 자신의 워크플로우에 맞게 쉽게 커스텀할 수 있으므로, 여러분만의 버전을 만들어 보시기 바란다.  &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html&quot;&gt;ANSI Color https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html&lt;/a&gt;    &lt;/li&gt;
+&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.thegeekstuff.com/2010/02/awk-conditional-statements/&quot;&gt;awk https://www.thegeekstuff.com/2010/02/awk-conditional-statements/&lt;/a&gt;    &lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TypeScript의 강력함: Discriminated Union과 as const 활용하기]]></title><description><![CDATA[<h1>TypeScript의 강력함: Discriminated Union과 'as const' 활용하기</h1>
 <p>TypeScript는 JavaScript의 상위 집합(super-set)으로서, JavaScript의 모든 기능을 포함하고 있음과 동시에 정적 타입 시스템과 다양한 고급 기능을 제공한다.
 이러한 고급 기능들 덕분에 TypeScript는 많은 개발자들에게 사랑받고 있으며, 여러 프로젝트에서 중요한 역할을 담당하고 있다.   </p>
 <p>이번 글에서는 TypeScript의 Discriminated Union과 'as const'라는 두 가지 강력한 기능을 소개하고, 이들을 어떻게 활용하는지 살펴보겠다.</p>
