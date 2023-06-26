@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Jun 2023 15:28:59 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[git stat를 이용하여 코드 리뷰 요청 전 커밋 사이즈 관리하기]]></title><description><![CDATA[<p>회사에서 코드 리뷰를 진행하며, 동료의 커밋 크기가 상당히 큰 것을 확인했다. </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[아웃풋 트레이닝]]></title><description><![CDATA[Frontend Software Engineer]]></description><link>https://baek.dev</link><image><url>https://baek.dev/assets/images/basic/profile.jpg</url><title>아웃풋 트레이닝</title><link>https://baek.dev</link></image><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Jun 2023 04:13:08 GMT</lastBuildDate><author><![CDATA[BAEKDEV]]></author><language><![CDATA[ko]]></language><item><title><![CDATA[git stat를 이용하여 코드 리뷰 요청 전 커밋 사이즈 관리하기]]></title><description><![CDATA[<p>회사에서 코드 리뷰를 진행하며, 동료의 커밋 크기가 상당히 큰 것을 확인했다. </p>
 <blockquote>
 <p>커밋 크기란,<br>
 추가된 라인 수와 삭제된 라인 수의 합계를 의미한다. </p>
@@ -38,7 +38,7 @@
 <li>git stage에 있는 변경의 크기를 미리 알 수 있도록 작업한다.  </li>
 </ol>
 </blockquote>
-<p>이 스크립트는 <strong><a href="/git_local_changes_stat.sh">git<em>local</em>changes_stat.sh</a></strong> 를 통해 다운로드 가능하다.    </p>
+<p>이 스크립트는 <a target="_blank" href="https://github.com/baekdev/git-stat">https://github.com/baekdev/git-stat</a> 를 통해 전체 코드 확인이 가능하다.      </p>
 <h2>1. 스크립트 만들기</h2>
 <h3>Step 1. 변경사항 준비</h3>
 <p>먼저, Git의 변경 사항을 분석하고 그 크기를 알려주는 쉘 스크립트를 작성한다.<br>
@@ -208,7 +208,7 @@ $ ~/projects/sample> git stat
 &lt;li&gt;git stage에 있는 변경의 크기를 미리 알 수 있도록 작업한다.  &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;이 스크립트는 &lt;strong&gt;&lt;a href=&quot;/git_local_changes_stat.sh&quot;&gt;git&lt;em&gt;local&lt;/em&gt;changes_stat.sh&lt;/a&gt;&lt;/strong&gt; 를 통해 다운로드 가능하다.    &lt;/p&gt;
+&lt;p&gt;이 스크립트는 &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/baekdev/git-stat&quot;&gt;https://github.com/baekdev/git-stat&lt;/a&gt; 를 통해 전체 코드 확인이 가능하다.      &lt;/p&gt;
 &lt;h2&gt;1. 스크립트 만들기&lt;/h2&gt;
 &lt;h3&gt;Step 1. 변경사항 준비&lt;/h3&gt;
 &lt;p&gt;먼저, Git의 변경 사항을 분석하고 그 크기를 알려주는 쉘 스크립트를 작성한다.&lt;br&gt;
