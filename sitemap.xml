@@ -12,6 +12,7 @@
 <url> <loc>https://baek.dev/post/pages/4</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/pages/5</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/til/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/post/52/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/51/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/50/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/49/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
@@ -67,6 +68,7 @@
 <url> <loc>https://baek.dev/post/3/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/2/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/post/1/</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
+<url> <loc>https://baek.dev/tags/retrospective</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/git</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/Git Alias</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/shell script</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
@@ -90,7 +92,6 @@
 <url> <loc>https://baek.dev/tags/react</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/SCSS</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/CRA</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
-<url> <loc>https://baek.dev/tags/retrospective</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/css</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/css length units</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
 <url> <loc>https://baek.dev/tags/viewport</loc> <changefreq>daily</changefreq> <priority>1.0</priority> </url>
